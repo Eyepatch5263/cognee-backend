@@ -1,0 +1,8 @@
+{
+  "case_id": "case_test_99",
+  "title": "State v. Jane Doe",
+  "summary": "This case involves an alleged theft of trade secrets from tech startup Acme Inc by employee Jane Doe on February 14, 2026.",
+  "suspects": ["Jane Doe"],
+  "witnesses": ["John Smith", "Bob Vance"],
+  "details": "Jane Doe downloaded 12GB of source code repository data to an encrypted USB drive before submitting her resignation."
+}

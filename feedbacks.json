@@ -1,0 +1,16 @@
+{
+  "test-case-123": [
+    {
+      "feedback_type": "evidence_correction",
+      "target": "CCTV_Report_12",
+      "action": "mark_false",
+      "reason": "Timestamp corruption"
+    },
+    {
+      "feedback_type": "witness_correction",
+      "target": "Witness_B",
+      "action": "mark_unreliable",
+      "reason": "Family relation bias confirmed"
+    }
+  ]
+}
