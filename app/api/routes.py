@@ -428,6 +428,9 @@ async def improve_case_memory(
     Improves graph connection quality and prunes stale connections.
     """
     try:
+        from app.services.feedback_store import AnalysisCacheStore
+        AnalysisCacheStore.clear_cached_analysis(id)
+        
         response = await client.improve_memory(
             dataset_id=id,
             run_in_background=request.run_in_background
@@ -455,6 +458,9 @@ async def forget_case_memory(
     Supports clearing memory only (re-cognifiable) or removing the dataset completely.
     """
     try:
+        from app.services.feedback_store import AnalysisCacheStore
+        AnalysisCacheStore.clear_cached_analysis(id)
+        
         await client.forget_memory(
             dataset_id=id,
             data_id=data_id,
@@ -541,6 +547,7 @@ async def get_case_reasoning(
 @router.get("/{id}/analysis", response_model=CaseAnalysisResponse)
 async def get_case_analysis(
     id: str,
+    bypass_cache: bool = False,
     client: CogneeAPIClient = Depends(get_cognee_client),
     reasoning_service: LLMReasoningService = Depends(get_reasoning_service),
     legal_engine: LegalIntelligenceEngine = Depends(get_legal_engine)
@@ -550,39 +557,79 @@ async def get_case_analysis(
     on the specified case to calculate deterministic weights, credibility, and suspect/conviction scores.
     """
     try:
-        # 1. Fetch graph data
-        graph_data = await client.get_case_graph(dataset_id=id)
-        
-        # 2. Fetch chunks/citations
-        chunks_raw = await client.recall_memory(
-            query="*",
-            dataset_ids=[id],
-            search_type="CHUNKS",
-            top_k=50
-        )
-        
-        # Format chunks for the pipeline
-        chunks = []
-        for r in chunks_raw:
-            text = r.get("text") or r.get("content") or ""
-            source = r.get("source") or "graph"
-            meta = r.get("metadata") or {}
-            chunks.append({
-                "text": text,
-                "source": meta.get("filename") or meta.get("source") or source,
-                "metadata": meta
-            })
+        # Try to load cached reasoning results
+        from app.services.feedback_store import AnalysisCacheStore
+        cached_reasoning = None
+        if not bypass_cache:
+            cached_reasoning = AnalysisCacheStore.get_cached_analysis(id)
             
-        # Compile Cognee input dict
-        cognee_data = {
-            "entities": graph_data.get("nodes", []),
-            "relations": graph_data.get("edges", []),
-            "chunks": chunks,
-            "citations": [c.get("source") for c in chunks if c.get("source")]
-        }
-        
-        # 3. Run LLM reasoning orchestration pipeline
-        reasoning_results = await reasoning_service.run_reasoning_pipeline(cognee_data)
+        if cached_reasoning:
+            logger.info(f"Found cached reasoning results for case {id}")
+            reasoning_results = cached_reasoning
+            # Load graph data and chunks only if we need them, or skip them for speed
+            # But the legal engine might need the raw entities/relations for Phase 4 calculations.
+            # So we still fetch the graph_data and chunks.
+            graph_data = await client.get_case_graph(dataset_id=id)
+            
+            chunks_raw = await client.recall_memory(
+                query="*",
+                dataset_ids=[id],
+                search_type="CHUNKS",
+                top_k=50
+            )
+            chunks = []
+            for r in chunks_raw:
+                text = r.get("text") or r.get("content") or ""
+                source = r.get("source") or "graph"
+                meta = r.get("metadata") or {}
+                chunks.append({
+                    "text": text,
+                    "source": meta.get("filename") or meta.get("source") or source,
+                    "metadata": meta
+                })
+            cognee_data = {
+                "entities": graph_data.get("nodes", []),
+                "relations": graph_data.get("edges", []),
+                "chunks": chunks,
+                "citations": [c.get("source") for c in chunks if c.get("source")]
+            }
+        else:
+            logger.info(f"No cached reasoning found (or bypass_cache=True) for case {id}. Fetching case details and running LLM reasoning...")
+            # 1. Fetch graph data
+            graph_data = await client.get_case_graph(dataset_id=id)
+            
+            # 2. Fetch chunks/citations
+            chunks_raw = await client.recall_memory(
+                query="*",
+                dataset_ids=[id],
+                search_type="CHUNKS",
+                top_k=50
+            )
+            
+            # Format chunks for the pipeline
+            chunks = []
+            for r in chunks_raw:
+                text = r.get("text") or r.get("content") or ""
+                source = r.get("source") or "graph"
+                meta = r.get("metadata") or {}
+                chunks.append({
+                    "text": text,
+                    "source": meta.get("filename") or meta.get("source") or source,
+                    "metadata": meta
+                })
+                
+            # Compile Cognee input dict
+            cognee_data = {
+                "entities": graph_data.get("nodes", []),
+                "relations": graph_data.get("edges", []),
+                "chunks": chunks,
+                "citations": [c.get("source") for c in chunks if c.get("source")]
+            }
+            
+            # 3. Run LLM reasoning orchestration pipeline
+            reasoning_results = await reasoning_service.run_reasoning_pipeline(cognee_data)
+            # Save to cache
+            AnalysisCacheStore.save_cached_analysis(id, reasoning_results)
         
         # 4. Integrate reasoning output with Cognee graph data for Legal Engine
         engine_input = {
@@ -681,9 +728,10 @@ async def submit_case_feedback(
                 except Exception as ex:
                     logger.warning(f"Cognee improve failed: {ex}")
                     
-        # Trigger recomputation: execute the complete case analysis pipeline
+        # Trigger recomputation: execute the complete case analysis pipeline bypassing the cache
         return await get_case_analysis(
             id=id,
+            bypass_cache=True,
             client=client,
             reasoning_service=reasoning_service,
             legal_engine=legal_engine

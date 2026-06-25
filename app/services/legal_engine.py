@@ -50,22 +50,96 @@ class LegalIntelligenceEngine:
         """Determines if a node represents a person in a case-agnostic way."""
         label_lower = node_label.lower()
         type_lower = node_type.lower()
-        if any(x in type_lower for x in ["person", "witness", "suspect", "victim", "officer", "police", "perpetrator", "accomplice"]):
+        
+        # 1. Check explicit person types
+        person_types = ["person", "witness", "suspect", "victim", "officer", "police", "perpetrator", "accomplice", "expert", "detective", "constable", "deputy", "inspector", "specialist", "medical examiner", "doctor"]
+        if any(x in type_lower for x in person_types):
             return True
+            
+        # 2. Check explicit non-person types
+        non_person_types = [
+            "location", "scene", "evidence", "document", "report", "event", 
+            "organization", "company", "object", "item", "artifact", "time", 
+            "date", "vehicle", "medical", "injury", "finding", "test", 
+            "physical", "digital", "log", "record", "receipt", "financial",
+            "photo", "cctv", "dna", "fingerprint", "weapon", "phone", "call"
+        ]
+        if any(t in type_lower for t in non_person_types):
+            return False
+            
+        # 3. Check explicit person properties
         if any(prop in node_properties for prop in ["occupation", "gender", "age", "relation_to_case", "email", "phone"]):
             return True
+
+        # Extract words for boundary check
+        import re
+        words_lower = re.findall(r'\b\w+\b', label_lower)
+        if not words_lower:
+            return False
+
+        # 4. Check person indicator keywords
+        person_indicators = [
+            "man", "woman", "boy", "girl", "father", "mother", "son", "daughter", 
+            "brother", "sister", "husband", "wife", "parent", "child", "friend", 
+            "neighbor", "neighbour", "worker", "student", "guard", "officer", 
+            "doctor", "dr", "mr", "mrs", "ms", "inspector", "constable", 
+            "detective", "assailant", "suspect", "victim", "defendant", 
+            "prosecutor", "lawyer", "attorney", "judge", "counsel", "cousin",
+            "vendor", "assistant", "passerby", "examiner", "specialist"
+        ]
+        if any(ind in words_lower for ind in person_indicators):
+            return True
+
+        # 5. Check non-person keywords
         non_person_keywords = [
             "deed", "transfer", "knife", "phone", "sedan", "suv", "car", "vehicle", "whatsapp", "cctv", 
             "dna", "evidence", "document", "report", "log", "statement", "testimony", "plot", "agreement", 
             "house", "villa", "bungalow", "sheet", "conspiracy", "event", "murder", "theft", "crime", 
             "fraud", "investigation", "hearing", "court", "bank", "account", "cash", "lakh", "rupee", "money",
             "gate", "temple", "office", "street", "lane", "road", "camera", "footage", "clip", "video", "photo",
-            "image", "fingerprint", "print", "blood", "autopsy", "weapon", "pistol", "gun", "bullet"
+            "image", "fingerprint", "print", "blood", "autopsy", "weapon", "pistol", "gun", "bullet",
+            "scratch", "receipt", "tear", "bruise", "bite mark", "abrasion", "reaction", "assault", "complex",
+            "lot", "shed", "hospital", "clinic", "university", "school", "college", "pm", "am", "clock",
+            "time", "date", "year", "month", "day", "hour", "minute", "second", "alarm", "call", "eraser",
+            "override", "credentials", "apartment", "society", "station", "ps", "ipc", "section", "law",
+            "rule", "code", "act", "bill", "file", "folder", "data", "system", "network", "server",
+            "power", "surge", "electricity", "outage", "blackout", "incident", "accident", "injury",
+            "injuries", "wound", "wounds", "scar", "scars", "fracture", "bleeding", "swelling", "pain",
+            "medical", "record", "records", "history", "profile", "test", "results", "analysis",
+            "lab", "laboratory", "specimen", "sample", "swab", "swabs", "clothing", "hoodie", "shirt",
+            "pants", "jeans", "jacket", "shoes", "socks", "underwear", "garment", "fabric", "fiber",
+            "fibers", "hair", "hairs", "saliva", "semen", "fluid", "fluids", "secretion", "secretions",
+            "stain", "stains", "smear", "smears", "mark", "marks", "injury", "trauma", "laceration",
+            "lacerations", "contusion", "contusions", "ecchymosis", "hematoma", "edema", "redness",
+            "swelling", "discharge", "examination", "exam", "findings", "diagnosis", "prognosis",
+            "therapy", "treatment", "medicine", "drug", "drugs", "prescription", "pharmacy",
+            "bill", "invoice", "receipts", "ledger", "logbook", "register", "entry", "entries",
+            "exit", "check-in", "checkout", "visitor", "visitors", "pass", "passes", "badge",
+            "badges", "key", "keys", "lock", "locks", "door", "doors", "window", "windows",
+            "room", "rooms", "hall", "hallway", "corridor", "lobby", "elevator", "lift", "stairs",
+            "staircase", "stairwell", "basement", "roof", "rooftop", "terrace", "balcony", "patio",
+            "yard", "garden", "lawn", "fence", "wall", "walls", "floor", "floors", "ceiling",
+            "ceilings", "light", "lights", "lamp", "lamps", "bulb", "bulbs", "switch", "switches",
+            "samsung", "iphone", "android", "mobile", "device", "serial", "brand", "model",
+            "version", "software", "app", "application", "website", "online", "internet",
+            "digital", "file", "database", "logs", "center", "centre", "place", "location",
+            "gym", "department", "wellness", "administrative", "override", "scene", "plank", "invitation"
         ]
-        if any(kw in label_lower for kw in non_person_keywords):
+        if any(kw in words_lower for kw in non_person_keywords):
             return False
-        if " " in node_label:
-            return True
+
+        # 6. Proper name casing check
+        tokens = re.findall(r'\b\w+\b', node_label)
+        if len(tokens) >= 2:
+            uppercase_tokens = sum(1 for t in tokens if t[0].isupper())
+            if uppercase_tokens >= 2:
+                if any(char.isdigit() for char in node_label):
+                    return False
+                common_words = {"in", "on", "at", "to", "for", "with", "by", "of", "and", "or", "but", "the", "a", "an"}
+                if any(w.lower() in common_words for w in tokens):
+                    return False
+                return True
+            
         return False
 
     @classmethod

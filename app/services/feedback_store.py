@@ -61,3 +61,53 @@ class FeedbackStore:
         if case_id in data:
             del data[case_id]
             cls._write_all(data)
+
+
+ANALYSIS_CACHE_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../analysis_cache.json"))
+
+class AnalysisCacheStore:
+    """
+    Simple file-based JSON storage to cache computed case analysis
+    to avoid redundant LLM queries and NVIDIA rate limits.
+    """
+
+    @staticmethod
+    def _read_all() -> Dict[str, Dict[str, Any]]:
+        if not os.path.exists(ANALYSIS_CACHE_FILE):
+            return {}
+        try:
+            with open(ANALYSIS_CACHE_FILE, "r") as f:
+                return json.load(f)
+        except Exception as e:
+            logger.warning(f"Failed to read analysis cache file: {e}")
+            return {}
+
+    @staticmethod
+    def _write_all(data: Dict[str, Dict[str, Any]]):
+        try:
+            os.makedirs(os.path.dirname(ANALYSIS_CACHE_FILE), exist_ok=True)
+            with open(ANALYSIS_CACHE_FILE, "w") as f:
+                json.dump(data, f, indent=2)
+        except Exception as e:
+            logger.error(f"Failed to write analysis cache file: {e}")
+
+    @classmethod
+    def get_cached_analysis(cls, case_id: str) -> Dict[str, Any]:
+        """Retrieve cached analysis if present."""
+        data = cls._read_all()
+        return data.get(case_id, None)
+
+    @classmethod
+    def save_cached_analysis(cls, case_id: str, analysis: Dict[str, Any]):
+        """Cache analysis result for a case."""
+        data = cls._read_all()
+        data[case_id] = analysis
+        cls._write_all(data)
+
+    @classmethod
+    def clear_cached_analysis(cls, case_id: str):
+        """Remove cached analysis for a case."""
+        data = cls._read_all()
+        if case_id in data:
+            del data[case_id]
+            cls._write_all(data)
