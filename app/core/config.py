@@ -26,6 +26,9 @@ class Settings:
     LLM_BASE_URL: str = os.getenv("LLM_BASE_URL", "https://integrate.api.nvidia.com/v1").rstrip("/")
     LLM_MODEL: str = os.getenv("LLM_MODEL", "qwen/qwen3-next-80b-a3b-instruct")
 
+    # Frontend URL
+    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:3000")
+
     @property
     def has_cognee_credentials(self) -> bool:
         return bool(self.COGNEE_API_KEY)
