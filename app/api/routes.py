@@ -825,6 +825,13 @@ async def get_case_briefs(id: str):
     """
     import os
     import json
+    from app.services.benchmark_store import BriefStore
+
+    # Try SQLite cache first
+    cached = BriefStore.get_briefs(id)
+    if cached:
+        return cached
+
     case_num = id.replace("CASE_", "")
     case_folder = f"CASE_{case_num.zfill(3)}"
     
@@ -837,7 +844,10 @@ async def get_case_briefs(id: str):
         
     try:
         with open(briefs_path, "r") as f:
-            return json.load(f)
+            data = json.load(f)
+            # Cache to SQLite
+            BriefStore.save_briefs(id, data)
+            return data
     except Exception as e:
         raise HTTPException(
             status_code=500,
@@ -847,6 +857,7 @@ async def get_case_briefs(id: str):
 @router.post("/{id}/briefs/generate")
 async def generate_case_briefs(
     id: str,
+    bypass_cache: bool = False,
     client: CogneeAPIClient = Depends(get_cognee_client)
 ):
     """
@@ -858,6 +869,13 @@ async def generate_case_briefs(
     import httpx
     import asyncio
     from app.core.config import settings
+    from app.services.benchmark_store import BriefStore
+
+    # Try SQLite cache first if not bypassing
+    if not bypass_cache:
+        cached = BriefStore.get_briefs(id)
+        if cached:
+            return cached
     
     # 1. Resolve dataset and case folder
     dataset_id = id
@@ -910,6 +928,15 @@ async def generate_case_briefs(
     cached_reasoning = AnalysisCacheStore.get_cached_analysis(dataset_id) or {}
     
     # 4. Construct prompt context from Cognee Cloud metadata
+    # Create id to name/label map for entities
+    id_to_name = {}
+    for n in graph_data.get("nodes", []):
+        n_id = n.get("id")
+        name = n.get("label") or n.get("name")
+        if n_id and name:
+            id_to_name[str(n_id).lower()] = name
+
+    # 4. Construct prompt context from Cognee Cloud metadata
     nodes_list = []
     for n in graph_data.get("nodes", [])[:50]:
         n_info = f"Entity: {n.get('label')} (Type: {n.get('type')})"
@@ -919,7 +946,12 @@ async def generate_case_briefs(
         
     edges_list = []
     for e in graph_data.get("edges", [])[:50]:
-        edges_list.append(f"Relationship: {e.get('source')} --({e.get('label')})--> {e.get('target')}")
+        source = e.get("source", "")
+        target = e.get("target", "")
+        label = e.get("label") or e.get("type") or "related_to"
+        source_name = id_to_name.get(str(source).lower(), source)
+        target_name = id_to_name.get(str(target).lower(), target)
+        edges_list.append(f"Relationship: {source_name} --({label})--> {target_name}")
         
     chunks_list = []
     for r in chunks_raw[:15]:
@@ -942,88 +974,109 @@ async def generate_case_briefs(
             f"Signals: {json.dumps(cached_reasoning.get('signals', {}))}\n"
         )
         
-    # Helper to call LLM for a version
-    async def call_llm(version_name: str, target_words: int) -> str:
-        system_prompt = (
-            "You are an expert legal analyst. You generate precise, concise, and comprehensive "
-            "legal briefs using only the provided facts, evidence, and structured case data "
-            "retrieved from our Cognee Cloud graph database. "
-            "Follow these rules strictly:\n"
-            "1. Do NOT hallucinate. Do not add outside facts.\n"
-            "2. Use only the provided evidence.\n"
-            "3. Mention uncertainty explicitly.\n"
-            "4. Highlight contradictions.\n"
-            "5. Mention the strongest evidence.\n"
-            "6. Preserve chronology.\n\n"
-            "Structure your output using these sections:\n"
-            "### Case Overview\n"
-            "[Summarize incident in 3-5 lines]\n\n"
-            "### Key Individuals\n"
-            "[List suspects, victims, witnesses, and investigators]\n\n"
-            "### Timeline\n"
-            "[Chronological sequence of major events]\n\n"
-            "### Evidence Summary\n"
-            "[Rank strongest evidence]\n\n"
-            "### Contradictions\n"
-            "[Mention major contradictions]\n\n"
-            "### Legal Assessment\n"
-            "- Suspect Likelihood: [Evaluation]\n"
-            "- Conviction Strength: [Evaluation]\n"
-            "- Key Uncertainty: [Evaluation]\n"
-        )
-        
-        user_prompt = (
-            f"Generate a {version_name} legal brief (~{target_words} words) based on the Cognee Cloud graph metadata below.\n\n"
-            f"COGNEE CLOUD GRAPH METADATA:\n"
-            f"{prompt_data}\n\n"
-            f"Ensure you follow the formatting sections (Case Overview, Key Individuals, Timeline, Evidence Summary, "
-            f"Contradictions, Legal Assessment) and target approximately {target_words} words."
-        )
-        
-        url = f"{settings.LLM_BASE_URL}/chat/completions"
-        headers = {
-            "Authorization": f"Bearer {settings.NVIDIA_API_KEY}",
-            "Content-Type": "application/json"
-        }
-        payload = {
-            "model": settings.LLM_MODEL,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
-            "temperature": 0.2,
-            "max_tokens": 2000,
-            "stream": False
-        }
-        
-        async with httpx.AsyncClient(timeout=180.0) as client_http:
-            for attempt in range(3):
-                try:
-                    res = await client_http.post(url, headers=headers, json=payload)
-                    if res.status_code == 200:
-                        return res.json()["choices"][0]["message"]["content"].strip()
-                    elif res.status_code == 429:
-                        await asyncio.sleep(2)
-                except Exception:
-                    await asyncio.sleep(1)
-            return ""
+    # Single LLM prompt to generate all three summary formats sequentially to avoid 429 concurrency limits
+    system_prompt = (
+        "You are an expert legal analyst. You generate precise, concise, and comprehensive "
+        "legal briefs using only the provided facts, evidence, and structured case data "
+        "retrieved from our Cognee Cloud graph database. "
+        "Follow these rules strictly:\n"
+        "1. Do NOT hallucinate. Do not add outside facts.\n"
+        "2. Use only the provided evidence.\n"
+        "3. Mention uncertainty explicitly.\n"
+        "4. Highlight contradictions.\n"
+        "5. Mention the strongest evidence.\n"
+        "6. Preserve chronology.\n\n"
+        "You must generate three separate versions of the legal brief based on the provided data:\n"
+        "1. A quick summary (~150 words)\n"
+        "2. A standard summary (~400 words)\n"
+        "3. A detailed brief (~1000 words)\n\n"
+        "Each version must include these subheadings:\n"
+        "### Case Overview\n"
+        "### Key Individuals\n"
+        "### Timeline\n"
+        "### Evidence Summary\n"
+        "### Contradictions\n"
+        "### Legal Assessment\n\n"
+        "You MUST separate the three versions with these exact tags (include the brackets):\n"
+        "[QUICK_SUMMARY]\n"
+        "(Insert the quick summary here)\n\n"
+        "[STANDARD_SUMMARY]\n"
+        "(Insert the standard summary here)\n\n"
+        "[DETAILED_BRIEF]\n"
+        "(Insert the detailed brief here)\n"
+    )
+    
+    user_prompt = (
+        f"Generate the three versions of the legal brief (quick, standard, detailed) based on the Cognee Cloud graph metadata below.\n\n"
+        f"COGNEE CLOUD GRAPH METADATA:\n"
+        f"{prompt_data}\n\n"
+        f"Ensure you output each summary under its respective tag: [QUICK_SUMMARY], [STANDARD_SUMMARY], and [DETAILED_BRIEF]."
+    )
+    
+    url = f"{settings.LLM_BASE_URL}/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {settings.NVIDIA_API_KEY}",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "model": settings.LLM_MODEL,
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        "temperature": 0.2,
+        "max_tokens": 4000,
+        "stream": False
+    }
+    
+    response_text = ""
+    async with httpx.AsyncClient(timeout=240.0) as client_http:
+        for attempt in range(3):
+            try:
+                res = await client_http.post(url, headers=headers, json=payload)
+                if res.status_code == 200:
+                    response_text = res.json()["choices"][0]["message"]["content"].strip()
+                    break
+                elif res.status_code == 429:
+                    await asyncio.sleep(3)
+            except Exception as e:
+                logger.error(f"Error on LLM call attempt {attempt+1}: {e}")
+                await asyncio.sleep(2)
+                
+    quick_summary = ""
+    standard_summary = ""
+    detailed_brief = ""
+    
+    if response_text:
+        import re
+        quick_match = re.split(r'\[quick[-_](?:summary|brief)\]', response_text, flags=re.IGNORECASE)
+        if len(quick_match) > 1:
+            after_quick = quick_match[1]
+            standard_match = re.split(r'\[standard[-_](?:summary|brief)\]', after_quick, flags=re.IGNORECASE)
+            quick_summary = standard_match[0].strip()
+            if len(standard_match) > 1:
+                after_standard = standard_match[1]
+                detailed_match = re.split(r'\[detailed[-_](?:brief|summary)\]', after_standard, flags=re.IGNORECASE)
+                standard_summary = detailed_match[0].strip()
+                if len(detailed_match) > 1:
+                    detailed_brief = detailed_match[1].strip()
+                else:
+                    detailed_brief = after_standard.strip()
+            else:
+                standard_summary = after_quick.strip()
+        else:
+            # Fallback if parsing fails
+            standard_summary = response_text
+            quick_summary = response_text[:500]
+            detailed_brief = response_text
 
-    # Generate the 3 summaries concurrently
-    tasks = [
-        call_llm("quick summary", 150),
-        call_llm("standard summary", 400),
-        call_llm("detailed brief", 1000)
-    ]
-    
-    quick_summary, standard_summary, detailed_brief = await asyncio.gather(*tasks)
-    
     briefs = {
         "quick_summary": quick_summary,
         "standard_summary": standard_summary,
         "detailed_brief": detailed_brief
     }
     
-    # Save to disk
+    # Save to disk and SQLite
     try:
         cases_dir = "/home/eyepatch/Documents/congiverdict/cases"
         case_path = os.path.join(cases_dir, case_folder)
@@ -1033,5 +1086,10 @@ async def generate_case_briefs(
             json.dump(briefs, f, indent=2)
     except Exception as e:
         logger.error(f"Failed to save briefs to file: {e}")
+
+    try:
+        BriefStore.save_briefs(id, briefs)
+    except Exception as e:
+        logger.error(f"Failed to save briefs to SQLite: {e}")
         
     return briefs

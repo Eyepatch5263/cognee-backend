@@ -121,6 +121,15 @@ async def process_cloud_case(client: CogneeAPIClient, case_id: str, dataset_id: 
     cached_reasoning = AnalysisCacheStore.get_cached_analysis(dataset_id) or {}
     
     # 4. Construct prompt context from Cognee Cloud metadata
+    # Create id to name/label map for entities
+    id_to_name = {}
+    for n in graph_data.get("nodes", []):
+        n_id = n.get("id")
+        name = n.get("label") or n.get("name")
+        if n_id and name:
+            id_to_name[str(n_id).lower()] = name
+
+    # 4. Construct prompt context from Cognee Cloud metadata
     nodes_list = []
     for n in graph_data.get("nodes", [])[:50]: # Limit count to save context window
         n_info = f"Entity: {n.get('label')} (Type: {n.get('type')})"
@@ -130,7 +139,12 @@ async def process_cloud_case(client: CogneeAPIClient, case_id: str, dataset_id: 
         
     edges_list = []
     for e in graph_data.get("edges", [])[:50]:
-        edges_list.append(f"Relationship: {e.get('source')} --({e.get('label')})--> {e.get('target')}")
+        source = e.get("source", "")
+        target = e.get("target", "")
+        label = e.get("label") or e.get("type") or "related_to"
+        source_name = id_to_name.get(str(source).lower(), source)
+        target_name = id_to_name.get(str(target).lower(), target)
+        edges_list.append(f"Relationship: {source_name} --({label})--> {target_name}")
         
     chunks_list = []
     for r in chunks_raw[:15]:

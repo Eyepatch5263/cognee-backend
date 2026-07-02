@@ -259,6 +259,13 @@ class LLMReasoningService:
             src = chunk.get("source", "Unknown")
             context_lines.append(f"[{idx+1}] Source: {src}\nContent: {txt}")
 
+        id_to_name = {}
+        for ent in entities:
+            ent_id = ent.get("id")
+            name = ent.get("label") or ent.get("name")
+            if ent_id and name:
+                id_to_name[str(ent_id).lower()] = name
+
         context_lines.append("\n=== KNOWLEDGE GRAPH ENTITIES ===")
         for ent in entities:
             name = ent.get("name", ent.get("label", ""))
@@ -272,7 +279,9 @@ class LLMReasoningService:
             source = rel.get("source", "")
             target = rel.get("target", "")
             rtype = rel.get("type", rel.get("label", "related_to"))
-            context_lines.append(f"- {source} --[{rtype}]--> {target}")
+            source_name = id_to_name.get(str(source).lower(), source)
+            target_name = id_to_name.get(str(target).lower(), target)
+            context_lines.append(f"- {source_name} --[{rtype}]--> {target_name}")
 
         case_context = "\n".join(context_lines)
 

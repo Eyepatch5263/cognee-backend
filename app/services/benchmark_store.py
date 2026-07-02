@@ -88,3 +88,86 @@ class BenchmarkStore:
             raise e
         finally:
             conn.close()
+
+
+class BriefStore:
+    @staticmethod
+    def get_connection():
+        conn = sqlite3.connect(DB_PATH)
+        conn.row_factory = sqlite3.Row
+        return conn
+
+    @classmethod
+    def initialize_db(cls):
+        conn = cls.get_connection()
+        try:
+            cursor = conn.cursor()
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS case_briefs (
+                    case_id TEXT PRIMARY KEY,
+                    quick_summary TEXT,
+                    standard_summary TEXT,
+                    detailed_brief TEXT,
+                    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
+            conn.commit()
+        except Exception as e:
+            logger.error(f"Error initializing case_briefs database: {e}")
+        finally:
+            conn.close()
+
+    @classmethod
+    def get_briefs(cls, case_id: str) -> Optional[Dict[str, str]]:
+        cls.initialize_db()
+        conn = cls.get_connection()
+        try:
+            cursor = conn.cursor()
+            cursor.execute(
+                "SELECT quick_summary, standard_summary, detailed_brief FROM case_briefs WHERE case_id = ?",
+                (case_id,)
+            )
+            row = cursor.fetchone()
+            if row:
+                return {
+                    "quick_summary": row["quick_summary"],
+                    "standard_summary": row["standard_summary"],
+                    "detailed_brief": row["detailed_brief"]
+                }
+            return None
+        except Exception as e:
+            logger.error(f"Error fetching case briefs from SQLite: {e}")
+            return None
+        finally:
+            conn.close()
+
+    @classmethod
+    def save_briefs(cls, case_id: str, briefs: Dict[str, str]):
+        cls.initialize_db()
+        conn = cls.get_connection()
+        try:
+            cursor = conn.cursor()
+            cursor.execute(
+                """
+                INSERT INTO case_briefs (case_id, quick_summary, standard_summary, detailed_brief)
+                VALUES (?, ?, ?, ?)
+                ON CONFLICT(case_id) DO UPDATE SET
+                    quick_summary = excluded.quick_summary,
+                    standard_summary = excluded.standard_summary,
+                    detailed_brief = excluded.detailed_brief,
+                    timestamp = CURRENT_TIMESTAMP
+                """,
+                (
+                    case_id,
+                    briefs.get("quick_summary", ""),
+                    briefs.get("standard_summary", ""),
+                    briefs.get("detailed_brief", "")
+                )
+            )
+            conn.commit()
+        except Exception as e:
+            logger.error(f"Error saving case briefs to SQLite: {e}")
+            raise e
+        finally:
+            conn.close()
+
