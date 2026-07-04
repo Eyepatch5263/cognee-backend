@@ -11,7 +11,7 @@ sys.stdout.reconfigure(line_buffering=True)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-CASES_DIR = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "cases")))
+CASES_DIR = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "cases")))
 LLM_API_KEY = "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"
 LLM_BASE_URL = "https://integrate.api.nvidia.com/v1"
 LLM_MODEL = "meta/llama-3.1-70b-instruct"

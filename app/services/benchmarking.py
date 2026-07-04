@@ -5,7 +5,8 @@ from typing import Dict, Any, List
 
 logger = logging.getLogger(__name__)
 
-CASES_DIR = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "cases")))
+CASES_DIR = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "cases")))
+
 
 
 class BenchmarkingService:
