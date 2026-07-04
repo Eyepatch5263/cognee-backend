@@ -211,9 +211,9 @@ class LLMReasoningService:
                 "justification": "Fallback signals used due to LLM processing failure."
             }
 
-    async def generate_explanation(self, case_context: str, signals: Dict[str, Any], contradictions: List[Dict[str, Any]]) -> str:
+    async def generate_explanation(self, case_context: str, contradictions: List[Dict[str, Any]], signals: Optional[Dict[str, Any]] = None) -> str:
         """5. Explanation Generation: Convert metrics and signals into human-readable legal explanations."""
-        signals_summary = json.dumps(signals, indent=2)
+        signals_summary = json.dumps(signals, indent=2) if signals else "Not pre-calculated"
         contradictions_summary = json.dumps(contradictions, indent=2)
         
         user_prompt = (
@@ -237,6 +237,7 @@ class LLMReasoningService:
                 "The credibility of witness testimonies is impacted by potential bias. Further forensic verification "
                 "is recommended."
             )
+
 
     async def run_reasoning_pipeline(self, cognee_data: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -363,12 +364,17 @@ class LLMReasoningService:
                 "explanation": explanation
             }
 
-        # Query LLM tasks in the pipeline
-        contradictions = await self.detect_contradictions(case_context)
-        motives = await self.detect_motives(case_context)
-        witness_biases = await self.detect_witness_biases(case_context)
-        signals = await self.extract_legal_signals(case_context, len(contradictions), corroboration_count)
-        explanation = await self.generate_explanation(case_context, signals, contradictions)
+        # Query LLM tasks in the pipeline in parallel stages
+        contradictions, motives, witness_biases = await asyncio.gather(
+            self.detect_contradictions(case_context),
+            self.detect_motives(case_context),
+            self.detect_witness_biases(case_context)
+        )
+
+        signals, explanation = await asyncio.gather(
+            self.extract_legal_signals(case_context, len(contradictions), corroboration_count),
+            self.generate_explanation(case_context, contradictions)
+        )
 
         return {
             "contradictions": contradictions,
@@ -377,6 +383,7 @@ class LLMReasoningService:
             "signals": signals,
             "explanation": explanation
         }
+
 
     async def query(self, system_prompt: str, user_prompt: str, json_format: bool = False) -> str:
         """Expose _query_llm publicly for benchmarking and custom queries."""
