@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cogniverdict-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - CASES_DIR=/app/cases
+    volumes:
+      # Mount the cases directory to persist uploaded legal case files
+      - ./cases:/app/cases
+      # Mount files to persist analysis database, cache, and feedbacks
+      - ./benchmarks.db:/app/benchmarks.db
+      - ./analysis_cache.json:/app/analysis_cache.json
+      - ./feedbacks.json:/app/feedbacks.json
+    restart: unless-stopped
