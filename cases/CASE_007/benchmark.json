@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "What is the motive behind the corruption?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q3",
+      "question": "Which witness provided false testimony regarding the March 15, 2022 cash transaction?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q4",
+      "question": "What evidence was forged to explain the source of funds for the Indore property?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q5",
+      "question": "How do the WhatsApp messages support the corruption allegation?",
+      "category": "communication_graph"
+    },
+    {
+      "id": "Q6",
+      "question": "What is the contradiction between Priya Mehta’s statement and the CCTV logs?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q7",
+      "question": "Why is the property purchase under Anjali Sharma’s name significant?",
+      "category": "property_ownership"
+    },
+    {
+      "id": "Q8",
+      "question": "Which document proves the financial discrepancy between declared income and actual assets?",
+      "category": "financial_motive"
+    },
+    {
+      "id": "Q9",
+      "question": "What is the conviction likelihood based on the evidence presented?",
+      "category": "conviction_likelihood"
+    },
+    {
+      "id": "Q10",
+      "question": "Who is the accomplice, and what role did they play?",
+      "category": "relationship_mapping"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "Rajiv Sharma is the actual perpetrator. He is the senior revenue officer who accepted bribes from Vikram Singh in exchange for approving illegal land regularization cases. The forensic audit, WhatsApp messages, and financial records all directly link him to the unexplained cash deposits and property purchase. Although he denies wrongdoing, the fabricated inheritance document and his inability to explain the ₹47.6 lakh inflows confirm his guilt."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "The true motive was to secure funds for his daughter’s overseas medical treatment, which was denied insurance coverage due to a pre-existing autoimmune disorder. The estimated cost of ₹30 lakh created financial pressure, leading him to begin accepting bribes in March 2021. This motive, while humanizing, does not justify the criminal acts and is corroborated by internal family records not disclosed during the investigation."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "Priya Mehta provided false testimony regarding the March 15, 2022 cash transaction. She claimed to have seen Rajiv Sharma receive cash from Vikram Singh at 11:10 AM, but CCTV and attendance logs prove he was in a mandatory meeting from 10:45 AM to 11:30 AM. This specific claim is fabricated or mistaken, though her broader allegations of bribery are supported by other evidence."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "A fabricated inheritance document dated 2019, allegedly signed by Rajiv Sharma’s deceased father, Ramesh Sharma, was presented to explain the source of funds for the Indore property. Forensic analysis confirmed it was printed on post-2021 paper, used a forged notary seal, and contained fake witness names. It was created after the property purchase to mislead investigators."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The WhatsApp messages between Rajiv Sharma and Vikram Singh contain coded language such as '₹5L cleared,' 'paperwork done,' and 'Anjali’s name this time,' which directly correlate with the timing and amounts of the three cash deposits. The use of terms like 'commission' and 'no trace' indicates an understanding of illegality and intent to conceal. These messages were recovered from device memory and confirm a pattern of bribery."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The contradiction is that Priya Mehta claimed to have witnessed Rajiv Sharma receiving cash from Vikram Singh at 11:10 AM on March 15, 2022, but official CCTV logs and attendance records confirm that Rajiv was in a mandatory departmental meeting from 10:45 AM to 11:30 AM. This makes the sighting physically impossible, exposing a critical flaw in her testimony on that specific date."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "The property purchase under Anjali Sharma’s name is significant because it was a deliberate attempt to circumvent scrutiny under the Benami Transactions (Prohibition) Act, 1988. By using his wife’s name, Rajiv Sharma tried to create a legal fiction that the asset belonged to someone else, hiding his own illicit wealth. The lack of any declared income for Anjali Sharma further confirms the benami nature of the transaction."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "The State Financial Intelligence Unit (SFIU) forensic audit report (ER-002) proves the financial discrepancy. It compares Rajiv Sharma’s declared annual income of ₹8.2 lakh with total unexplained bank inflows of ₹47.6 lakh over three years, including three cash deposits of ₹5 lakh each and a ₹2.1 crore property purchase. The report concludes no legitimate source exists for these assets."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The conviction likelihood is very high. The case has multiple layers of corroborating evidence: financial records, digital communications, forensic analysis of forged documents, and a clear timeline linking bribes to asset acquisition. Although one witness statement contains a contradiction, it is isolated and does not undermine the overwhelming documentary and forensic evidence. The charge sheet is legally sound, and the accused’s defense lacks credibility."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "Vikram Singh is the accomplice. He acted as the intermediary who collected bribes from landowners and delivered cash to Rajiv Sharma. He facilitated the property purchase in Indore and used coded WhatsApp messages to coordinate the bribes. His role was essential in laundering the illicit cash and ensuring the transactions remained untraceable. He is being investigated as a co-conspirator under Section 12 of the Prevention of Corruption Act."
+    }
+  ]
+}

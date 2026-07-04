@@ -1,0 +1,10 @@
+{
+  "document_id": "AR-001",
+  "document_type": "audit_working_papers_report",
+  "metadata": {
+    "report_id": "AR/EOW/2023/031",
+    "investigating_officer": "Forensic Audit Team, EOW",
+    "date_issued": "2023-09-15"
+  },
+  "content": "Ramesh & Associates’ audit working papers for FY 2022–23 list 12 client bank confirmations. Upon verification with the banks: (1) 10 banks confirmed no such requests were ever made. (2) Two ‘confirmations’ were PDFs with mismatched letterheads—Gujarat State Bank letterhead used for an account at Axis Bank. (3) All ‘signed’ confirmations had identical digital signatures from the same unknown user, not the banks’ official signatories. (4) No email trail exists between Ramesh & Associates and any of the 12 clients requesting verification. (5) The audit file was last modified on 2023-06-22, two weeks after the audit opinion was issued. Conclusion: Bank confirmations were fabricated. No due diligence was performed. The audit opinion is fraudulent and issued after bribery."
+}

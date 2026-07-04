@@ -1,0 +1,12 @@
+{
+  "document_id": "ER-004",
+  "document_type": "Digital_forensics_report",
+  "metadata": {
+    "report_id": "DF-2023-10457-04",
+    "device": "Samsung Galaxy S21 (Rohan Kapoor)",
+    "lab": "Digital Evidence Unit, Chandigarh Cyber Cell",
+    "date_retrieved": "2023-10-17",
+    "analyst": "Inspector Arun Patel"
+  },
+  "content": "Forensic imaging of Anjali Verma’s iPhone 13 (Serial: F123456) recovered call logs showing three calls to Priya Mehta (10:48 PM, 10:50 PM, 10:52 PM) and one call to Rohan Kapoor (10:49 PM, duration: 12 seconds). Call log from Rohan Kapoor’s Samsung S21 (Serial: G789012) showed no outgoing call to Anjali on 14.10.2023 in active log. However, forensic recovery from device backup (cloud sync, 13.10.2023) revealed a deleted call log entry: Call to Anjali Verma (9:45:03 PM, duration: 47 seconds). Call was manually deleted using third-party app 'Call Eraser Pro'. No call records from Rohan to Arjun Singh on that date. WhatsApp and SMS logs show no prior communication between Rohan and Anjali. Anjali’s phone GPS data shows she was at library until 10:05 PM, then walked home. Rohan’s phone GPS shows movement from FitLife Gym to Sector 17 parking lot between 10:15–10:25 PM, then to Café Zenith at 10:37 PM."
+}

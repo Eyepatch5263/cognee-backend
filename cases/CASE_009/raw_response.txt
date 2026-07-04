@@ -1,0 +1,339 @@
+```json
+{
+  "CASE METADATA": {
+    "case_id": "CASE_009",
+    "case_type": "property_dispute",
+    "difficulty": "hard",
+    "incident_date": "2023-05-12",
+    "location": "Kharagpur, West Bengal",
+    "summary": "The dispute centers on a 2.3-acre agricultural plot in Kharagpur, originally owned by the late Shri Anil Chatterjee, who died in 2018. His two daughters, Priya Chatterjee and Sunita Roy, now contest ownership, with Priya claiming sole inheritance under a 2017 will, while Sunita asserts the will is forged and that her father verbally bequeathed the land equally before his death. The property has been under dispute since 2020, when Priya registered a mutation in her name using a notarized will and a forged signature on the 2016 land revenue record. Sunita, who lived with her father and managed the farm, alleges her sister bribed the local revenue clerk, Mr. Debashish Mukherjee, to alter records and falsify witness affidavits. Complicating matters, a third party, Dr. Arjun Mehta — a distant cousin and retired orthopedic surgeon — claims he was named as a trustee in a 2015 handwritten document, which Priya claims is a draft with no legal standing. The case has attracted media attention due to allegations of a land mafia connection and the sudden death of the original revenue officer, Mr. Ramesh Das, who was scheduled to testify. Forensic analysis of the will’s ink and paper shows inconsistencies, but the notary who certified it has vanished. The land’s boundary markers have been moved twice since 2021, and satellite imagery from 2020 contradicts the survey submitted by Priya’s legal team."
+  },
+  "HIDDEN GROUND TRUTH": {
+    "actual_criminal": "Priya Chatterjee",
+    "accomplices": [
+      "Debashish Mukherjee",
+      "Nandini Sen"
+    ],
+    "true_motive": "To sell the land to a real estate developer for ₹4.2 crore, as Priya was deeply in debt from failed business ventures and needed to cover embezzlement from her father’s savings.",
+    "true_timeline": [
+      "2015: Anil Chatterjee drafts a handwritten note naming Dr. Arjun Mehta as trustee for equal division among daughters, but never signs it.",
+      "2017: Priya forges a will with her father’s signature using a template she found in his study, with help from Nandini Sen, a typist who knew his handwriting.",
+      "2018: Anil Chatterjee dies of cardiac arrest; Sunita is unaware of the forged will.",
+      "2019: Priya bribes Debashish Mukherjee to alter the 2016 land revenue record to show her as sole heir, backdating the entry.",
+      "2020: Priya files mutation application using the forged will and altered record; Sunita files objection.",
+      "2021: Ramesh Das, the revenue officer who reviewed the mutation, is found dead in his home — ruled suicide, but evidence suggests poisoning.",
+      "2022: Nandini Sen, fearing exposure, flees to Nepal after receiving a threat from Priya.",
+      "2023: Priya hires a local contractor to move boundary stones to claim an additional 0.4 acres, triggering the current legal case."
+    ],
+    "lying_witnesses": [
+      "Debashish Mukherjee",
+      "Nandini Sen",
+      "Mrs. Anjali Ghosh (neighbor)",
+      "Dr. Arjun Mehta"
+    ],
+    "forged_evidence": [
+      "The 2017 will signed by Anil Chatterjee — ink matches a pen purchased by Priya in 2017, but the paper is from a 2015 batch found in Anil’s drawer; signature is traced.",
+      "The 2016 land revenue record entry — digitally altered in the Kharagpur Tehsil database; original paper copy was destroyed.",
+      "The notarization certificate — notarized by a fake notary whose seal was forged using a stolen stamp from a defunct law firm."
+    ],
+    "injected_contradictions": [
+      "Priya claims the will was signed on 12/03/2017, but the notary’s logbook shows no appointment that day — yet the notary’s signature is present.",
+      "Sunita says her father never trusted banks, yet bank records show a ₹5 lakh withdrawal from his account on 11/03/2017 — the day before the will was allegedly signed — which Priya claims was for legal fees.",
+      "Dr. Mehta says he was given the 2015 handwritten note as a 'draft for future use,' but the paper is from a notebook purchased by Sunita, not Anil.",
+      "Mrs. Ghosh testifies she saw Anil sign the will in 2017, but her own diary entry from March 2017 says she was hospitalized for pneumonia from 08/03/2017 to 20/03/2017.",
+      "The boundary survey submitted by Priya shows a 2020 measurement, but the GPS coordinates match a 2018 survey that was never officially filed.",
+      "Nandini Sen’s affidavit claims she typed the will on 10/03/2017, but her employer’s attendance log shows she was on leave that week."
+    ]
+  },
+  "REASONING PERSPECTIVES": [
+    "timeline reconstruction",
+    "witness credibility",
+    "family relationships",
+    "property ownership",
+    "document forensics",
+    "financial motive",
+    "money flow",
+    "communication graph",
+    "alibi verification",
+    "land registry chain"
+  ],
+  "CONTRADICTIONS": [
+    {
+      "type": "timeline",
+      "severity": "critical",
+      "claim_a": "Priya claims the will was signed on 12/03/2017, and the notary certified it the same day.",
+      "claim_b": "The notary’s official logbook shows no appointment on 12/03/2017, and the notary’s signature matches a stamp stolen from a firm that closed in 2016."
+    },
+    {
+      "type": "testimony",
+      "severity": "high",
+      "claim_a": "Mrs. Anjali Ghosh testifies she witnessed Anil Chatterjee signing the will on 12/03/2017.",
+      "claim_b": "Mrs. Ghosh’s personal diary confirms she was hospitalized for pneumonia from 08/03/2017 to 20/03/2017, making her presence impossible."
+    },
+    {
+      "type": "forensic",
+      "severity": "high",
+      "claim_a": "The 2017 will is printed on paper from a 2015 batch found in Anil Chatterjee’s study.",
+      "claim_b": "The ink used is from a Parker pen purchased by Priya on 05/03/2017, and the signature shows signs of tracing using a lightbox."
+    },
+    {
+      "type": "financial",
+      "severity": "medium",
+      "claim_a": "Priya claims the ₹5 lakh withdrawal from Anil’s account on 11/03/2017 was for legal fees to draft the will.",
+      "claim_b": "The bank’s transaction code shows the withdrawal was made as a cash transfer to an unregistered account under the name 'P. C. Enterprises' — a shell company Priya created in 2016."
+    },
+    {
+      "type": "testimony",
+      "severity": "high",
+      "claim_a": "Dr. Arjun Mehta claims he was named trustee in a 2015 handwritten note and has held it since.",
+      "claim_b": "The notebook the note was written in was purchased by Sunita in January 2015, and the handwriting matches Anil’s, but the paper is from a different batch than Anil’s known stationery."
+    },
+    {
+      "type": "forensic",
+      "severity": "critical",
+      "claim_a": "The 2016 land revenue record shows Priya as sole heir, certified by Debashish Mukherjee.",
+      "claim_b": "The original paper copy of the 2016 record was destroyed in a fire in 2019, but the digital version shows metadata indicating edits made on 04/04/2019 — after Anil’s death and before the mutation filing."
+    },
+    {
+      "type": "timeline",
+      "severity": "medium",
+      "claim_a": "Nandini Sen claims she typed the will on 10/03/2017 at her workplace.",
+      "claim_b": "Her employer’s attendance records show she was on approved leave from 08/03/2017 to 14/03/2017 due to family emergency."
+    },
+    {
+      "type": "property ownership",
+      "severity": "high",
+      "claim_a": "Priya’s survey shows the boundary extends 15 meters east, claiming additional land.",
+      "claim_b": "Satellite imagery from 2020 shows the boundary was identical to the 2018 survey, and the current eastern marker was installed in January 2023."
+    },
+    {
+      "type": "testimony",
+      "severity": "medium",
+      "claim_a": "Dr. Mehta says he was never involved in the property and only received the note as a 'courtesy.'",
+      "claim_b": "A 2016 WhatsApp message from Priya to Dr. Mehta says, 'You’re the only one who can keep this safe — don’t let Sunita get her hands on it.'"
+    },
+    {
+      "type": "financial",
+      "severity": "critical",
+      "claim_a": "Priya claims she inherited her father’s savings and used them for medical care.",
+      "claim_b": "Anil’s bank statements show ₹12 lakh was transferred to Priya’s account in 2017, but ₹8.5 lakh was transferred to a foreign account in Dubai under the name 'P. Chatterjee' in 2021 — matching her passport details."
+    }
+  ],
+  "EXPECTED KNOWLEDGE GRAPH": {
+    "nodes": [
+      {
+        "id": "P1",
+        "type": "Person",
+        "label": "Priya Chatterjee"
+      },
+      {
+        "id": "P2",
+        "type": "Person",
+        "label": "Sunita Roy"
+      },
+      {
+        "id": "P3",
+        "type": "Person",
+        "label": "Anil Chatterjee"
+      },
+      {
+        "id": "P4",
+        "type": "Person",
+        "label": "Debashish Mukherjee"
+      },
+      {
+        "id": "P5",
+        "type": "Person",
+        "label": "Nandini Sen"
+      },
+      {
+        "id": "P6",
+        "type": "Person",
+        "label": "Dr. Arjun Mehta"
+      },
+      {
+        "id": "P7",
+        "type": "Person",
+        "label": "Ramesh Das"
+      },
+      {
+        "id": "P8",
+        "type": "Person",
+        "label": "Mrs. Anjali Ghosh"
+      },
+      {
+        "id": "E1",
+        "type": "Evidence",
+        "label": "2017 Will (forged)"
+      },
+      {
+        "id": "E2",
+        "type": "Evidence",
+        "label": "2016 Land Revenue Record (altered)"
+      },
+      {
+        "id": "E3",
+        "type": "Evidence",
+        "label": "2015 Handwritten Note"
+      },
+      {
+        "id": "E4",
+        "type": "Evidence",
+        "label": "Parker Pen (purchase record)"
+      },
+      {
+        "id": "E5",
+        "type": "Evidence",
+        "label": "Bank Withdrawal Record (₹5L)"
+      },
+      {
+        "id": "E6",
+        "type": "Evidence",
+        "label": "Satellite Imagery (2020)"
+      },
+      {
+        "id": "L1",
+        "type": "Location",
+        "label": "Kharagpur Agricultural Plot"
+      },
+      {
+        "id": "L2",
+        "type": "Location",
+        "label": "Kharagpur Tehsil Office"
+      },
+      {
+        "id": "L3",
+        "type": "Location",
+        "label": "Nandini Sen's Workplace"
+      },
+      {
+        "id": "L4",
+        "type": "Location",
+        "label": "Anil Chatterjee's Residence"
+      },
+      {
+        "id": "O1",
+        "type": "Organization",
+        "label": "P. C. Enterprises (shell company)"
+      },
+      {
+        "id": "E7",
+        "type": "Evidence",
+        "label": "WhatsApp Message (Priya to Dr. Mehta)"
+      },
+      {
+        "id": "E8",
+        "type": "Evidence",
+        "label": "Mrs. Ghosh's Hospital Records"
+      },
+      {
+        "id": "E9",
+        "type": "Evidence",
+        "label": "Notary Seal (forged)"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P1",
+        "target": "E1",
+        "relation": "created"
+      },
+      {
+        "source": "P1",
+        "target": "E2",
+        "relation": "bribed"
+      },
+      {
+        "source": "P4",
+        "target": "E2",
+        "relation": "altered"
+      },
+      {
+        "source": "P1",
+        "target": "P4",
+        "relation": "bribed"
+      },
+      {
+        "source": "P1",
+        "target": "P5",
+        "relation": "hired"
+      },
+      {
+        "source": "P5",
+        "target": "E1",
+        "relation": "typed"
+      },
+      {
+        "source": "P3",
+        "target": "L4",
+        "relation": "owned"
+      },
+      {
+        "source": "L4",
+        "target": "E3",
+        "relation": "contained"
+      },
+      {
+        "source": "P2",
+        "target": "E3",
+        "relation": "found"
+      },
+      {
+        "source": "P1",
+        "target": "E4",
+        "relation": "purchased"
+      },
+      {
+        "source": "P1",
+        "target": "E5",
+        "relation": "transferred"
+      },
+      {
+        "source": "E5",
+        "target": "O1",
+        "relation": "transferred_to"
+      },
+      {
+        "source": "P1",
+        "target": "E7",
+        "relation": "sent"
+      },
+      {
+        "source": "P6",
+        "target": "E7",
+        "relation": "received"
+      },
+      {
+        "source": "P8",
+        "target": "E8",
+        "relation": "produced"
+      },
+      {
+        "source": "P8",
+        "target": "E1",
+        "relation": "testified_against"
+      },
+      {
+        "source": "P7",
+        "target": "E2",
+        "relation": "reviewed"
+      },
+      {
+        "source": "P1",
+        "target": "P7",
+        "relation": "threatened"
+      },
+      {
+        "source": "L1",
+        "target": "E6",
+        "relation": "contradicts"
+      },
+      {
+        "source": "P1",
+        "target": "E9",
+        "relation": "used"
+      }
+    ]
+  }
+}
+```

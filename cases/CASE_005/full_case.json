@@ -1,0 +1,449 @@
+{
+  "skeleton": {
+    "metadata": {
+      "case_id": "005",
+      "case_type": "assault",
+      "difficulty": "easy",
+      "incident_date": "2024-03-12",
+      "location": "Shivaji Nagar, Pune, Maharashtra",
+      "summary": "On the evening of March 12, 2024, a physical assault occurred outside the Shree Ram Grocery Store in Shivaji Nagar, Pune. The victim, Arjun Deshmukh, a local vegetable vendor, was attacked by an unidentified man who struck him repeatedly with a wooden plank, causing a fractured left radius and multiple contusions. Arjun was rushed to Ruby Hall Clinic, where his injuries were documented. CCTV footage from the grocery store\u2019s entrance captured the assault, showing a man in a dark hoodie and blue jeans fleeing the scene. Three witnesses \u2014 Mrs. Meena Kulkarni (neighbor), Rajesh Patil (shop assistant), and Vikram Joshi (passerby) \u2014 provided statements to the Shivaji Nagar Police Station. All three identified the suspect as Rohan Deshmukh, Arjun\u2019s estranged cousin, who had a documented history of verbal altercations with Arjun over a disputed family land parcel. Police recovered a blood-stained wooden plank near the alley behind the store, matching the injury pattern. However, Rohan claims he was at his sister\u2019s wedding in Satara that evening and produced a wedding invitation and photo as alibi evidence. The case appears straightforward, but inconsistencies in witness timing and a minor discrepancy in the CCTV timestamp raise questions about the reliability of the identification."
+    },
+    "hidden_ground_truth": {
+      "actual_criminal": "Ramesh Kulkarni",
+      "accomplices": [],
+      "true_motive": "Revenge for Arjun reporting Ramesh\u2019s illegal alcohol distillation operation to the excise department two weeks prior",
+      "true_timeline": [
+        "2024-03-12 18:15: Ramesh Kulkarni arrives at Shivaji Nagar on a rented scooter from Pimpri",
+        "2024-03-12 18:30: Ramesh waits near Shree Ram Grocery Store, observing Arjun closing up",
+        "2024-03-12 18:37: Ramesh strikes Arjun with a wooden plank from behind, then flees on foot toward the alley",
+        "2024-03-12 18:42: Ramesh discards the plank behind the store and takes a rickshaw to the Pune railway station",
+        "2024-03-12 19:15: Ramesh boards a train to Satara, arriving at 21:30 \u2014 just in time to be seen at the wedding reception",
+        "2024-03-12 20:00: Ramesh uses a borrowed phone to send a photo of himself at the wedding to his sister, who later provides it as alibi evidence"
+      ],
+      "lying_witnesses": [
+        "Mrs. Meena Kulkarni"
+      ],
+      "forged_evidence": [
+        "Wedding photo presented by Ramesh Kulkarni \u2014 digitally altered to include his face in a group photo taken at 20:15, while he was still en route to Satara"
+      ],
+      "injected_contradictions": [
+        {
+          "description": "Mrs. Meena Kulkarni claims she saw the attacker\u2019s face clearly at 18:35, but her statement says she was looking out her window at 18:30 \u2014 the CCTV timestamp shows the attack began at 18:37, and her window faces the opposite direction"
+        },
+        {
+          "description": "Rajesh Patil says the attacker was wearing a blue hoodie, but the CCTV footage shows a dark grey hoodie \u2014 this was later 'corrected' in the police report to match Rohan\u2019s known clothing"
+        },
+        {
+          "description": "Vikram Joshi says he saw the attacker run toward the railway station, but his initial statement to the constable said 'toward the bus stand' \u2014 this was changed after a police officer suggested the railway station was more logical"
+        }
+      ]
+    },
+    "perspectives": [
+      "timeline reconstruction",
+      "witness credibility",
+      "forensic evidence",
+      "digital forensics",
+      "alibi verification",
+      "family relationships",
+      "communication graph",
+      "location verification"
+    ],
+    "contradictions": [
+      {
+        "type": "timeline",
+        "severity": "low",
+        "claim_a": "Mrs. Meena Kulkarni claims she saw the attacker\u2019s face clearly at 18:30 while looking out her window.",
+        "claim_b": "CCTV footage confirms the assault began at 18:37, and Mrs. Kulkarni\u2019s window faces away from the alley where the attack occurred."
+      },
+      {
+        "type": "testimony",
+        "severity": "medium",
+        "claim_a": "Rajesh Patil states the attacker wore a bright blue hoodie.",
+        "claim_b": "CCTV footage clearly shows the attacker wearing a dark grey hoodie with no visible blue."
+      },
+      {
+        "type": "forensic",
+        "severity": "low",
+        "claim_a": "The wooden plank recovered has blood matching Arjun Deshmukh\u2019s DNA and fingerprints of Rohan Deshmukh.",
+        "claim_b": "Rohan\u2019s fingerprints were found on the plank only because he had visited the store to buy vegetables two days earlier \u2014 the blood was planted after the fact using a swab from the hospital."
+      }
+    ],
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "P01",
+          "type": "Person",
+          "label": "Arjun Deshmukh"
+        },
+        {
+          "id": "P02",
+          "type": "Person",
+          "label": "Rohan Deshmukh"
+        },
+        {
+          "id": "P03",
+          "type": "Person",
+          "label": "Ramesh Kulkarni"
+        },
+        {
+          "id": "P04",
+          "type": "Person",
+          "label": "Mrs. Meena Kulkarni"
+        },
+        {
+          "id": "P05",
+          "type": "Person",
+          "label": "Rajesh Patil"
+        },
+        {
+          "id": "P06",
+          "type": "Person",
+          "label": "Vikram Joshi"
+        },
+        {
+          "id": "E01",
+          "type": "Event",
+          "label": "Assault at Shree Ram Grocery Store"
+        },
+        {
+          "id": "E02",
+          "type": "Event",
+          "label": "Wedding in Satara"
+        },
+        {
+          "id": "E03",
+          "type": "Event",
+          "label": "Excise Complaint Against Ramesh"
+        },
+        {
+          "id": "E04",
+          "type": "Evidence",
+          "label": "Blood-stained Wooden Plank"
+        },
+        {
+          "id": "E05",
+          "type": "Evidence",
+          "label": "Wedding Photo (Forged)"
+        },
+        {
+          "id": "E06",
+          "type": "Evidence",
+          "label": "CCTV Footage"
+        },
+        {
+          "id": "L01",
+          "type": "Location",
+          "label": "Shree Ram Grocery Store"
+        },
+        {
+          "id": "L02",
+          "type": "Location",
+          "label": "Ruby Hall Clinic"
+        },
+        {
+          "id": "L03",
+          "type": "Location",
+          "label": "Satara Wedding Venue"
+        },
+        {
+          "id": "L04",
+          "type": "Location",
+          "label": "Pune Railway Station"
+        }
+      ],
+      "edges": [
+        {
+          "source": "P01",
+          "target": "E01",
+          "relation": "victim_of"
+        },
+        {
+          "source": "P03",
+          "target": "E01",
+          "relation": "perpetrator_of"
+        },
+        {
+          "source": "P03",
+          "target": "E03",
+          "relation": "target_of"
+        },
+        {
+          "source": "P01",
+          "target": "E03",
+          "relation": "filed_complaint"
+        },
+        {
+          "source": "P03",
+          "target": "E02",
+          "relation": "attended"
+        },
+        {
+          "source": "P04",
+          "target": "E01",
+          "relation": "witnessed"
+        },
+        {
+          "source": "P05",
+          "target": "E01",
+          "relation": "witnessed"
+        },
+        {
+          "source": "P06",
+          "target": "E01",
+          "relation": "witnessed"
+        },
+        {
+          "source": "E01",
+          "target": "E04",
+          "relation": "produced"
+        },
+        {
+          "source": "E04",
+          "target": "P01",
+          "relation": "caused_injury"
+        },
+        {
+          "source": "E02",
+          "target": "E05",
+          "relation": "used_as"
+        },
+        {
+          "source": "E05",
+          "target": "P02",
+          "relation": "supports_alibi"
+        },
+        {
+          "source": "E06",
+          "target": "P03",
+          "relation": "captures"
+        },
+        {
+          "source": "E06",
+          "target": "L01",
+          "relation": "recorded_at"
+        },
+        {
+          "source": "P03",
+          "target": "L04",
+          "relation": "traveled_to"
+        },
+        {
+          "source": "L04",
+          "target": "L03",
+          "relation": "connected_by_train"
+        },
+        {
+          "source": "P04",
+          "target": "P03",
+          "relation": "related_to"
+        },
+        {
+          "source": "P02",
+          "target": "P01",
+          "relation": "cousin_of"
+        },
+        {
+          "source": "E05",
+          "target": "E06",
+          "relation": "contradicts"
+        },
+        {
+          "source": "P04",
+          "target": "E01",
+          "relation": "gave_false_testimony"
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "document_id": "FIR-001",
+      "document_type": "FIR",
+      "metadata": {
+        "fir_number": "FIR/2024/0087",
+        "police_station": "Shivaji Nagar Police Station, Pune",
+        "date_filed": "2024-03-12",
+        "filed_by": "Arjun Deshmukh (via neighbor Mrs. Meena Kulkarni)"
+      },
+      "content": "FIRST INFORMATION REPORT\n\nUnder Section 154 CrPC, Police Station: Shivaji Nagar, Pune\nFIR No.: FIR/2024/0087\nDate of Registration: 12/03/2024\nTime: 19:15 hrs\n\nComplainant: Arjun Deshmukh, aged 42, resident of Shivaji Nagar, Pune, vegetable vendor. Complainant was physically assaulted and is currently admitted at Ruby Hall Clinic.\n\nFactual Narrative:\nOn 12/03/2024 at approximately 18:35 hrs, the complainant was closing his vegetable stall outside Shree Ram Grocery Store, Shivaji Nagar, Pune. While turning to lock the gate, he was suddenly struck from behind on the left forearm and head with a heavy wooden plank by an unidentified male wearing a dark hoodie and blue jeans. The assailant fled towards the alley behind the store. The complainant fell unconscious and was found by Mrs. Meena Kulkarni, a neighbor, who alerted shop assistant Rajesh Patil. Both rushed the complainant to Ruby Hall Clinic, where he was diagnosed with a fractured left radius and multiple contusions.\n\nCCTV footage from the grocery store entrance captured the incident. Three witnesses \u2014 Mrs. Meena Kulkarni, Rajesh Patil, and Vikram Joshi \u2014 identified the suspect as Rohan Deshmukh, estranged cousin of the complainant, due to a longstanding property dispute. A blood-stained wooden plank was recovered from behind the store, bearing fingerprints and blood matching the complainant. The suspect\u2019s clothing and build match Rohan Deshmukh\u2019s known appearance. The complainant has no known enemies other than Rohan Deshmukh. The case is being registered under IPC 323, 324, and 326.\n\nInvestigating Officer: SI Ramesh Desai\nSignature: __________________\n\nDate: 12/03/2024"
+    },
+    {
+      "document_id": "WS-001",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Mrs. Meena Kulkarni",
+        "relation_to_case": "Neighbor of victim; maternal aunt of Rohan Deshmukh",
+        "occupation": "Homemaker"
+      },
+      "content": "I am Mrs. Meena Kulkarni, aged 58, residing at Flat No. 3, Shivaji Nagar. On 12/03/2024 at around 18:30 hrs, I was looking out my kitchen window to check if the rain had stopped. I saw a man in a dark blue hoodie and jeans standing behind Arjun Deshmukh. He raised a wooden plank and hit him hard on the arm. I saw his face clearly \u2014 it was Rohan Deshmukh. He looked angry, and I recognized him immediately. He ran towards the alley behind the store. I called out, but no one responded. I then ran to the shop and told Rajesh to help Arjun. I am certain it was Rohan. He has been threatening Arjun for months over the land dispute. I did not see anyone else near the scene."
+    },
+    {
+      "document_id": "WS-002",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Rajesh Patil",
+        "relation_to_case": "Shop assistant at Shree Ram Grocery Store",
+        "occupation": "Retail Assistant"
+      },
+      "content": "I am Rajesh Patil, 28, working at Shree Ram Grocery Store. On 12/03/2024, I was inside the store at 18:35 hrs, restocking packets. I heard a loud thud and looked out the front window. I saw a man in a bright blue hoodie hitting Arjun Deshmukh with a wooden plank. The man had a lean build and short hair \u2014 I\u2019m sure it was Rohan Deshmukh. He ran off toward the railway station. I ran out and found Arjun unconscious. I called the police and helped carry him to the clinic. I told the constable the hoodie was blue, but later the report said dark grey. I think I was mistaken \u2014 I\u2019ve seen Rohan wear blue before. I know him well \u2014 he comes here every Tuesday to buy onions."
+    },
+    {
+      "document_id": "WS-003",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Vikram Joshi",
+        "relation_to_case": "Passerby",
+        "occupation": "Freelance Photographer"
+      },
+      "content": "I am Vikram Joshi, 34, a photographer. On 12/03/2024, I was walking from the bus stand to the railway station around 18:40 hrs. I saw a man in a dark hoodie running from the alley behind Shree Ram Grocery. He was holding something long \u2014 looked like a plank. He was running fast, looking back. I didn\u2019t see his face, but he had the same build as Rohan Deshmukh, whom I\u2019ve seen around the market. I thought he looked familiar. He turned right toward the bus stand, not the railway station. I told the constable that, but he said railway station made more sense, so I changed it. I didn\u2019t want to cause trouble. I didn\u2019t know who he was \u2014 just recognized the build."
+    },
+    {
+      "document_id": "ER-001",
+      "document_type": "cctv_report",
+      "metadata": {
+        "evidence_id": "E06",
+        "source": "Shree Ram Grocery Store Surveillance System",
+        "recording_date": "2024-03-12",
+        "time_range": "18:20 to 18:50"
+      },
+      "content": "CCTV FOOTAGE ANALYSIS REPORT\n\nEvidence ID: E06\nSource: Shree Ram Grocery Store \u2014 Entrance Camera (Camera ID: SRG-CAM01)\n\nTimestamp Analysis:\n- 18:22: Arjun Deshmukh locks stall gate, begins walking toward store entrance.\n- 18:30: Man in dark grey hoodie (not blue) enters frame from alley behind store, walks slowly toward Arjun.\n- 18:37: Man strikes Arjun from behind with wooden plank (visible in frame). Arjun collapses.\n- 18:38: Man flees toward alley behind store, dropping plank.\n- 18:42: Man exits alley, turns left toward rear street (not toward railway station).\n- 18:45: Man disappears from view.\n\nFindings:\n1. Attacker\u2019s hoodie is dark grey, not blue. No visible blue coloration.\n2. Attacker\u2019s face is partially obscured by hoodie and shadow. No clear facial recognition possible.\n3. Attacker\u2019s build: approximately 5'9\", 70 kg, average build \u2014 matches Rohan Deshmukh but also others in area.\n4. No other individuals visible in frame during attack.\n\nConclusion: The individual in the footage cannot be positively identified as Rohan Deshmukh based on facial features. Clothing color contradicts witness Rajesh Patil\u2019s initial statement. The attack occurred at 18:37, not 18:30 as claimed by Mrs. Kulkarni. The window she claims to have looked out of faces north, while the attack occurred on the east side of the building \u2014 her view would be obstructed."
+    },
+    {
+      "document_id": "ER-002",
+      "document_type": "forensic_report",
+      "metadata": {
+        "evidence_id": "E04",
+        "lab": "Maharashtra Forensic Science Laboratory, Pune",
+        "report_date": "2024-03-14"
+      },
+      "content": "FORENSIC ANALYSIS REPORT \u2014 BLOOD-STAINED WOODEN PLANK\n\nEvidence ID: E04\nRecovered from alley behind Shree Ram Grocery Store, Shivaji Nagar, Pune on 12/03/2024.\n\n1. DNA Analysis:\n   - Blood sample matches Arjun Deshmukh (P01) with 99.98% probability.\n   - No other human DNA detected.\n\n2. Fingerprint Analysis:\n   - Latent prints recovered: 3 partial prints.\n   - One print matches Rohan Deshmukh (P02) \u2014 confirmed via AFIS.\n   - Fingerprint analysis shows print was deposited on 10/03/2024 (verified via print age estimation and store purchase logs).\n   - No recent prints (post-10/03) found.\n\n3. Blood Pattern Analysis:\n   - Blood spatter pattern consistent with blunt force trauma to forearm.\n   - Blood amount indicates injury occurred at scene, not transported.\n\n4. Additional Finding:\n   - Blood on plank was not fresh at time of recovery \u2014 dried for approximately 12\u201318 hours.\n   - Swabbing pattern suggests blood was deliberately applied using a swab from Ruby Hall Clinic\u2019s medical records (matching protocol used in hospital for Arjun\u2019s wound).\n\nConclusion: The wooden plank was used in the assault. However, Rohan Deshmukh\u2019s fingerprints were not deposited during the assault. They were present from a prior visit. The blood was likely planted after the attack using a swab from the hospital. This indicates tampering with evidence."
+    },
+    {
+      "document_id": "ER-003",
+      "document_type": "digital_forensics_report",
+      "metadata": {
+        "evidence_id": "E05",
+        "source": "Wedding Photo (submitted by Rohan Deshmukh)",
+        "analysis_date": "2024-03-15"
+      },
+      "content": "DIGITAL FORENSICS ANALYSIS REPORT \u2014 FORGED WEDDING PHOTO\n\nEvidence ID: E05\nSubmitted by Rohan Deshmukh as alibi evidence for 12/03/2024 wedding in Satara.\n\nImage File: IMG_20240312_201523.jpg (JPEG)\nMetadata:\n- Created: 12/03/2024 20:15:23\n- Modified: 12/03/2024 20:16:41\n- GPS Coordinates: 17.6987\u00b0 N, 75.9063\u00b0 E (Satara Wedding Venue)\n- Camera Model: Xiaomi Redmi Note 10 Pro\n\nAnalysis:\n1. Image contains group photo of wedding guests. Face of suspect (Rohan Deshmukh) is digitally inserted.\n2. Facial recognition analysis shows mismatch in skin tone, lighting angle, and shadow direction.\n3. Background elements (e.g., lanterns, curtain folds) show inconsistent parallax \u2014 evidence of compositing.\n4. Original photo (recovered from sister\u2019s phone) was taken at 20:15 with 12 people. Rohan\u2019s face was not among them.\n5. Timestamp of photo (20:15) conflicts with Ramesh Kulkarni\u2019s timeline: he was still en route to Satara via train, arriving at 21:30.\n6. Phone usage logs show Ramesh Kulkarni borrowed a phone at 20:05 from a relative at Pune Railway Station \u2014 used to edit and send the photo.\n\nConclusion: The photo is a digitally altered composite. It was created to fabricate an alibi. The real perpetrator, Ramesh Kulkarni, used this photo to impersonate Rohan Deshmukh\u2019s presence at the wedding."
+    },
+    {
+      "document_id": "IR-001",
+      "document_type": "police_investigation_report",
+      "metadata": {
+        "investigating_officer": "SI Ramesh Desai",
+        "report_date": "2024-03-18",
+        "case_id": "005"
+      },
+      "content": "INVESTIGATION REPORT \u2014 CASE NO. 005\n\nInvestigating Officer: SI Ramesh Desai, Shivaji Nagar PS\nDate: 18/03/2024\n\nSummary:\nOn 12/03/2024, Arjun Deshmukh was assaulted outside Shree Ram Grocery Store. Initial suspicion fell on Rohan Deshmukh due to familial dispute and witness identifications. However, forensic and digital evidence revealed inconsistencies.\n\nKey Findings:\n1. Witness statements contain contradictions:\n   - Mrs. Meena Kulkarni claims to have seen the attacker\u2019s face at 18:30, but CCTV shows attack at 18:37 and her window faces away from the scene.\n   - Rajesh Patil initially stated \u2018blue hoodie\u2019 \u2014 later corrected to \u2018dark grey\u2019 after viewing CCTV.\n   - Vikram Joshi changed his statement from \u2018bus stand\u2019 to \u2018railway station\u2019 under suggestive questioning.\n\n2. Forensic Evidence:\n   - Blood-stained plank contains Arjun\u2019s blood and Rohan\u2019s old fingerprints \u2014 no recent prints.\n   - Blood was planted using hospital swab \u2014 evidence of tampering.\n\n3. Digital Evidence:\n   - Wedding photo presented as alibi is a forgery. Face of Rohan was digitally inserted into a photo taken at 20:15.\n   - Ramesh Kulkarni (P03), brother-in-law of Mrs. Kulkarni, was not at the wedding at 20:15 \u2014 he was en route from Pune.\n\n4. Motive:\n   - Ramesh Kulkarni was reported to the excise department by Arjun on 28/02/2024 for illegal alcohol distillation. Excise records confirm complaint.\n   - Ramesh Kulkarni traveled from Pimpri to Pune on rented scooter on 12/03/2024, then took a rickshaw to railway station, boarded train to Satara, arriving at 21:30 \u2014 just in time to be seen at reception.\n\n5. Conclusion:\n   - Rohan Deshmukh is not the perpetrator. His fingerprints and alibi are fabricated.\n   - Mrs. Meena Kulkarni is the only witness who knowingly provided false testimony \u2014 she is Ramesh Kulkarni\u2019s sister-in-law.\n   - Ramesh Kulkarni is the actual perpetrator. He used the family feud to frame Rohan and fabricated an alibi using digital manipulation.\n\nRecommendation: Charge sheet to be filed against Ramesh Kulkarni under IPC 324, 201 (tampering evidence), 193 (false evidence), and 420 (cheating). Mrs. Meena Kulkarni to be examined under Section 164 CrPC for perjury."
+    },
+    {
+      "document_id": "CS-001",
+      "document_type": "charge_sheet",
+      "metadata": {
+        "court": "Magistrate Court, Shivaji Nagar, Pune",
+        "case_number": "CRL.MC/2024/0112",
+        "date_filed": "2024-03-20",
+        "prosecutor": "Public Prosecutor, Pune City"
+      },
+      "content": "CHARGE SHEET\n\nCourt: Magistrate Court, Shivaji Nagar, Pune\nCase No.: CRL.MC/2024/0112\nDate: 20/03/2024\nAccused: Ramesh Kulkarni, aged 45, resident of Pimpri, Pune\n\nCharges under:\n- Section 324 IPC: Voluntarily causing hurt by dangerous weapons\n- Section 201 IPC: Causing disappearance of evidence\n- Section 193 IPC: Giving false evidence\n- Section 420 IPC: Cheating and dishonestly inducing delivery of property\n- Section 120B IPC: Criminal conspiracy (if accomplices identified later)\n\nFacts:\nOn 12/03/2024, the accused, Ramesh Kulkarni, assaulted Arjun Deshmukh with a wooden plank outside Shree Ram Grocery Store, Shivaji Nagar, in retaliation for Arjun\u2019s excise complaint filed on 28/02/2024. The accused then planted Rohan Deshmukh\u2019s fingerprints on the weapon and used a forged wedding photo to establish a false alibi. Mrs. Meena Kulkarni, his sister-in-law, knowingly provided false testimony to implicate Rohan Deshmukh.\n\nEvidence:\n1. CCTV footage showing attacker\u2019s build and route.\n2. Forensic report confirming blood was planted from hospital swab.\n3. Digital forensics report proving wedding photo is altered.\n4. Train ticket and rickshaw receipt from Pune Railway Station (20:00\u201321:30).\n5. Excise complaint record dated 28/02/2024.\n6. Testimony of Vikram Joshi and Rajesh Patil (revised).\n\nThe accused is hereby charged and committed for trial.\n\nProsecutor: [Signature]\nDate: 20/03/2024"
+    }
+  ],
+  "benchmark": {
+    "queries": [
+      {
+        "id": "Q1",
+        "question": "Who is the actual perpetrator of the assault?",
+        "category": "suspect_identification"
+      },
+      {
+        "id": "Q2",
+        "question": "What is the true motive behind the assault?",
+        "category": "motive_analysis"
+      },
+      {
+        "id": "Q3",
+        "question": "Which witness provided false testimony and why?",
+        "category": "witness_credibility"
+      },
+      {
+        "id": "Q4",
+        "question": "How was the alibi evidence (wedding photo) forged?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q5",
+        "question": "What inconsistency exists between Mrs. Meena Kulkarni\u2019s statement and the CCTV timestamp?",
+        "category": "timeline_reconstruction"
+      },
+      {
+        "id": "Q6",
+        "question": "Why is the presence of Rohan Deshmukh\u2019s fingerprints on the plank not incriminating?",
+        "category": "evidence_ranking"
+      },
+      {
+        "id": "Q7",
+        "question": "What does the blood pattern analysis reveal about the timing of the evidence tampering?",
+        "category": "forensic_evidence"
+      },
+      {
+        "id": "Q8",
+        "question": "Which location verification contradicts Vikram Joshi\u2019s initial statement?",
+        "category": "location_verification"
+      },
+      {
+        "id": "Q9",
+        "question": "How does the digital forensics report contradict the claim that Rohan Deshmukh was at the wedding?",
+        "category": "digital_forensics"
+      },
+      {
+        "id": "Q10",
+        "question": "What is the likelihood of Rohan Deshmukh being convicted based on the evidence presented?",
+        "category": "conviction_likelihood"
+      }
+    ],
+    "expected_answers": [
+      {
+        "query_id": "Q1",
+        "answer": "The actual perpetrator is Ramesh Kulkarni. He assaulted Arjun Deshmukh in retaliation for filing an excise complaint against his illegal alcohol distillation operation. He used the family feud between Arjun and Rohan to frame Rohan, planted Rohan\u2019s old fingerprints on the wooden plank, and created a forged wedding photo to establish a false alibi. Digital forensics and timeline analysis confirm he was en route to Satara during the attack and arrived at the wedding reception only after 21:30, while the photo was timestamped at 20:15."
+      },
+      {
+        "query_id": "Q2",
+        "answer": "The true motive is revenge. Arjun Deshmukh reported Ramesh Kulkarni\u2019s illegal alcohol distillation operation to the excise department on 28/02/2024. This led to a raid and seizure of Ramesh\u2019s equipment. The assault on 12/03/2024 was a targeted act of retaliation, designed to intimidate Arjun and discredit his credibility by framing a family member."
+      },
+      {
+        "query_id": "Q3",
+        "answer": "Mrs. Meena Kulkarni provided false testimony. She is Ramesh Kulkarni\u2019s sister-in-law and knowingly claimed she saw the attacker\u2019s face at 18:30, identifying him as Rohan Deshmukh. However, CCTV footage shows the attack occurred at 18:37, and her window faces the opposite direction of the alley. Her statement was intentionally deceptive to support Ramesh\u2019s alibi and divert suspicion from him."
+      },
+      {
+        "query_id": "Q4",
+        "answer": "The wedding photo was digitally altered by inserting Ramesh Kulkarni\u2019s face into a group photo taken at 20:15 at the Satara wedding venue. Digital forensics revealed mismatched lighting, skin tone, and parallax errors. The original photo, recovered from his sister\u2019s phone, did not include Ramesh. He used a borrowed phone at Pune Railway Station at 20:05 to edit and send the photo, creating a false impression of his presence at the wedding."
+      },
+      {
+        "query_id": "Q5",
+        "answer": "Mrs. Meena Kulkarni claimed she saw the attacker\u2019s face clearly at 18:30 while looking out her window. However, the CCTV footage confirms the assault began at 18:37, and her kitchen window faces north, while the attack occurred on the east side of the store \u2014 making it physically impossible for her to have seen the attacker\u2019s face at any time during the incident."
+      },
+      {
+        "query_id": "Q6",
+        "answer": "Rohan Deshmukh\u2019s fingerprints on the plank are not incriminating because forensic analysis shows they were deposited during a prior visit on 10/03/2024, when he bought vegetables from the store. No recent prints were found, and the blood on the plank was planted after the assault using a swab from Ruby Hall Clinic \u2014 indicating the plank was tampered with after the crime to frame him."
+      },
+      {
+        "query_id": "Q7",
+        "answer": "The blood pattern analysis revealed the blood on the plank was dried for 12\u201318 hours at the time of recovery, but the assault occurred at 18:37 on 12/03/2024. Since the plank was recovered within 2 hours, the blood could not have dried naturally. This indicates the blood was applied later using a swab from Arjun\u2019s hospital wound, confirming deliberate tampering after the assault."
+      },
+      {
+        "query_id": "Q8",
+        "answer": "Vikram Joshi\u2019s initial statement claimed the attacker ran toward the bus stand, but later changed it to the railway station after police suggestion. CCTV footage shows the attacker turned left toward a rear street leading away from both the bus stand and railway station \u2014 contradicting both versions and indicating the witness was influenced or misled."
+      },
+      {
+        "query_id": "Q9",
+        "answer": "The digital forensics report shows the wedding photo was timestamped at 20:15, but Ramesh Kulkarni was still traveling from Pune to Satara at that time \u2014 he boarded the train at 19:15 and arrived at 21:30. The photo was edited to insert his face into a group image taken at 20:15, which he did not attend. His phone usage logs confirm he was using a borrowed phone in Pune at 20:05 to edit the photo \u2014 proving he was not at the wedding."
+      },
+      {
+        "query_id": "Q10",
+        "answer": "The likelihood of Rohan Deshmukh being convicted is extremely low. All evidence against him has been debunked: his fingerprints were from a prior visit, his alibi is unrelated to the crime, and the witnesses who identified him are either mistaken or complicit in framing him. The real perpetrator is Ramesh Kulkarni, and the forged evidence and false testimony have been exposed. Rohan should be cleared of all charges."
+      }
+    ]
+  }
+}

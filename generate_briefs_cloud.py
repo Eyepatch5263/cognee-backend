@@ -9,7 +9,7 @@ import logging
 sys.stdout.reconfigure(line_buffering=True)
 
 # Add backend directory to path to import app services
-sys.path.append("/home/eyepatch/Documents/congiverdict/backend")
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 from app.services.cognee_client import CogneeAPIClient
 from app.services.feedback_store import AnalysisCacheStore
@@ -17,7 +17,7 @@ from app.services.feedback_store import AnalysisCacheStore
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-CASES_DIR = "/home/eyepatch/Documents/congiverdict/cases"
+CASES_DIR = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "cases")))
 LLM_API_KEY = "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"
 LLM_BASE_URL = "https://integrate.api.nvidia.com/v1"
 LLM_MODEL = "meta/llama-3.1-70b-instruct"

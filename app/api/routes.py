@@ -835,7 +835,8 @@ async def get_case_briefs(id: str):
     case_num = id.replace("CASE_", "")
     case_folder = f"CASE_{case_num.zfill(3)}"
     
-    briefs_path = f"/home/eyepatch/Documents/congiverdict/cases/{case_folder}/legal_briefs.json"
+    cases_dir = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "cases")))
+    briefs_path = os.path.join(cases_dir, case_folder, "legal_briefs.json")
     if not os.path.exists(briefs_path):
         raise HTTPException(
             status_code=404,
@@ -1078,7 +1079,7 @@ async def generate_case_briefs(
     
     # Save to disk and SQLite
     try:
-        cases_dir = "/home/eyepatch/Documents/congiverdict/cases"
+        cases_dir = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "cases")))
         case_path = os.path.join(cases_dir, case_folder)
         os.makedirs(case_path, exist_ok=True)
         output_file = os.path.join(case_path, "legal_briefs.json")

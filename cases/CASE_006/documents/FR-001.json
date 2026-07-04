@@ -1,0 +1,10 @@
+{
+  "document_id": "FR-001",
+  "document_type": "forensic_report",
+  "metadata": {
+    "report_id": "FR/VedaCorp/2023/09",
+    "investigating_unit": "Central Forensic Science Laboratory, Mumbai",
+    "date_generated": "2023-09-10"
+  },
+  "content": "Examination of physical and digital documents related to Sahara Ventures and Nirvana Tech Solutions: 1. All vendor invoices from Sahara Ventures bear forged GSTINs. GSTN portal confirms these numbers were either never issued or were suspended prior to transaction dates. 2. The physical address of Sahara Ventures (Mumbai) is a vacant commercial unit; no business activity detected via drone surveillance or neighbor interviews. 3. Bank account number ending 7890 (Sahara Ventures) was opened on 2022-11-15 at Axis Bank, Navi Mumbai, using a forged Aadhaar and PAN card of Dr. Anjali Kulkarni. 4. Signature on the MCA Form INC-22 (registration of Sahara Ventures) was digitally scanned from a document of Priya Mehta’s signature on a 2020 hospital form — matching biometric patterns. 5. No physical or digital evidence links Arjun Mehta to the registration process. However, the IP address used to file the documents was traced to VedaCorp’s HR server. Conclusion: Systematic creation of shell entities using stolen identities and forged documents. No legitimate business activity detected."
+}

@@ -1,0 +1,11 @@
+{
+  "document_id": "ER-002",
+  "document_type": "forensic_report",
+  "metadata": {
+    "report_id": "FR-2024-0315-0876",
+    "lab": "Central Forensic Science Laboratory, Chandigarh",
+    "analyst": "Dr. Anjali Mehta, Senior Forensic Officer",
+    "date_issued": "2024-03-18"
+  },
+  "content": "A latent fingerprint was recovered from the edge of the wooden drawer in the study of the Mehta residence. The print was partial, smudged, and contained only 7 distinct ridge characteristics. Initial analysis on 16.03.2024 indicated insufficient detail for positive identification. Subsequent digital enhancement using AFIS (Automated Fingerprint Identification System) with contrast amplification and noise reduction algorithms revealed additional minutiae points. The enhanced print was matched to the known prints of Rohan Verma (ID: PF-2023-0987) with a confidence level of 98.7%. \n\nNote: The original print was not of sufficient quality for direct visual comparison. Enhancement was performed under laboratory protocol, and the raw enhanced image is archived. The initial report mistakenly stated the print was 'unambiguously identifiable' — this was an error in drafting. The correct conclusion is: 'Positive identification achieved only after digital enhancement.'\n\nNo other fingerprints were recovered from the drawer or the cap."
+}

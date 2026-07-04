@@ -1,0 +1,10 @@
+{
+  "document_id": "ER-001",
+  "document_type": "CCTV_report",
+  "metadata": {
+    "source": "Arjun Roy’s Shop Front Camera",
+    "date_range": "2023-08-13 08:00 to 2023-08-14 06:00",
+    "analyst": "Digital Forensics Unit, Kharagpur Police"
+  },
+  "content": "CCTV footage from Arjun Roy’s shop (KA-12-8876 Shop) shows: - 08:30 PM: Arjun Roy enters shop. - 08:42 PM: Arjun Roy exits shop, carrying a plastic bag. - 08:45 PM to 11:00 PM: No person enters or exits the shop. Security light remains on. - 11:00 PM to 03:45 AM: No activity. - 04:05 AM: A white Maruti Dzire (KA-12-8876) is seen arriving at the shop entrance, stopping for 30 seconds. Driver is obscured by darkness. No person exits the vehicle. Vehicle departs at 04:08 AM. - 04:20 AM: Priya Roy’s mobile phone is detected near shop entrance (via Bluetooth proximity). Footage does not show Priya Roy exiting vehicle or approaching shop. Conclusion: Arjun Roy was last seen exiting his shop at 8:42 PM on August 13. The vehicle was present at the shop at 04:05 AM, prior to the reported discovery of the accident. No evidence of Arjun Roy being present at the shop after 8:42 PM. Contradicts Mrs. Anjali Das’s claim of seeing him at 9 PM."
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "DFR-001",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "report_id": "DFR/VedaCorp/2023/007",
+    "investigating_unit": "Navi Mumbai Cyber Crime Cell",
+    "date_generated": "2023-08-20"
+  },
+  "content": "Forensic examination of Ravi Kulkarni’s corporate laptop (Model: Dell Latitude 7420, Serial: DM-7420-8891) revealed:\n\n1. The board meeting minutes dated 2022-01-10 were created on January 12, 2022, at 02:14 AM using Adobe Acrobat Pro DC. The digital signature of Dr. Priya Nair was extracted from a 2021 document and digitally inserted. Metadata confirms Kulkarni’s user account performed the edit.\n\n2. The email sent to Gupta & Associates on January 18, 2022, at 3:17 AM, claiming 'no red flags found,' was sent from Kulkarni’s corporate email. However, the company’s network logs confirm his access was deactivated at 11:45 PM on January 17 due to a mandatory system update. The email was sent using a compromised credential set — traced to a phishing attack on Kulkarni’s personal Gmail (ravi.kulkarni92@gmail.com), which had auto-sync enabled.\n\n3. Invoice #VSP-2022-001 was generated on January 14, 2022, using a template from VedaCorp’s ERP. The QR code linked to a website registered on February 1, 2022, under the name 'Sparrow Holdings LLP' — registered via a third-party agent using a fake PAN.\n\n4. The Mauritius offshore account (IBAN: MUS8765432109876543210) was opened using a scanned copy of Dr. Nair’s expired passport (expired 2020). The copy was found in a folder labeled 'Nair_Docs_Backup' on Arjun Mehta’s work desktop.\n\nConclusion: Ravi Kulkarni forged documents. Arjun Mehta had access to and used Dr. Nair’s personal documents to open the offshore account. The fraud was orchestrated by Arjun Mehta with Kulkarni as the technical enabler."
+}

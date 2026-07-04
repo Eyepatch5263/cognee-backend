@@ -1,0 +1,11 @@
+{
+  "document_id": "FINANCIAL-001",
+  "document_type": "Financial_Records",
+  "metadata": {
+    "institution": "State Bank of India, Noida Branch",
+    "account_holder": "Rohan Mehta",
+    "date": "2023-10-14",
+    "investigator": "Financial Crimes Unit, UP Police"
+  },
+  "content": "Bank statement for Account No. SBIN/9876543210 (Rohan Mehta) shows NO withdrawal of ₹20,00,000 on October 14, 2023. The so-called 'withdrawal receipt' submitted to police is a forgery. Paper stock matches Vikram Mehta’s office printer paper (Batch #N-2023-09-11). Ink composition matches the printer used in Vikram’s office. The bank letterhead used is a high-resolution scan of SBI’s official letterhead, obtained via phishing from a former SBI employee. Digital signature embedded is fake. The receipt was printed on October 15, 17:01:33, from Vikram Mehta’s office printer, logged under Priya Mehta’s user credentials. No transaction occurred. The receipt was created to frame Rohan Mehta."
+}

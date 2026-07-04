@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "case_id": "003",
+    "case_type": "theft",
+    "difficulty": "easy",
+    "incident_date": "2024-03-15",
+    "location": "Sector 17, Chandigarh, Punjab",
+    "summary": "On the evening of March 15, 2024, a burglary occurred at the residence of Mr. Arjun Mehta, a retired government officer living in a gated community in Sector 17, Chandigarh. The intruder gained access through an unlocked rear window, bypassing a faulty alarm system. Items stolen included a gold watch (Rolex Submariner), ₹2.5 lakh in cash kept in a wooden drawer, and a vintage silver tea set gifted to Mr. Mehta by his late father. CCTV footage from the main gate showed a masked individual entering the compound at 8:12 PM and exiting at 8:47 PM. The suspect was identified through a partial fingerprint on the drawer’s edge and a discarded cap found near the rear garden. The suspect, Rohan Verma, a former domestic helper employed by the Mehta family six months prior, was arrested two days later after the stolen items were recovered from his rented room in Kharar. The recovery report and fingerprint match were conclusive, but one witness — Mrs. Priya Mehta, the victim’s daughter — claimed she saw Rohan leaving the house at 7:30 PM, contradicting the CCTV timeline. This discrepancy, along with a minor inconsistency in the fingerprint analysis report, has raised questions despite the otherwise strong physical evidence."
+  },
+  "hidden_ground_truth": {
+    "actual_criminal": "Rohan Verma",
+    "accomplices": [],
+    "true_motive": "Revenge for being falsely accused of stealing a phone from the household six months earlier, which led to his termination and social stigma in the community",
+    "true_timeline": [
+      "2024-03-15 18:00: Rohan Verma arrives near the Mehta residence, observes the house through the gate.",
+      "2024-03-15 19:45: Rohan climbs over the back fence, enters through the unlocked window.",
+      "2024-03-15 20:10: Rohan opens the drawer, takes cash and watch, places tea set in a sack.",
+      "2024-03-15 20:30: Rohan exits through the garden, drops cap near rose bushes to mislead.",
+      "2024-03-15 20:47: Rohan leaves the compound via the side alley, unseen by main gate camera.",
+      "2024-03-15 21:15: Rohan returns to his rented room in Kharar, hides items under floorboard."
+    ],
+    "lying_witnesses": [
+      "Priya Mehta"
+    ],
+    "forged_evidence": [
+      "The fingerprint analysis report falsely claims the print was 'clearly identifiable' — in reality, it was smudged and only matched after digital enhancement, which was not documented in the original report."
+    ],
+    "injected_contradictions": [
+      {
+        "description": "Priya Mehta claims she saw Rohan leaving at 7:30 PM, but CCTV shows no one exiting until 8:47 PM — she was in the kitchen and misremembered the time due to a power outage."
+      },
+      {
+        "description": "The recovery report states the tea set was found wrapped in a 'blue cotton cloth' — but the cloth was actually green; this was a clerical error in the police inventory log."
+      }
+    ]
+  },
+  "perspectives": [
+    "timeline reconstruction",
+    "witness credibility",
+    "forensic evidence",
+    "financial motive",
+    "alibi verification",
+    "property ownership",
+    "employment history",
+    "digital forensics"
+  ],
+  "contradictions": [
+    {
+      "type": "timeline",
+      "severity": "low",
+      "claim_a": "Witness Priya Mehta states she saw suspect Rohan Verma leaving the house at 7:30 PM.",
+      "claim_b": "CCTV footage from the main gate shows suspect exiting the compound at 8:47 PM, with no other exits recorded."
+    },
+    {
+      "type": "forensic",
+      "severity": "low",
+      "claim_a": "Fingerprint analysis report claims the print on the drawer was 'unambiguously matched' to Rohan Verma.",
+      "claim_b": "The original forensic lab notes indicate the print was partial, smudged, and required digital enhancement to match — a step not disclosed in the official report."
+    },
+    {
+      "type": "testimony",
+      "severity": "low",
+      "claim_a": "Recovery report states the stolen tea set was found wrapped in a blue cotton cloth.",
+      "claim_b": "Photographs from the recovery scene show the cloth is green, and the inventory log was later amended to correct this."
+    }
+  ],
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "id": "P001",
+        "type": "Person",
+        "label": "Arjun Mehta"
+      },
+      {
+        "id": "P002",
+        "type": "Person",
+        "label": "Priya Mehta"
+      },
+      {
+        "id": "P003",
+        "type": "Person",
+        "label": "Rohan Verma"
+      },
+      {
+        "id": "E001",
+        "type": "Event",
+        "label": "Burglary at Mehta Residence"
+      },
+      {
+        "id": "E002",
+        "type": "Event",
+        "label": "Rohan's Termination"
+      },
+      {
+        "id": "A001",
+        "type": "Asset",
+        "label": "Rolex Submariner Watch"
+      },
+      {
+        "id": "A002",
+        "type": "Asset",
+        "label": "Silver Tea Set"
+      },
+      {
+        "id": "L001",
+        "type": "Location",
+        "label": "Mehta Residence, Sector 17, Chandigarh"
+      },
+      {
+        "id": "L002",
+        "type": "Location",
+        "label": "Rohan's Rented Room, Kharar"
+      },
+      {
+        "id": "E003",
+        "type": "Evidence",
+        "label": "Fingerprint on Drawer"
+      },
+      {
+        "id": "E004",
+        "type": "Evidence",
+        "label": "Discarded Cap"
+      },
+      {
+        "id": "E005",
+        "type": "Evidence",
+        "label": "CCTV Footage"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P001",
+        "target": "E001",
+        "relation": "victim_of"
+      },
+      {
+        "source": "P003",
+        "target": "E001",
+        "relation": "perpetrator_of"
+      },
+      {
+        "source": "P002",
+        "target": "E001",
+        "relation": "witness_to"
+      },
+      {
+        "source": "P003",
+        "target": "E002",
+        "relation": "affected_by"
+      },
+      {
+        "source": "E001",
+        "target": "A001",
+        "relation": "stole"
+      },
+      {
+        "source": "E001",
+        "target": "A002",
+        "relation": "stole"
+      },
+      {
+        "source": "L001",
+        "target": "E001",
+        "relation": "location_of"
+      },
+      {
+        "source": "P003",
+        "target": "L002",
+        "relation": "resides_at"
+      },
+      {
+        "source": "E001",
+        "target": "E003",
+        "relation": "produced"
+      },
+      {
+        "source": "E001",
+        "target": "E004",
+        "relation": "produced"
+      },
+      {
+        "source": "E001",
+        "target": "E005",
+        "relation": "produced"
+      },
+      {
+        "source": "E003",
+        "target": "P003",
+        "relation": "matches"
+      },
+      {
+        "source": "P002",
+        "target": "P003",
+        "relation": "testified_against"
+      },
+      {
+        "source": "E002",
+        "target": "P003",
+        "relation": "caused"
+      },
+      {
+        "source": "L001",
+        "target": "L002",
+        "relation": "connected_by"
+      }
+    ]
+  }
+}

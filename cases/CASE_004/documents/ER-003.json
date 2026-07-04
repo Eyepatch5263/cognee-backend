@@ -1,0 +1,10 @@
+{
+  "document_id": "ER-003",
+  "document_type": "Digital_Forensics_Report",
+  "metadata": {
+    "report_id": "DF-ACB-GZB-2023-087-WHATSAPP",
+    "prepared_by": "ACB Cyber Cell, Ghaziabad",
+    "date": "2023-10-13"
+  },
+  "content": "The WhatsApp chat history between Mr. Arjun Mehta (mobile: +91-98765-43210) and Mr. Ramesh Kumar (mobile: +91-98765-43211) was extracted and analyzed. The following messages were recovered: - 10.10.2023, 14:30: 'Sir, building permit ke liye kya procedure hai? Jaldi chahiye.' - 10.10.2023, 16:15: 'Bhaiya, 50 hazaar cash de do, toh 7 din mein permit mil jayega. Koi paper nahi chahiye.' - 12.10.2023, 13:05: 'Kal 3 baje office mein milte hain?' - 12.10.2023, 13:07: 'Haan, main wahi hoon. Ek envelope le aao.' The messages are intact, unaltered, and timestamped. No deleted messages were recovered. The call logs between the two numbers on 10.10.2023 and 12.10.2023 confirm two calls: one at 16:20 on 10.10.2023 (duration: 42 sec) and one at 15:10 on 12.10.2023 (duration: 18 sec). The content of the calls matches the WhatsApp transcript. Conclusion: The communication graph confirms the bribe demand and meeting arrangement. No evidence of third-party involvement in communication."
+}

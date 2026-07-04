@@ -1,0 +1,10 @@
+{
+  "document_id": "DFR-001",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "report_id": "DFR/VedaCorp/2023/08",
+    "investigating_unit": "Navi Mumbai Cyber Forensics Lab",
+    "date_generated": "2023-09-02"
+  },
+  "content": "Forensic analysis of VedaCorp’s internal servers and employee devices revealed the following: 1. The board meeting minutes dated 2023-03-10 were digitally signed using a certificate associated with Ravi Nair’s account. However, the last login to that account was on 2023-02-27. The signature was generated from an IP address (192.168.1.15) matching Rajiv Desai’s workstation. 2. The email titled 'Make sure Kulkarni gets her bonus' dated 2023-01-05 was sent from Priya Mehta’s device (MAC: 78:4C:F1:XX:XX:XX), not Arjun Mehta’s. The IP matched VedaCorp’s internal network at 2:17 AM. 3. Rohan Verma’s whistleblower email was sent from a device with Priya Mehta’s Wi-Fi MAC address, logged in at 11:45 PM on 2023-07-02 — after Verma’s work hours. 4. The bank reconciliation report submitted to Spectrum Audit was an edited Excel file. Original file 'Recon_Q4_2022.xlsx' was overwritten on 2023-07-18. Metadata shows edits made by Rajiv Desai’s account. 5. Sahara Ventures’ MCA registration was filed using a duplicate Aadhaar card linked to Dr. Kulkarni’s identity, uploaded via a public portal on 2022-11-12. The upload IP matched VedaCorp’s server room. Conclusion: Systemic forgery, identity theft, and insider manipulation confirmed. Multiple actors involved."
+}

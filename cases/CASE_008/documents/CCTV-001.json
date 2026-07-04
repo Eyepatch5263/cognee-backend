@@ -1,0 +1,10 @@
+{
+  "document_id": "CCTV-001",
+  "document_type": "CCTV_report",
+  "metadata": {
+    "source": "Gurgaon Central Mall - East Gate Camera",
+    "date_retrieved": "2024-03-17",
+    "analyst": "DSP Arun Mehta, Cyber Cell, Gurgaon"
+  },
+  "content": "CCTV footage from East Gate Camera (ID: GC-MALL-E07) captured a blue Mahindra XUV700 (plate partially obscured by mud) approaching the pedestrian crossing at 18:54:12. The vehicle accelerated through the crossing at 18:54:56, striking a pedestrian. The driver, identifiable as a male with a dark hoodie, was alone in the vehicle. No female passenger visible. The vehicle turned right onto Sector 46 Road at 18:55:03. A second camera (GC-MALL-W03) at the west entrance captured the same vehicle passing at 18:55:18. No other blue SUVs were recorded in the vicinity between 18:45 and 19:05. The license plate is partially visible as 'HR-14-AB-7891' — registered to Priya Sharma. No vehicle matching this description was recorded entering or exiting the mall parking between 18:30 and 19:10."
+}

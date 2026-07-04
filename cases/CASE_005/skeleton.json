@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "case_id": "005",
+    "case_type": "assault",
+    "difficulty": "easy",
+    "incident_date": "2024-03-12",
+    "location": "Shivaji Nagar, Pune, Maharashtra",
+    "summary": "On the evening of March 12, 2024, a physical assault occurred outside the Shree Ram Grocery Store in Shivaji Nagar, Pune. The victim, Arjun Deshmukh, a local vegetable vendor, was attacked by an unidentified man who struck him repeatedly with a wooden plank, causing a fractured left radius and multiple contusions. Arjun was rushed to Ruby Hall Clinic, where his injuries were documented. CCTV footage from the grocery store’s entrance captured the assault, showing a man in a dark hoodie and blue jeans fleeing the scene. Three witnesses — Mrs. Meena Kulkarni (neighbor), Rajesh Patil (shop assistant), and Vikram Joshi (passerby) — provided statements to the Shivaji Nagar Police Station. All three identified the suspect as Rohan Deshmukh, Arjun’s estranged cousin, who had a documented history of verbal altercations with Arjun over a disputed family land parcel. Police recovered a blood-stained wooden plank near the alley behind the store, matching the injury pattern. However, Rohan claims he was at his sister’s wedding in Satara that evening and produced a wedding invitation and photo as alibi evidence. The case appears straightforward, but inconsistencies in witness timing and a minor discrepancy in the CCTV timestamp raise questions about the reliability of the identification."
+  },
+  "hidden_ground_truth": {
+    "actual_criminal": "Ramesh Kulkarni",
+    "accomplices": [],
+    "true_motive": "Revenge for Arjun reporting Ramesh’s illegal alcohol distillation operation to the excise department two weeks prior",
+    "true_timeline": [
+      "2024-03-12 18:15: Ramesh Kulkarni arrives at Shivaji Nagar on a rented scooter from Pimpri",
+      "2024-03-12 18:30: Ramesh waits near Shree Ram Grocery Store, observing Arjun closing up",
+      "2024-03-12 18:37: Ramesh strikes Arjun with a wooden plank from behind, then flees on foot toward the alley",
+      "2024-03-12 18:42: Ramesh discards the plank behind the store and takes a rickshaw to the Pune railway station",
+      "2024-03-12 19:15: Ramesh boards a train to Satara, arriving at 21:30 — just in time to be seen at the wedding reception",
+      "2024-03-12 20:00: Ramesh uses a borrowed phone to send a photo of himself at the wedding to his sister, who later provides it as alibi evidence"
+    ],
+    "lying_witnesses": [
+      "Mrs. Meena Kulkarni"
+    ],
+    "forged_evidence": [
+      "Wedding photo presented by Ramesh Kulkarni — digitally altered to include his face in a group photo taken at 20:15, while he was still en route to Satara"
+    ],
+    "injected_contradictions": [
+      {
+        "description": "Mrs. Meena Kulkarni claims she saw the attacker’s face clearly at 18:35, but her statement says she was looking out her window at 18:30 — the CCTV timestamp shows the attack began at 18:37, and her window faces the opposite direction"
+      },
+      {
+        "description": "Rajesh Patil says the attacker was wearing a blue hoodie, but the CCTV footage shows a dark grey hoodie — this was later 'corrected' in the police report to match Rohan’s known clothing"
+      },
+      {
+        "description": "Vikram Joshi says he saw the attacker run toward the railway station, but his initial statement to the constable said 'toward the bus stand' — this was changed after a police officer suggested the railway station was more logical"
+      }
+    ]
+  },
+  "perspectives": [
+    "timeline reconstruction",
+    "witness credibility",
+    "forensic evidence",
+    "digital forensics",
+    "alibi verification",
+    "family relationships",
+    "communication graph",
+    "location verification"
+  ],
+  "contradictions": [
+    {
+      "type": "timeline",
+      "severity": "low",
+      "claim_a": "Mrs. Meena Kulkarni claims she saw the attacker’s face clearly at 18:30 while looking out her window.",
+      "claim_b": "CCTV footage confirms the assault began at 18:37, and Mrs. Kulkarni’s window faces away from the alley where the attack occurred."
+    },
+    {
+      "type": "testimony",
+      "severity": "medium",
+      "claim_a": "Rajesh Patil states the attacker wore a bright blue hoodie.",
+      "claim_b": "CCTV footage clearly shows the attacker wearing a dark grey hoodie with no visible blue."
+    },
+    {
+      "type": "forensic",
+      "severity": "low",
+      "claim_a": "The wooden plank recovered has blood matching Arjun Deshmukh’s DNA and fingerprints of Rohan Deshmukh.",
+      "claim_b": "Rohan’s fingerprints were found on the plank only because he had visited the store to buy vegetables two days earlier — the blood was planted after the fact using a swab from the hospital."
+    }
+  ],
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "id": "P01",
+        "type": "Person",
+        "label": "Arjun Deshmukh"
+      },
+      {
+        "id": "P02",
+        "type": "Person",
+        "label": "Rohan Deshmukh"
+      },
+      {
+        "id": "P03",
+        "type": "Person",
+        "label": "Ramesh Kulkarni"
+      },
+      {
+        "id": "P04",
+        "type": "Person",
+        "label": "Mrs. Meena Kulkarni"
+      },
+      {
+        "id": "P05",
+        "type": "Person",
+        "label": "Rajesh Patil"
+      },
+      {
+        "id": "P06",
+        "type": "Person",
+        "label": "Vikram Joshi"
+      },
+      {
+        "id": "E01",
+        "type": "Event",
+        "label": "Assault at Shree Ram Grocery Store"
+      },
+      {
+        "id": "E02",
+        "type": "Event",
+        "label": "Wedding in Satara"
+      },
+      {
+        "id": "E03",
+        "type": "Event",
+        "label": "Excise Complaint Against Ramesh"
+      },
+      {
+        "id": "E04",
+        "type": "Evidence",
+        "label": "Blood-stained Wooden Plank"
+      },
+      {
+        "id": "E05",
+        "type": "Evidence",
+        "label": "Wedding Photo (Forged)"
+      },
+      {
+        "id": "E06",
+        "type": "Evidence",
+        "label": "CCTV Footage"
+      },
+      {
+        "id": "L01",
+        "type": "Location",
+        "label": "Shree Ram Grocery Store"
+      },
+      {
+        "id": "L02",
+        "type": "Location",
+        "label": "Ruby Hall Clinic"
+      },
+      {
+        "id": "L03",
+        "type": "Location",
+        "label": "Satara Wedding Venue"
+      },
+      {
+        "id": "L04",
+        "type": "Location",
+        "label": "Pune Railway Station"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P01",
+        "target": "E01",
+        "relation": "victim_of"
+      },
+      {
+        "source": "P03",
+        "target": "E01",
+        "relation": "perpetrator_of"
+      },
+      {
+        "source": "P03",
+        "target": "E03",
+        "relation": "target_of"
+      },
+      {
+        "source": "P01",
+        "target": "E03",
+        "relation": "filed_complaint"
+      },
+      {
+        "source": "P03",
+        "target": "E02",
+        "relation": "attended"
+      },
+      {
+        "source": "P04",
+        "target": "E01",
+        "relation": "witnessed"
+      },
+      {
+        "source": "P05",
+        "target": "E01",
+        "relation": "witnessed"
+      },
+      {
+        "source": "P06",
+        "target": "E01",
+        "relation": "witnessed"
+      },
+      {
+        "source": "E01",
+        "target": "E04",
+        "relation": "produced"
+      },
+      {
+        "source": "E04",
+        "target": "P01",
+        "relation": "caused_injury"
+      },
+      {
+        "source": "E02",
+        "target": "E05",
+        "relation": "used_as"
+      },
+      {
+        "source": "E05",
+        "target": "P02",
+        "relation": "supports_alibi"
+      },
+      {
+        "source": "E06",
+        "target": "P03",
+        "relation": "captures"
+      },
+      {
+        "source": "E06",
+        "target": "L01",
+        "relation": "recorded_at"
+      },
+      {
+        "source": "P03",
+        "target": "L04",
+        "relation": "traveled_to"
+      },
+      {
+        "source": "L04",
+        "target": "L03",
+        "relation": "connected_by_train"
+      },
+      {
+        "source": "P04",
+        "target": "P03",
+        "relation": "related_to"
+      },
+      {
+        "source": "P02",
+        "target": "P01",
+        "relation": "cousin_of"
+      },
+      {
+        "source": "E05",
+        "target": "E06",
+        "relation": "contradicts"
+      },
+      {
+        "source": "P04",
+        "target": "E01",
+        "relation": "gave_false_testimony"
+      }
+    ]
+  }
+}

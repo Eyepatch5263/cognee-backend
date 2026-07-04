@@ -1,0 +1,10 @@
+{
+  "document_id": "FR-002",
+  "document_type": "financial_records_report",
+  "metadata": {
+    "report_id": "FR/CC/2023/00478-03",
+    "prepared_by": "Financial Forensics Unit, Bengaluru Cyber Crime Cell",
+    "date": "2023-11-20"
+  },
+  "content": "Transaction analysis of the ₹87 lakh transfer: 1. Funds were split into three batches: ₹30L BTC, ₹35L USDT, ₹22L USDT. 2. Transfers occurred between 02:20 and 02:45 on 2023-11-15. 3. First two batches flowed through two tumblers (Ethereum-based mixers), then to wallet: 0x7a8f...b2c1. 4. Final transfer to cold wallet (0x99d3...f8a7) was initiated from a burner phone (IMSI: 405-823-123456789) purchased under fake Aadhaar: 7890-1234-5678 (name: Rajesh Kumar, address: Mysore). 5. ₹50,000 transfer from Arjun Mehta’s wallet (0x55e2...c9f1) occurred at 03:15:12. 6. IP address used for this transfer: 103.24.112.15 (Mysore, Vodafone ISP). 7. This IP is registered to Vikram Singh’s residence. 8. Arjun’s phone was not active at that time—its last known location was Banashankari. 9. The transfer was initiated via a mobile browser session that had been hijacked via a phishing link sent to Arjun’s email on November 10. Conclusion: The ₹50,000 transfer was planted to frame Arjun Mehta. It originated from Vikram Singh’s location in Mysore."
+}

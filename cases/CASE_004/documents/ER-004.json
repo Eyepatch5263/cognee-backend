@@ -1,0 +1,10 @@
+{
+  "document_id": "ER-004",
+  "document_type": "Financial_Record",
+  "metadata": {
+    "report_id": "BANK-WITHDRAWAL-AXIS-NOIDA-2023-1011",
+    "prepared_by": "Axis Bank, Noida Branch",
+    "date": "2023-10-15"
+  },
+  "content": "Account Holder: Vikram Kumar (Account No.: XXXX-XXXX-5432) Transaction Date: 11.10.2023 Time: 11:45 AM Withdrawal Amount: ₹50,000 Denominations: ₹500 x 100 notes Serial Numbers: E032156789 to E032156888 (as per bank’s internal record) Mode: Cash withdrawal from counter, no deposit slip, no ID verification beyond PAN (PAN: AABPV7890Q). Witness: Teller Ms. Rekha Singh. Remarks: Customer appeared nervous, asked for notes in new condition. No CCTV footage available for counter due to camera malfunction on that day. This withdrawal is unrelated to any ACB operation. The serial numbers match those recovered during the trap on 12.10.2023."
+}

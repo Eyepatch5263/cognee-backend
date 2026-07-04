@@ -1,0 +1,10 @@
+{
+  "document_id": "ER-002",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "report_id": "DFR-2023-0874-B",
+    "issued_by": "National Cyber Forensics Unit, New Delhi",
+    "date_issued": "2023-06-15"
+  },
+  "content": "Examination of the Kharagpur Tehsil Digital Land Record (2016 Entry): 1. Metadata of the digital file shows the last edit occurred on 04/04/2019 at 14:23 IST. 2. IP address traced to a terminal in the Tehsil Office, logged in with Debashish Mukherjee’s credentials. 3. The original paper copy was reported destroyed in a 2019 fire — but the digital file was not backed up until after the fire, indicating premeditated deletion. 4. No authorized access log exists for the date of alteration. Conclusion: The 2016 land revenue record was digitally altered posthumously by Debashish Mukherjee to support Priya Chatterjee’s mutation claim."
+}

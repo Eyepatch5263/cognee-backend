@@ -1,0 +1,11 @@
+{
+  "document_id": "FORENSIC-001",
+  "document_type": "Forensic_Report",
+  "metadata": {
+    "evidence_item": "Ransom Note",
+    "lab": "Central Forensic Science Laboratory, New Delhi",
+    "date": "2023-10-18",
+    "analyst": "Dr. Anjali Mehta"
+  },
+  "content": "The ransom note was printed on 80 gsm bond paper. Ink analysis reveals trace composition of 'Cyan 541' and 'Magenta 612', consistent with HP LaserJet Pro MFP M428fdw printer ink, not government-issued printers. The paper stock matches the exact batch used in Vikram Mehta’s private office (Batch #N-2023-09-11). No trace of Uttar Pradesh Revenue Department ink was found. The printer used was not a government model. The note was printed using a high-end office printer, likely accessed via a shared network. DNA on the paper’s edge (minor skin cells) matches Priya Mehta. The note was printed on October 15, 17:02:44, according to printer logs recovered from Vikram’s office server."
+}

@@ -1,0 +1,11 @@
+{
+  "document_id": "DIGITAL-001",
+  "document_type": "Digital_Forensics_Report",
+  "metadata": {
+    "device": "Arjun Mehta’s Smartwatch (Model: FitKid Pro)",
+    "lab": "Noida Cyber Forensics Unit",
+    "date": "2023-10-17",
+    "analyst": "Tech Officer Deepak Sharma"
+  },
+  "content": "Forensic analysis of Arjun’s smartwatch reveals the GPS module was manually disabled via Bluetooth command at 15:05:17 — 5 minutes before the signal drop reported in the FIR. The command originated from a paired Bluetooth device with MAC address 1A:2B:3C:4D:5E:6F. This device matches the tracker unit installed in Vikram Mehta’s SUV (UP-12-AB-7891), which was removed by Ramesh Kumar during his tenure as a vehicle tracker technician. The device was later found in Ramesh Kumar’s residence. The smartwatch’s accelerometer shows no violent movement between 15:05 and 15:10, suggesting Arjun was not forcibly moved during this interval — he was likely sedated or drugged. The device was not remotely disabled by the kidnappers, but by someone with internal access to the vehicle’s tracking system."
+}

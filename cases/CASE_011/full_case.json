@@ -1,0 +1,643 @@
+{
+  "skeleton": {
+    "metadata": {
+      "case_id": "CASE_011",
+      "case_type": "kidnapping",
+      "difficulty": "hard",
+      "incident_date": "2023-10-15",
+      "location": "Noida, Uttar Pradesh",
+      "summary": "On October 15, 2023, 12-year-old Arjun Mehta, son of prominent Noida-based real estate developer Vikram Mehta, was kidnapped from outside his school by two masked individuals. A ransom demand of \u20b92.5 crore was sent via encrypted messaging app, with instructions to deliver cash at a remote forested area near Sector 57. The family immediately filed an FIR at Noida Police Station (PS Sector 16). Call records show three suspicious calls from a burner phone to Vikram\u2019s mobile, all timed between 3:15 PM and 4:45 PM on the day of the kidnapping. GPS data from Arjun\u2019s smartwatch indicates he was last seen near the school gate, then moved toward the Noida-Greater Noida Expressway before the signal dropped. A recovery operation led by Special Task Force (STF) on October 18 resulted in Arjun\u2019s rescue near an abandoned warehouse in Sector 62, unharmed but traumatized. However, the kidnappers escaped. Five suspects were identified: Vikram\u2019s estranged brother Rohan Mehta, his business rival Rajiv Khanna, the school\u2019s former security head Manoj Verma, Vikram\u2019s personal driver Ramesh Kumar, and a known local extortionist, Bittu Singh. Six witnesses provided statements, but three have since recanted or changed their accounts under pressure. Forensic analysis of the ransom note revealed traces of a rare ink used only in government offices \u2014 a clue that appears deliberately misleading. The case is further complicated by a forged bank transfer receipt allegedly showing Rohan Mehta withdrew \u20b920 lakh the day before the kidnapping \u2014 a document later found to be digitally altered. Multi-hop reasoning is required to connect the burner phone\u2019s last known location to a stolen motorcycle, which was traced to a pawnshop owned by a relative of the school principal \u2014 a connection no one has yet made."
+    },
+    "hidden_ground_truth": {
+      "actual_criminal": "Manoj Verma",
+      "accomplices": [
+        "Ramesh Kumar",
+        "Priya Mehta"
+      ],
+      "true_motive": "Manoj Verma sought revenge for being wrongfully terminated from his security job after he exposed Vikram Mehta\u2019s illegal land acquisition in Sector 45. Ramesh provided access to Arjun\u2019s school schedule and vehicle routes. Priya, Vikram\u2019s estranged wife and Manoj\u2019s secret lover, forged the bank receipt to frame Rohan and diverted police attention.",
+      "true_timeline": [
+        "2023-10-15 14:30: Manoj Verma, using a stolen uniform, enters school premises under guise of maintenance check.",
+        "2023-10-15 14:55: Ramesh Kumar parks Vikram\u2019s SUV near the school gate as a decoy; Arjun is lured toward it by a fake message from his mother.",
+        "2023-10-15 15:02: Arjun is forcibly taken into the SUV, driven to a hidden garage in Sector 58.",
+        "2023-10-15 15:30: Manoj and Ramesh switch vehicles using a stolen motorcycle registered to Bittu Singh\u2019s cousin.",
+        "2023-10-15 16:10: Ransom message sent from a burner phone purchased with cash at a shop in Ghaziabad.",
+        "2023-10-15 17:00: Priya Mehta uses her access to Vikram\u2019s office printer to forge the \u20b920 lakh withdrawal receipt, printing it on official stationery.",
+        "2023-10-16 03:00: Arjun is moved to the abandoned warehouse in Sector 62, where he is held until rescue.",
+        "2023-10-18 11:20: STF raids warehouse after tracking the burner phone\u2019s last ping to a nearby tower, but suspects flee via a pre-planned tunnel to a farmhouse in Ballabhgarh."
+      ],
+      "lying_witnesses": [
+        "Rohan Mehta",
+        "Bittu Singh",
+        "Priya Mehta"
+      ],
+      "forged_evidence": [
+        "Bank withdrawal receipt dated 2023-10-14 showing \u20b920 lakh withdrawal from Rohan Mehta\u2019s account \u2014 forged by Priya Mehta using Vikram\u2019s office printer and stolen bank letterhead.",
+        "Security camera footage from Sector 57 showing a man matching Rohan\u2019s build near the ransom drop site \u2014 digitally altered to insert Rohan\u2019s face using AI."
+      ],
+      "injected_contradictions": [
+        {
+          "description": "Witness (school janitor) claims to have seen Arjun being taken by a man in a blue jacket \u2014 but the actual kidnappers wore black. The blue jacket was worn by a school teacher who was later bribed to lie."
+        },
+        {
+          "description": "Ramesh Kumar\u2019s phone logs show he was at home at 15:00, but tower data places him near the school \u2014 the discrepancy is due to a spoofed location via a VPN app installed by Priya."
+        },
+        {
+          "description": "The ransom note\u2019s ink matches government office supplies, but the printer used was never in any government office \u2014 it was a high-end printer in Vikram\u2019s private office, which Priya accessed daily."
+        },
+        {
+          "description": "Bittu Singh claims his motorcycle was stolen on October 13, but CCTV from the pawnshop shows it was returned on October 16 by Ramesh Kumar \u2014 a fact omitted in his statement."
+        },
+        {
+          "description": "Vikram claims he never spoke to Rohan in months \u2014 but call records show two calls from Vikram\u2019s personal phone to Rohan\u2019s unlisted number on October 12, both deleted from his device."
+        },
+        {
+          "description": "Arjun\u2019s smartwatch shows no movement after 15:10, but forensic analysis reveals the GPS module was manually disabled at 15:05 \u2014 not by the kidnappers, but by Ramesh Kumar using a device he kept from his old job as a vehicle tracker technician."
+        }
+      ]
+    },
+    "perspectives": [
+      "timeline reconstruction",
+      "witness credibility",
+      "financial motive",
+      "family relationships",
+      "digital forensics",
+      "forensic evidence",
+      "communication graph",
+      "money flow",
+      "alibi verification",
+      "device manipulation"
+    ],
+    "contradictions": [
+      {
+        "type": "timeline",
+        "severity": "critical",
+        "claim_a": "Rohan Mehta was at his farmhouse in Ballabhgarh during the kidnapping (15:00\u201316:30), as confirmed by his wife and two guests.",
+        "claim_b": "Cell tower data from Rohan\u2019s phone shows it was active near Sector 57 at 15:45 \u2014 the exact time of the ransom drop \u2014 but the phone was stolen two days prior and used by Ramesh Kumar."
+      },
+      {
+        "type": "testimony",
+        "severity": "high",
+        "claim_a": "School janitor, Ram Singh, saw a man in a blue jacket force Arjun into a car near the gate.",
+        "claim_b": "Security footage from the school\u2019s main gate shows the kidnapper wore black, and the only person in blue was teacher Anjali Rao, who was in her classroom at the time."
+      },
+      {
+        "type": "forensic",
+        "severity": "high",
+        "claim_a": "The ransom note was printed on paper with ink traceable to Uttar Pradesh Revenue Department printers.",
+        "claim_b": "The same ink was found in Vikram Mehta\u2019s private office printer, which Priya Mehta accessed daily \u2014 and the paper stock matches the office\u2019s unused supply."
+      },
+      {
+        "type": "financial",
+        "severity": "critical",
+        "claim_a": "Rohan Mehta withdrew \u20b920 lakh from his account on October 14, suggesting he funded the kidnapping.",
+        "claim_b": "Bank records show the withdrawal was never made \u2014 the receipt is a forgery printed on Vikram\u2019s office printer using stolen letterhead."
+      },
+      {
+        "type": "digital forensics",
+        "severity": "medium",
+        "claim_a": "Arjun\u2019s smartwatch GPS signal stopped at 15:10, indicating he was taken at that time.",
+        "claim_b": "Forensic analysis shows the GPS module was manually disabled at 15:05 using a Bluetooth signal from a device Ramesh Kumar used as a vehicle tracker \u2014 meaning the kidnapping occurred before the signal dropped."
+      },
+      {
+        "type": "communication",
+        "severity": "medium",
+        "claim_a": "The burner phone used for ransom calls was purchased in Ghaziabad on October 14 by a man matching Bittu Singh\u2019s description.",
+        "claim_b": "CCTV from the Ghaziabad shop shows the buyer was wearing a cap and mask \u2014 but the height and gait match Ramesh Kumar, not Bittu Singh."
+      },
+      {
+        "type": "testimony",
+        "severity": "high",
+        "claim_a": "Bittu Singh claims his motorcycle was stolen on October 13 and never recovered.",
+        "claim_b": "Pawnshop owner in Sector 62 confirms the motorcycle was returned on October 16 by a man matching Ramesh Kumar\u2019s build, who claimed it was 'found' and wanted to claim reward."
+      },
+      {
+        "type": "timeline",
+        "severity": "medium",
+        "claim_a": "Vikram Mehta says he had no contact with Rohan for over a year.",
+        "claim_b": "Call logs from Vikram\u2019s deleted call history (recovered via forensic imaging) show two calls to Rohan\u2019s unlisted number on October 12 \u2014 both lasting under 30 seconds."
+      },
+      {
+        "type": "forensic",
+        "severity": "high",
+        "claim_a": "Arjun\u2019s school bag was found near the warehouse with no fingerprints except his own.",
+        "claim_b": "Trace DNA from a hair strand on the bag\u2019s strap matches Priya Mehta \u2014 she claims she never touched the bag, but she helped pack it the morning of the kidnapping."
+      },
+      {
+        "type": "alibi verification",
+        "severity": "critical",
+        "claim_a": "Ramesh Kumar\u2019s wife says he was home all evening on October 15, watching TV.",
+        "claim_b": "Smart TV logs show no activity between 14:30 and 17:00 \u2014 the device was powered off, but the remote was used to turn it on at 17:05 \u2014 suggesting someone faked the alibi."
+      }
+    ],
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "P01",
+          "type": "Person",
+          "label": "Arjun Mehta"
+        },
+        {
+          "id": "P02",
+          "type": "Person",
+          "label": "Vikram Mehta"
+        },
+        {
+          "id": "P03",
+          "type": "Person",
+          "label": "Rohan Mehta"
+        },
+        {
+          "id": "P04",
+          "type": "Person",
+          "label": "Manoj Verma"
+        },
+        {
+          "id": "P05",
+          "type": "Person",
+          "label": "Ramesh Kumar"
+        },
+        {
+          "id": "P06",
+          "type": "Person",
+          "label": "Priya Mehta"
+        },
+        {
+          "id": "P07",
+          "type": "Person",
+          "label": "Bittu Singh"
+        },
+        {
+          "id": "E01",
+          "type": "Event",
+          "label": "Kidnapping of Arjun Mehta"
+        },
+        {
+          "id": "E02",
+          "type": "Event",
+          "label": "Ransom Demand"
+        },
+        {
+          "id": "E03",
+          "type": "Event",
+          "label": "Recovery Operation"
+        },
+        {
+          "id": "E04",
+          "type": "Event",
+          "label": "Forged Bank Receipt"
+        },
+        {
+          "id": "E05",
+          "type": "Evidence",
+          "label": "Burner Phone"
+        },
+        {
+          "id": "E06",
+          "type": "Evidence",
+          "label": "Smartwatch GPS Data"
+        },
+        {
+          "id": "E07",
+          "type": "Evidence",
+          "label": "Ransom Note"
+        },
+        {
+          "id": "E08",
+          "type": "Evidence",
+          "label": "Stolen Motorcycle"
+        },
+        {
+          "id": "L01",
+          "type": "Location",
+          "label": "Noida Public School"
+        },
+        {
+          "id": "L02",
+          "type": "Location",
+          "label": "Abandoned Warehouse, Sector 62"
+        },
+        {
+          "id": "L03",
+          "type": "Location",
+          "label": "Vikram Mehta's Office"
+        },
+        {
+          "id": "L04",
+          "type": "Location",
+          "label": "Ghaziabad Phone Shop"
+        },
+        {
+          "id": "L05",
+          "type": "Location",
+          "label": "Pawnshop, Sector 62"
+        },
+        {
+          "id": "A01",
+          "type": "Asset",
+          "label": "Vikram's SUV"
+        },
+        {
+          "id": "A02",
+          "type": "Asset",
+          "label": "Smartwatch"
+        },
+        {
+          "id": "A03",
+          "type": "Asset",
+          "label": "Office Printer"
+        }
+      ],
+      "edges": [
+        {
+          "source": "P01",
+          "target": "E01",
+          "relation": "victim_of"
+        },
+        {
+          "source": "P02",
+          "target": "E01",
+          "relation": "family_of"
+        },
+        {
+          "source": "P04",
+          "target": "E01",
+          "relation": "perpetrator_of"
+        },
+        {
+          "source": "P05",
+          "target": "E01",
+          "relation": "accomplice_of"
+        },
+        {
+          "source": "P06",
+          "target": "E01",
+          "relation": "accomplice_of"
+        },
+        {
+          "source": "P04",
+          "target": "P05",
+          "relation": "collaborated_with"
+        },
+        {
+          "source": "P06",
+          "target": "P04",
+          "relation": "related_to"
+        },
+        {
+          "source": "P05",
+          "target": "A01",
+          "relation": "used"
+        },
+        {
+          "source": "P06",
+          "target": "A03",
+          "relation": "accessed"
+        },
+        {
+          "source": "A03",
+          "target": "E04",
+          "relation": "used_to_create"
+        },
+        {
+          "source": "P05",
+          "target": "E05",
+          "relation": "used"
+        },
+        {
+          "source": "E05",
+          "target": "E02",
+          "relation": "used_for"
+        },
+        {
+          "source": "P07",
+          "target": "E08",
+          "relation": "owner_of"
+        },
+        {
+          "source": "P05",
+          "target": "E08",
+          "relation": "used"
+        },
+        {
+          "source": "E08",
+          "target": "L05",
+          "relation": "returned_to"
+        },
+        {
+          "source": "P01",
+          "target": "A02",
+          "relation": "owned"
+        },
+        {
+          "source": "A02",
+          "target": "E01",
+          "relation": "provided_evidence"
+        },
+        {
+          "source": "L01",
+          "target": "E01",
+          "relation": "location_of"
+        },
+        {
+          "source": "L02",
+          "target": "E03",
+          "relation": "location_of"
+        },
+        {
+          "source": "L03",
+          "target": "E04",
+          "relation": "location_of"
+        },
+        {
+          "source": "L04",
+          "target": "E05",
+          "relation": "purchased_at"
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "document_id": "FIR-001",
+      "document_type": "FIR",
+      "metadata": {
+        "fir_number": "FIR/16/2023/0897",
+        "police_station": "Noida Police Station, Sector 16",
+        "date_filed": "2023-10-15",
+        "filed_by": "Vikram Mehta"
+      },
+      "content": "I, Vikram Mehta, resident of House No. 12, Sector 48, Noida, Uttar Pradesh, hereby lodge this First Information Report regarding the kidnapping of my 12-year-old son, Arjun Mehta. On 15th October 2023, at approximately 15:05 hours, Arjun was taken from outside Noida Public School by two masked men on a motorcycle. The incident was witnessed by several school staff and students. One of the kidnappers forced Arjun into a black SUV parked near the school gate. The vehicle was registered to me, but I did not authorize its use at that time. Shortly after, I received a message via the encrypted app Signal demanding \u20b92.5 crore in cash, to be delivered at the forested area near Sector 57 by 18:00 hours. The message threatened harm to Arjun if the police were involved. I immediately contacted the police and cooperated fully. Arjun\u2019s smartwatch signal dropped at 15:10 near the Noida-Greater Noida Expressway. No ransom has been paid. I request immediate investigation and protection for my family. I have no knowledge of any person involved and have no grudges against anyone. I have attached copies of the ransom message and Arjun\u2019s smartwatch location history."
+    },
+    {
+      "document_id": "WS-001",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Ram Singh",
+        "relation_to_case": "School Janitor",
+        "occupation": "Cleaner, Noida Public School"
+      },
+      "content": "I was cleaning near the main gate around 3:00 PM when I saw a man in a bright blue jacket pulling Arjun Mehta towards a black SUV. He had a cloth over his face, but his voice sounded familiar. Arjun was screaming, but the man slapped him and pushed him inside. The SUV drove off fast. I ran to the principal\u2019s office but couldn\u2019t stop them. The man wore blue \u2014 I\u2019m sure of it. I didn\u2019t see the other man. I didn\u2019t know who it was, but I thought maybe someone from the staff? I told the police the same thing. I didn\u2019t lie. I saw the blue jacket."
+    },
+    {
+      "document_id": "WS-002",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Anjali Rao",
+        "relation_to_case": "School Teacher",
+        "occupation": "Class 7 Teacher, Noida Public School"
+      },
+      "content": "I was in Room 7B from 14:45 to 15:20. I wore a blue jacket that day \u2014 yes, it was the same one Ram Singh described. But I never left the classroom. My attendance register and CCTV from the corridor confirm this. I didn\u2019t see Arjun being taken. I didn\u2019t know anything about it. I only found out later when the school was locked down. I was confused when the police asked me about the blue jacket \u2014 I didn\u2019t realize anyone could have mistaken me for the kidnapper. I never touched Arjun or his bag."
+    },
+    {
+      "document_id": "WS-003",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Rohan Mehta",
+        "relation_to_case": "Estranged Brother of Victim's Father",
+        "occupation": "Real Estate Consultant"
+      },
+      "content": "I was at my farmhouse in Ballabhgarh from 2:00 PM to 7:00 PM on October 15. My wife, Priya, and two guests, Rajiv and Ankit, can confirm. I didn\u2019t know about the kidnapping until the news broke. I haven\u2019t spoken to Vikram in over a year. I have no motive. I didn\u2019t send any messages. I don\u2019t even know how to use encrypted apps. My phone was stolen two days before \u2014 I reported it to the police on October 13. I don\u2019t know why my phone\u2019s signal was near Sector 57. I didn\u2019t go there. I swear on my son\u2019s life."
+    },
+    {
+      "document_id": "WS-004",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Ramesh Kumar",
+        "relation_to_case": "Personal Driver of Vikram Mehta",
+        "occupation": "Driver"
+      },
+      "content": "I was home all day on October 15. My wife cooked dinner at 7:00 PM. I watched TV from 5:00 PM onwards. I didn\u2019t drive Vikram\u2019s SUV that day. I didn\u2019t know Arjun was taken. I didn\u2019t call anyone. I didn\u2019t go near the school. I have no idea who did it. I\u2019ve been loyal to Vikram for 8 years. I\u2019m just a driver. I don\u2019t know anything about money or kidnapping. My phone was dead all day \u2014 I forgot to charge it. That\u2019s why my wife says I was home \u2014 because I was."
+    },
+    {
+      "document_id": "WS-005",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Priya Mehta",
+        "relation_to_case": "Estranged Wife of Vikram Mehta",
+        "occupation": "Homeowner, Former Corporate Executive"
+      },
+      "content": "I was at home with Rohan in Ballabhgarh on the 15th. I didn\u2019t know anything about the kidnapping until I saw the news. I haven\u2019t been to Vikram\u2019s office since June. I didn\u2019t print any documents. I didn\u2019t know about the bank receipt. I didn\u2019t speak to Manoj Verma in years. I was in a bad place emotionally after the divorce, but I would never hurt Arjun. He\u2019s my son too. I love him. I don\u2019t know why my DNA was on his bag. Maybe I hugged him that morning? I packed his lunch. Maybe I touched the strap. But I didn\u2019t do anything illegal. I\u2019m not a criminal."
+    },
+    {
+      "document_id": "WS-006",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Bittu Singh",
+        "relation_to_case": "Known Extortionist",
+        "occupation": "Unemployed"
+      },
+      "content": "I didn\u2019t kidnap anyone. I\u2019ve been in jail since October 12 for a petty theft charge \u2014 you can check the Noida Central Jail records. My motorcycle was stolen on October 13. I reported it to the police. I never saw it again. I don\u2019t know who used it. I don\u2019t know Ramesh Kumar. I don\u2019t know Manoj Verma. I\u2019m just a poor man trying to survive. I didn\u2019t send any ransom messages. I don\u2019t even have a phone right now. I didn\u2019t go near Sector 62. I swear on my mother\u2019s grave."
+    },
+    {
+      "document_id": "WS-007",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Manoj Verma",
+        "relation_to_case": "Former Security Head, Noida Public School",
+        "occupation": "Former Security Supervisor"
+      },
+      "content": "I was fired from the school in August 2023 after I reported Vikram Mehta\u2019s illegal land acquisition in Sector 45. I was framed for theft \u2014 I didn\u2019t steal anything. I didn\u2019t kidnap Arjun. I was at home on October 15. I didn\u2019t go to the school. I didn\u2019t know he was being taken. I didn\u2019t know Ramesh Kumar was involved. I hate Vikram, yes, but I wouldn\u2019t hurt a child. I\u2019ve got a daughter of my own. I\u2019m not a monster. I don\u2019t know why the police think I\u2019m involved. I didn\u2019t use a burner phone. I don\u2019t have one."
+    },
+    {
+      "document_id": "WS-008",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Vikram Mehta",
+        "relation_to_case": "Father of Victim",
+        "occupation": "Real Estate Developer"
+      },
+      "content": "I had no idea anyone would target my son. I\u2019ve been a law-abiding citizen. I don\u2019t owe anyone money. I\u2019ve never been involved in any illegal land deals \u2014 those are lies spread by Manoj Verma after he was fired. I haven\u2019t spoken to Rohan in over a year \u2014 I deleted his number. I didn\u2019t know about the calls until the police showed me the recovered logs. I didn\u2019t know Priya had access to my printer. I didn\u2019t know Ramesh had a tracker device. I didn\u2019t know about the motorcycle. I\u2019m devastated. I just want my son back. I\u2019m cooperating fully. I\u2019ve offered \u20b95 crore reward for information. I have nothing to hide."
+    },
+    {
+      "document_id": "CCTV-001",
+      "document_type": "CCTV_Report",
+      "metadata": {
+        "location": "Noida Public School Main Gate",
+        "date_time": "2023-10-15 14:50-15:10",
+        "investigating_officer": "SI Rajesh Kumar, Noida PS Sector 16"
+      },
+      "content": "CCTV footage from School Gate Camera #4 shows two individuals approaching Arjun Mehta at 14:55:12. Both are dressed in black hoodies and masks. One individual (Tall, ~175 cm, slight limp) approaches Arjun from the left, speaking briefly. Arjun turns toward a black SUV (registration UP-12-AB-7891) parked 12 meters away. The second individual (Shorter, ~168 cm, broad shoulders) emerges from behind a bush and grabs Arjun\u2019s arm. The victim is forced into the SUV by 14:57:03. The SUV departs at 14:57:45. The individual in the driver\u2019s seat is later identified as Ramesh Kumar via facial recognition. No person in blue jacket appears in this footage. The janitor\u2019s statement regarding a blue jacket is inconsistent with video evidence. The footage was not tampered with. Timestamps verified against NTP server."
+    },
+    {
+      "document_id": "CCTV-002",
+      "document_type": "CCTV_Report",
+      "metadata": {
+        "location": "Ghaziabad Phone Shop, Sector 12",
+        "date_time": "2023-10-14 16:22-16:35",
+        "investigating_officer": "SI Rajesh Kumar, Noida PS Sector 16"
+      },
+      "content": "CCTV footage from the Ghaziabad Mobile Shop shows a male purchasing a prepaid burner phone (IMEI: 867845032145678) at 16:28. The individual is wearing a cap, surgical mask, and dark jacket. Height estimated at 168-170 cm. Gait analysis indicates a slight right leg drag. Facial features obscured. The individual pays in cash (\u20b92,000). The shopkeeper identifies the gait as matching Ramesh Kumar\u2019s walk, based on prior employment records from Vikram Mehta\u2019s security detail. No resemblance to Bittu Singh. The purchaser exits on a red motorcycle (registration UP-12-CD-4567), later confirmed as belonging to Bittu Singh\u2019s cousin, Ravi Singh."
+    },
+    {
+      "document_id": "CCTV-003",
+      "document_type": "CCTV_Report",
+      "metadata": {
+        "location": "Pawnshop, Sector 62, Noida",
+        "date_time": "2023-10-16 11:15-11:22",
+        "investigating_officer": "SI Rajesh Kumar, Noida PS Sector 16"
+      },
+      "content": "CCTV footage from the pawnshop \u2018Golden Key\u2019 shows a male entering at 11:16 and returning a red motorcycle (UP-12-CD-4567) at 11:18. The individual is wearing a black hoodie and gloves. He hands over the keys and a \u20b95,000 reward receipt. The pawnshop owner, Ramesh Patel, identifies the build and gait as matching Ramesh Kumar. The individual states, 'Found it near the expressway, thought I\u2019d claim the reward.' The motorcycle was reported stolen on October 13 by Bittu Singh. The pawnshop owner was not aware of the kidnapping at the time. This footage was not disclosed in Bittu Singh\u2019s original statement."
+    },
+    {
+      "document_id": "FORENSIC-001",
+      "document_type": "Forensic_Report",
+      "metadata": {
+        "evidence_item": "Ransom Note",
+        "lab": "Central Forensic Science Laboratory, New Delhi",
+        "date": "2023-10-18",
+        "analyst": "Dr. Anjali Mehta"
+      },
+      "content": "The ransom note was printed on 80 gsm bond paper. Ink analysis reveals trace composition of 'Cyan 541' and 'Magenta 612', consistent with HP LaserJet Pro MFP M428fdw printer ink, not government-issued printers. The paper stock matches the exact batch used in Vikram Mehta\u2019s private office (Batch #N-2023-09-11). No trace of Uttar Pradesh Revenue Department ink was found. The printer used was not a government model. The note was printed using a high-end office printer, likely accessed via a shared network. DNA on the paper\u2019s edge (minor skin cells) matches Priya Mehta. The note was printed on October 15, 17:02:44, according to printer logs recovered from Vikram\u2019s office server."
+    },
+    {
+      "document_id": "DIGITAL-001",
+      "document_type": "Digital_Forensics_Report",
+      "metadata": {
+        "device": "Arjun Mehta\u2019s Smartwatch (Model: FitKid Pro)",
+        "lab": "Noida Cyber Forensics Unit",
+        "date": "2023-10-17",
+        "analyst": "Tech Officer Deepak Sharma"
+      },
+      "content": "Forensic analysis of Arjun\u2019s smartwatch reveals the GPS module was manually disabled via Bluetooth command at 15:05:17 \u2014 5 minutes before the signal drop reported in the FIR. The command originated from a paired Bluetooth device with MAC address 1A:2B:3C:4D:5E:6F. This device matches the tracker unit installed in Vikram Mehta\u2019s SUV (UP-12-AB-7891), which was removed by Ramesh Kumar during his tenure as a vehicle tracker technician. The device was later found in Ramesh Kumar\u2019s residence. The smartwatch\u2019s accelerometer shows no violent movement between 15:05 and 15:10, suggesting Arjun was not forcibly moved during this interval \u2014 he was likely sedated or drugged. The device was not remotely disabled by the kidnappers, but by someone with internal access to the vehicle\u2019s tracking system."
+    },
+    {
+      "document_id": "FINANCIAL-001",
+      "document_type": "Financial_Records",
+      "metadata": {
+        "institution": "State Bank of India, Noida Branch",
+        "account_holder": "Rohan Mehta",
+        "date": "2023-10-14",
+        "investigator": "Financial Crimes Unit, UP Police"
+      },
+      "content": "Bank statement for Account No. SBIN/9876543210 (Rohan Mehta) shows NO withdrawal of \u20b920,00,000 on October 14, 2023. The so-called 'withdrawal receipt' submitted to police is a forgery. Paper stock matches Vikram Mehta\u2019s office printer paper (Batch #N-2023-09-11). Ink composition matches the printer used in Vikram\u2019s office. The bank letterhead used is a high-resolution scan of SBI\u2019s official letterhead, obtained via phishing from a former SBI employee. Digital signature embedded is fake. The receipt was printed on October 15, 17:01:33, from Vikram Mehta\u2019s office printer, logged under Priya Mehta\u2019s user credentials. No transaction occurred. The receipt was created to frame Rohan Mehta."
+    },
+    {
+      "document_id": "CALLLOGS-001",
+      "document_type": "Call_Logs",
+      "metadata": {
+        "device": "Vikram Mehta\u2019s Personal Phone (IMEI: 359876012345678)",
+        "date_range": "2023-10-12 to 2023-10-15",
+        "analyst": "Noida Cyber Forensics Unit"
+      },
+      "content": "Forensic recovery of deleted call logs reveals two calls from Vikram Mehta\u2019s phone to an unlisted number (98765 43210) registered to Rohan Mehta on October 12, 2023, at 10:12 and 10:47. Duration: 27 seconds and 22 seconds. The calls were manually deleted from the device using a third-party app ('Call Eraser Pro'). The number was not in Vikram\u2019s contact list. Call metadata shows the receiver was active in Ballabhgarh. The content of the calls was not recovered. This contradicts Vikram\u2019s claim of 'no contact for over a year.' The calls occurred 3 days before the kidnapping. No further contact recorded."
+    },
+    {
+      "document_id": "POLICE-001",
+      "document_type": "Police_Investigation_Report",
+      "metadata": {
+        "case_id": "CASE_011",
+        "investigating_officer": "DSP Anand Verma",
+        "date": "2023-10-20",
+        "status": "Ongoing"
+      },
+      "content": "This report summarizes the findings of the investigation into the kidnapping of Arjun Mehta. Key contradictions have been identified: 1) The blue jacket witness account is false; CCTV shows black attire. 2) The \u20b920 lakh withdrawal receipt is forged, printed on Vikram\u2019s printer by Priya Mehta. 3) The burner phone was purchased by Ramesh Kumar, not Bittu Singh. 4) The motorcycle was returned to the pawnshop by Ramesh Kumar on October 16. 5) GPS on Arjun\u2019s watch was disabled by Ramesh Kumar using his old tracker device. 6) The ransom note ink does not match government printers \u2014 it matches Vikram\u2019s office. 7) Two deleted calls from Vikram to Rohan indicate prior contact. 8) Priya Mehta\u2019s DNA on Arjun\u2019s bag suggests direct contact on the morning of the kidnapping. 9) Manoj Verma, recently terminated for exposing Vikram\u2019s illegal land deals, has no alibi for 14:30-15:30 on October 15. 10) Ramesh Kumar\u2019s alibi (TV logs) is fabricated \u2014 the TV was turned on remotely at 17:05. Based on the evidence, the prime suspects are Manoj Verma (primary perpetrator), Ramesh Kumar (accomplice), and Priya Mehta (forensic facilitator). The motive is revenge for Manoj\u2019s termination and financial gain. Bittu Singh and Rohan Mehta are innocent, framed. The case has been escalated to the Special Task Force for further tracking of the escape route to Ballabhgarh."
+    },
+    {
+      "document_id": "CHARGE_SHEET-001",
+      "document_type": "Charge_Sheet",
+      "metadata": {
+        "case_id": "CASE_011",
+        "court": "Sessions Court, Noida",
+        "filed_by": "Public Prosecutor, UP",
+        "date": "2023-11-05"
+      },
+      "content": "IN THE COURT OF THE SESSIONS JUDGE, NOIDA\n\nCharge Sheet No.: CS/2023/011\n\nAccused: Manoj Verma, Ramesh Kumar, Priya Mehta\n\nSections: 364 (Kidnapping), 366 (Kidnapping to compel marriage or forced labor), 384 (Extortion), 465 (Forgery), 468 (Forgery for purpose of cheating), 471 (Using forged document), 201 (Destruction of evidence)\n\nThe accused, Manoj Verma, former security head of Noida Public School, conspired with Ramesh Kumar, the personal driver of Vikram Mehta, to kidnap Arjun Mehta to exact revenge for his wrongful termination after exposing Vikram Mehta\u2019s illegal land acquisition in Sector 45. Priya Mehta, Vikram\u2019s estranged wife and Manoj\u2019s secret lover, forged the \u20b920 lakh bank receipt to frame Rohan Mehta and diverted police attention. Ramesh Kumar used his knowledge of Arjun\u2019s routine and vehicle tracking device to disable the smartwatch and lure Arjun into the SUV. The ransom note, printed using Vikram\u2019s office printer, was designed to mislead investigators into believing government involvement. The stolen motorcycle was used as a decoy to implicate Bittu Singh. The accused fled via a pre-planned tunnel to a farmhouse in Ballabhgarh. Evidence includes CCTV, forensic ink analysis, digital forensics, and recovered tracker device. All accused are charged under IPC Sections as above. The prosecution seeks maximum punishment."
+    }
+  ],
+  "benchmark": {
+    "queries": [
+      {
+        "id": "Q1",
+        "question": "Who is the actual perpetrator of the kidnapping?",
+        "category": "suspect_identification"
+      },
+      {
+        "id": "Q2",
+        "question": "Which witness statement contains the most deliberate falsehoods, and what evidence contradicts it?",
+        "category": "witness_credibility"
+      },
+      {
+        "id": "Q3",
+        "question": "What is the significance of the ink found on the ransom note, and why is the government office claim misleading?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q4",
+        "question": "Reconstruct the timeline of the kidnapping from 14:30 to 15:10 based on digital and physical evidence.",
+        "category": "timeline_reconstruction"
+      },
+      {
+        "id": "Q5",
+        "question": "How was the bank withdrawal receipt forged, and who had the means and opportunity to do it?",
+        "category": "evidence_ranking"
+      },
+      {
+        "id": "Q6",
+        "question": "What motive did the actual perpetrator have, and how does it connect to other events in the case?",
+        "category": "motive_analysis"
+      },
+      {
+        "id": "Q7",
+        "question": "Which two individuals were framed, and what evidence was manipulated to implicate them?",
+        "category": "relationship_mapping"
+      },
+      {
+        "id": "Q8",
+        "question": "Why does the smartwatch data suggest the kidnapping occurred earlier than the signal drop?",
+        "category": "digital_forensics"
+      },
+      {
+        "id": "Q9",
+        "question": "What role did Priya Mehta play in the crime, and how does her relationship to both Vikram and Manoj explain her actions?",
+        "category": "relationship_mapping"
+      },
+      {
+        "id": "Q10",
+        "question": "Based on the evidence, what is the likelihood of conviction for each of the three accused, and why?",
+        "category": "conviction_likelihood"
+      }
+    ],
+    "expected_answers": [
+      {
+        "query_id": "Q1",
+        "answer": "The actual perpetrator is Manoj Verma. He was wrongfully terminated from his security job after exposing Vikram Mehta\u2019s illegal land acquisition in Sector 45. His motive was revenge. He orchestrated the kidnapping with Ramesh Kumar, who provided access to Arjun\u2019s schedule and the vehicle, and Priya Mehta, who forged evidence to frame Rohan. Manoj entered the school in a stolen uniform, lured Arjun with a fake message, and coordinated the escape. The forensic, digital, and testimonial evidence all converge on him as the mastermind."
+      },
+      {
+        "query_id": "Q2",
+        "answer": "Bittu Singh\u2019s statement contains the most deliberate falsehoods. He claimed his motorcycle was stolen on October 13 and never recovered. However, CCTV from the Sector 62 pawnshop shows Ramesh Kumar returned the motorcycle on October 16, claiming he 'found' it to claim a reward. This was a deliberate attempt to mislead investigators into believing the bike was stolen and used by an outsider, when in fact it was used as a decoy vehicle by Ramesh. Bittu Singh\u2019s statement was false because he was either complicit or being paid to lie \u2014 likely by Priya Mehta to divert suspicion."
+      },
+      {
+        "query_id": "Q3",
+        "answer": "The ink on the ransom note was claimed to match Uttar Pradesh Revenue Department printers, suggesting official involvement. However, forensic analysis revealed the ink was HP LaserJet Pro ink, identical to the printer in Vikram Mehta\u2019s private office. The paper stock also matched Vikram\u2019s office supply. The government ink claim was deliberately misleading \u2014 a red herring planted by Priya Mehta, who accessed the office daily and knew the ink\u2019s properties. This was intended to trigger a false investigation into government corruption, buying time for the kidnappers to escape."
+      },
+      {
+        "query_id": "Q4",
+        "answer": "Timeline: 14:30 \u2014 Manoj Verma enters Noida Public School in a stolen security uniform under guise of maintenance. 14:55 \u2014 Ramesh Kumar parks Vikram\u2019s SUV near the gate. A fake message (sent via Ramesh\u2019s phone) lures Arjun to the vehicle. 15:02 \u2014 Arjun is forcibly taken into the SUV. 15:05 \u2014 Ramesh Kumar disables Arjun\u2019s smartwatch GPS via Bluetooth tracker device. 15:07 \u2014 The SUV departs toward Sector 58. 15:30 \u2014 Manoj and Ramesh switch to the stolen motorcycle (registered to Bittu\u2019s cousin) at a hidden garage. 15:45 \u2014 Ramesh uses the burner phone to confirm ransom drop location. 16:10 \u2014 Ransom message sent from Ghaziabad. The kidnapping occurred at 15:02, but the GPS signal was disabled at 15:05 to falsely suggest the abduction happened later."
+      },
+      {
+        "query_id": "Q5",
+        "answer": "The bank withdrawal receipt was forged using high-resolution scans of SBI letterhead, printed on Vikram Mehta\u2019s office printer using his paper stock. The forgery was created using Priya Mehta\u2019s user credentials on the office printer, logged at 17:01:33 on October 15. She had access to the office, knew the bank\u2019s formatting, and had motive to frame Rohan. Only Priya had the means (access to printer, knowledge of bank documents) and opportunity (she was alone in the office after hours). The bank\u2019s own records confirm no such withdrawal occurred."
+      },
+      {
+        "query_id": "Q6",
+        "answer": "Manoj Verma\u2019s motive was revenge for being wrongfully terminated from his security job after exposing Vikram Mehta\u2019s illegal land acquisition in Sector 45. Vikram had Manoj framed for theft to silence him. Manoj sought to destroy Vikram\u2019s family emotionally and financially. The kidnapping targeted Arjun \u2014 Vikram\u2019s only son \u2014 to inflict maximum pain. The ransom demand was never meant to be paid; it was a cover for the real goal: to expose Vikram\u2019s crimes by planting evidence (forged receipt, government ink) that would trigger a corruption investigation. The plan was to make Vikram look guilty, not just lose his son."
+      },
+      {
+        "query_id": "Q7",
+        "answer": "Rohan Mehta and Bittu Singh were framed. Rohan was implicated by a forged \u20b920 lakh withdrawal receipt printed on Vikram\u2019s printer and by falsified cell tower data from his stolen phone. Bittu Singh was framed by falsely claiming his motorcycle was stolen on October 13, while CCTV shows Ramesh Kumar returned it on October 16. Both were used as decoys to misdirect police from the real perpetrators: Manoj, Ramesh, and Priya. The forged documents and false alibis were all created by Priya Mehta and Ramesh Kumar to shift blame."
+      },
+      {
+        "query_id": "Q8",
+        "answer": "Arjun\u2019s smartwatch GPS signal dropped at 15:10, suggesting the kidnapping occurred then. However, digital forensics revealed the GPS module was manually disabled at 15:05 using a Bluetooth command from Ramesh Kumar\u2019s old vehicle tracker device, which he retained after his employment. This means Arjun was taken and moved before the signal dropped \u2014 the delay was intentional to mislead investigators about the timing of the abduction. The kidnappers wanted the GPS to appear to drop at the moment of capture, but the real event happened earlier."
+      },
+      {
+        "query_id": "Q9",
+        "answer": "Priya Mehta played a critical role as the forensic and logistical enabler. As Vikram\u2019s estranged wife and Manoj\u2019s secret lover, she had access to his office, printer, and documents. She forged the bank receipt to frame Rohan, used her knowledge of the printer to plant misleading ink evidence, and likely planted her DNA on Arjun\u2019s bag by helping pack it. She also manipulated Ramesh Kumar\u2019s alibi by remotely turning on the TV to simulate his presence at home. Her dual loyalty \u2014 to Manoj and resentment toward Vikram \u2014 motivated her to destroy his family while protecting her lover. Her actions were calculated, cold, and essential to the plan\u2019s success."
+      },
+      {
+        "query_id": "Q10",
+        "answer": "The likelihood of conviction is very high for all three accused. Manoj Verma has direct forensic and circumstantial evidence linking him to the school entry, the kidnapping, and the motive. Ramesh Kumar\u2019s fingerprints and tracker device are found at the crime scene, and his alibi is falsified. Priya Mehta\u2019s DNA on the ransom note and bag, along with printer logs proving she printed the forged receipt, are irrefutable. The digital forensics, CCTV, and financial records are consistent and cross-verified. There is no reasonable doubt. All three will likely be convicted under multiple IPC sections, with life imprisonment probable for Manoj and Ramesh, and 10\u201315 years for Priya due to her lesser direct involvement but central role in forgery."
+      }
+    ]
+  }
+}

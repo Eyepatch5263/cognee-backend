@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "What is the true timeline of the murder?",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q3",
+      "question": "Which witness statements are intentionally deceptive and why?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q4",
+      "question": "How was the ₹25 lakh transfer executed, and who had the means to do it?",
+      "category": "financial_motive"
+    },
+    {
+      "id": "Q5",
+      "question": "Which piece of forensic evidence most directly implicates the perpetrator?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q6",
+      "question": "What is the nature of the forged property document, and how was it created?",
+      "category": "forged_document_analysis"
+    },
+    {
+      "id": "Q7",
+      "question": "How were digital communications manipulated to mislead investigators?",
+      "category": "digital_forensics"
+    },
+    {
+      "id": "Q8",
+      "question": "What is the relationship between Nidhi Rao and Vikram Desai, and how did it contribute to the crime?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q9",
+      "question": "Why did Priya Mehta lie about her whereabouts, and what was her financial motive?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q10",
+      "question": "Based on the evidence, what is the likelihood of conviction for Vikram Desai and Nidhi Rao?",
+      "category": "conviction_likelihood"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "The actual perpetrator is Vikram Desai. He entered Arjun’s home using a key obtained from Nidhi Rao, argued with Arjun over the forged property deed, stabbed him during the struggle, and planted the knife. His DNA was found under Arjun’s fingernails during the fight, and his car was seen entering the service lane at 9:50 PM — contradicting his alibi. He orchestrated the transfer of ₹25 lakh, bribed witnesses, and forged documents to secure the property. His motive was financial gain through the fraudulent land sale."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "The true timeline is: 8:45 PM — Vikram meets Arjun at temple gate demanding signature on forged deed; Arjun refuses. 9:15 PM — Vikram enters house via service entrance using key from Nidhi. 9:30 PM — Argument escalates; Vikram stabs Arjun. Arjun scratches Vikram’s forearm. 9:35 PM — Vikram wipes knife, plants it in garden, exits via backdoor leaving partial palm print. 9:40 PM — Nidhi Rao transfers ₹25 lakh using Arjun’s biometric login. 9:45 PM — Priya leaves to meet her yoga instructor. 10:10 PM — Vikram calls Nidhi to confirm transfer. 10:15 PM — Arjun dies. 11:15 PM — Priya returns and stages discovery. Nidhi flees on 10/16. Neighbors bribed to claim argument at 10:45 PM."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "Priya Mehta is deceptive — she claims she heard a scream at 10:30 PM and discovered the body immediately, but CCTV shows her leaving at 9:45 PM and returning at 11:15 PM, and autopsy confirms death occurred by 10:15 PM. Mrs. Kulkarni falsely claims to have heard an argument at 10:45 PM; her porch light was off and she admitted to being paid. Father Thomas initially identified a hooded figure at 8:45 PM, but retracted after receiving ₹50,000 from an unknown source (linked to Vikram via Constable Ramesh). All three are lying to cover up the real timeline and protect the actual perpetrator."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "The ₹25 lakh transfer was executed via UPI using Arjun’s smartphone’s biometric login at 9:40 PM. Only Arjun and Nidhi Rao had access to his fingerprint authentication. Nidhi Rao, acting under Vikram’s instructions, performed the transfer. Digital forensics confirm the transaction was initiated from Arjun’s phone, which was in his study at the time. Nidhi had previously installed a remote access tool on the phone. The money was sent to a shell account under 'R. Sharma,' which is untraceable. This confirms Nidhi’s direct involvement and Vikram’s control over the scheme."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The DNA under Arjun’s fingernails is the most directly incriminating forensic evidence. It matches Vikram Desai’s 2021 blood donation profile — a match not in police databases because he had no criminal record. This proves physical contact during a struggle, placing Vikram at the scene at the time of death. The DNA was not planted, and the victim’s defensive wounds confirm the struggle occurred during the attack. No other suspect has a biological link to this evidence."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The forged property deed was a digitally altered version of the original 2005 deed. The 2018 version, submitted by Vikram, falsely listed Arjun as sole owner. Forensic analysis showed the signature was scanned from the original 2005 document and superimposed onto a newer paper stock. The thumbprint was digitally altered using software to match Arjun’s prints. The original 2005 deed was hidden in Arjun’s safe, proving the forgery. Nidhi Rao had access to scanned copies of Arjun’s documents and likely assisted in creating the forgery using her administrative role."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "Digital communications were manipulated in three ways: (1) Nidhi Rao deleted 17 encrypted WhatsApp messages with Vikram from her device, but they were recovered from iCloud backup. (2) A fake WhatsApp screenshot showing Arjun threatening Vikram was created using Arjun’s message template and saved as 'land_deal.jpg' to mislead investigators. (3) Nidhi’s phone showed no recent calls to Vikram, but call logs were wiped using a cleaning app; carrier backups revealed 17 calls between Oct 10–15. These manipulations were designed to create a false narrative of no collusion."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Nidhi Rao and Vikram Desai were co-conspirators. Nidhi, as Arjun’s assistant, had full access to his phone, documents, and financial apps. Vikram bribed her to obtain access to his biometric login and confidential files. She transferred the ₹25 lakh and helped create the forged deed. Their relationship was professional but criminal — they communicated via encrypted messages and coordinated the murder and cover-up. She fled to Goa after the crime, indicating premeditated escape. He provided the motive and direction; she provided the access and execution."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "Priya Mehta lied about her whereabouts to create an alibi. She left at 9:45 PM to meet her yoga instructor, whom she was still seeing despite claiming the affair ended in September. She returned at 11:15 PM and staged the discovery to appear innocent. Her financial motive was revealed when ₹10 lakh was transferred to her new account on October 14 — the same day Vikram transferred ₹5 lakh to Nidhi. She likely knew about the scheme and benefited financially, making her an accomplice in the fraud, even if not directly involved in the murder."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The likelihood of conviction for Vikram Desai and Nidhi Rao is very high. The evidence is overwhelming: DNA match, digital communications proving conspiracy, financial trail, forged documents, CCTV anomalies, witness bribes, and the recovered original deed. Priya’s involvement is less certain but likely for fraud. The court has already denied bail to Vikram based on forensic and digital evidence. With Nidhi’s extradition from Goa and the confession of Constable Ramesh regarding bribery, the prosecution’s case is solid. Conviction under Sections 302 and 120B IPC is highly probable."
+    }
+  ]
+}

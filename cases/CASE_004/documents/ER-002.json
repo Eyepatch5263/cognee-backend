@@ -1,0 +1,11 @@
+{
+  "document_id": "ER-002",
+  "document_type": "Forensic_report",
+  "metadata": {
+    "report_id": "FORENSIC-CURRENCY-ACB-GZB-2023-087",
+    "prepared_by": "Central Forensic Science Laboratory, Lucknow",
+    "date": "2023-10-14",
+    "evidence_item": "₹50,000 in Currency Notes (Denominations: ₹500 x 100)"
+  },
+  "content": "The currency notes seized during the trap operation on 12.10.2023 were submitted for forensic analysis. The following findings are reported: 1. Serial numbers of the seized notes were cross-referenced with the ACB’s official marked currency ledger (Ref: ACB/MarkedNotes/2023/Trap-087). The ledger indicates that the serial numbers claimed to be 'ACB-marked' (e.g., E032156789, E032156790, etc.) were never issued by the ACB for any trap operation. 2. Upon further investigation, these exact serial numbers were found in the withdrawal record of Axis Bank, Noida, dated 11.10.2023, under account number XXXX-XXXX-5432, withdrawn by one Vikram Kumar. 3. The notes are genuine Indian currency, with no signs of tampering or counterfeiting. 4. The notes bear the same batch and printing characteristics as those issued by the Reserve Bank of India in July 2023. Conclusion: The seized currency notes are authentic but were not the original notes issued by the ACB for the trap. The claim that the notes were 'ACB-marked' is factually incorrect. The notes were likely obtained from a public bank withdrawal and later used in the transaction."
+}

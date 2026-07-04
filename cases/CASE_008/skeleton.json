@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "case_id": "008",
+    "case_type": "hit_and_run",
+    "difficulty": "medium",
+    "incident_date": "2024-03-17",
+    "location": "Sector 45, Gurgaon, Haryana",
+    "summary": "On the evening of March 17, 2024, a pedestrian, Mr. Arjun Mehta (58), was struck and killed while crossing the pedestrian crossing near the Gurgaon Central Mall. The driver fled the scene without stopping. The victim’s body was found with multiple fractures and a distinct tire tread pattern consistent with a mid-size SUV. The police recovered a shattered left headlight casing and a fragment of blue paint near the impact zone. Initial CCTV footage from the mall’s main entrance showed a blue Mahindra XUV700 speeding away, but the license plate was partially obscured by mud. Two witnesses claimed to have seen the driver as a young man in a hoodie, while a third reported hearing a female voice shouting after the impact. The vehicle was traced to a registered owner, Ms. Priya Sharma, a corporate lawyer, but her alibi—attending a virtual board meeting from 7:15 PM to 9:00 PM—was corroborated by her company’s Zoom logs and screen recordings. However, her husband, Rohan Sharma, a freelance photographer, was seen near the scene on a different CCTV feed, driving a blue SUV matching the description, but he claimed he was returning from a photo shoot in Sohna Road and had not been near the mall. Forensic analysis of the vehicle recovered from Rohan’s garage showed recent repairs to the front left fender and a mismatched headlight, but the mechanical inspection report stated the damage was 'at least two weeks old.' The case is complicated by conflicting witness accounts, a partial alibi, and a suspiciously timed insurance claim filed by Priya Sharma two days after the incident."
+  },
+  "hidden_ground_truth": {
+    "actual_criminal": "Rohan Sharma",
+    "accomplices": [
+      "Vikas Mehta"
+    ],
+    "true_motive": "To prevent Arjun Mehta from exposing financial fraud in Vikas Mehta’s startup, which was secretly funded by Priya Sharma’s law firm’s client trust account. Rohan was hired by Vikas to intimidate Arjun, but the confrontation turned fatal.",
+    "true_timeline": [
+      "18:45: Arjun Mehta leaves his office near Sector 45, walking toward the bus stop.",
+      "18:52: Rohan Sharma, driving a modified blue Mahindra XUV700 (plate: HR-14-AB-7891), picks up Vikas Mehta from a side alley near the mall.",
+      "18:54: Rohan and Vikas argue over unpaid dues; Vikas demands Arjun be 'taken care of.'",
+      "18:56: Rohan deliberately hits Arjun Mehta at the pedestrian crossing, then accelerates away.",
+      "18:57: Rohan drops Vikas at a bus stop 3 km away, instructing him to take a bus to Gurgaon Railway Station.",
+      "18:59: Rohan returns home, washes the car, and replaces the damaged headlight with a used one from a junkyard.",
+      "19:05: Priya Sharma logs into her Zoom meeting from home, unaware of Rohan’s actions.",
+      "19:15: Vikas Mehta boards a train to Delhi, deleting all messages with Rohan.",
+      "19:30: Rohan uploads a fake photo shoot timestamped 18:00–19:30 from his phone’s gallery, using geotagged images from Sohna Road taken days earlier."
+    ],
+    "lying_witnesses": [
+      "Priya Sharma",
+      "Vikas Mehta",
+      "Mrs. Anjali Kapoor"
+    ],
+    "forged_evidence": [
+      "Fake photo gallery timestamps on Rohan Sharma’s phone, fabricated to support his alibi",
+      "Modified mechanical inspection report by a corrupt garage owner, altering damage age from 2 days to 14 days",
+      "Altered Zoom meeting recording metadata to show Priya Sharma was present the entire time (she was briefly away from screen at 18:58–19:02)"
+    ],
+    "injected_contradictions": [
+      {
+        "description": "Witness Mrs. Kapoor claims she saw a woman driving the SUV, but CCTV shows only a male driver; she later admits she was nearsighted and confused the hoodie’s silhouette."
+      },
+      {
+        "description": "The forensic report states the paint fragment matches Priya Sharma’s registered vehicle, but the vehicle’s paint was repainted 3 months ago—while the fragment matches a factory color no longer used."
+      },
+      {
+        "description": "Rohan claims he was at Sohna Road at 18:30, but his phone’s Bluetooth logs show it was paired with Vikas’s phone near Sector 45 at 18:50."
+      }
+    ]
+  },
+  "perspectives": [
+    "timeline reconstruction",
+    "witness credibility",
+    "financial motive",
+    "family relationships",
+    "digital forensics",
+    "forensic evidence",
+    "alibi verification",
+    "communication graph"
+  ],
+  "contradictions": [
+    {
+      "type": "timeline",
+      "severity": "medium",
+      "claim_a": "Priya Sharma was in a Zoom meeting from 7:15 PM to 9:00 PM, confirmed by company logs.",
+      "claim_b": "Her phone’s location data shows it was moved from home to the garage at 7:58 PM, and returned at 8:03 PM—during which time Rohan was at the accident scene."
+    },
+    {
+      "type": "testimony",
+      "severity": "high",
+      "claim_a": "Witness Mrs. Anjali Kapoor states she saw a woman in a blue SUV fleeing the scene.",
+      "claim_b": "CCTV footage from the mall’s east gate clearly shows a male driver with a hoodie, no visible female passenger."
+    },
+    {
+      "type": "forensic",
+      "severity": "critical",
+      "claim_a": "The paint fragment recovered at the scene matches the factory color code of Priya Sharma’s registered XUV700.",
+      "claim_b": "The vehicle’s official service record shows it was repainted in a different shade in January 2024, and the factory color is no longer in use."
+    },
+    {
+      "type": "timeline",
+      "severity": "medium",
+      "claim_a": "Rohan Sharma claims he was photographing in Sohna Road from 6:30 PM to 9:00 PM, with geotagged photos as proof.",
+      "claim_b": "His phone’s Bluetooth logs show pairing with Vikas Mehta’s phone at 6:50 PM and again at 8:50 PM—both locations are within 500m of the accident site."
+    },
+    {
+      "type": "forensic",
+      "severity": "high",
+      "claim_a": "Mechanical inspection report states the front fender damage is at least 14 days old.",
+      "claim_b": "The garage owner’s digital invoice shows payment for headlight replacement and fender repair was made on March 16, 2024, at 11:47 PM."
+    }
+  ],
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "id": "P001",
+        "type": "Person",
+        "label": "Rohan Sharma"
+      },
+      {
+        "id": "P002",
+        "type": "Person",
+        "label": "Priya Sharma"
+      },
+      {
+        "id": "P003",
+        "type": "Person",
+        "label": "Arjun Mehta"
+      },
+      {
+        "id": "P004",
+        "type": "Person",
+        "label": "Vikas Mehta"
+      },
+      {
+        "id": "P005",
+        "type": "Person",
+        "label": "Mrs. Anjali Kapoor"
+      },
+      {
+        "id": "E001",
+        "type": "Event",
+        "label": "Hit and Run Incident"
+      },
+      {
+        "id": "V001",
+        "type": "Asset",
+        "label": "Blue Mahindra XUV700 (HR-14-AB-7891)"
+      },
+      {
+        "id": "L001",
+        "type": "Location",
+        "label": "Sector 45 Pedestrian Crossing"
+      },
+      {
+        "id": "L002",
+        "type": "Location",
+        "label": "Rohan Sharma's Garage"
+      },
+      {
+        "id": "L003",
+        "type": "Location",
+        "label": "Sohna Road"
+      },
+      {
+        "id": "E002",
+        "type": "Evidence",
+        "label": "Blue Paint Fragment"
+      },
+      {
+        "id": "E003",
+        "type": "Evidence",
+        "label": "Shattered Headlight Casing"
+      },
+      {
+        "id": "E004",
+        "type": "Evidence",
+        "label": "Zoom Meeting Recording"
+      },
+      {
+        "id": "E005",
+        "type": "Evidence",
+        "label": "Forged Photo Gallery"
+      },
+      {
+        "id": "E006",
+        "type": "Evidence",
+        "label": "Mechanical Inspection Report"
+      },
+      {
+        "id": "C001",
+        "type": "Communication",
+        "label": "Rohan-Vikas Bluetooth Pairing"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P001",
+        "target": "E001",
+        "relation": "committed"
+      },
+      {
+        "source": "P001",
+        "target": "V001",
+        "relation": "owns"
+      },
+      {
+        "source": "P002",
+        "target": "V001",
+        "relation": "registered_owner"
+      },
+      {
+        "source": "P001",
+        "target": "P004",
+        "relation": "met_at"
+      },
+      {
+        "source": "P004",
+        "target": "P003",
+        "relation": "has_grudge_with"
+      },
+      {
+        "source": "P001",
+        "target": "L001",
+        "relation": "visited"
+      },
+      {
+        "source": "V001",
+        "target": "L001",
+        "relation": "was_at"
+      },
+      {
+        "source": "E002",
+        "target": "V001",
+        "relation": "matches_paint"
+      },
+      {
+        "source": "E005",
+        "target": "P001",
+        "relation": "created_by"
+      },
+      {
+        "source": "C001",
+        "target": "P001",
+        "relation": "involves"
+      },
+      {
+        "source": "C001",
+        "target": "P004",
+        "relation": "involves"
+      },
+      {
+        "source": "E006",
+        "target": "V001",
+        "relation": "assesses"
+      },
+      {
+        "source": "E004",
+        "target": "P002",
+        "relation": "supports_alibi"
+      },
+      {
+        "source": "P005",
+        "target": "E001",
+        "relation": "testified_against"
+      },
+      {
+        "source": "P002",
+        "target": "P001",
+        "relation": "married_to"
+      },
+      {
+        "source": "P004",
+        "target": "E001",
+        "relation": "conspired_in"
+      }
+    ]
+  }
+}

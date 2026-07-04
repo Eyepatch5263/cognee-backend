@@ -1,0 +1,11 @@
+{
+  "document_id": "ER-003",
+  "document_type": "Digital_Forensics_Report",
+  "metadata": {
+    "report_id": "DFR-ACB-2023-087",
+    "device": "Rajiv Sharma’s Samsung Galaxy S21",
+    "date_extracted": "2023-08-15",
+    "analyst": "Shri Arjun Patel, Cyber Forensics Cell, ACB"
+  },
+  "content": "Forensic extraction of WhatsApp messages from Rajiv Sharma’s device (backup ID: ACB-007-S21-0815) revealed 17 encrypted conversations with Vikram Singh (number: +91-98765-43210) between January 2021 and August 2023.\n\nKey excerpts:\n- 18th March 2022: \"Vikram: Done. ₹5L cleared. Paperwork done. No trace.\" \n- 22nd May 2022: \"Rajiv: Same as before. 5 more. Need to move fast. Anjali’s name this time.\"\n- 10th July 2022: \"Vikram: Last one. After this, I’m out. Too risky.\"\n\nAll messages were deleted from the app interface but recovered from device memory. Timestamps align with cash deposits. No messages reference inheritance, land sales, or legitimate income. The term 'commission' was used 9 times, always in context of \"clearing files\" or \"approvals.\" \n\nConclusion: The WhatsApp communications confirm a pattern of bribes tied to land regularization approvals. The use of coded language and encrypted deletion indicates intent to conceal. No evidence supports the claim of inheritance as a funding source."
+}

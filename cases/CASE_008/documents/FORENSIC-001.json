@@ -1,0 +1,10 @@
+{
+  "document_id": "FORENSIC-001",
+  "document_type": "forensic_report",
+  "metadata": {
+    "lab": "Central Forensic Science Laboratory, Chandigarh",
+    "report_no": "CFSL/2024/HR-087",
+    "date": "2024-03-20"
+  },
+  "content": "1. Blue paint fragment recovered from pedestrian crossing (E002) was analyzed via FTIR and XRF spectroscopy. Match found with factory color code 'Azure Blue (Code: MB-2023)' used on Mahindra XUV700 models manufactured between 2021-2023. 2. Registered vehicle (HR-14-AB-7891) was repainted in 'Midnight Sapphire' (Code: MB-2024) on January 15, 2024, per service records. The factory color is obsolete and no longer used in production. 3. Shattered headlight casing (E003) matches the left headlight assembly of the registered vehicle, but the lens material is from a 2020 model, not the 2023 model registered. 4. Tire tread pattern (12.5 cm width) matches Michelin Latitude Tour HP tires — standard fitment on XUV700. 5. Conclusion: The paint fragment does not originate from the currently registered vehicle. The headlight casing is from a replacement part, inconsistent with the vehicle’s original equipment. The vehicle involved was likely modified or had non-original parts installed."
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "CALLLOGS-001",
+  "document_type": "Call_Logs",
+  "metadata": {
+    "device": "Vikram Mehta’s Personal Phone (IMEI: 359876012345678)",
+    "date_range": "2023-10-12 to 2023-10-15",
+    "analyst": "Noida Cyber Forensics Unit"
+  },
+  "content": "Forensic recovery of deleted call logs reveals two calls from Vikram Mehta’s phone to an unlisted number (98765 43210) registered to Rohan Mehta on October 12, 2023, at 10:12 and 10:47. Duration: 27 seconds and 22 seconds. The calls were manually deleted from the device using a third-party app ('Call Eraser Pro'). The number was not in Vikram’s contact list. Call metadata shows the receiver was active in Ballabhgarh. The content of the calls was not recovered. This contradicts Vikram’s claim of 'no contact for over a year.' The calls occurred 3 days before the kidnapping. No further contact recorded."
+}

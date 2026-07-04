@@ -1,0 +1,332 @@
+```json
+{
+  "CASE METADATA": {
+    "case_id": "006",
+    "case_type": "business_fraud",
+    "difficulty": "hard",
+    "incident_date": "2023-08-15",
+    "location": "Navi Mumbai, Maharashtra",
+    "summary": "In August 2023, auditors from the Ministry of Corporate Affairs flagged severe irregularities in the financial statements of VedaCorp Solutions Pvt. Ltd., a mid-sized IT services firm based in Navi Mumbai. The company reported a 47% year-over-year revenue surge and a net profit of ₹18.2 crore, despite industry-wide slowdowns and declining client retention. Internal whistleblower complaints led to a forensic audit, revealing that ₹12.7 crore in revenue was fabricated through shell companies linked to directors and their relatives. The audit also uncovered forged board meeting minutes approving non-existent vendor contracts and altered bank transaction logs. Shareholders, including a retired government officer and a family trust, filed a petition alleging misappropriation and breach of fiduciary duty. The case escalated when two key witnesses — the CFO and the external auditor — retracted their initial statements, claiming coercion. The company’s founder, Arjun Mehta, denies all allegations, pointing to a disgruntled ex-employee as the source of the leak. Meanwhile, a mysterious ₹5 crore transfer from VedaCorp’s payroll account to a dormant account under the name 'Sahara Ventures' has gone unexplained, despite being flagged by the bank’s AI fraud detection system. Regulatory authorities suspect a multi-layered scheme involving forged invoices, bribed auditors, and a complex web of shell entities to launder funds and inflate equity value ahead of a planned IPO."
+  },
+  "HIDDEN GROUND TRUTH": {
+    "actual_criminal": "Arjun Mehta",
+    "accomplices": [
+      "Priya Mehta",
+      "Rajiv Desai",
+      "Dr. Anjali Kulkarni"
+    ],
+    "true_motive": "To inflate VedaCorp’s valuation to secure a ₹250 crore private equity investment and exit before the fraud was discovered, while diverting ₹18 crore to offshore accounts under family trusts.",
+    "true_timeline": [
+      "2022-11-03: Arjun Mehta instructs CFO Rajiv Desai to create fake vendor contracts with shell companies controlled by his wife, Priya Mehta.",
+      "2022-12-15: Dr. Anjali Kulkarni, a board member and external auditor, is bribed with ₹15 lakh to approve falsified financials without independent verification.",
+      "2023-01-20: ₹8 crore is routed through Sahara Ventures (shell entity) to a Cyprus-based trust via three intermediary accounts.",
+      "2023-03-10: Forged board minutes are created to retroactively approve the vendor contracts, signed by a digitally cloned signature of independent director Mr. Ravi Nair (who was on leave).",
+      "2023-05-12: Ex-employee Rohan Verma is terminated after raising concerns internally; he later files a whistleblower complaint.",
+      "2023-07-28: Priya Mehta withdraws ₹3.2 crore from Sahara Ventures into her personal account under the guise of 'dividend income'.",
+      "2023-08-10: External auditor firm 'Spectrum Audit' issues a clean opinion based on falsified documents provided by Rajiv Desai.",
+      "2023-08-15: MCA audit triggers investigation; Rajiv Desai and Dr. Kulkarni are approached by CBI for questioning but are bribed to retract testimony.",
+      "2023-08-20: Rajiv Desai files a false affidavit claiming Rohan Verma planted the fraud to sabotage the IPO.",
+      "2023-08-25: Dr. Kulkarni recants her initial statement, claiming she was pressured by Arjun Mehta to sign off — but later retracts again, saying she was threatened by 'unknown persons'."
+    ],
+    "lying_witnesses": [
+      "Rajiv Desai",
+      "Dr. Anjali Kulkarni",
+      "Rohan Verma"
+    ],
+    "forged_evidence": [
+      "Board meeting minutes dated 2023-03-10 with digitally forged signature of Mr. Ravi Nair",
+      "Invoices from 'Sahara Ventures' and 'Nirvana Tech Solutions' with altered GSTINs and non-existent company registrations",
+      "Bank transaction logs from Axis Bank showing 'Sahara Ventures' as a legitimate vendor — later proven to be manipulated by internal IT staff under Rajiv Desai's orders",
+      "Email thread from Priya Mehta to Arjun Mehta titled 'Dividend Distribution Plan' — timestamp backdated to 2022-10-15 to appear before the fraud began"
+    ],
+    "injected_contradictions": [
+      "Rajiv Desai claims in his first affidavit that he acted alone under Arjun Mehta’s orders, but later testifies that Dr. Kulkarni initiated the fraud scheme.",
+      "Dr. Kulkarni’s initial statement says she was unaware of the shell companies, but her personal email shows she received a ₹15 lakh payment from Sahara Ventures on 2023-01-22 — which she denies ever receiving.",
+      "Rohan Verma’s whistleblower email claims he saw Arjun Mehta sign the forged minutes, but the digital metadata of the email shows it was sent from a device logged into Priya Mehta’s account.",
+      "The external auditor’s report states that all vendor entities were verified via physical site visits — yet CCTV footage from the addresses listed shows no such visits occurred.",
+      "Arjun Mehta claims the ₹5 crore transfer to Sahara Ventures was a 'loan repayment' from a client, but no client named Sahara Ventures exists in VedaCorp’s client database.",
+      "Priya Mehta claims she never owned Sahara Ventures, but the MCA registry shows her as the sole director appointed in 2022 — a filing she denies authorizing."
+    ]
+  },
+  "REASONING PERSPECTIVES": [
+    "money flow",
+    "ownership graph",
+    "decision authority",
+    "communication graph",
+    "digital forensics",
+    "witness credibility",
+    "financial motive",
+    "regulatory compliance",
+    "timeline reconstruction",
+    "alibi verification"
+  ],
+  "CONTRADICTIONS": [
+    {
+      "type": "financial",
+      "severity": "critical",
+      "claim_a": "Rajiv Desai claims the ₹5 crore transfer to Sahara Ventures was a legitimate client repayment for services rendered in Q4 2022.",
+      "claim_b": "VedaCorp’s client ledger shows no client named Sahara Ventures, and no contract or invoice exists for any service rendered to them in Q4 2022."
+    },
+    {
+      "type": "testimony",
+      "severity": "high",
+      "claim_a": "Dr. Anjali Kulkarni initially testified that she never received any payment from Sahara Ventures.",
+      "claim_b": "Bank records show a ₹15 lakh credit to her personal account from Sahara Ventures on 2023-01-22, with a memo 'Audit Fee - Q4 2022'."
+    },
+    {
+      "type": "forensic",
+      "severity": "high",
+      "claim_a": "The board meeting minutes of 2023-03-10 bear the digital signature of independent director Ravi Nair.",
+      "claim_b": "Ravi Nair was on medical leave in Goa from 2023-02-28 to 2023-03-18 and never accessed VedaCorp’s digital signing system during that period."
+    },
+    {
+      "type": "timeline",
+      "severity": "medium",
+      "claim_a": "Rohan Verma claims he discovered the fraud on 2023-06-10 and reported it immediately to HR.",
+      "claim_b": "HR email logs show his complaint was filed on 2023-07-03, and he was terminated on 2023-07-05 — two days after the first internal audit flagged anomalies."
+    },
+    {
+      "type": "financial",
+      "severity": "critical",
+      "claim_a": "The audited financials show ₹18.2 crore net profit, supported by ₹42 crore in revenue from 12 vendors.",
+      "claim_b": "Only 3 of the 12 vendors are registered with the GSTN; the rest have invalid or suspended registrations, and their bank accounts were opened after the alleged transactions."
+    },
+    {
+      "type": "testimony",
+      "severity": "high",
+      "claim_a": "Priya Mehta claims she had no knowledge of Sahara Ventures and never signed any documents related to it.",
+      "claim_b": "MCA filings show her Aadhaar-linked digital signature was used to register Sahara Ventures on 2022-11-12 — the same day she was in Delhi attending a family wedding, per flight records."
+    },
+    {
+      "type": "communication",
+      "severity": "medium",
+      "claim_a": "An email from Arjun Mehta to Rajiv Desai dated 2023-01-05 says, 'Make sure Kulkarni gets her bonus — she’s doing great work.'",
+      "claim_b": "The email server logs show this email was sent from Priya Mehta’s device, not Arjun Mehta’s, and the IP address matches the company’s internal network during off-hours."
+    },
+    {
+      "type": "financial",
+      "severity": "high",
+      "claim_a": "The external auditor’s report states that all vendor payments were verified via bank reconciliation.",
+      "claim_b": "The bank reconciliation report submitted to the auditor was manually edited in Excel — metadata shows the original file was overwritten on 2023-07-18, after the audit began."
+    },
+    {
+      "type": "timeline",
+      "severity": "medium",
+      "claim_a": "Arjun Mehta claims he was in Singapore on business from 2023-03-01 to 2023-03-15 and could not have approved the forged minutes.",
+      "claim_b": "His passport shows he returned on 2023-03-10, and airport CCTV shows him entering the VedaCorp office at 10:45 PM that same night — the same time the minutes were digitally signed."
+    },
+    {
+      "type": "ownership",
+      "severity": "critical",
+      "claim_a": "Sahara Ventures is listed as a private limited company with 100% ownership by Priya Mehta.",
+      "claim_b": "The company’s PAN and GSTIN were registered using a duplicate Aadhaar card of Dr. Anjali Kulkarni — which she claims was stolen in 2021 but never reported."
+    }
+  ],
+  "EXPECTED KNOWLEDGE GRAPH": {
+    "nodes": [
+      {
+        "id": "P1",
+        "type": "Person",
+        "label": "Arjun Mehta"
+      },
+      {
+        "id": "P2",
+        "type": "Person",
+        "label": "Priya Mehta"
+      },
+      {
+        "id": "P3",
+        "type": "Person",
+        "label": "Rajiv Desai"
+      },
+      {
+        "id": "P4",
+        "type": "Person",
+        "label": "Dr. Anjali Kulkarni"
+      },
+      {
+        "id": "P5",
+        "type": "Person",
+        "label": "Rohan Verma"
+      },
+      {
+        "id": "P6",
+        "type": "Person",
+        "label": "Ravi Nair"
+      },
+      {
+        "id": "O1",
+        "type": "Organization",
+        "label": "VedaCorp Solutions Pvt. Ltd."
+      },
+      {
+        "id": "O2",
+        "type": "Organization",
+        "label": "Sahara Ventures"
+      },
+      {
+        "id": "O3",
+        "type": "Organization",
+        "label": "Spectrum Audit"
+      },
+      {
+        "id": "E1",
+        "type": "Event",
+        "label": "Board Meeting (2023-03-10)"
+      },
+      {
+        "id": "E2",
+        "type": "Event",
+        "label": "₹5 Cr Transfer to Sahara Ventures"
+      },
+      {
+        "id": "E3",
+        "type": "Event",
+        "label": "Whistleblower Complaint (Rohan Verma)"
+      },
+      {
+        "id": "E4",
+        "type": "Event",
+        "label": "MCA Audit Trigger"
+      },
+      {
+        "id": "A1",
+        "type": "Asset",
+        "label": "Forged Board Minutes (2023-03-10)"
+      },
+      {
+        "id": "A2",
+        "type": "Asset",
+        "label": "₹15 Lakh Payment to Dr. Kulkarni"
+      },
+      {
+        "id": "A3",
+        "type": "Asset",
+        "label": "Digital Signature of Ravi Nair"
+      },
+      {
+        "id": "C1",
+        "type": "Communication",
+        "label": "Email: 'Make sure Kulkarni gets her bonus'"
+      },
+      {
+        "id": "L1",
+        "type": "Location",
+        "label": "VedaCorp Office, Navi Mumbai"
+      },
+      {
+        "id": "L2",
+        "type": "Location",
+        "label": "Sahara Ventures Registered Address (Mumbai)"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P1",
+        "target": "O1",
+        "relation": "owns"
+      },
+      {
+        "source": "P2",
+        "target": "O2",
+        "relation": "owns"
+      },
+      {
+        "source": "P3",
+        "target": "O1",
+        "relation": "employed_as"
+      },
+      {
+        "source": "P4",
+        "target": "O1",
+        "relation": "auditor"
+      },
+      {
+        "source": "P4",
+        "target": "O3",
+        "relation": "employed_as"
+      },
+      {
+        "source": "P5",
+        "target": "O1",
+        "relation": "former_employee"
+      },
+      {
+        "source": "P6",
+        "target": "O1",
+        "relation": "independent_director"
+      },
+      {
+        "source": "O1",
+        "target": "O2",
+        "relation": "transferred_to"
+      },
+      {
+        "source": "O2",
+        "target": "P4",
+        "relation": "transferred_to"
+      },
+      {
+        "source": "P1",
+        "target": "E1",
+        "relation": "authorized"
+      },
+      {
+        "source": "E1",
+        "target": "A1",
+        "relation": "produced"
+      },
+      {
+        "source": "A1",
+        "target": "P6",
+        "relation": "forged_signature"
+      },
+      {
+        "source": "C1",
+        "target": "P4",
+        "relation": "sent_to"
+      },
+      {
+        "source": "C1",
+        "target": "P2",
+        "relation": "originated_from"
+      },
+      {
+        "source": "P3",
+        "target": "A1",
+        "relation": "created"
+      },
+      {
+        "source": "P3",
+        "target": "A2",
+        "relation": "authorized_transfer"
+      },
+      {
+        "source": "P1",
+        "target": "E2",
+        "relation": "ordered"
+      },
+      {
+        "source": "P5",
+        "target": "E3",
+        "relation": "filed"
+      },
+      {
+        "source": "E3",
+        "target": "E4",
+        "relation": "triggered"
+      },
+      {
+        "source": "O1",
+        "target": "L1",
+        "relation": "located_at"
+      },
+      {
+        "source": "O2",
+        "target": "L2",
+        "relation": "registered_at"
+      }
+    ]
+  }
+}
+```

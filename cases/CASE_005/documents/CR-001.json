@@ -1,0 +1,11 @@
+{
+  "document_id": "CR-001",
+  "document_type": "financial_records",
+  "metadata": {
+    "record_id": "CR/VedaCorp/2023/005",
+    "period": "FY 2021–22",
+    "source": "VedaCorp Corporate Bank Accounts",
+    "generated_by": "ED Forensic Finance Team"
+  },
+  "content": "Bank Statement Summary — VedaCorp Solutions Pvt. Ltd. (SBIN A/C: 7890123456)\n\n- Total inflows: ₹182.4 crore (reported revenue)\n- Actual verified client payments: ₹126.8 crore (from 3 existing clients: TechNova Dubai, InfraSoft Singapore, DataCore Bengaluru)\n- Suspicious outflows:\n  - ₹4.2 crore to Sparrow Holdings (Feb 15, 2022)\n  - ₹7.5 crore to Vireo Ventures (Jul 12, 2022)\n  - ₹6.0 crore to Goa property via Mauritius (Aug 15, 2022)\n- Total siphoned: ₹18.7 crore\n\nRevenue recognition: 47% increase attributed to 12 new enterprise clients — but CRM shows 0 new clients added in FY2022. All 'new client' entries were backdated from FY2021. Invoices were issued in bulk on Dec 31, 2021, for services rendered 'in FY2022' — a clear violation of Ind AS 18.\n\nConclusion: Revenue was artificially inflated. Asset stripping occurred through fake consultancy invoices and circular fund transfers."
+}

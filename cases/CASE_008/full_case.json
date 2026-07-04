@@ -1,0 +1,499 @@
+{
+  "skeleton": {
+    "metadata": {
+      "case_id": "008",
+      "case_type": "hit_and_run",
+      "difficulty": "medium",
+      "incident_date": "2024-03-17",
+      "location": "Sector 45, Gurgaon, Haryana",
+      "summary": "On the evening of March 17, 2024, a pedestrian, Mr. Arjun Mehta (58), was struck and killed while crossing the pedestrian crossing near the Gurgaon Central Mall. The driver fled the scene without stopping. The victim\u2019s body was found with multiple fractures and a distinct tire tread pattern consistent with a mid-size SUV. The police recovered a shattered left headlight casing and a fragment of blue paint near the impact zone. Initial CCTV footage from the mall\u2019s main entrance showed a blue Mahindra XUV700 speeding away, but the license plate was partially obscured by mud. Two witnesses claimed to have seen the driver as a young man in a hoodie, while a third reported hearing a female voice shouting after the impact. The vehicle was traced to a registered owner, Ms. Priya Sharma, a corporate lawyer, but her alibi\u2014attending a virtual board meeting from 7:15 PM to 9:00 PM\u2014was corroborated by her company\u2019s Zoom logs and screen recordings. However, her husband, Rohan Sharma, a freelance photographer, was seen near the scene on a different CCTV feed, driving a blue SUV matching the description, but he claimed he was returning from a photo shoot in Sohna Road and had not been near the mall. Forensic analysis of the vehicle recovered from Rohan\u2019s garage showed recent repairs to the front left fender and a mismatched headlight, but the mechanical inspection report stated the damage was 'at least two weeks old.' The case is complicated by conflicting witness accounts, a partial alibi, and a suspiciously timed insurance claim filed by Priya Sharma two days after the incident."
+    },
+    "hidden_ground_truth": {
+      "actual_criminal": "Rohan Sharma",
+      "accomplices": [
+        "Vikas Mehta"
+      ],
+      "true_motive": "To prevent Arjun Mehta from exposing financial fraud in Vikas Mehta\u2019s startup, which was secretly funded by Priya Sharma\u2019s law firm\u2019s client trust account. Rohan was hired by Vikas to intimidate Arjun, but the confrontation turned fatal.",
+      "true_timeline": [
+        "18:45: Arjun Mehta leaves his office near Sector 45, walking toward the bus stop.",
+        "18:52: Rohan Sharma, driving a modified blue Mahindra XUV700 (plate: HR-14-AB-7891), picks up Vikas Mehta from a side alley near the mall.",
+        "18:54: Rohan and Vikas argue over unpaid dues; Vikas demands Arjun be 'taken care of.'",
+        "18:56: Rohan deliberately hits Arjun Mehta at the pedestrian crossing, then accelerates away.",
+        "18:57: Rohan drops Vikas at a bus stop 3 km away, instructing him to take a bus to Gurgaon Railway Station.",
+        "18:59: Rohan returns home, washes the car, and replaces the damaged headlight with a used one from a junkyard.",
+        "19:05: Priya Sharma logs into her Zoom meeting from home, unaware of Rohan\u2019s actions.",
+        "19:15: Vikas Mehta boards a train to Delhi, deleting all messages with Rohan.",
+        "19:30: Rohan uploads a fake photo shoot timestamped 18:00\u201319:30 from his phone\u2019s gallery, using geotagged images from Sohna Road taken days earlier."
+      ],
+      "lying_witnesses": [
+        "Priya Sharma",
+        "Vikas Mehta",
+        "Mrs. Anjali Kapoor"
+      ],
+      "forged_evidence": [
+        "Fake photo gallery timestamps on Rohan Sharma\u2019s phone, fabricated to support his alibi",
+        "Modified mechanical inspection report by a corrupt garage owner, altering damage age from 2 days to 14 days",
+        "Altered Zoom meeting recording metadata to show Priya Sharma was present the entire time (she was briefly away from screen at 18:58\u201319:02)"
+      ],
+      "injected_contradictions": [
+        {
+          "description": "Witness Mrs. Kapoor claims she saw a woman driving the SUV, but CCTV shows only a male driver; she later admits she was nearsighted and confused the hoodie\u2019s silhouette."
+        },
+        {
+          "description": "The forensic report states the paint fragment matches Priya Sharma\u2019s registered vehicle, but the vehicle\u2019s paint was repainted 3 months ago\u2014while the fragment matches a factory color no longer used."
+        },
+        {
+          "description": "Rohan claims he was at Sohna Road at 18:30, but his phone\u2019s Bluetooth logs show it was paired with Vikas\u2019s phone near Sector 45 at 18:50."
+        }
+      ]
+    },
+    "perspectives": [
+      "timeline reconstruction",
+      "witness credibility",
+      "financial motive",
+      "family relationships",
+      "digital forensics",
+      "forensic evidence",
+      "alibi verification",
+      "communication graph"
+    ],
+    "contradictions": [
+      {
+        "type": "timeline",
+        "severity": "medium",
+        "claim_a": "Priya Sharma was in a Zoom meeting from 7:15 PM to 9:00 PM, confirmed by company logs.",
+        "claim_b": "Her phone\u2019s location data shows it was moved from home to the garage at 7:58 PM, and returned at 8:03 PM\u2014during which time Rohan was at the accident scene."
+      },
+      {
+        "type": "testimony",
+        "severity": "high",
+        "claim_a": "Witness Mrs. Anjali Kapoor states she saw a woman in a blue SUV fleeing the scene.",
+        "claim_b": "CCTV footage from the mall\u2019s east gate clearly shows a male driver with a hoodie, no visible female passenger."
+      },
+      {
+        "type": "forensic",
+        "severity": "critical",
+        "claim_a": "The paint fragment recovered at the scene matches the factory color code of Priya Sharma\u2019s registered XUV700.",
+        "claim_b": "The vehicle\u2019s official service record shows it was repainted in a different shade in January 2024, and the factory color is no longer in use."
+      },
+      {
+        "type": "timeline",
+        "severity": "medium",
+        "claim_a": "Rohan Sharma claims he was photographing in Sohna Road from 6:30 PM to 9:00 PM, with geotagged photos as proof.",
+        "claim_b": "His phone\u2019s Bluetooth logs show pairing with Vikas Mehta\u2019s phone at 6:50 PM and again at 8:50 PM\u2014both locations are within 500m of the accident site."
+      },
+      {
+        "type": "forensic",
+        "severity": "high",
+        "claim_a": "Mechanical inspection report states the front fender damage is at least 14 days old.",
+        "claim_b": "The garage owner\u2019s digital invoice shows payment for headlight replacement and fender repair was made on March 16, 2024, at 11:47 PM."
+      }
+    ],
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "P001",
+          "type": "Person",
+          "label": "Rohan Sharma"
+        },
+        {
+          "id": "P002",
+          "type": "Person",
+          "label": "Priya Sharma"
+        },
+        {
+          "id": "P003",
+          "type": "Person",
+          "label": "Arjun Mehta"
+        },
+        {
+          "id": "P004",
+          "type": "Person",
+          "label": "Vikas Mehta"
+        },
+        {
+          "id": "P005",
+          "type": "Person",
+          "label": "Mrs. Anjali Kapoor"
+        },
+        {
+          "id": "E001",
+          "type": "Event",
+          "label": "Hit and Run Incident"
+        },
+        {
+          "id": "V001",
+          "type": "Asset",
+          "label": "Blue Mahindra XUV700 (HR-14-AB-7891)"
+        },
+        {
+          "id": "L001",
+          "type": "Location",
+          "label": "Sector 45 Pedestrian Crossing"
+        },
+        {
+          "id": "L002",
+          "type": "Location",
+          "label": "Rohan Sharma's Garage"
+        },
+        {
+          "id": "L003",
+          "type": "Location",
+          "label": "Sohna Road"
+        },
+        {
+          "id": "E002",
+          "type": "Evidence",
+          "label": "Blue Paint Fragment"
+        },
+        {
+          "id": "E003",
+          "type": "Evidence",
+          "label": "Shattered Headlight Casing"
+        },
+        {
+          "id": "E004",
+          "type": "Evidence",
+          "label": "Zoom Meeting Recording"
+        },
+        {
+          "id": "E005",
+          "type": "Evidence",
+          "label": "Forged Photo Gallery"
+        },
+        {
+          "id": "E006",
+          "type": "Evidence",
+          "label": "Mechanical Inspection Report"
+        },
+        {
+          "id": "C001",
+          "type": "Communication",
+          "label": "Rohan-Vikas Bluetooth Pairing"
+        }
+      ],
+      "edges": [
+        {
+          "source": "P001",
+          "target": "E001",
+          "relation": "committed"
+        },
+        {
+          "source": "P001",
+          "target": "V001",
+          "relation": "owns"
+        },
+        {
+          "source": "P002",
+          "target": "V001",
+          "relation": "registered_owner"
+        },
+        {
+          "source": "P001",
+          "target": "P004",
+          "relation": "met_at"
+        },
+        {
+          "source": "P004",
+          "target": "P003",
+          "relation": "has_grudge_with"
+        },
+        {
+          "source": "P001",
+          "target": "L001",
+          "relation": "visited"
+        },
+        {
+          "source": "V001",
+          "target": "L001",
+          "relation": "was_at"
+        },
+        {
+          "source": "E002",
+          "target": "V001",
+          "relation": "matches_paint"
+        },
+        {
+          "source": "E005",
+          "target": "P001",
+          "relation": "created_by"
+        },
+        {
+          "source": "C001",
+          "target": "P001",
+          "relation": "involves"
+        },
+        {
+          "source": "C001",
+          "target": "P004",
+          "relation": "involves"
+        },
+        {
+          "source": "E006",
+          "target": "V001",
+          "relation": "assesses"
+        },
+        {
+          "source": "E004",
+          "target": "P002",
+          "relation": "supports_alibi"
+        },
+        {
+          "source": "P005",
+          "target": "E001",
+          "relation": "testified_against"
+        },
+        {
+          "source": "P002",
+          "target": "P001",
+          "relation": "married_to"
+        },
+        {
+          "source": "P004",
+          "target": "E001",
+          "relation": "conspired_in"
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "document_id": "FIR-001",
+      "document_type": "FIR",
+      "metadata": {
+        "fir_number": "FIR/2024/0876",
+        "police_station": "Sector 45 Police Station, Gurgaon, Haryana",
+        "date_filed": "2024-03-17",
+        "filed_by": "Mr. Rajesh Kumar, Security Guard, Gurgaon Central Mall"
+      },
+      "content": "I, Rajesh Kumar, Security Guard, Gurgaon Central Mall, hereby file this First Information Report regarding a hit-and-run incident that occurred on 17.03.2024 at approximately 18:58 hours near the pedestrian crossing adjacent to the mall\u2019s main entrance. At around 18:55 hours, I was on patrol near the pedestrian zone when I heard a loud thud followed by screeching tires. I rushed to the scene and found the body of an elderly male, approximately 55-60 years old, lying on the zebra crossing with severe trauma to the head and limbs. There was no vehicle present. Nearby, I observed a shattered left headlight casing and a fragment of blue paint on the road. I immediately alerted the mall\u2019s CCTV control room and called emergency services. The victim was identified later as Mr. Arjun Mehta, 58, resident of Sector 44. Based on CCTV footage from the east gate, a blue Mahindra XUV700 with partially obscured license plate was seen speeding away from the scene. No one stopped to assist. I request immediate investigation under Section 304A IPC and Section 134 of the Motor Vehicles Act. I have attached the CCTV timestamped footage and my signed statement."
+    },
+    {
+      "document_id": "WS-001",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Mrs. Anjali Kapoor",
+        "relation_to_case": "Eyewitness",
+        "occupation": "Retired School Teacher"
+      },
+      "content": "I was waiting for the bus at the pedestrian crossing at around 6:55 PM when I saw a blue SUV coming from the direction of the mall. It was going very fast. I saw the driver \u2014 it was definitely a woman. She had a dark hoodie pulled over her head, and I could see her profile \u2014 long hair, slender neck. The car hit the man crossing the road and didn\u2019t stop. I screamed, but she accelerated. I saw her turn right onto Sector 46 Road. I am 100% sure it was a woman. I have poor eyesight without glasses, but I was wearing them that evening. I remember the car clearly because I saw the same model near my daughter\u2019s school last month."
+    },
+    {
+      "document_id": "WS-002",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Mr. Vikas Mehta",
+        "relation_to_case": "Acquaintance of Victim",
+        "occupation": "Founder, FinTech Start-up 'NexaPay'"
+      },
+      "content": "I was at the bus stop near the mall at 7:00 PM on March 17. I had just left my office and was waiting for the 7:10 bus to Delhi. I heard a crash, but I didn\u2019t see the vehicle. I only heard a woman shout \u2014 'Oh God, what have you done?' \u2014 right after the impact. I turned around but saw no one. I didn\u2019t see the driver. I didn\u2019t know Arjun was crossing. I had a fight with him earlier that day about the audit report. He threatened to expose me. But I didn\u2019t harm him. I took the 7:15 bus. I have my ticket and the station CCTV to prove it."
+    },
+    {
+      "document_id": "WS-003",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Rohan Sharma",
+        "relation_to_case": "Husband of Registered Owner",
+        "occupation": "Freelance Photographer"
+      },
+      "content": "I was photographing sunset shots on Sohna Road from 6:30 PM to 9:00 PM on March 17. I was capturing the light on the hills near the golf course. I have over 40 geotagged photos on my phone from that time. I returned home at 9:15 PM. I had no idea about the accident until the police came to my garage the next day. My wife\u2019s car \u2014 the blue XUV700 \u2014 was parked in the garage. I didn\u2019t drive it that day. I use my own black Honda City. The headlight was broken, but I thought it had been damaged two weeks ago during the monsoon pothole incident. I didn\u2019t repair it because I was busy with assignments. I swear I didn\u2019t go near Sector 45 that evening."
+    },
+    {
+      "document_id": "WS-004",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Priya Sharma",
+        "relation_to_case": "Registered Owner of Vehicle",
+        "occupation": "Corporate Lawyer, Sharma & Associates"
+      },
+      "content": "I was attending a virtual board meeting for my client, NexaPay, from 7:15 PM to 9:00 PM on March 17. My Zoom session was recorded. I was in my home office, wearing a formal blouse, with my laptop on the desk. I had a glass of water beside me. I never left the room. I didn\u2019t know my husband had taken the car. I only found out when the police called me at 9:30 PM. I had no idea the headlight was damaged. I had my car serviced on March 10, and it was fine. I filed an insurance claim on March 19 because I noticed the damage then \u2014 I thought it was from a minor scrape. I had no motive to harm Mr. Mehta. I barely knew him."
+    },
+    {
+      "document_id": "WS-005",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Mr. Rajiv Mehta",
+        "relation_to_case": "Brother of Victim",
+        "occupation": "Accountant"
+      },
+      "content": "My brother Arjun was under immense stress in the last two weeks. He told me he had evidence of financial fraud in Vikas Mehta\u2019s startup \u2014 money siphoned from a client trust account managed by Priya Sharma\u2019s law firm. He said he was going to the police on March 18. He was scared. He didn\u2019t tell me what the evidence was, but he showed me a folder labeled 'NexaPay Audit.' He was going to meet Vikas that evening to confront him. I didn\u2019t know he was walking home. I found his phone at the scene. It was still on, last call was to me at 6:52 PM. I believe he was killed because he was going to expose them."
+    },
+    {
+      "document_id": "CCTV-001",
+      "document_type": "CCTV_report",
+      "metadata": {
+        "source": "Gurgaon Central Mall - East Gate Camera",
+        "date_retrieved": "2024-03-17",
+        "analyst": "DSP Arun Mehta, Cyber Cell, Gurgaon"
+      },
+      "content": "CCTV footage from East Gate Camera (ID: GC-MALL-E07) captured a blue Mahindra XUV700 (plate partially obscured by mud) approaching the pedestrian crossing at 18:54:12. The vehicle accelerated through the crossing at 18:54:56, striking a pedestrian. The driver, identifiable as a male with a dark hoodie, was alone in the vehicle. No female passenger visible. The vehicle turned right onto Sector 46 Road at 18:55:03. A second camera (GC-MALL-W03) at the west entrance captured the same vehicle passing at 18:55:18. No other blue SUVs were recorded in the vicinity between 18:45 and 19:05. The license plate is partially visible as 'HR-14-AB-7891' \u2014 registered to Priya Sharma. No vehicle matching this description was recorded entering or exiting the mall parking between 18:30 and 19:10."
+    },
+    {
+      "document_id": "FORENSIC-001",
+      "document_type": "forensic_report",
+      "metadata": {
+        "lab": "Central Forensic Science Laboratory, Chandigarh",
+        "report_no": "CFSL/2024/HR-087",
+        "date": "2024-03-20"
+      },
+      "content": "1. Blue paint fragment recovered from pedestrian crossing (E002) was analyzed via FTIR and XRF spectroscopy. Match found with factory color code 'Azure Blue (Code: MB-2023)' used on Mahindra XUV700 models manufactured between 2021-2023. 2. Registered vehicle (HR-14-AB-7891) was repainted in 'Midnight Sapphire' (Code: MB-2024) on January 15, 2024, per service records. The factory color is obsolete and no longer used in production. 3. Shattered headlight casing (E003) matches the left headlight assembly of the registered vehicle, but the lens material is from a 2020 model, not the 2023 model registered. 4. Tire tread pattern (12.5 cm width) matches Michelin Latitude Tour HP tires \u2014 standard fitment on XUV700. 5. Conclusion: The paint fragment does not originate from the currently registered vehicle. The headlight casing is from a replacement part, inconsistent with the vehicle\u2019s original equipment. The vehicle involved was likely modified or had non-original parts installed."
+    },
+    {
+      "document_id": "DIGITAL-001",
+      "document_type": "digital_forensics_report",
+      "metadata": {
+        "device": "Rohan Sharma - iPhone 14 Pro",
+        "analyst": "Cyber Cell, Gurgaon",
+        "date": "2024-03-21"
+      },
+      "content": "1. Photo gallery on device contains 42 images labeled 'Sohna Road Sunset Shoot - 17.03.2024.' Geotags show locations in Sohna Road between 18:00\u201319:30. However, metadata timestamps were altered. Original EXIF timestamps show the earliest image was taken on March 10, 2024, at 17:45. 2. Bluetooth logs show pairing with device 'Vikas_Mehta_iPhone' at 18:50:12 and 18:52:47. Location data from Bluetooth pairing corresponds to Sector 45, within 300m of pedestrian crossing. 3. Device location history (GPS) shows movement from home (Sector 44) to Sector 45 between 18:40\u201319:00, then return home at 19:05. 4. WhatsApp messages with Vikas Mehta were deleted between 18:56 and 19:00. Recovered fragments indicate: 'He\u2019s gone. Clean the car. I\u2019m on the bus.' 5. Conclusion: The photo gallery was fabricated to establish alibi. Device was physically present at the crime scene at time of impact."
+    },
+    {
+      "document_id": "MECHANICAL-001",
+      "document_type": "mechanical_inspection_report",
+      "metadata": {
+        "garage": "Rajesh Auto Care, Sector 46, Gurgaon",
+        "report_no": "RAC/2024/045",
+        "date": "2024-03-18"
+      },
+      "content": "Vehicle: Blue Mahindra XUV700, HR-14-AB-7891. Inspection conducted on March 18, 2024. Findings: 1. Front left fender has recent dent and paint mismatch. Paint chip analysis indicates repair occurred within 48 hours. 2. Left headlight replaced with used unit (VIN: XUV700-HL-2020-08). 3. Damage to fender consistent with high-velocity impact. 4. Garage owner\u2019s invoice dated March 16, 2024, at 23:47, for 'Headlight Replacement & Fender Repair' \u2014 payment via UPI. 5. Report states damage 'at least 14 days old' \u2014 this is incorrect. The repair was completed on March 16. The report was amended at the request of the owner. Original draft report attached as Annexure A."
+    },
+    {
+      "document_id": "MEDICAL-001",
+      "document_type": "autopsy_report",
+      "metadata": {
+        "hospital": "Max Super Speciality Hospital, Gurgaon",
+        "report_no": "MSH/AUT/2024/0317",
+        "pathologist": "Dr. Nalini Verma"
+      },
+      "content": "Deceased: Mr. Arjun Mehta, 58, male. Cause of Death: Multiple blunt force traumas consistent with high-velocity vehicular impact. Primary injuries: Fractured skull, bilateral rib fractures, pelvic fracture, internal hemorrhage. No defensive wounds. No alcohol or drugs detected in blood. Time of Death: Estimated between 18:50 and 19:00. No signs of prior assault. Clothing: Slight scuff marks on right shoe, consistent with tire tread. No other injuries. Conclusion: Death resulted from being struck by a motor vehicle while crossing a pedestrian crossing. No evidence of pre-existing medical condition contributing to death."
+    },
+    {
+      "document_id": "FINANCIAL-001",
+      "document_type": "financial_records",
+      "metadata": {
+        "source": "Sharma & Associates - Client Trust Account",
+        "date": "2024-03-22",
+        "analyst": "CBI Forensic Accounting Unit"
+      },
+      "content": "Audit of client trust account #CTA-7891 (NexaPay Client Fund) reveals irregular transfers totaling \u20b942.7 lakhs between January 15, 2024, and March 10, 2024. Funds were transferred to personal accounts linked to Vikas Mehta via shell companies. Priya Sharma, as the managing partner, had signing authority. No formal approval from client board. Withdrawals coincided with Vikas\u2019s startup\u2019s cash crunch. On March 16, 2024, a final transfer of \u20b98.5 lakhs was made. Arjun Mehta, as internal auditor for the client, had flagged these transfers in a draft report dated March 15, 2024. The report was never submitted due to 'administrative delay.' However, a draft was found on his encrypted cloud drive, with a note: 'If I disappear, send this to CBI.'"
+    },
+    {
+      "document_id": "INVESTIGATION-001",
+      "document_type": "police_investigation_report",
+      "metadata": {
+        "officer": "SP Rajiv Singh",
+        "case_no": "008/2024",
+        "date": "2024-03-25"
+      },
+      "content": "Investigation Summary: The incident occurred on March 17, 2024, at Sector 45 pedestrian crossing. The vehicle involved is registered to Priya Sharma, but evidence indicates her husband, Rohan Sharma, was the driver. Digital forensics confirm Rohan\u2019s presence at the scene via Bluetooth and GPS. His alibi via geotagged photos was fabricated. The mechanical inspection report was falsified by the garage owner, who admitted to altering the damage age upon request. The paint fragment does not match the currently registered vehicle, suggesting the vehicle had been modified with an older headlight and paint. Witness Anjali Kapoor\u2019s testimony of a female driver is inconsistent with CCTV and appears to be a misidentification due to poor eyesight. Vikas Mehta\u2019s alibi is partially corroborated by bus ticket and station CCTV, but his phone was paired with Rohan\u2019s at the time of impact. Financial records confirm Arjun Mehta was about to expose a fraud involving Vikas and Priya\u2019s law firm. Motive: To silence Arjun Mehta. Suspects: Rohan Sharma (driver), Vikas Mehta (conspirator). Priya Sharma\u2019s alibi via Zoom is compromised \u2014 her screen recording shows a 4-minute gap (18:58\u201319:02) where she was not visible. Her insurance claim filed two days after the incident suggests awareness of damage. Case is recommended for charge sheet under Sections 304A, 201, 120B IPC and MV Act violations. Recommend arrest of Rohan Sharma and Vikas Mehta. Priya Sharma to be questioned further."
+    },
+    {
+      "document_id": "CHARGE_SHEET-001",
+      "document_type": "charge_sheet",
+      "metadata": {
+        "court": "Sessions Court, Gurgaon",
+        "case_no": "008/2024",
+        "date_filed": "2024-04-01",
+        "prosecutor": "Public Prosecutor, Haryana"
+      },
+      "content": "IN THE COURT OF THE SESSIONS JUDGE, GURGAON\n\nCHARGE SHEET UNDER SECTION 173 CrPC\n\nAccused:\n1. Rohan Sharma, S/o Harish Sharma, aged 34, resident of Sector 44, Gurgaon\n2. Vikas Mehta, S/o Baldev Mehta, aged 31, resident of Sector 50, Gurgaon\n\nOffenses:\n1. Section 304A IPC - Causing death by negligence\n2. Section 201 IPC - Causing disappearance of evidence\n3. Section 120B IPC - Criminal conspiracy\n4. Section 134 of Motor Vehicles Act - Hit and Run\n\nFacts:\nOn March 17, 2024, at approximately 18:56 PM, the accused Rohan Sharma, while driving a blue Mahindra XUV700 (HR-14-AB-7891), deliberately struck Mr. Arjun Mehta at a pedestrian crossing in Sector 45, Gurgaon, and fled the scene. The vehicle was owned by Priya Sharma, but Rohan was the driver. The act was committed in conspiracy with Vikas Mehta, who had a financial grudge against the deceased due to impending exposure of a \u20b942.7 lakh fraud involving client trust funds managed by Priya Sharma\u2019s law firm. Rohan Sharma fabricated an alibi using doctored photographs and tampered with vehicle evidence. Vikas Mehta was picked up by Rohan shortly before the incident and dropped off after. The mechanical inspection report was falsified. Digital evidence confirms the presence of both accused at the scene. The accused are jointly liable for the crime. Evidence includes CCTV footage, Bluetooth logs, digital forensics, autopsy report, and financial audit. The accused are charged and the case is ready for trial."
+    }
+  ],
+  "benchmark": {
+    "queries": [
+      {
+        "id": "Q1",
+        "question": "Who is the actual perpetrator of the hit-and-run?",
+        "category": "suspect_identification"
+      },
+      {
+        "id": "Q2",
+        "question": "Which witness statement contains the most deliberate falsehood, and why?",
+        "category": "witness_credibility"
+      },
+      {
+        "id": "Q3",
+        "question": "How does the forensic paint analysis contradict the registered vehicle\u2019s official service record?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q4",
+        "question": "Reconstruct the accurate timeline of events between 18:45 and 19:05 based on digital and physical evidence.",
+        "category": "timeline_reconstruction"
+      },
+      {
+        "id": "Q5",
+        "question": "What is the true motive behind the crime, and how is it connected to the financial records?",
+        "category": "motive_analysis"
+      },
+      {
+        "id": "Q6",
+        "question": "Which piece of evidence was forged, and who is responsible for the forgery?",
+        "category": "evidence_ranking"
+      },
+      {
+        "id": "Q7",
+        "question": "Why is Priya Sharma\u2019s Zoom alibi considered unreliable despite official logs?",
+        "category": "alibi_verification"
+      },
+      {
+        "id": "Q8",
+        "question": "What is the relationship between Vikas Mehta and the victim, and how does it support the conspiracy theory?",
+        "category": "relationship_mapping"
+      },
+      {
+        "id": "Q9",
+        "question": "Which two pieces of digital evidence most conclusively place Rohan Sharma at the crime scene?",
+        "category": "evidence_ranking"
+      },
+      {
+        "id": "Q10",
+        "question": "What is the likelihood of conviction for Rohan Sharma and Vikas Mehta based on current evidence?",
+        "category": "conviction_likelihood"
+      }
+    ],
+    "expected_answers": [
+      {
+        "query_id": "Q1",
+        "answer": "Rohan Sharma is the actual perpetrator. Digital forensics confirm his phone\u2019s Bluetooth paired with Vikas Mehta\u2019s phone at the crime scene at 18:50, and GPS data places him at the pedestrian crossing between 18:40\u201319:00. His fabricated photo gallery and altered mechanical report confirm intent to conceal. The headlight and paint fragment match a modified vehicle he repaired on March 16. His wife\u2019s alibi is unrelated to the act. The motive \u2014 silencing Arjun Mehta \u2014 aligns with his actions."
+      },
+      {
+        "query_id": "Q2",
+        "answer": "Mrs. Anjali Kapoor\u2019s statement contains the most deliberate falsehood. She claims to have seen a woman driving, but CCTV clearly shows a male driver. She later admits to being nearsighted and confusing the silhouette. This is not an honest mistake \u2014 it was likely influenced by external pressure, possibly from Vikas Mehta or Priya Sharma, to deflect suspicion from the male driver and create confusion about the driver\u2019s identity."
+      },
+      {
+        "query_id": "Q3",
+        "answer": "The forensic report confirms the paint fragment matches the factory color 'Azure Blue (MB-2023)' used on 2021\u20132023 XUV700 models. However, the registered vehicle was repainted in 'Midnight Sapphire (MB-2024)' in January 2024, per official service records. The factory color is obsolete and no longer used, meaning the paint fragment could not have come from the currently registered vehicle \u2014 indicating the vehicle involved had been modified with an older, non-original part."
+      },
+      {
+        "query_id": "Q4",
+        "answer": "18:45 \u2014 Arjun Mehta leaves office. 18:50 \u2014 Rohan Sharma\u2019s phone pairs with Vikas Mehta\u2019s phone near Sector 45. 18:52 \u2014 Rohan picks up Vikas from a side alley. 18:54 \u2014 Rohan hits Arjun at the pedestrian crossing. 18:57 \u2014 Rohan drops Vikas at a bus stop 3 km away. 18:59 \u2014 Rohan returns home, washes car, replaces headlight. 19:02 \u2014 Priya Sharma briefly leaves Zoom screen (per metadata tampering). 19:05 \u2014 Rohan uploads fake photos. 19:15 \u2014 Vikas boards train to Delhi. All timelines are corroborated by Bluetooth, GPS, and digital metadata, contradicting the alibis presented."
+      },
+      {
+        "query_id": "Q5",
+        "answer": "The true motive is to prevent Arjun Mehta from exposing a \u20b942.7 lakh financial fraud involving illicit transfers from a client trust account managed by Priya Sharma\u2019s law firm to Vikas Mehta\u2019s startup. Arjun, as an internal auditor, had drafted evidence of the fraud and planned to report it to authorities. Vikas, fearing exposure and criminal liability, hired Rohan to intimidate Arjun. The confrontation escalated into a fatal hit-and-run. The financial records show the timing of the fraud\u2019s final transfer (March 16) directly preceded the murder, confirming the urgency to silence Arjun."
+      },
+      {
+        "query_id": "Q6",
+        "answer": "The forged evidence includes: (1) the fake photo gallery on Rohan\u2019s phone, fabricated by Rohan to support his alibi; and (2) the altered mechanical inspection report, falsified by the garage owner at Rohan\u2019s request. Both were created to mislead investigators into believing the vehicle damage was old and that Rohan was elsewhere. The garage owner admitted to the alteration under questioning."
+      },
+      {
+        "query_id": "Q7",
+        "answer": "Priya Sharma\u2019s Zoom alibi is unreliable because although the company\u2019s logs show her presence from 7:15\u20139:00 PM, digital forensics on the recording reveal a 4-minute gap (18:58\u201319:02) where her video feed was inactive and audio muted. Her screen was not visible during this window \u2014 precisely the time of the hit-and-run. The recording was later edited to mask this gap, suggesting she was aware of the incident and attempted to cover for her husband."
+      },
+      {
+        "query_id": "Q8",
+        "answer": "Vikas Mehta and Arjun Mehta had a professional relationship as client and auditor. Arjun was the internal auditor for Vikas\u2019s startup, NexaPay, and discovered that Vikas had siphoned \u20b942.7 lakhs from a client trust account managed by Priya Sharma\u2019s law firm. Arjun threatened to expose the fraud. Vikas, fearing criminal prosecution and loss of funding, conspired with Rohan Sharma to eliminate Arjun. Their relationship is central to the motive: Vikas needed Arjun silenced, and Rohan was the instrument."
+      },
+      {
+        "query_id": "Q9",
+        "answer": "The two most conclusive digital pieces of evidence are: (1) Bluetooth pairing logs between Rohan\u2019s iPhone and Vikas Mehta\u2019s phone at 18:50 and 18:52, geolocated within 300m of the pedestrian crossing \u2014 proving Rohan was physically present with Vikas at the time of the crime; and (2) GPS location history showing Rohan\u2019s phone moved from home to Sector 45 between 18:40\u201319:00, then returned home \u2014 directly contradicting his claim of being in Sohna Road."
+      },
+      {
+        "query_id": "Q10",
+        "answer": "The likelihood of conviction for both Rohan Sharma and Vikas Mehta is very high. The evidence is overwhelming: digital forensics place Rohan at the scene, financial records prove motive, the forged alibis are exposed, and the mechanical report was falsified. Vikas\u2019s communication with Rohan and his presence near the scene at the time of the crime establish conspiracy. Even without a direct confession, the circumstantial and digital evidence meets the standard of 'beyond reasonable doubt' under Indian law. Priya Sharma may face lesser charges for obstruction, but Rohan and Vikas are clearly culpable."
+      }
+    ]
+  }
+}

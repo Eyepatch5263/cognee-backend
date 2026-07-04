@@ -1,0 +1,11 @@
+{
+  "document_id": "ER-005",
+  "document_type": "Financial_records",
+  "metadata": {
+    "report_id": "FIN-2023-10457-05",
+    "source": "Café Zenith POS System",
+    "date_retrieved": "2023-10-19",
+    "analyst": "Manager Priyanka Mehta, Café Zenith"
+  },
+  "content": "Café Zenith POS system logs show a transaction for two herbal teas and one almond milk latte on 14.10.2023 at 10:37:12 PM. Receipt printed at 10:37:15 PM. The receipt presented as evidence (Receipt ID: CZ-1014-23-089) was manually altered — the timestamp was changed from 10:37:15 PM to 10:30:00 PM using administrative override. The override was performed using the manager’s credentials, which were accessed by Arjun Singh on 15.10.2023 at 3:15 AM. The system logs confirm the original receipt was printed at 10:37 PM. No other transactions from Rohan Kapoor were recorded before or after. CCTV from café entrance shows Rohan Kapoor entering at 10:37:08 PM, Arjun Singh already seated."
+}

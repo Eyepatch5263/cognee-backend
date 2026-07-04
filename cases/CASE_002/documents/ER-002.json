@@ -1,0 +1,11 @@
+{
+  "document_id": "ER-002",
+  "document_type": "Forensic_report",
+  "metadata": {
+    "report_id": "FORENSIC-2023-10457-02",
+    "lab": "Central Forensic Science Laboratory, Chandigarh",
+    "date_issued": "2023-10-18",
+    "analyst": "Dr. Nidhi Sharma, Senior Forensic Scientist"
+  },
+  "content": "Biological samples collected from under the fingernails of victim Anjali Verma (Sample ID: FV-1014-23) were subjected to STR analysis. The DNA profile obtained (Allele Profile: D3S1358-15,17; TH01-6,9; D21S11-28,30; etc.) matches the reference sample of Rohan Kapoor (Sample ID: RK-1015-23) with a match probability of 1 in 1.2 billion. No other contributors detected. The sample contained trace epithelial cells consistent with a struggle. No blood or other bodily fluids were present. The sample was collected 4 hours post-incident. Contamination from prior injury (gardening scratch) cannot be ruled out as a contributing factor, but the quantity and distribution of DNA are consistent with direct contact during violent struggle. Conclusion: DNA profile matches Rohan Kapoor. Source of DNA is likely from physical contact during assault."
+}

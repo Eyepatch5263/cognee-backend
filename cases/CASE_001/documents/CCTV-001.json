@@ -1,0 +1,10 @@
+{
+  "document_id": "CCTV-001",
+  "document_type": "CCTV_report",
+  "metadata": {
+    "location": "Neighbor’s Gate Camera (House No. 19, Kharadi)",
+    "date_recorded": "2023-10-15",
+    "reviewed_by": "Digital Forensics Unit, Pune Cyber Cell"
+  },
+  "content": "CCTV footage from House No. 19 shows the following: - 09:45 PM: Priya Mehta exits her bungalow in a white SUV (registration MH-12-AB-7890). - 11:15 PM: Priya Mehta returns to her bungalow. - 09:50 PM: A white sedan (Vikram Desai’s car, MH-12-CD-4567) is seen entering the service lane behind Arjun’s bungalow, but the camera angle does not capture the entrance. - 10:20 PM: The same sedan is seen leaving the service lane. - 10:45 PM: No vehicles are observed near Arjun’s property. Footage timestamps were verified against NTP server logs. No evidence of tampering found. Note: The sedan’s license plate was partially obscured in the 10:20 PM clip, but vehicle model and color match Vikram Desai’s registered vehicle."
+}

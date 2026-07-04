@@ -1,0 +1,448 @@
+{
+  "skeleton": {
+    "metadata": {
+      "case_id": "004",
+      "case_type": "bribery",
+      "difficulty": "easy",
+      "incident_date": "2023-10-12",
+      "location": "Rajiv Nagar, Ghaziabad, Uttar Pradesh",
+      "summary": "On October 12, 2023, the Anti-Corruption Bureau (ACB) of Uttar Pradesh conducted a trap operation at the Ghaziabad Municipal Corporation office, targeting a junior clerk suspected of demanding a bribe of \u20b950,000 for expediting a building permit. The complainant, Mr. Arjun Mehta, a local contractor, had recorded the demand via a hidden audio device and handed over marked currency notes during a scheduled meeting with the accused, Mr. Ramesh Kumar. ACB officers recovered the money from Ramesh Kumar immediately after the transaction. Forensic analysis of the currency revealed that the notes bore the same serial numbers as those issued by the ACB prior to the trap. However, one of the two independent witnesses, Mrs. Priya Sharma, later claimed she saw Ramesh Kumar receiving the money from a different person \u2014 a claim contradicted by the video footage from the ACB\u2019s surveillance camera. The case hinges on the authenticity of the trap, the credibility of the witnesses, and whether the marked notes were planted or genuinely recovered from the accused. The timeline is clear: the demand was made on October 10, the meeting occurred on October 12 at 3:15 PM, and the recovery happened within 90 seconds of the exchange. All communications between the complainant and the accused were logged via WhatsApp and call records, which corroborate the meeting arrangement."
+    },
+    "hidden_ground_truth": {
+      "actual_criminal": "Ramesh Kumar",
+      "accomplices": [],
+      "true_motive": "To supplement his low salary and pay for his daughter\u2019s private medical treatment for a chronic illness",
+      "true_timeline": [
+        "2023-10-10 14:30: Ramesh Kumar receives WhatsApp message from Arjun Mehta requesting expedited permit",
+        "2023-10-10 16:15: Ramesh Kumar replies demanding \u20b950,000 via cash",
+        "2023-10-12 13:00: Ramesh Kumar collects \u20b950,000 in marked notes from his cousin, Vikram, who had obtained them from a local moneylender (unrelated to ACB)",
+        "2023-10-12 14:45: Ramesh Kumar hides the money in his desk drawer",
+        "2023-10-12 15:15: ACB team arrives at office under guise of audit",
+        "2023-10-12 15:30: Arjun Mehta enters office, hands over envelope to Ramesh Kumar",
+        "2023-10-12 15:31: Ramesh Kumar pockets envelope, ACB officers enter and arrest him",
+        "2023-10-12 15:33: Money recovered from drawer \u2014 but the notes are NOT the original ACB-marked ones; they were swapped by Vikram before the trap"
+      ],
+      "lying_witnesses": [
+        "Priya Sharma"
+      ],
+      "forged_evidence": [
+        "The ACB\u2019s recovery report falsely states that the seized notes were taken directly from Ramesh Kumar\u2019s hand \u2014 when in fact they were retrieved from his desk drawer after he was detained"
+      ],
+      "injected_contradictions": [
+        {
+          "description": "Priya Sharma claims she saw Ramesh Kumar receive the envelope from a man in a blue shirt (Vikram), but the video shows only Arjun Mehta entering the room \u2014 Vikram never entered the office, and Priya was outside the building during the exchange, having been coached by Vikram to lie"
+        },
+        {
+          "description": "The forensic report lists the serial numbers of the recovered notes as matching ACB\u2019s marked currency, but the actual ACB ledger shows those serials were never issued \u2014 they were copied from a public bank withdrawal record"
+        }
+      ]
+    },
+    "perspectives": [
+      "timeline reconstruction",
+      "witness credibility",
+      "forensic evidence",
+      "communication graph",
+      "money flow",
+      "digital forensics",
+      "alibi verification",
+      "trap procedure compliance"
+    ],
+    "contradictions": [
+      {
+        "type": "testimony",
+        "severity": "medium",
+        "claim_a": "Independent witness Priya Sharma states she saw Ramesh Kumar receive the bribe envelope from a man in a blue shirt outside the office before the meeting.",
+        "claim_b": "ACB surveillance video shows only Arjun Mehta entering the office at 15:30, and no other person is seen near Ramesh Kumar during the transaction."
+      },
+      {
+        "type": "forensic",
+        "severity": "high",
+        "claim_a": "Forensic report claims the recovered \u20b950,000 notes match the serial numbers of the ACB-marked currency issued for the trap.",
+        "claim_b": "ACB\u2019s internal currency ledger shows those exact serial numbers were never issued \u2014 they were withdrawn from a public bank in Noida on October 11, unrelated to the operation."
+      }
+    ],
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "P1",
+          "type": "Person",
+          "label": "Ramesh Kumar"
+        },
+        {
+          "id": "P2",
+          "type": "Person",
+          "label": "Arjun Mehta"
+        },
+        {
+          "id": "P3",
+          "type": "Person",
+          "label": "Priya Sharma"
+        },
+        {
+          "id": "P4",
+          "type": "Person",
+          "label": "Vikram Kumar"
+        },
+        {
+          "id": "E1",
+          "type": "Event",
+          "label": "Trap Operation at GMC Office"
+        },
+        {
+          "id": "E2",
+          "type": "Event",
+          "label": "Bribe Demand via WhatsApp"
+        },
+        {
+          "id": "E3",
+          "type": "Event",
+          "label": "Currency Withdrawal at Noida Bank"
+        },
+        {
+          "id": "E4",
+          "type": "Event",
+          "label": "Recovery of Bribe Money"
+        },
+        {
+          "id": "E5",
+          "type": "Event",
+          "label": "ACB Surveillance Recording"
+        },
+        {
+          "id": "E6",
+          "type": "Event",
+          "label": "Forensic Currency Analysis"
+        },
+        {
+          "id": "A1",
+          "type": "Asset",
+          "label": "\u20b950,000 in Currency Notes"
+        },
+        {
+          "id": "C1",
+          "type": "Communication",
+          "label": "WhatsApp Message Chain (Arjun-Ramesh)"
+        },
+        {
+          "id": "C2",
+          "type": "Communication",
+          "label": "Phone Call (Arjun-Ramesh)"
+        },
+        {
+          "id": "L1",
+          "type": "Location",
+          "label": "Ghaziabad Municipal Corporation Office"
+        },
+        {
+          "id": "L2",
+          "type": "Location",
+          "label": "Axis Bank, Noida"
+        }
+      ],
+      "edges": [
+        {
+          "source": "P1",
+          "target": "P2",
+          "relation": "bribed"
+        },
+        {
+          "source": "P1",
+          "target": "A1",
+          "relation": "possesses"
+        },
+        {
+          "source": "P2",
+          "target": "C1",
+          "relation": "initiated"
+        },
+        {
+          "source": "P2",
+          "target": "C2",
+          "relation": "initiated"
+        },
+        {
+          "source": "P2",
+          "target": "E1",
+          "relation": "complained_about"
+        },
+        {
+          "source": "P1",
+          "target": "E2",
+          "relation": "committed"
+        },
+        {
+          "source": "P1",
+          "target": "E4",
+          "relation": "arrested_during"
+        },
+        {
+          "source": "P3",
+          "target": "E1",
+          "relation": "testified_against"
+        },
+        {
+          "source": "P4",
+          "target": "A1",
+          "relation": "provided"
+        },
+        {
+          "source": "P4",
+          "target": "E3",
+          "relation": "withdrew"
+        },
+        {
+          "source": "A1",
+          "target": "E6",
+          "relation": "analyzed_in"
+        },
+        {
+          "source": "E1",
+          "target": "L1",
+          "relation": "occurred_at"
+        },
+        {
+          "source": "E3",
+          "target": "L2",
+          "relation": "occurred_at"
+        },
+        {
+          "source": "E5",
+          "target": "E1",
+          "relation": "records"
+        },
+        {
+          "source": "C1",
+          "target": "E2",
+          "relation": "supports"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "relation": "provides_evidence_for"
+        },
+        {
+          "source": "P3",
+          "target": "P4",
+          "relation": "related_to"
+        },
+        {
+          "source": "A1",
+          "target": "E2",
+          "relation": "used_in"
+        },
+        {
+          "source": "E6",
+          "target": "E4",
+          "relation": "contradicts"
+        },
+        {
+          "source": "E5",
+          "target": "P3",
+          "relation": "contradicts"
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "document_id": "FIR-001",
+      "document_type": "FIR",
+      "metadata": {
+        "fir_number": "FIR/ACB/GZB/2023/087",
+        "police_station": "Anti-Corruption Bureau, Ghaziabad",
+        "date_filed": "2023-10-12",
+        "filed_by": "Shri Vikas Singh, Senior Officer, ACB, Uttar Pradesh"
+      },
+      "content": "I, Shri Vikas Singh, Senior Officer, Anti-Corruption Bureau, Uttar Pradesh, hereby file this First Information Report under Section 7 read with Section 13(1)(d) of the Prevention of Corruption Act, 1988. On 12.10.2023 at approximately 15:30 hours, a trap operation was conducted at the office of Ghaziabad Municipal Corporation, Rajiv Nagar, Ghaziabad, Uttar Pradesh, against one Mr. Ramesh Kumar, Junior Clerk (Grade-III), on the complaint of Mr. Arjun Mehta, a licensed building contractor. The complainant had earlier, on 10.10.2023, received a WhatsApp message from the accused demanding a bribe of \u20b950,000 in cash for expediting his building permit application. The complainant, with the prior approval of the ACB, recorded the conversation and arranged a meeting on 12.10.2023. At the scheduled time, the complainant entered the accused\u2019s office and handed over an envelope containing \u20b950,000 in marked currency notes (serial numbers listed in ACB Annexure-A). Immediately upon receipt, the accused pocketed the envelope. ACB officers, stationed inside the office under cover, entered the room within 90 seconds and arrested the accused. The marked currency was recovered from his person. Two independent witnesses, Mrs. Priya Sharma and Mr. Sanjay Verma, were present during the operation and corroborated the transaction. The accused was produced before the ACB Magistrate on the same day. The case is being investigated under the Prevention of Corruption Act, 1988. No prior complaint was lodged by the complainant. This FIR is filed to initiate formal proceedings."
+    },
+    {
+      "document_id": "WS-001",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Arjun Mehta",
+        "relation_to_case": "Complainant",
+        "occupation": "Building Contractor"
+      },
+      "content": "I, Arjun Mehta, resident of Sector 12, Rajiv Nagar, Ghaziabad, am a licensed contractor. On 10.10.2023, I approached the Ghaziabad Municipal Corporation to obtain an expedited building permit for my residential project. I was told by Mr. Ramesh Kumar, the Junior Clerk, that the process would take 45 days normally but could be done in 7 days if I paid \u20b950,000 in cash. I recorded our WhatsApp conversation where he explicitly said, 'Bhaiya, yeh sab formalities ke liye 50 hazaar cash chahiye, aur phir aapka permit 7 din mein mil jayega.' I immediately informed the ACB. On 12.10.2023, I went to his office at 3:15 PM with \u20b950,000 in marked notes provided by ACB. I handed him the envelope in his cabin. He took it, put it in his pocket, and smiled. Within moments, ACB officers entered and arrested him. I had no prior relationship with Mr. Kumar except this transaction. I did not give the money to anyone else. I swear this statement is true to the best of my knowledge."
+    },
+    {
+      "document_id": "WS-002",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Priya Sharma",
+        "relation_to_case": "Independent Witness",
+        "occupation": "Office Assistant, Ghaziabad Municipal Corporation"
+      },
+      "content": "I, Priya Sharma, work as an office assistant in the same building as Mr. Ramesh Kumar. On 12.10.2023, around 3:15 PM, I was standing near the entrance of the GMC office, waiting for my lunch break. I saw Mr. Ramesh Kumar step out of his cabin and walk towards the main gate. He met a man in a light blue shirt who was standing near the parked auto-rickshaw. They exchanged a small envelope. Mr. Kumar then returned to his cabin. A few minutes later, Mr. Arjun Mehta entered the office and met Mr. Kumar. I did not see the envelope being handed over inside \u2014 I only saw the earlier exchange outside. I thought it was strange because Mr. Kumar usually handles such matters alone. I told the ACB officers about this because I felt something was off. I swear this is the truth. I did not know the man in blue \u2014 I\u2019ve never seen him before."
+    },
+    {
+      "document_id": "WS-003",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Sanjay Verma",
+        "relation_to_case": "Independent Witness",
+        "occupation": "Retired Government Clerk"
+      },
+      "content": "I am Sanjay Verma, retired clerk from the same department. I was present as an independent witness during the ACB trap on 12.10.2023. I was seated in the waiting area outside Mr. Kumar\u2019s cabin. I saw Mr. Arjun Mehta enter the cabin at 3:15 PM. He handed over a white envelope to Mr. Ramesh Kumar. Mr. Kumar took it, placed it in his inner shirt pocket, and said something like 'Kal tak mil jayega.' I did not see anyone else enter or exit the cabin before or after. The ACB officers entered within 90 seconds. I confirm that the money was handed directly by Mr. Mehta to Mr. Kumar. I have no reason to lie. I have known Mr. Kumar for 12 years \u2014 he is a quiet man, but I\u2019ve heard rumors about him asking for money. I stand by my statement."
+    },
+    {
+      "document_id": "ER-001",
+      "document_type": "CCTV_report",
+      "metadata": {
+        "report_id": "CCTV-GMC-2023-1012-03",
+        "location": "Ghaziabad Municipal Corporation, Main Entrance & Corridor",
+        "date_time": "2023-10-12 15:00 to 15:45",
+        "prepared_by": "ACB Digital Forensics Unit"
+      },
+      "content": "The CCTV footage from the main entrance and corridor of GMC office, dated 12.10.2023, between 15:00 and 15:45 hours, was analyzed. The following observations are noted: 1. At 15:15:02, Mr. Arjun Mehta enters the building via the main gate. No other person enters during the relevant window. 2. At 15:29:45, Mr. Mehta is seen walking toward the corridor leading to Room 304 (Ramesh Kumar\u2019s cabin). 3. At 15:30:10, Mr. Mehta enters Room 304. No other individual is seen entering or exiting the room until 15:31:05. 4. At 15:31:08, ACB officers enter Room 304. 5. At 15:32:15, Mr. Kumar is seen being escorted out of the room. 6. No individual in a blue shirt is seen near the entrance, corridor, or cabin during the entire period. The footage is uninterrupted and timestamped. Conclusion: Only Mr. Arjun Mehta had direct contact with Mr. Ramesh Kumar during the alleged bribe transaction. The claim by Mrs. Priya Sharma of a third-party handover outside the office is not corroborated by video evidence."
+    },
+    {
+      "document_id": "ER-002",
+      "document_type": "Forensic_report",
+      "metadata": {
+        "report_id": "FORENSIC-CURRENCY-ACB-GZB-2023-087",
+        "prepared_by": "Central Forensic Science Laboratory, Lucknow",
+        "date": "2023-10-14",
+        "evidence_item": "\u20b950,000 in Currency Notes (Denominations: \u20b9500 x 100)"
+      },
+      "content": "The currency notes seized during the trap operation on 12.10.2023 were submitted for forensic analysis. The following findings are reported: 1. Serial numbers of the seized notes were cross-referenced with the ACB\u2019s official marked currency ledger (Ref: ACB/MarkedNotes/2023/Trap-087). The ledger indicates that the serial numbers claimed to be 'ACB-marked' (e.g., E032156789, E032156790, etc.) were never issued by the ACB for any trap operation. 2. Upon further investigation, these exact serial numbers were found in the withdrawal record of Axis Bank, Noida, dated 11.10.2023, under account number XXXX-XXXX-5432, withdrawn by one Vikram Kumar. 3. The notes are genuine Indian currency, with no signs of tampering or counterfeiting. 4. The notes bear the same batch and printing characteristics as those issued by the Reserve Bank of India in July 2023. Conclusion: The seized currency notes are authentic but were not the original notes issued by the ACB for the trap. The claim that the notes were 'ACB-marked' is factually incorrect. The notes were likely obtained from a public bank withdrawal and later used in the transaction."
+    },
+    {
+      "document_id": "ER-003",
+      "document_type": "Digital_Forensics_Report",
+      "metadata": {
+        "report_id": "DF-ACB-GZB-2023-087-WHATSAPP",
+        "prepared_by": "ACB Cyber Cell, Ghaziabad",
+        "date": "2023-10-13"
+      },
+      "content": "The WhatsApp chat history between Mr. Arjun Mehta (mobile: +91-98765-43210) and Mr. Ramesh Kumar (mobile: +91-98765-43211) was extracted and analyzed. The following messages were recovered: - 10.10.2023, 14:30: 'Sir, building permit ke liye kya procedure hai? Jaldi chahiye.' - 10.10.2023, 16:15: 'Bhaiya, 50 hazaar cash de do, toh 7 din mein permit mil jayega. Koi paper nahi chahiye.' - 12.10.2023, 13:05: 'Kal 3 baje office mein milte hain?' - 12.10.2023, 13:07: 'Haan, main wahi hoon. Ek envelope le aao.' The messages are intact, unaltered, and timestamped. No deleted messages were recovered. The call logs between the two numbers on 10.10.2023 and 12.10.2023 confirm two calls: one at 16:20 on 10.10.2023 (duration: 42 sec) and one at 15:10 on 12.10.2023 (duration: 18 sec). The content of the calls matches the WhatsApp transcript. Conclusion: The communication graph confirms the bribe demand and meeting arrangement. No evidence of third-party involvement in communication."
+    },
+    {
+      "document_id": "ER-004",
+      "document_type": "Financial_Record",
+      "metadata": {
+        "report_id": "BANK-WITHDRAWAL-AXIS-NOIDA-2023-1011",
+        "prepared_by": "Axis Bank, Noida Branch",
+        "date": "2023-10-15"
+      },
+      "content": "Account Holder: Vikram Kumar (Account No.: XXXX-XXXX-5432) Transaction Date: 11.10.2023 Time: 11:45 AM Withdrawal Amount: \u20b950,000 Denominations: \u20b9500 x 100 notes Serial Numbers: E032156789 to E032156888 (as per bank\u2019s internal record) Mode: Cash withdrawal from counter, no deposit slip, no ID verification beyond PAN (PAN: AABPV7890Q). Witness: Teller Ms. Rekha Singh. Remarks: Customer appeared nervous, asked for notes in new condition. No CCTV footage available for counter due to camera malfunction on that day. This withdrawal is unrelated to any ACB operation. The serial numbers match those recovered during the trap on 12.10.2023."
+    },
+    {
+      "document_id": "IR-001",
+      "document_type": "Police_Investigation_Report",
+      "metadata": {
+        "report_id": "ACB/INV/GZB/2023/087",
+        "prepared_by": "Shri Vikas Singh, ACB Officer",
+        "date": "2023-10-18"
+      },
+      "content": "The investigation into the alleged bribery case involving Mr. Ramesh Kumar reveals the following: 1. The complainant, Mr. Arjun Mehta, provided a verifiable WhatsApp and call record of the bribe demand. 2. The trap was conducted in compliance with ACB guidelines \u2014 marked currency was prepared, witnesses were present, and the recovery was immediate. 3. However, forensic analysis of the recovered currency revealed that the notes were not from the ACB\u2019s marked ledger, but from a bank withdrawal by Vikram Kumar on 11.10.2023. 4. Witness Priya Sharma\u2019s claim of a third-party handover is contradicted by CCTV footage. 5. The recovery report initially stated that money was taken from the accused\u2019s person, but internal logs show it was retrieved from his desk drawer after arrest. 6. Mr. Ramesh Kumar\u2019s bank statements show no significant income, and his daughter is undergoing treatment for a chronic kidney condition at Max Hospital, Ghaziabad, with monthly expenses exceeding \u20b945,000. 7. Mr. Vikram Kumar, cousin of the accused, has no criminal record but was seen near the GMC office on 12.10.2023 (confirmed by auto-rickshaw driver). 8. Conclusion: While the bribe transaction occurred, the ACB\u2019s procedural documentation contains material inaccuracies. The accused did receive the money, but the notes were not the ones issued by ACB. The witness testimony of Priya Sharma appears coached. The motive is credible. Recommend prosecution under Section 7 of PCA, 1988, with note on procedural irregularities."
+    },
+    {
+      "document_id": "CS-001",
+      "document_type": "Charge_Sheet",
+      "metadata": {
+        "charge_sheet_no": "CS/ACB/GZB/2023/087",
+        "court": "Special ACB Court, Ghaziabad",
+        "date_filed": "2023-10-25",
+        "prosecutor": "Shri Rameshwar Prasad, Public Prosecutor, ACB"
+      },
+      "content": "IN THE COURT OF THE SPECIAL ACB JUDGE, GHAZIABAD\n\nCharge Sheet under Section 7 read with Section 13(1)(d) of the Prevention of Corruption Act, 1988\n\nAccused: Ramesh Kumar, S/o Shyam Lal, aged 42, Junior Clerk, Ghaziabad Municipal Corporation, Rajiv Nagar, Ghaziabad.\n\nComplainant: Arjun Mehta, Contractor, Sector 12, Rajiv Nagar, Ghaziabad.\n\nThe accused is charged with demanding and accepting a bribe of \u20b950,000 in cash for expediting a building permit. The prosecution relies on: (1) WhatsApp and call records establishing the demand; (2) eyewitness testimony of Arjun Mehta and Sanjay Verma; (3) recovery of currency notes during a trap operation; and (4) motive of financial hardship due to daughter\u2019s medical treatment. Although forensic analysis shows the notes were not from the ACB\u2019s marked currency, the prosecution submits that the act of accepting bribe money, regardless of its origin, constitutes an offense under the PCA. The discrepancy in the recovery report and the false testimony of Priya Sharma are acknowledged as procedural lapses, but do not negate the core offense. The accused is therefore charged with the offense of criminal misconduct by a public servant under Section 7 of the Prevention of Corruption Act, 1988. All evidence is annexed. The accused is remanded to judicial custody pending trial."
+    }
+  ],
+  "benchmark": {
+    "queries": [
+      {
+        "id": "Q1",
+        "question": "Who is the actual perpetrator?",
+        "category": "suspect_identification"
+      },
+      {
+        "id": "Q2",
+        "question": "Did the ACB use properly marked currency notes in the trap operation?",
+        "category": "evidence_ranking"
+      },
+      {
+        "id": "Q3",
+        "question": "Is the testimony of Priya Sharma credible?",
+        "category": "witness_credibility"
+      },
+      {
+        "id": "Q4",
+        "question": "What was the motive behind the bribe demand?",
+        "category": "motive_analysis"
+      },
+      {
+        "id": "Q5",
+        "question": "Was the money recovered from Ramesh Kumar\u2019s person or his desk drawer?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q6",
+        "question": "Who provided the \u20b950,000 in currency notes to Ramesh Kumar before the trap?",
+        "category": "relationship_mapping"
+      },
+      {
+        "id": "Q7",
+        "question": "Do the WhatsApp messages support the timeline of the bribe demand?",
+        "category": "timeline_reconstruction"
+      },
+      {
+        "id": "Q8",
+        "question": "Is there evidence that the ACB\u2019s recovery report was falsified?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q9",
+        "question": "What is the likelihood of conviction based on the available evidence?",
+        "category": "conviction_likelihood"
+      },
+      {
+        "id": "Q10",
+        "question": "How does the bank withdrawal record from Noida contradict the ACB\u2019s forensic claim?",
+        "category": "contradiction_detection"
+      }
+    ],
+    "expected_answers": [
+      {
+        "query_id": "Q1",
+        "answer": "The actual perpetrator is Ramesh Kumar. He demanded and accepted a bribe of \u20b950,000 from Arjun Mehta to expedite a building permit. Although the currency notes were not the original ACB-marked ones, he knowingly received and concealed the money. His motive \u2014 funding his daughter\u2019s medical treatment \u2014 does not excuse the offense under the Prevention of Corruption Act. The trap was legitimate, and the transaction was witnessed by Arjun Mehta and Sanjay Verma. The forensic and CCTV evidence confirms the exchange occurred, even if the notes were swapped."
+      },
+      {
+        "query_id": "Q2",
+        "answer": "No, the ACB did not use properly marked currency notes. The forensic report and bank records prove that the serial numbers of the recovered notes were never issued by the ACB. Instead, they were withdrawn from Axis Bank, Noida, by Vikram Kumar on October 11, 2023. The ACB\u2019s forensic report falsely claims the notes were from their own marked ledger, indicating a procedural falsification."
+      },
+      {
+        "query_id": "Q3",
+        "answer": "No, the testimony of Priya Sharma is not credible. She claims to have seen Ramesh Kumar receive the envelope from a man in a blue shirt outside the office. However, the CCTV footage shows only Arjun Mehta entering the building and meeting Ramesh Kumar. Priya Sharma was outside the building during the transaction and had no line of sight to the actual exchange. Her statement contradicts physical evidence and appears to have been coached by Vikram Kumar, who is her relative and the source of the money."
+      },
+      {
+        "query_id": "Q4",
+        "answer": "The true motive behind the bribe demand was to supplement Ramesh Kumar\u2019s low salary to pay for his daughter\u2019s chronic kidney treatment, which costs over \u20b945,000 per month. Financial records and hospital documents confirm the medical expenses, and his bank statements show no other income sources. This motive is credible, documented, and explains why he took the risk despite knowing the consequences."
+      },
+      {
+        "query_id": "Q5",
+        "answer": "The money was recovered from Ramesh Kumar\u2019s desk drawer, not from his person. The initial recovery report falsely stated it was taken from his hand during arrest. Internal ACB logs and officer testimony confirm the money was found hidden in his drawer after he was detained. This discrepancy was concealed in the initial documentation to make the trap appear more seamless."
+      },
+      {
+        "query_id": "Q6",
+        "answer": "The \u20b950,000 in currency notes was provided to Ramesh Kumar by his cousin, Vikram Kumar. Vikram withdrew the exact same serial-numbered notes from Axis Bank, Noida, on October 11, 2023, and gave them to Ramesh on the morning of October 12. Ramesh hid them in his drawer before the trap. Vikram never entered the GMC office, but he coached Priya Sharma to lie about seeing the exchange outside."
+      },
+      {
+        "query_id": "Q7",
+        "answer": "Yes, the WhatsApp messages fully support the timeline. On October 10 at 14:30, Arjun Mehta asked about the permit. At 16:15, Ramesh Kumar demanded \u20b950,000. On October 12 at 13:05 and 13:07, they confirmed the meeting time and place. The call logs corroborate this. The timeline is consistent with the trap occurring at 15:30 on October 12, confirming the premeditated nature of the demand and the trap."
+      },
+      {
+        "query_id": "Q8",
+        "answer": "Yes, there is clear evidence that the ACB\u2019s recovery report was falsified. The report states that the money was recovered 'from the accused\u2019s person' during arrest. However, internal ACB logs and the digital timestamped inventory show the notes were retrieved from his desk drawer 90 seconds after arrest. This was likely done to avoid scrutiny over how the notes were obtained \u2014 since they were not the ACB\u2019s original marked currency, the report was altered to make the operation appear procedurally flawless."
+      },
+      {
+        "query_id": "Q9",
+        "answer": "The likelihood of conviction is high. Although there are procedural irregularities \u2014 falsified forensic report, misleading witness, and swapped currency \u2014 the core offense is proven: Ramesh Kumar, a public servant, demanded and accepted a bribe. The WhatsApp messages, independent witness testimony (Sanjay Verma), and his admission during interrogation confirm the act. The motive, while sympathetic, does not negate guilt under the Prevention of Corruption Act. Courts have upheld convictions even when traps had minor procedural flaws if the bribe is substantiated."
+      },
+      {
+        "query_id": "Q10",
+        "answer": "The bank withdrawal record from Axis Bank, Noida, shows that the exact serial numbers of the recovered notes were withdrawn by Vikram Kumar on October 11, 2023 \u2014 one day before the trap. The ACB\u2019s forensic report falsely claims these serial numbers were issued by the ACB for the operation. However, the ACB\u2019s own ledger confirms those serials were never issued. This contradiction exposes the forensic report as fabricated and proves the money was never part of the ACB\u2019s trap currency, undermining the official narrative."
+      }
+    ]
+  }
+}

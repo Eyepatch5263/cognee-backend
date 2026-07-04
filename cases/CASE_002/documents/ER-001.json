@@ -1,0 +1,11 @@
+{
+  "document_id": "ER-001",
+  "document_type": "CCTV_report",
+  "metadata": {
+    "report_id": "CCTV-2023-10457-01",
+    "location": "Sector 17 Apartment Complex - Main Gate",
+    "date_retrieved": "2023-10-15",
+    "analyst": "Constable Vikram Singh, Cyber Cell, Sector 17 PS"
+  },
+  "content": "CCTV footage from Main Gate Camera (Camera ID: SG-17-MG-03) shows Anjali Verma entering the complex at 10:12:14 PM wearing a blue denim jacket, black leggings, and carrying a backpack. She walks directly toward her building (Apartment 4B). No other individuals are seen entering with her. The camera covering the parking lot (Camera ID: SG-17-PL-07) was offline from 10:20:03 PM to 10:50:17 PM due to a power surge. No footage exists of the alleged incident location. The camera system logs confirm the outage was not caused by tampering — it was a documented system failure reported by the housing society at 10:18 PM. No evidence of manual intervention found."
+}

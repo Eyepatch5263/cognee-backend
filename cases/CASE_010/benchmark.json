@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "Which witness statement is most clearly fabricated, and what evidence contradicts it?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q3",
+      "question": "What is the most critical forensic contradiction in the case?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q4",
+      "question": "Reconstruct the true timeline of events on August 13–14, 2023.",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q5",
+      "question": "What was the primary motive behind the crime?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q6",
+      "question": "Which piece of evidence is most indicative of premeditation?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q7",
+      "question": "How did the accused attempt to conceal the crime through forged documents?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q8",
+      "question": "Which individuals are accomplices, and what roles did they play?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q9",
+      "question": "Why was the insurance claim initially accepted for processing despite red flags?",
+      "category": "policy_compliance"
+    },
+    {
+      "id": "Q10",
+      "question": "What is the likelihood of conviction for all three accused based on available evidence?",
+      "category": "conviction_likelihood"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "Priya Roy is the actual perpetrator. She orchestrated the murder to collect ₹50 lakhs in insurance proceeds to pay off gambling debts and prevent foreclosure on her family home. She conspired with Rajesh Choudhary to stage the accident and Dr. Suman Mukherjee to forge medical records. Digital forensics place her at the scene before the accident was reported, her smartwatch recorded elevated heart rate and movement consistent with manual strangulation, and she withdrew ₹4.2 lakhs immediately after the death. Her false testimony, forged documents, and deleted communications confirm her central role."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "Mrs. Anjali Das’s statement is most clearly fabricated. She claimed to have seen Arjun Roy walking near his shop at 9 PM on August 13. However, the shop’s CCTV footage shows no one entering or exiting between 8:45 PM and 11:00 PM, and the security light was on during that period. This directly contradicts her testimony, suggesting she either lied or was mistaken—likely under pressure from Priya Roy to create an alibi."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "The most critical forensic contradiction is between the original post-mortem report (which cited 'blunt force trauma due to accident') and the independent forensic analysis from the State Forensic Science Laboratory, which found no signs of high-impact trauma but clear evidence of sedative overdose and manual strangulation. This contradiction reveals the accident was staged and the death was homicidal, undermining the entire insurance claim narrative."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "True timeline: On August 13, Arjun Roy left his shop at 8:42 PM and returned home. At 11:45 PM, Rajesh Choudhary picked him up under false pretenses. Arjun was drugged with Diazepam en route. At 02:30–03:15 AM, Rajesh strangled him at a secluded spot near NH6. At 03:45 AM, Rajesh placed the body in the car and used a winch to push it off the embankment. At 04:05 AM, Priya Roy arrived at the scene, likely to ensure the setup was complete. At 04:20 AM, she called emergency services from the shop landline. At 05:10 AM, Dr. Mukherjee visited the mortuary to alter autopsy notes. At 06:30 AM, Priya withdrew ₹4.2 lakhs from the joint account."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The primary motive was financial desperation. Priya Roy had accumulated ₹18 lakhs in gambling debts secured against the family home, which was about to be seized by a loan shark. She increased Arjun’s life insurance policy by ₹30 lakhs just 12 days before the murder, knowing he had undiagnosed hypertension and would likely die soon. The ₹50 lakh payout would clear her debts and save the home. Her actions were premeditated and financially driven."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The most indicative piece of evidence of premeditation is the deleted WhatsApp message recovered from Priya Roy’s phone: 'Done. Car pushed. Body in. Call police at 4:20. Don’t mention me.' This shows detailed planning, coordination with an accomplice, and deliberate timing of the report. Combined with her Google search history on 'how to fake car accident' and 'sedatives without prescription', this proves intent and planning weeks in advance."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "The accused used forged documents to create a false medical narrative: (1) A fabricated medical report claiming Arjun had 'severe cervical strain' requiring therapy, justifying his absence from work and implying vulnerability; (2) A forged physiotherapy logbook with 14 entries, including one on August 14—when the clinic was closed; (3) A fake cash receipt for the insurance premium, contradicting bank records showing NEFT payment; and (4) An altered autopsy report inserting non-existent trauma descriptors. These documents were designed to make the death appear accidental and the claim legitimate."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Accomplices: Rajesh Choudhary and Dr. Suman Mukherjee. Rajesh acted as the executor—he drove Arjun to the location, drugged him, strangled him, and staged the accident using a winch. Dr. Mukherjee provided the medical cover-up—he forged the therapy records and altered the autopsy report to support the accident narrative. Both were paid by Priya Roy. Rajesh received ₹1.2 lakhs via bank transfer; Dr. Mukherjee received undisclosed cash payments and protection from exposure."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The insurance claim was initially accepted because Bharat Life Insurance’s automated system did not flag the policy increase as suspicious, and the forged documents appeared authentic on initial review. The claim form listed Arjun as a non-smoker/non-drinker, masking his alcohol-induced gastritis history. The cash premium receipt was not cross-verified with bank records. The EDR (black box) was reported damaged, but the insurer waived the requirement for claims over ₹40 lakhs due to internal policy loopholes. Human oversight and reliance on forged paperwork allowed the claim to proceed to processing."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The likelihood of conviction for all three accused is very high. The evidence is overwhelming: digital forensics place Priya at the scene, toxicology confirms homicide, financial trails show motive and movement of funds, and multiple forged documents are directly tied to Dr. Mukherjee and Rajesh. All three have no credible alibis, and their testimonies contradict each other and physical evidence. Under Indian law, conspiracy and joint liability apply. With the charge sheet filed and forensic evidence intact, conviction is probable on all counts."
+    }
+  ]
+}

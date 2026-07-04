@@ -1,0 +1,10 @@
+{
+  "document_id": "FINANCIAL-001",
+  "document_type": "financial_records",
+  "metadata": {
+    "bank": "State Bank of India, Kharadi Branch",
+    "account_holder": "Arjun Mehta",
+    "period": "October 1–16, 2023"
+  },
+  "content": "Transaction Summary: - 10/14/2023: ₹10,00,000 transferred from Arjun Mehta’s account to Priya Mehta’s newly opened savings account (A/C No: SBIN00987654321). - 10/15/2023: ₹25,00,000 transferred to 'R. Sharma' (Account: IB00123456789) via UPI. Label: 'Personal Loan'. - 10/15/2023: ₹5,00,000 withdrawn in cash from ATM (Kharadi Central). - 10/16/2023: ₹1,00,000 transferred from Vikram Desai’s account to Nidhi Rao’s account (labeled 'consulting fee'). Bank records confirm Nidhi Rao opened account on 10/13/2023. Priya’s new account was opened on 10/14/2023 with ₹10 lakh deposit — matching the transfer from Arjun. No prior deposits in Priya’s account since 2020. R. Sharma account is shell account registered under fake PAN. No physical person identified."
+}

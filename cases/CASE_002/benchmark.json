@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "What evidence was forged, and by whom?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q3",
+      "question": "Why is the timeline of the café receipt critical to the case?",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q4",
+      "question": "Which witness statements are intentionally deceptive, and what details were omitted or falsified?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q5",
+      "question": "How does the deleted call log at 9:45 PM impact the motive analysis?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q6",
+      "question": "What contradiction exists between the victim’s description of the assailant’s clothing and her own attire?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q7",
+      "question": "Is the DNA evidence under the victim’s fingernails conclusive, or could it have been contaminated?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q8",
+      "question": "What is the relationship between Arjun Singh and Rohan Kapoor, and how does it affect the case?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q9",
+      "question": "What is the likelihood of conviction based on the available evidence?",
+      "category": "conviction_likelihood"
+    },
+    {
+      "id": "Q10",
+      "question": "How did family pressure influence the investigation process?",
+      "category": "family_pressure_dynamics"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "Rohan Kapoor is the actual perpetrator. The forensic DNA under the victim’s fingernails matches his profile. Digital forensics place him at the parking lot between 10:15–10:25 PM, and his phone was used to call the victim 47 seconds earlier at 9:45 PM — indicating prior contact and intent. His alibi was fabricated using a forged café receipt, which was timestamped by Arjun Singh to 10:30 PM, while the POS system logs prove he arrived at 10:37 PM. His motive is revenge for being rejected by Anjali and her threat to expose his history of harassing female gym members."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "The Café Zenith receipt was forged by Arjun Singh, at the request of Rohan Kapoor. The original receipt was printed at 10:37:15 PM, but was manually altered to 10:30:00 PM using administrative access. This was done to create a false alibi. Additionally, Rohan Kapoor deleted the 47-second call log to Anjali from his phone using a third-party app, which was later recovered by digital forensics — this constitutes destruction of evidence."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "The café receipt timeline is critical because it forms the core of Rohan Kapoor’s alibi. If he was at the café at 10:30 PM, he could not have committed the assault between 10:20–10:35 PM. However, the POS system logs prove the receipt was printed at 10:37 PM, meaning he arrived at the café after the assault. This makes his alibi impossible and proves premeditated fabrication of evidence, directly implicating him in the crime and obstructing justice."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "Arjun Singh and Mrs. Mehta are intentionally deceptive. Arjun Singh falsely testified that Rohan arrived at Café Zenith at 10:30 PM and that the receipt was printed then — he later admitted to altering the timestamp. Mrs. Mehta claimed she saw Anjali walking with a man she recognized at 10:20 PM — but the security guard confirmed she was not on her balcony at that time due to migraine, meaning her testimony is fabricated or based on false memory. Both are protecting Rohan Kapoor."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The deleted 47-second call at 9:45 PM indicates prior contact between Rohan and Anjali, contradicting his claim of never knowing her. The duration suggests a deliberate conversation, not a wrong number. This supports the motive of revenge for rejection — he was likely attempting to rekindle a romantic connection or warn her against exposing his harassment. The deletion shows intent to conceal, strengthening the case for premeditation and stalking behavior."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The victim initially told police the assailant wore a black hoodie, but later told her counselor he wore a blue jacket. However, CCTV shows the victim herself was wearing a blue jacket. This creates ambiguity — was she misremembering the attacker’s clothing, or was she subconsciously projecting her own attire onto the assailant due to trauma? This contradiction was exploited by the defense to cast doubt, but it does not negate the DNA evidence or timeline."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "The DNA evidence is forensically conclusive — the match probability is 1 in 1.2 billion. While Priya Mehta claims the victim scratched herself gardening earlier, the forensic report notes the quantity and distribution of DNA under the fingernails are consistent with a violent struggle, not a minor scratch. The sample contained epithelial cells from multiple areas of the hand, not localized to a single wound. Contamination is theoretically possible but statistically negligible given the profile strength and context."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Arjun Singh is Rohan Kapoor’s yoga instructor and close confidant. He provided emotional support to Rohan and was aware of his resentment toward Anjali. He assisted in forging the café receipt to create an alibi and may have advised Rohan on how to evade suspicion. Their relationship is one of mentorship and complicity — Arjun’s actions were not merely passive but actively obstructive to justice."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The likelihood of conviction is very high. The case has multiple converging lines of evidence: DNA match, digital forensics placing the accused at the scene, a proven fabricated alibi, a deleted incriminating call, and testimony from the victim corroborated by medical findings. While witness contradictions exist, they are largely attributable to deception by accomplices or trauma-induced memory errors. The prosecution’s case is strong and meets the standard of 'beyond reasonable doubt'."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "Family pressure from Anjali’s father, a senior government official, expedited the investigation and ensured forensic reports were prioritized. This prevented delays but also created public perception of bias. Conversely, Rohan’s family pressured authorities to focus on the neighbor’s testimony and the gardening injury, attempting to divert suspicion. While pressure did not alter forensic results, it influenced the tone of media coverage and the speed of procedural steps, highlighting systemic vulnerability to influence in high-profile cases."
+    }
+  ]
+}

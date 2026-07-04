@@ -1,0 +1,233 @@
+```json
+{
+  "CASE METADATA": {
+    "case_id": "CASE_010",
+    "case_type": "insurance_scam",
+    "difficulty": "medium",
+    "incident_date": "2023-08-14",
+    "location": "Kharagpur, West Bengal",
+    "summary": "On August 14, 2023, Mr. Arjun Roy, a 42-year-old shopkeeper from Kharagpur, was reported dead in a single-vehicle accident near the NH6 bypass. His wife, Priya Roy, filed a life insurance claim for ₹50 lakhs under a policy issued by Bharat Life Insurance, citing accidental death. The insurer flagged the claim due to inconsistencies in medical records and delayed reporting of the incident. Preliminary investigation revealed that Arjun had recently increased his coverage by ₹30 lakhs just 12 days before the accident, with no prior health disclosures. The vehicle, a 2018 Maruti Suzuki Dzire, was found overturned near a deserted stretch with no skid marks, suggesting the driver may not have been in control—or was never driving at all. The body showed no signs of trauma consistent with a high-speed crash, but the post-mortem report listed 'blunt force trauma due to accident'—a conclusion later questioned by an independent forensic expert. The case deepened when neighbors reported seeing Arjun alive the evening after the alleged accident, and bank records showed a large cash withdrawal by Priya two hours after the incident was reported to police. The insurance company launched a formal investigation, uncovering forged medical reports, conflicting witness statements, and a hidden relationship between Priya and a local physiotherapist with a history of falsifying injury reports. The case now hinges on whether this was a staged accident, a premeditated murder, or a desperate act by a woman drowning in debt."
+  },
+  "HIDDEN GROUND TRUTH": {
+    "actual_criminal": "Priya Roy",
+    "accomplices": [
+      "Dr. Suman Mukherjee",
+      "Rajesh Choudhary"
+    ],
+    "true_motive": "To collect insurance money to pay off gambling debts and avoid foreclosure on her family home, which she had secretly mortgaged to a loan shark.",
+    "true_timeline": [
+      "2023-08-02: Priya Roy increases Arjun's life insurance coverage by ₹30 lakhs without disclosing his recent diagnosis of stage 2 hypertension.",
+      "2023-08-13: Priya and Dr. Suman Mukherjee plan the scam; Suman agrees to forge medical records and provide a false 'injury report' for Arjun's recent physiotherapy sessions.",
+      "2023-08-14, 03:15 AM: Rajesh Choudhary, a hired driver, takes Arjun to the NH6 bypass under the pretense of a late-night errand. Arjun is drugged with a sedative and placed in the car, which is then pushed off a slight embankment by Rajesh using a hidden winch mechanism.",
+      "2023-08-14, 03:45 AM: Rajesh leaves the scene. Priya calls emergency services at 04:20 AM, claiming she found the car overturned after hearing a crash.",
+      "2023-08-14, 05:10 AM: Dr. Mukherjee visits the mortuary and alters the preliminary autopsy notes to match the 'accident' narrative, inserting fabricated soft tissue injuries.",
+      "2023-08-14, 06:30 AM: Priya withdraws ₹4.2 lakhs from Arjun’s joint account at Kharagpur Central Bank.",
+      "2023-08-15: Priya submits the insurance claim with forged medical reports from 'Suman Wellness Clinic' and a fake physiotherapy logbook.",
+      "2023-08-16: Priya visits her sister in Durgapur, claiming she is 'grieving'—but CCTV shows her meeting Rajesh at a roadside dhaba."
+    ],
+    "lying_witnesses": [
+      "Dr. Suman Mukherjee",
+      "Rajesh Choudhary",
+      "Mrs. Anjali Das (neighbor)"
+    ],
+    "forged_evidence": [
+      "Medical report from Suman Wellness Clinic dated 2023-08-10 claiming Arjun had 'severe cervical strain' requiring daily therapy",
+      "Physiotherapy logbook with 14 entries (all forged) signed by Dr. Mukherjee",
+      "Altered post-mortem summary sheet with fabricated trauma descriptors matching 'accidental impact'",
+      "Fake receipt for ₹2.5 lakh insurance premium payment on 2023-08-03 (actually paid via bank transfer on 2023-08-02)"
+    ],
+    "injected_contradictions": [
+      "Witness Mrs. Anjali Das claims she saw Arjun walking near his shop at 9 PM on August 13, but CCTV from the shop’s front camera shows no one entering or exiting after 8:45 PM.",
+      "Insurance claim form lists Arjun as a 'non-smoker and non-drinker', but his hospital records from a 2022 visit show he was treated for alcohol-induced gastritis.",
+      "The vehicle’s black box (if present) was reportedly damaged, but the insurance policy’s terms require a functional EDR for claims over ₹40 lakhs—yet the claim was accepted for processing anyway.",
+      "Dr. Mukherjee’s clinic was closed on August 14 due to 'power outage', yet his forged logbook shows a session with Arjun at 11:30 AM that day.",
+      "Priya claims she was asleep during the accident, but her mobile phone location data shows she was at the accident site at 04:05 AM—two hours before she called police."
+    ]
+  },
+  "REASONING PERSPECTIVES": [
+    "timeline reconstruction",
+    "witness credibility",
+    "financial motive",
+    "family relationships",
+    "digital forensics",
+    "forensic evidence",
+    "money flow",
+    "communication graph",
+    "alibi verification",
+    "policy compliance"
+  ],
+  "CONTRADICTIONS": [
+    {
+      "type": "timeline",
+      "severity": "high",
+      "claim_a": "Priya Roy claims she discovered the accident at 4:20 AM after hearing a loud crash from her bedroom.",
+      "claim_b": "Mobile tower pings show Priya’s phone was at the accident site at 4:05 AM, and her smartwatch recorded elevated heart rate and movement from 3:50 AM to 4:10 AM."
+    },
+    {
+      "type": "testimony",
+      "severity": "medium",
+      "claim_a": "Mrs. Anjali Das, neighbor, testifies she saw Arjun Roy walking near his shop at 9 PM on August 13.",
+      "claim_b": "Shop front CCTV footage shows no person entering or exiting between 8:45 PM and 11:00 PM, and the shop’s security light was off during that period."
+    },
+    {
+      "type": "forensic",
+      "severity": "critical",
+      "claim_a": "Post-mortem report states Arjun died from 'blunt force trauma consistent with vehicle impact'.",
+      "claim_b": "Independent forensic pathologist finds no internal organ displacement or rib fractures typical of high-speed impact; instead, signs of sedative overdose and manual strangulation are present."
+    },
+    {
+      "type": "financial",
+      "severity": "high",
+      "claim_a": "Insurance claim states the last premium payment was made on August 3, 2023, via cash deposit at the branch.",
+      "claim_b": "Bank records show the premium was paid via NEFT transfer on August 2, 2023, from Priya’s personal account—no cash deposit occurred on August 3."
+    },
+    {
+      "type": "testimony",
+      "severity": "medium",
+      "claim_a": "Dr. Suman Mukherjee claims he treated Arjun Roy daily from August 1–13, 2023, at Suman Wellness Clinic.",
+      "claim_b": "Clinic CCTV footage and staff logs confirm the clinic was closed on August 14 due to power failure, and no patient was seen after August 12."
+    }
+  ],
+  "EXPECTED KNOWLEDGE GRAPH": {
+    "nodes": [
+      {
+        "id": "P001",
+        "type": "Person",
+        "label": "Priya Roy"
+      },
+      {
+        "id": "P002",
+        "type": "Person",
+        "label": "Arjun Roy"
+      },
+      {
+        "id": "P003",
+        "type": "Person",
+        "label": "Dr. Suman Mukherjee"
+      },
+      {
+        "id": "P004",
+        "type": "Person",
+        "label": "Rajesh Choudhary"
+      },
+      {
+        "id": "P005",
+        "type": "Person",
+        "label": "Mrs. Anjali Das"
+      },
+      {
+        "id": "O001",
+        "type": "Organization",
+        "label": "Bharat Life Insurance"
+      },
+      {
+        "id": "O002",
+        "type": "Organization",
+        "label": "Suman Wellness Clinic"
+      },
+      {
+        "id": "E001",
+        "type": "Event",
+        "label": "Vehicle Accident (Aug 14, 2023)"
+      },
+      {
+        "id": "A001",
+        "type": "Asset",
+        "label": "Maruti Suzuki Dzire (KA-12-8876)"
+      },
+      {
+        "id": "A002",
+        "type": "Asset",
+        "label": "Life Insurance Policy #BLI-77892"
+      },
+      {
+        "id": "L001",
+        "type": "Location",
+        "label": "NH6 Bypass, Kharagpur"
+      },
+      {
+        "id": "L002",
+        "type": "Location",
+        "label": "Suman Wellness Clinic, Kharagpur"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P001",
+        "target": "P002",
+        "relation": "related_to"
+      },
+      {
+        "source": "P001",
+        "target": "A002",
+        "relation": "owns"
+      },
+      {
+        "source": "P001",
+        "target": "E001",
+        "relation": "filed_claim"
+      },
+      {
+        "source": "P001",
+        "target": "O001",
+        "relation": "submitted_claim_to"
+      },
+      {
+        "source": "P003",
+        "target": "A002",
+        "relation": "forged_evidence"
+      },
+      {
+        "source": "P003",
+        "target": "P001",
+        "relation": "conspired_with"
+      },
+      {
+        "source": "P004",
+        "target": "E001",
+        "relation": "staged"
+      },
+      {
+        "source": "P004",
+        "target": "P001",
+        "relation": "conspired_with"
+      },
+      {
+        "source": "P005",
+        "target": "P002",
+        "relation": "testified_against"
+      },
+      {
+        "source": "P005",
+        "target": "E001",
+        "relation": "witnessed"
+      },
+      {
+        "source": "A001",
+        "target": "L001",
+        "relation": "located_at"
+      },
+      {
+        "source": "O002",
+        "target": "L002",
+        "relation": "located_at"
+      },
+      {
+        "source": "A002",
+        "target": "O001",
+        "relation": "issued_by"
+      },
+      {
+        "source": "P001",
+        "target": "A001",
+        "relation": "owns"
+      },
+      {
+        "source": "P003",
+        "target": "E001",
+        "relation": "provided_forged_medical_report"
+      }
+    ]
+  }
+}
+```

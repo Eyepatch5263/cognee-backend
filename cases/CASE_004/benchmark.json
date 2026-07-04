@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "Did the ACB use properly marked currency notes in the trap operation?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q3",
+      "question": "Is the testimony of Priya Sharma credible?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q4",
+      "question": "What was the motive behind the bribe demand?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q5",
+      "question": "Was the money recovered from Ramesh Kumar’s person or his desk drawer?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q6",
+      "question": "Who provided the ₹50,000 in currency notes to Ramesh Kumar before the trap?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q7",
+      "question": "Do the WhatsApp messages support the timeline of the bribe demand?",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q8",
+      "question": "Is there evidence that the ACB’s recovery report was falsified?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q9",
+      "question": "What is the likelihood of conviction based on the available evidence?",
+      "category": "conviction_likelihood"
+    },
+    {
+      "id": "Q10",
+      "question": "How does the bank withdrawal record from Noida contradict the ACB’s forensic claim?",
+      "category": "contradiction_detection"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "The actual perpetrator is Ramesh Kumar. He demanded and accepted a bribe of ₹50,000 from Arjun Mehta to expedite a building permit. Although the currency notes were not the original ACB-marked ones, he knowingly received and concealed the money. His motive — funding his daughter’s medical treatment — does not excuse the offense under the Prevention of Corruption Act. The trap was legitimate, and the transaction was witnessed by Arjun Mehta and Sanjay Verma. The forensic and CCTV evidence confirms the exchange occurred, even if the notes were swapped."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "No, the ACB did not use properly marked currency notes. The forensic report and bank records prove that the serial numbers of the recovered notes were never issued by the ACB. Instead, they were withdrawn from Axis Bank, Noida, by Vikram Kumar on October 11, 2023. The ACB’s forensic report falsely claims the notes were from their own marked ledger, indicating a procedural falsification."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "No, the testimony of Priya Sharma is not credible. She claims to have seen Ramesh Kumar receive the envelope from a man in a blue shirt outside the office. However, the CCTV footage shows only Arjun Mehta entering the building and meeting Ramesh Kumar. Priya Sharma was outside the building during the transaction and had no line of sight to the actual exchange. Her statement contradicts physical evidence and appears to have been coached by Vikram Kumar, who is her relative and the source of the money."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "The true motive behind the bribe demand was to supplement Ramesh Kumar’s low salary to pay for his daughter’s chronic kidney treatment, which costs over ₹45,000 per month. Financial records and hospital documents confirm the medical expenses, and his bank statements show no other income sources. This motive is credible, documented, and explains why he took the risk despite knowing the consequences."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The money was recovered from Ramesh Kumar’s desk drawer, not from his person. The initial recovery report falsely stated it was taken from his hand during arrest. Internal ACB logs and officer testimony confirm the money was found hidden in his drawer after he was detained. This discrepancy was concealed in the initial documentation to make the trap appear more seamless."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The ₹50,000 in currency notes was provided to Ramesh Kumar by his cousin, Vikram Kumar. Vikram withdrew the exact same serial-numbered notes from Axis Bank, Noida, on October 11, 2023, and gave them to Ramesh on the morning of October 12. Ramesh hid them in his drawer before the trap. Vikram never entered the GMC office, but he coached Priya Sharma to lie about seeing the exchange outside."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "Yes, the WhatsApp messages fully support the timeline. On October 10 at 14:30, Arjun Mehta asked about the permit. At 16:15, Ramesh Kumar demanded ₹50,000. On October 12 at 13:05 and 13:07, they confirmed the meeting time and place. The call logs corroborate this. The timeline is consistent with the trap occurring at 15:30 on October 12, confirming the premeditated nature of the demand and the trap."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Yes, there is clear evidence that the ACB’s recovery report was falsified. The report states that the money was recovered 'from the accused’s person' during arrest. However, internal ACB logs and the digital timestamped inventory show the notes were retrieved from his desk drawer 90 seconds after arrest. This was likely done to avoid scrutiny over how the notes were obtained — since they were not the ACB’s original marked currency, the report was altered to make the operation appear procedurally flawless."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The likelihood of conviction is high. Although there are procedural irregularities — falsified forensic report, misleading witness, and swapped currency — the core offense is proven: Ramesh Kumar, a public servant, demanded and accepted a bribe. The WhatsApp messages, independent witness testimony (Sanjay Verma), and his admission during interrogation confirm the act. The motive, while sympathetic, does not negate guilt under the Prevention of Corruption Act. Courts have upheld convictions even when traps had minor procedural flaws if the bribe is substantiated."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The bank withdrawal record from Axis Bank, Noida, shows that the exact serial numbers of the recovered notes were withdrawn by Vikram Kumar on October 11, 2023 — one day before the trap. The ACB’s forensic report falsely claims these serial numbers were issued by the ACB for the operation. However, the ACB’s own ledger confirms those serials were never issued. This contradiction exposes the forensic report as fabricated and proves the money was never part of the ACB’s trap currency, undermining the official narrative."
+    }
+  ]
+}

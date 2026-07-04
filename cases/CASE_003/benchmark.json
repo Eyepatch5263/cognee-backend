@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "What is the true motive behind the theft?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q3",
+      "question": "Which witness provided a false timeline, and why is their statement misleading?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q4",
+      "question": "How does the fingerprint evidence support the conviction despite the report’s inconsistency?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q5",
+      "question": "What is the correct timeline of the burglary based on all evidence?",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q6",
+      "question": "Which piece of evidence was incorrectly documented in the recovery report?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q7",
+      "question": "Does the CCTV footage support or contradict Priya Mehta’s testimony?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q8",
+      "question": "What is the likelihood of conviction based on the evidence presented?",
+      "category": "conviction_likelihood"
+    },
+    {
+      "id": "Q9",
+      "question": "How does Rohan Verma’s employment history relate to the crime?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q10",
+      "question": "Which evidence is most reliable and why?",
+      "category": "evidence_ranking"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "The actual perpetrator is Rohan Verma. He is the only person whose fingerprint was found on the drawer, and the stolen items were recovered from his rented room in Kharar. The CCTV footage shows a person matching his physical description entering and exiting the compound during the time of the burglary. His motive — revenge for being falsely accused of stealing a phone and subsequently terminated — aligns with the targeted nature of the theft. Despite his denial and the witness contradiction, the physical evidence is conclusive and internally consistent with the hidden ground truth."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "The true motive is revenge. Rohan Verma was terminated from his position as a domestic helper six months prior after being falsely accused of stealing a mobile phone from the Mehta household. This accusation led to social stigma in the community and loss of livelihood. The theft was not financially motivated in the traditional sense — the cash and watch were valuable, but the tea set had sentimental value to the victim, indicating a targeted act of psychological retaliation rather than opportunistic gain."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "Priya Mehta provided a false timeline. She claimed she saw Rohan leaving the house at 7:30 PM, but the CCTV footage shows no one exiting until 8:47 PM. She is misleading because she misremembered the time due to a power outage that occurred around 7:20 PM, which disrupted her phone’s clock and caused her to misjudge the time. She genuinely believes her statement, but her recollection is inaccurate. This is not intentional deception, but a case of faulty memory under stress."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "The fingerprint evidence supports conviction because, despite the report’s initial claim that the print was 'unambiguously identifiable,' the forensic lab’s internal notes confirm the print was smudged and required digital enhancement — a step that was not disclosed in the official report. However, the enhancement was properly performed and archived, and the final match to Rohan Verma is scientifically valid. The inconsistency is procedural, not evidentiary. The match remains reliable and legally admissible, as the underlying data is sound."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The correct timeline, per hidden ground truth and corroborated evidence, is: 18:00 — Rohan arrives near the Mehta residence; 19:45 — climbs over the back fence and enters through the unlocked window; 20:10 — opens drawer, takes cash and watch, places tea set in sack; 20:30 — exits through garden, drops cap near rose bushes; 20:47 — leaves compound via side alley (unseen by main gate camera); 21:15 — returns to rented room in Kharar and hides items under floorboard. This timeline aligns with CCTV entry/exit (20:12–20:47), forensic timing of the break-in, and the absence of any other suspect."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The recovery report incorrectly stated that the silver tea set was wrapped in a 'blue cotton cloth.' Photographs from the recovery scene clearly show the cloth is green. This was a clerical error made by the inventory officer under poor lighting conditions. The error was corrected in the official log on March 19, 2024, and does not affect the authenticity of the recovered items or the identity of the accused."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "The CCTV footage directly contradicts Priya Mehta’s testimony. The footage shows no person exiting the compound until 8:47 PM, and no one entering or exiting between 7:30 PM and 8:12 PM. Priya claims she saw Rohan leave at 7:30 PM, but the camera would have captured him if he had exited through the main gate. Since the compound has only one monitored exit and no other entry/exit points, her statement cannot be true. This contradiction is resolved by her faulty memory due to a power outage."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "The likelihood of conviction is very high. The evidence is strong and consistent: fingerprint match (after proper enhancement), recovery of all stolen items from the accused’s residence, CCTV footage placing him at the scene, and a clear motive rooted in past grievances. While there are minor inconsistencies in witness testimony and report drafting, none undermine the core physical evidence. Indian courts have upheld convictions based on circumstantial evidence when the chain is unbroken, as here."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "Rohan Verma’s employment history is directly related to the crime. He worked as a domestic helper in the Mehta household from June to September 2023 and had intimate knowledge of the house layout, routines, and the location of the hidden cash drawer. His termination after a false accusation of theft created resentment and social stigma, providing a clear motive for revenge. His access to the home during employment enabled him to plan the burglary with precision, targeting items of both monetary and emotional value to the victim."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The most reliable evidence is the recovery of the stolen items from Rohan Verma’s rented room. This is direct, physical, and corroborated by multiple sources: the watch and tea set were identified by the victim, the cash matches the reported amount, and the location was secured under a search warrant. The fingerprint evidence is second most reliable — though it required enhancement, it was scientifically validated and archived. CCTV footage is also reliable as it is objective and time-stamped. Witness testimony is the least reliable due to memory errors and potential bias."
+    }
+  ]
+}

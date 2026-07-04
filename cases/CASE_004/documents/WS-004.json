@@ -1,0 +1,10 @@
+{
+  "document_id": "WS-004",
+  "document_type": "witness_statement",
+  "metadata": {
+    "witness_name": "Srinivas Rao",
+    "relation_to_case": "Complainant, Senior Manager",
+    "occupation": "Senior Manager, VerveTech Solutions"
+  },
+  "content": "I discovered the breach at 7:30 AM on November 15. The transfer was authorized by a digital signature on form APPROVE-VRV-8872, which I did not approve. I have no record of authorizing any such transfer. The signature appears to be mine, but I never signed that document. I reviewed the logs and saw that the access came from Arjun Mehta’s device. I also noticed the ₹50,000 transfer from his personal wallet—this confirms intent. I terminated Vikram Singh in October for refusing to sign an NDA that would have transferred ownership of his blockchain protocol to the company. He had access to internal systems and knew our security weaknesses. I suspect he orchestrated this as revenge. I have no personal motive to frame anyone. I want justice."
+}

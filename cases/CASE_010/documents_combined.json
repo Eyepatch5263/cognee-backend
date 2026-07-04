@@ -1,0 +1,138 @@
+[
+  {
+    "document_id": "FIR-001",
+    "document_type": "FIR",
+    "metadata": {
+      "fir_number": "FIR/2023/1874",
+      "police_station": "Kharagpur North Police Station",
+      "date_filed": "2023-08-14",
+      "filed_by": "Priya Roy"
+    },
+    "content": "I, Priya Roy, wife of late Arjun Roy, aged 42, resident of House No. 47, Ramkrishna Road, Kharagpur, West Bengal, hereby file this FIR regarding the accidental death of my husband. On the night of 13th August 2023, my husband left home at approximately 10:30 PM, stating he had to meet a client regarding his shop\u2019s inventory. I went to sleep around 11:30 PM. At approximately 4:20 AM on 14th August 2023, I heard a loud crashing sound from the direction of NH6 bypass, about 2.5 km from our residence. I immediately rushed out and found our vehicle, a Maruti Suzuki Dzire, registration KA-12-8876, overturned near the bypass near the abandoned textile warehouse. I saw my husband\u2019s body inside the vehicle, motionless. I called 112 and the local police. The vehicle showed no signs of skidding or braking, and the steering wheel was bent. There was no other vehicle involved. I believe this was a tragic single-vehicle accident. I request immediate investigation and post-mortem. I am in shock and request assistance in handling the formalities. I have no reason to suspect foul play at this time, but I am willing to cooperate fully with the investigation."
+  },
+  {
+    "document_id": "WS-001",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Priya Roy",
+      "relation_to_case": "Wife of deceased, claimant",
+      "occupation": "Homemaker (formerly shop assistant)"
+    },
+    "content": "I was asleep when the accident happened. I heard a loud crash around 4:20 AM. I didn\u2019t see anything. I\u2019ve never been to the accident site before that night. My husband was a good man, never took risks driving. He had been feeling unwell lately\u2014headaches, dizziness\u2014but I thought it was stress. He was supposed to be at his shop by 8 AM every day. I didn\u2019t know he went out that night. I found out only when I heard the crash. I called the police immediately. I didn\u2019t withdraw any money that morning. The \u20b94.2 lakh I took was from our joint account to pay for his funeral and medical bills. I didn\u2019t know about the insurance increase\u2014I only found out about the policy when I was filling the claim. Dr. Mukherjee treated him for back pain. I don\u2019t know anything about forged documents. I swear on my children\u2019s lives that I didn\u2019t harm my husband."
+  },
+  {
+    "document_id": "WS-002",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Dr. Suman Mukherjee",
+      "relation_to_case": "Physiotherapist and clinic owner",
+      "occupation": "Registered Physiotherapist, Owner, Suman Wellness Clinic"
+    },
+    "content": "I treated Mr. Arjun Roy for cervical and lumbar strain from August 1 to August 12, 2023. He came daily at 11:30 AM. His condition was worsening\u2014he had severe muscle spasms and was advised bed rest. I provided him with a therapy logbook signed by me. On August 14, our clinic had a power outage from 9 AM to 6 PM. We were closed. I did not see Mr. Roy on that day. I did not issue any medical report on August 14. The report submitted to Bharat Life Insurance is not mine. I do not know how it was forged. I have no connection to Priya Roy beyond treating her husband. I am shocked to see my signature on those documents. I have never met Rajesh Choudhary."
+  },
+  {
+    "document_id": "WS-003",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Rajesh Choudhary",
+      "relation_to_case": "Driver, alleged accomplice",
+      "occupation": "Private taxi driver"
+    },
+    "content": "I am a taxi driver. I picked up Mr. Arjun Roy on the night of August 13 at 11:45 PM from his shop. He asked me to drive him to the NH6 bypass to meet someone. He was acting strange\u2014drowsy, slurring words. I thought he was drunk. I drove him there, dropped him off near the embankment, and waited for him to meet his contact. He said he\u2019d be back in 10 minutes. He never came back. I waited until 1:30 AM, then left. I didn\u2019t know he was dead until I saw the news. I didn\u2019t push his car. I didn\u2019t know about the insurance. I swear I didn\u2019t do anything wrong. I don\u2019t know Priya Roy. I\u2019ve never met Dr. Mukherjee. I only drove him that one time."
+  },
+  {
+    "document_id": "WS-004",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Mrs. Anjali Das",
+      "relation_to_case": "Neighbor",
+      "occupation": "Retired school teacher"
+    },
+    "content": "I saw Arjun Roy walking near his shop at around 9 PM on August 13. He was carrying a plastic bag\u2014probably groceries. He waved at me. I thought he was fine. He didn\u2019t look drunk or unwell. I remember because I was watering my plants. I didn\u2019t see him leave after that. I didn\u2019t see him return. I didn\u2019t know he was dead until the next morning. I don\u2019t know anything about insurance or his health. I only saw him walking. That\u2019s all."
+  },
+  {
+    "document_id": "WS-005",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Mr. Debashis Ghosh",
+      "relation_to_case": "Shopkeeper, adjacent to Arjun Roy\u2019s shop",
+      "occupation": "Owner of 'Ghosh Stationery'"
+    },
+    "content": "I closed my shop at 8:45 PM on August 13. I locked the front door. I saw Arjun Roy come in at 8:30 PM to buy pens and notebooks. He paid in cash. He left at 8:42 PM. I didn\u2019t see him come back. My security light was on all night. I checked the CCTV later when police asked. No one entered or exited after 8:42 PM. I didn\u2019t hear any noise. I didn\u2019t know he was dead. I never saw him with Dr. Mukherjee or Rajesh. He seemed fine that night."
+  },
+  {
+    "document_id": "ER-001",
+    "document_type": "CCTV_report",
+    "metadata": {
+      "source": "Arjun Roy\u2019s Shop Front Camera",
+      "date_range": "2023-08-13 08:00 to 2023-08-14 06:00",
+      "analyst": "Digital Forensics Unit, Kharagpur Police"
+    },
+    "content": "CCTV footage from Arjun Roy\u2019s shop (KA-12-8876 Shop) shows: - 08:30 PM: Arjun Roy enters shop. - 08:42 PM: Arjun Roy exits shop, carrying a plastic bag. - 08:45 PM to 11:00 PM: No person enters or exits the shop. Security light remains on. - 11:00 PM to 03:45 AM: No activity. - 04:05 AM: A white Maruti Dzire (KA-12-8876) is seen arriving at the shop entrance, stopping for 30 seconds. Driver is obscured by darkness. No person exits the vehicle. Vehicle departs at 04:08 AM. - 04:20 AM: Priya Roy\u2019s mobile phone is detected near shop entrance (via Bluetooth proximity). Footage does not show Priya Roy exiting vehicle or approaching shop. Conclusion: Arjun Roy was last seen exiting his shop at 8:42 PM on August 13. The vehicle was present at the shop at 04:05 AM, prior to the reported discovery of the accident. No evidence of Arjun Roy being present at the shop after 8:42 PM. Contradicts Mrs. Anjali Das\u2019s claim of seeing him at 9 PM."
+  },
+  {
+    "document_id": "ER-002",
+    "document_type": "forensic_report",
+    "metadata": {
+      "report_id": "FM-2023-087",
+      "institution": "State Forensic Science Laboratory, Kolkata",
+      "examined_by": "Dr. Nandini Sen, Senior Forensic Pathologist",
+      "date": "2023-08-18"
+    },
+    "content": "Post-mortem examination of deceased Arjun Roy (male, 42) reveals: - External: Minor abrasions on right temple and left forearm consistent with contact with interior of vehicle. No fractures of skull, ribs, or pelvis. No signs of high-velocity impact trauma. - Internal: No pulmonary contusions, no liver or spleen rupture. No subarachnoid hemorrhage. - Toxicology: High levels of Diazepam (1.8 mg/L) and Ethanol (0.08%) detected. - Additional findings: Petechial hemorrhages in conjunctivae and cervical region. Compression marks on anterior neck consistent with manual strangulation. No signs of recent physical struggle. - Conclusion: Death was not due to blunt force trauma from vehicle impact. Primary cause: Sedative overdose (Diazepam) combined with manual strangulation. Secondary factor: Ethanol intoxication. Time of death: Estimated between 02:30 AM and 03:45 AM on August 14, 2023. The vehicle accident was staged. The body was placed in the vehicle post-mortem. The original post-mortem report from Kharagpur Civil Hospital is inaccurate and appears to have been altered."
+  },
+  {
+    "document_id": "ER-003",
+    "document_type": "medical_report",
+    "metadata": {
+      "report_id": "MW-2023-014",
+      "institution": "Suman Wellness Clinic, Kharagpur",
+      "date": "2023-08-10",
+      "issued_by": "Dr. Suman Mukherjee"
+    },
+    "content": "Patient: Arjun Roy, 42, Male. Diagnosis: Severe Cervical Strain (C5-C6) with Radiculopathy. Treatment: Daily physiotherapy, 30 mins, for 14 days. Prognosis: Requires bed rest and avoidance of physical stress. Advised to discontinue driving. Date of last session: August 13, 2023. Signed: Dr. Suman Mukherjee. [Signature and clinic stamp] NOTE: This document was later determined to be forged. The clinic was closed on August 14. No session occurred on August 10 or 13. The signature and stamp were digitally replicated."
+  },
+  {
+    "document_id": "ER-004",
+    "document_type": "financial_records",
+    "metadata": {
+      "source": "Kharagpur Central Bank, Branch Code: KC-127",
+      "account_holder": "Arjun Roy (Joint Account with Priya Roy)",
+      "date_range": "2023-07-01 to 2023-08-15"
+    },
+    "content": "Transaction Summary: - 2023-08-02: NEFT transfer of \u20b92,50,000 from Priya Roy\u2019s personal account (ending 5578) to Bharat Life Insurance (Policy #BLI-77892). - 2023-08-03: No cash deposit recorded. Claimed cash payment is false. - 2023-08-14, 06:30 AM: Cash withdrawal of \u20b94,20,000 from joint account by Priya Roy. - 2023-08-14, 07:15 AM: \u20b93,00,000 deposited into account ending 9912 (unregistered account). - 2023-08-15: \u20b91,20,000 transferred to Durgapur-based account under name 'R. Choudhary'. - Outstanding loan: \u20b918 lakhs owed to 'Shree Ganesh Loan & Finance' (loan shark), secured against family home. - Arjun Roy\u2019s last salary deposit: \u20b945,000 on July 28, 2023. Conclusion: Significant financial distress. Large withdrawal immediately after death. Funds transferred to suspected accomplice. Insurance premium paid via NEFT, not cash as claimed."
+  },
+  {
+    "document_id": "ER-005",
+    "document_type": "digital_forensics_report",
+    "metadata": {
+      "device": "iPhone 12 (Priya Roy)",
+      "imei": "358976012345678",
+      "analyst": "Cyber Cell, West Bengal Police",
+      "date": "2023-08-20"
+    },
+    "content": "Device analysis reveals: - Location data: Phone was at NH6 Bypass (coordinates: 22.412\u00b0N, 87.315\u00b0E) at 04:05 AM on August 14, 2023. - Smartwatch (Apple Watch Series 6): Heart rate spiked from 62 bpm to 138 bpm between 03:50 AM and 04:10 AM. Movement detected: 127 steps, 42 seconds of rapid motion. - Call logs: No outgoing call to emergency services at 04:20 AM. Call was placed from landline (0322-2547890) registered to shop. - WhatsApp: Deleted chat with number ending 9876 (Rajesh Choudhary) on August 14, 04:15 AM. Recovered metadata: 'Done. Car pushed. Body in. Call police at 4:20. Don\u2019t mention me.' - Google Maps: Search history on August 13: 'how to fake car accident', 'sedatives without prescription', 'life insurance payout after murder'. Conclusion: Priya Roy was at the scene before the accident was reported. She orchestrated the timing. Deleted communications confirm premeditation."
+  },
+  {
+    "document_id": "IR-001",
+    "document_type": "police_investigation_report",
+    "metadata": {
+      "report_no": "INV/2023/891",
+      "investigating_officer": "DSP Ramesh Kumar",
+      "date": "2023-08-25",
+      "status": "Under Review for Charge Sheet"
+    },
+    "content": "This report summarizes findings in CASE_010 (Arjun Roy death). Key findings: 1. The death was not accidental. Autopsy confirms sedative overdose and manual strangulation. 2. The vehicle accident was staged. No skid marks, no brake application, winch mechanism traces found on embankment. 3. Insurance claim was based on forged documents: medical reports, physiotherapy logbook, premium receipt. 4. Priya Roy\u2019s mobile and smartwatch data place her at the scene at 04:05 AM\u201415 minutes before she reported the accident. 5. \u20b94.2 lakh withdrawn within 2 hours of death. Funds transferred to Rajesh Choudhary. 6. Dr. Suman Mukherjee\u2019s clinic was closed on August 14; his signature on documents is forged. 7. Mrs. Anjali Das\u2019s testimony is false\u2014CCTV contradicts her. 8. Arjun Roy had stage 2 hypertension, undisclosed to insurer. 9. Priya Roy had gambling debts and mortgaged home to loan shark. Conclusion: This is a premeditated insurance fraud involving murder. Priya Roy is the principal conspirator. Rajesh Choudhary is the executor. Dr. Suman Mukherjee provided forged medical evidence. Recommend filing charge sheet under IPC Sections 302, 420, 467, 468, 471, and Insurance Act, 1938. Evidence sufficient for prosecution."
+  },
+  {
+    "document_id": "CS-001",
+    "document_type": "charge_sheet",
+    "metadata": {
+      "case_no": "COURT/2023/1142",
+      "court": "Sessions Court, Kharagpur",
+      "date_filed": "2023-09-01",
+      "prosecutor": "Public Prosecutor, West Bengal"
+    },
+    "content": "IN THE COURT OF THE SESSIONS JUDGE, KHARAGPUR\nCHARGE SHEET UNDER SECTION 173 CrPC\n\nAccused: \n1. Priya Roy, wife of deceased, aged 40, resident of House No. 47, Ramkrishna Road, Kharagpur.\n2. Dr. Suman Mukherjee, aged 48, owner of Suman Wellness Clinic, Kharagpur.\n3. Rajesh Choudhary, aged 35, taxi driver, resident of Kharagpur.\n\nOffences:\n- IPC 302: Murder\n- IPC 420: Cheating\n- IPC 467: Forgery of valuable security\n- IPC 468: Forgery for purpose of cheating\n- IPC 471: Using forged document as genuine\n- Insurance Act, 1938, Section 18: Fraudulent insurance claim\n\nFacts:\nOn August 14, 2023, Arjun Roy was murdered by manual strangulation and sedative overdose. His body was placed in his own vehicle, which was then pushed off an embankment to simulate an accident. The accused conspired to defraud Bharat Life Insurance of \u20b950 lakhs. Priya Roy increased the policy by \u20b930 lakhs without disclosing Arjun\u2019s hypertension. She paid the premium via NEFT but submitted a forged cash receipt. She withdrew \u20b94.2 lakhs within hours of the murder. Dr. Mukherjee forged medical records and therapy logs. Rajesh Choudhary drove Arjun to the scene and used a winch to stage the crash. CCTV, digital forensics, toxicology, and financial records confirm premeditation. All accused are jointly liable.\n\nEvidence:\n- Forensic autopsy report\n- Digital location data from Priya\u2019s phone and watch\n- Forged medical documents\n- Bank withdrawal and transfer records\n- Deleted WhatsApp messages\n- CCTV footage of vehicle at shop at 04:05 AM\n\nIt is submitted that sufficient evidence exists to proceed to trial.\n\nProsecutor,\nWest Bengal\nDate: 01.09.2023"
+  }
+]

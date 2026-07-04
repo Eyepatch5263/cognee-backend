@@ -1,0 +1,10 @@
+{
+  "document_id": "ER-003",
+  "document_type": "financial_records",
+  "metadata": {
+    "report_id": "FR-2023-0874-C",
+    "issued_by": "State Bank of India, Kharagpur Branch",
+    "date_issued": "2023-06-12"
+  },
+  "content": "Transaction History of Account No. SBIN/123456789 (Anil Chatterjee): - 11/03/2017: ₹5,00,000 withdrawn as cash transfer to 'P. C. Enterprises' (Account No. SBIN/987654321). Transaction Code: 'CT-UNREG' (Unregistered Entity). - 15/03/2017: ₹12,00,000 transferred from Anil’s account to Priya Chatterjee’s personal account. - 12/08/2021: ₹8,50,000 transferred from Priya’s account to Dubai-based account 'P. Chatterjee' (SWIFT: DUBAI123). The shell company 'P. C. Enterprises' was registered on 02/06/2016 with a fake PAN. Priya Chatterjee is the sole director. The ₹5 lakh withdrawal was not for legal fees — no legal invoice or receipt exists. The transfer to Dubai matches Priya’s passport details."
+}

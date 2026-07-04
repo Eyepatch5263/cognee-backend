@@ -1,0 +1,10 @@
+{
+  "document_id": "PIR-001",
+  "document_type": "police_investigation_report",
+  "metadata": {
+    "report_id": "PIR/CC/2023/00478",
+    "prepared_by": "Inspector R. Mehta, Bengaluru Cyber Crime Cell",
+    "date": "2023-11-22"
+  },
+  "content": "The investigation into the cyber-enabled theft of ₹87 lakhs from VerveTech Solutions has identified Vikram Singh, former lead engineer, as the primary suspect. Evidence indicates: 1. Vikram Singh was terminated on October 28, 2023, after refusing to sign an NDA ceding ownership of his blockchain protocol. 2. He had retained access to legacy systems and internal templates, including the approval form template used to forge APPROVE-VRV-8872. 3. Rohan Desai, under coercion, installed a backdoor keylogger on November 14, 2023, at Vikram’s direction. 4. Vikram remotely accessed the admin workstation on November 14, harvested credentials, and spoofed Arjun Mehta’s device fingerprint to initiate the breach on November 15. 5. The phishing email to Priya Nair was sent via a delayed-render script to create a false timeline. 6. The ₹50,000 transfer from Arjun’s wallet was executed remotely from Vikram’s residence in Mysore using a compromised session on Arjun’s stolen phone. 7. The burner phone was purchased using a forged Aadhaar. 8. All contradictions in witness statements (Arjun’s phone location, Priya’s email open time, keylogger timestamp) were intentionally planted to mislead. 9. Vikram Singh’s motive is revenge for wrongful termination and theft of intellectual property. 10. Rohan Desai is an accomplice under duress. 11. Arjun Mehta and Priya Nair are innocent victims of manipulation. Recommendation: Issue arrest warrant for Vikram Singh under Sections 420, 66C, 66D, 66F of IPC and IT Act. Apply for search warrant for residence in Mysore. Seize digital devices and blockchain wallet access keys."
+}

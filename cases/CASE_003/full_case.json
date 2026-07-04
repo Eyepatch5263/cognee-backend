@@ -1,0 +1,404 @@
+{
+  "skeleton": {
+    "metadata": {
+      "case_id": "003",
+      "case_type": "theft",
+      "difficulty": "easy",
+      "incident_date": "2024-03-15",
+      "location": "Sector 17, Chandigarh, Punjab",
+      "summary": "On the evening of March 15, 2024, a burglary occurred at the residence of Mr. Arjun Mehta, a retired government officer living in a gated community in Sector 17, Chandigarh. The intruder gained access through an unlocked rear window, bypassing a faulty alarm system. Items stolen included a gold watch (Rolex Submariner), \u20b92.5 lakh in cash kept in a wooden drawer, and a vintage silver tea set gifted to Mr. Mehta by his late father. CCTV footage from the main gate showed a masked individual entering the compound at 8:12 PM and exiting at 8:47 PM. The suspect was identified through a partial fingerprint on the drawer\u2019s edge and a discarded cap found near the rear garden. The suspect, Rohan Verma, a former domestic helper employed by the Mehta family six months prior, was arrested two days later after the stolen items were recovered from his rented room in Kharar. The recovery report and fingerprint match were conclusive, but one witness \u2014 Mrs. Priya Mehta, the victim\u2019s daughter \u2014 claimed she saw Rohan leaving the house at 7:30 PM, contradicting the CCTV timeline. This discrepancy, along with a minor inconsistency in the fingerprint analysis report, has raised questions despite the otherwise strong physical evidence."
+    },
+    "hidden_ground_truth": {
+      "actual_criminal": "Rohan Verma",
+      "accomplices": [],
+      "true_motive": "Revenge for being falsely accused of stealing a phone from the household six months earlier, which led to his termination and social stigma in the community",
+      "true_timeline": [
+        "2024-03-15 18:00: Rohan Verma arrives near the Mehta residence, observes the house through the gate.",
+        "2024-03-15 19:45: Rohan climbs over the back fence, enters through the unlocked window.",
+        "2024-03-15 20:10: Rohan opens the drawer, takes cash and watch, places tea set in a sack.",
+        "2024-03-15 20:30: Rohan exits through the garden, drops cap near rose bushes to mislead.",
+        "2024-03-15 20:47: Rohan leaves the compound via the side alley, unseen by main gate camera.",
+        "2024-03-15 21:15: Rohan returns to his rented room in Kharar, hides items under floorboard."
+      ],
+      "lying_witnesses": [
+        "Priya Mehta"
+      ],
+      "forged_evidence": [
+        "The fingerprint analysis report falsely claims the print was 'clearly identifiable' \u2014 in reality, it was smudged and only matched after digital enhancement, which was not documented in the original report."
+      ],
+      "injected_contradictions": [
+        {
+          "description": "Priya Mehta claims she saw Rohan leaving at 7:30 PM, but CCTV shows no one exiting until 8:47 PM \u2014 she was in the kitchen and misremembered the time due to a power outage."
+        },
+        {
+          "description": "The recovery report states the tea set was found wrapped in a 'blue cotton cloth' \u2014 but the cloth was actually green; this was a clerical error in the police inventory log."
+        }
+      ]
+    },
+    "perspectives": [
+      "timeline reconstruction",
+      "witness credibility",
+      "forensic evidence",
+      "financial motive",
+      "alibi verification",
+      "property ownership",
+      "employment history",
+      "digital forensics"
+    ],
+    "contradictions": [
+      {
+        "type": "timeline",
+        "severity": "low",
+        "claim_a": "Witness Priya Mehta states she saw suspect Rohan Verma leaving the house at 7:30 PM.",
+        "claim_b": "CCTV footage from the main gate shows suspect exiting the compound at 8:47 PM, with no other exits recorded."
+      },
+      {
+        "type": "forensic",
+        "severity": "low",
+        "claim_a": "Fingerprint analysis report claims the print on the drawer was 'unambiguously matched' to Rohan Verma.",
+        "claim_b": "The original forensic lab notes indicate the print was partial, smudged, and required digital enhancement to match \u2014 a step not disclosed in the official report."
+      },
+      {
+        "type": "testimony",
+        "severity": "low",
+        "claim_a": "Recovery report states the stolen tea set was found wrapped in a blue cotton cloth.",
+        "claim_b": "Photographs from the recovery scene show the cloth is green, and the inventory log was later amended to correct this."
+      }
+    ],
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "P001",
+          "type": "Person",
+          "label": "Arjun Mehta"
+        },
+        {
+          "id": "P002",
+          "type": "Person",
+          "label": "Priya Mehta"
+        },
+        {
+          "id": "P003",
+          "type": "Person",
+          "label": "Rohan Verma"
+        },
+        {
+          "id": "E001",
+          "type": "Event",
+          "label": "Burglary at Mehta Residence"
+        },
+        {
+          "id": "E002",
+          "type": "Event",
+          "label": "Rohan's Termination"
+        },
+        {
+          "id": "A001",
+          "type": "Asset",
+          "label": "Rolex Submariner Watch"
+        },
+        {
+          "id": "A002",
+          "type": "Asset",
+          "label": "Silver Tea Set"
+        },
+        {
+          "id": "L001",
+          "type": "Location",
+          "label": "Mehta Residence, Sector 17, Chandigarh"
+        },
+        {
+          "id": "L002",
+          "type": "Location",
+          "label": "Rohan's Rented Room, Kharar"
+        },
+        {
+          "id": "E003",
+          "type": "Evidence",
+          "label": "Fingerprint on Drawer"
+        },
+        {
+          "id": "E004",
+          "type": "Evidence",
+          "label": "Discarded Cap"
+        },
+        {
+          "id": "E005",
+          "type": "Evidence",
+          "label": "CCTV Footage"
+        }
+      ],
+      "edges": [
+        {
+          "source": "P001",
+          "target": "E001",
+          "relation": "victim_of"
+        },
+        {
+          "source": "P003",
+          "target": "E001",
+          "relation": "perpetrator_of"
+        },
+        {
+          "source": "P002",
+          "target": "E001",
+          "relation": "witness_to"
+        },
+        {
+          "source": "P003",
+          "target": "E002",
+          "relation": "affected_by"
+        },
+        {
+          "source": "E001",
+          "target": "A001",
+          "relation": "stole"
+        },
+        {
+          "source": "E001",
+          "target": "A002",
+          "relation": "stole"
+        },
+        {
+          "source": "L001",
+          "target": "E001",
+          "relation": "location_of"
+        },
+        {
+          "source": "P003",
+          "target": "L002",
+          "relation": "resides_at"
+        },
+        {
+          "source": "E001",
+          "target": "E003",
+          "relation": "produced"
+        },
+        {
+          "source": "E001",
+          "target": "E004",
+          "relation": "produced"
+        },
+        {
+          "source": "E001",
+          "target": "E005",
+          "relation": "produced"
+        },
+        {
+          "source": "E003",
+          "target": "P003",
+          "relation": "matches"
+        },
+        {
+          "source": "P002",
+          "target": "P003",
+          "relation": "testified_against"
+        },
+        {
+          "source": "E002",
+          "target": "P003",
+          "relation": "caused"
+        },
+        {
+          "source": "L001",
+          "target": "L002",
+          "relation": "connected_by"
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "document_id": "FIR-001",
+      "document_type": "FIR",
+      "metadata": {
+        "fir_number": "FIR/2024/0876",
+        "police_station": "Sector 17 Police Station, Chandigarh",
+        "date_filed": "2024-03-16",
+        "filed_by": "Shri Arjun Mehta"
+      },
+      "content": "I, Shri Arjun Mehta, aged 68, retired Deputy Commissioner, Government of Punjab, resident of House No. 47, Sector 17, Chandigarh, hereby lodge this First Information Report regarding a burglary that occurred at my residence on the evening of 15th March, 2024.\n\nAt approximately 9:15 PM on 15.03.2024, my daughter, Smt. Priya Mehta, returned home and discovered that the rear window of the drawing room was open and the wooden drawer in my study had been forced open. Upon inspection, we found that a Rolex Submariner watch (serial no. 123456), \u20b92,50,000 in cash kept in the drawer, and a vintage silver tea set gifted to me by my late father, were missing. The alarm system, though installed, had been malfunctioning since February 2024 and did not trigger.\n\nThere were no signs of forced entry on the main doors. However, a discarded black cotton cap was found near the rose bushes in the rear garden. The CCTV footage from the main gate shows a masked individual entering the compound at 8:12 PM and exiting at 8:47 PM. The suspect was identified as Rohan Verma, a former domestic helper employed by us from June 2023 to September 2023, who was terminated after being accused of stealing a mobile phone from the house. He has a known grudge against our family.\n\nI request immediate investigation and recovery of stolen property. I have attached photographs of the drawer and the missing items.\n\nSigned,\nArjun Mehta\nDate: 16.03.2024\nFiling Officer: Sub-Inspector Rajiv Sharma"
+    },
+    {
+      "document_id": "WS-001",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Priya Mehta",
+        "relation_to_case": "Daughter of Victim",
+        "occupation": "Marketing Executive, TechNova Solutions"
+      },
+      "content": "I am Priya Mehta, daughter of Arjun Mehta. On the evening of March 15, 2024, I returned home from work at around 7:15 PM. I went to the kitchen to make tea. While there, I saw Rohan Verma leaving through the front gate. He was wearing a black cap and a dark jacket. I recognized him immediately because I had seen him around the house for months. I thought he had come back to return something, so I didn\u2019t think much of it. I saw him leave at exactly 7:30 PM \u2014 I checked my phone\u2019s timestamp because I was texting my friend at that moment.\n\nI didn\u2019t report it then because I assumed he had permission to come back. But when I came back at 9:15 PM and found the house broken into, I realized it was him. He must have come back later too, but I only saw him once \u2014 at 7:30 PM. I\u2019m certain of the time because my phone battery died right after that, and I had to charge it at 7:40 PM."
+    },
+    {
+      "document_id": "WS-002",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Arjun Mehta",
+        "relation_to_case": "Victim",
+        "occupation": "Retired Deputy Commissioner, Government of Punjab"
+      },
+      "content": "I was at home on the evening of March 15, 2024, but I was in my bedroom resting after dinner. I did not see anyone enter or leave the house. I only became aware of the theft when my daughter came to me at 9:15 PM and told me the drawer was open and the items were missing. I had not seen Rohan Verma since his termination in September 2023. I had no reason to believe he would return. I am certain the items are his because he knew exactly where the cash was kept \u2014 only family and domestic staff knew about the drawer. He was angry about being accused of stealing the phone. I believe he did this for revenge."
+    },
+    {
+      "document_id": "WS-003",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Rohan Verma",
+        "relation_to_case": "Accused",
+        "occupation": "Unemployed"
+      },
+      "content": "I am Rohan Verma. I was employed by Mr. Mehta from June 2023 to September 2023. I was fired falsely for stealing a phone that was never mine. Since then, I have been shunned by the community. I did not go to the Mehta house on March 15. I was at home in Kharar all evening. I was watching TV and eating dinner. My landlord, Mr. Singh, saw me at 8:00 PM and 9:30 PM. I did not leave my room. I don\u2019t know how my fingerprint got on the drawer. I never touched it after I was fired. The cap? Maybe someone planted it. I didn\u2019t wear a cap that day. I don\u2019t own a black cotton cap."
+    },
+    {
+      "document_id": "ER-001",
+      "document_type": "cctv_report",
+      "metadata": {
+        "report_id": "CCTV-2024-0315-0876",
+        "location": "Main Gate, Mehta Residence, Sector 17",
+        "date_retrieved": "2024-03-16",
+        "analyst": "Constable Vikas Mehta, Cyber Cell, Chandigarh Police"
+      },
+      "content": "CCTV footage from the main gate of Mehta Residence was reviewed for the time period 18:00 to 21:00 on 15.03.2024. The system recorded one individual entering the compound at 20:12:03 and exiting at 20:47:18. The individual was wearing a black hoodie, face obscured by a mask, and carried a small sack. No other individuals were recorded entering or exiting the compound during this period. The gate camera has a 180-degree field of view and no blind spots. The suspect\u2019s gait and height (approximately 5\u20199\") match the physical description of Rohan Verma. No vehicle or second person was observed. Footage does not corroborate witness Priya Mehta\u2019s claim of seeing the suspect leaving at 7:30 PM. The suspect was not visible on any other camera in the compound except the main gate."
+    },
+    {
+      "document_id": "ER-002",
+      "document_type": "forensic_report",
+      "metadata": {
+        "report_id": "FR-2024-0315-0876",
+        "lab": "Central Forensic Science Laboratory, Chandigarh",
+        "analyst": "Dr. Anjali Mehta, Senior Forensic Officer",
+        "date_issued": "2024-03-18"
+      },
+      "content": "A latent fingerprint was recovered from the edge of the wooden drawer in the study of the Mehta residence. The print was partial, smudged, and contained only 7 distinct ridge characteristics. Initial analysis on 16.03.2024 indicated insufficient detail for positive identification. Subsequent digital enhancement using AFIS (Automated Fingerprint Identification System) with contrast amplification and noise reduction algorithms revealed additional minutiae points. The enhanced print was matched to the known prints of Rohan Verma (ID: PF-2023-0987) with a confidence level of 98.7%. \n\nNote: The original print was not of sufficient quality for direct visual comparison. Enhancement was performed under laboratory protocol, and the raw enhanced image is archived. The initial report mistakenly stated the print was 'unambiguously identifiable' \u2014 this was an error in drafting. The correct conclusion is: 'Positive identification achieved only after digital enhancement.'\n\nNo other fingerprints were recovered from the drawer or the cap."
+    },
+    {
+      "document_id": "ER-003",
+      "document_type": "recovery_report",
+      "metadata": {
+        "report_id": "RR-2024-0318-0876",
+        "location": "Rohan Verma's Rented Room, Kharar",
+        "date_recovered": "2024-03-18",
+        "officer": "Sub-Inspector Rajiv Sharma"
+      },
+      "content": "On 18.03.2024, at 11:30 AM, a search warrant was executed at Room No. 3B, Shivam Guest House, Kharar, on the premises of Rohan Verma. Under the floorboard near the bed, the following stolen items were recovered:\n\n1. Rolex Submariner Watch (Serial No. 123456) \u2014 in a black velvet pouch.\n2. \u20b92,50,000 in cash \u2014 in five \u20b950,000 bundles, wrapped in newspaper.\n3. Vintage Silver Tea Set (8-piece) \u2014 wrapped in a green cotton cloth.\n\nThe cloth was initially recorded in the inventory log as 'blue cotton cloth' due to a clerical error under low lighting conditions. This was corrected on 19.03.2024. Photographs of the recovery scene confirm the cloth is green. The watch and tea set were identified by Mr. Arjun Mehta as his property. The cash denomination matches the amount reported stolen. No other items were found.\n\nRohan Verma was arrested on the spot."
+    },
+    {
+      "document_id": "IR-001",
+      "document_type": "police_investigation_report",
+      "metadata": {
+        "report_id": "IR-2024-0876",
+        "investigating_officer": "Sub-Inspector Rajiv Sharma",
+        "date_submitted": "2024-03-20",
+        "case_id": "003"
+      },
+      "content": "Investigation Summary:\n\nThe burglary at Mehta Residence on 15.03.2024 was investigated using physical evidence, CCTV, witness statements, and forensic analysis. The suspect, Rohan Verma, was identified through a fingerprint match on the drawer and recovery of stolen property from his residence. The CCTV timeline confirms the suspect entered and exited between 8:12 PM and 8:47 PM. Witness Priya Mehta\u2019s claim of seeing Rohan at 7:30 PM is inconsistent with CCTV footage. No other suspects were identified.\n\nThe fingerprint evidence, though initially smudged, was conclusively matched after digital enhancement. The discrepancy in the cloth color was a clerical error and does not affect the core evidence. The motive is established: Rohan Verma was terminated after being falsely accused of stealing a phone, resulting in social ostracization. He had access to the house layout and knowledge of the hidden cash drawer.\n\nConclusion: Sufficient evidence exists to charge Rohan Verma under Sections 380, 457, and 446 IPC for house-breaking and theft. Recommend filing of charge sheet."
+    },
+    {
+      "document_id": "CS-001",
+      "document_type": "charge_sheet",
+      "metadata": {
+        "charge_sheet_no": "CS/2024/0451",
+        "court": "Sessions Court, Chandigarh",
+        "date_filed": "2024-03-22",
+        "prosecutor": "Public Prosecutor, Chandigarh"
+      },
+      "content": "IN THE COURT OF THE SESSIONS JUDGE, CHANDIGARH\n\nSTATE OF PUNJAB vs. ROHAN VERMA\n\nCase No.: 003/2024\n\nCharge Sheet under Sections 380, 457, and 446 of the Indian Penal Code, 1860.\n\nThe accused, Rohan Verma, aged 26, son of Baldev Singh, resident of Room 3B, Shivam Guest House, Kharar, is charged with:\n\n1. Theft under Section 380 IPC \u2014 for stealing a Rolex watch, \u20b92.5 lakh in cash, and a silver tea set.\n2. House-breaking by night under Section 457 IPC \u2014 for entering the dwelling house of Arjun Mehta through an unlocked window at night with intent to commit theft.\n3. Mischief by damaging property under Section 446 IPC \u2014 for damaging the wooden drawer to gain access.\n\nEvidence:\n- Fingerprint match on drawer (forensic report FR-2024-0315-0876)\n- Recovery of stolen property from accused\u2019s residence (recovery report RR-2024-0318-0876)\n- CCTV footage showing suspect entering/exiting compound (CCTV-2024-0315-0876)\n- Employment history and motive of revenge (witness statements)\n\nThe accused denies the charges. The prosecution submits that the evidence is conclusive and the inconsistencies in witness testimony do not undermine the physical evidence.\n\nThe charge sheet is submitted for trial.\n\nDated: 22.03.2024\n\n(Signature)\nPublic Prosecutor\nChandigarh"
+    }
+  ],
+  "benchmark": {
+    "queries": [
+      {
+        "id": "Q1",
+        "question": "Who is the actual perpetrator?",
+        "category": "suspect_identification"
+      },
+      {
+        "id": "Q2",
+        "question": "What is the true motive behind the theft?",
+        "category": "motive_analysis"
+      },
+      {
+        "id": "Q3",
+        "question": "Which witness provided a false timeline, and why is their statement misleading?",
+        "category": "witness_credibility"
+      },
+      {
+        "id": "Q4",
+        "question": "How does the fingerprint evidence support the conviction despite the report\u2019s inconsistency?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q5",
+        "question": "What is the correct timeline of the burglary based on all evidence?",
+        "category": "timeline_reconstruction"
+      },
+      {
+        "id": "Q6",
+        "question": "Which piece of evidence was incorrectly documented in the recovery report?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q7",
+        "question": "Does the CCTV footage support or contradict Priya Mehta\u2019s testimony?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q8",
+        "question": "What is the likelihood of conviction based on the evidence presented?",
+        "category": "conviction_likelihood"
+      },
+      {
+        "id": "Q9",
+        "question": "How does Rohan Verma\u2019s employment history relate to the crime?",
+        "category": "relationship_mapping"
+      },
+      {
+        "id": "Q10",
+        "question": "Which evidence is most reliable and why?",
+        "category": "evidence_ranking"
+      }
+    ],
+    "expected_answers": [
+      {
+        "query_id": "Q1",
+        "answer": "The actual perpetrator is Rohan Verma. He is the only person whose fingerprint was found on the drawer, and the stolen items were recovered from his rented room in Kharar. The CCTV footage shows a person matching his physical description entering and exiting the compound during the time of the burglary. His motive \u2014 revenge for being falsely accused of stealing a phone and subsequently terminated \u2014 aligns with the targeted nature of the theft. Despite his denial and the witness contradiction, the physical evidence is conclusive and internally consistent with the hidden ground truth."
+      },
+      {
+        "query_id": "Q2",
+        "answer": "The true motive is revenge. Rohan Verma was terminated from his position as a domestic helper six months prior after being falsely accused of stealing a mobile phone from the Mehta household. This accusation led to social stigma in the community and loss of livelihood. The theft was not financially motivated in the traditional sense \u2014 the cash and watch were valuable, but the tea set had sentimental value to the victim, indicating a targeted act of psychological retaliation rather than opportunistic gain."
+      },
+      {
+        "query_id": "Q3",
+        "answer": "Priya Mehta provided a false timeline. She claimed she saw Rohan leaving the house at 7:30 PM, but the CCTV footage shows no one exiting until 8:47 PM. She is misleading because she misremembered the time due to a power outage that occurred around 7:20 PM, which disrupted her phone\u2019s clock and caused her to misjudge the time. She genuinely believes her statement, but her recollection is inaccurate. This is not intentional deception, but a case of faulty memory under stress."
+      },
+      {
+        "query_id": "Q4",
+        "answer": "The fingerprint evidence supports conviction because, despite the report\u2019s initial claim that the print was 'unambiguously identifiable,' the forensic lab\u2019s internal notes confirm the print was smudged and required digital enhancement \u2014 a step that was not disclosed in the official report. However, the enhancement was properly performed and archived, and the final match to Rohan Verma is scientifically valid. The inconsistency is procedural, not evidentiary. The match remains reliable and legally admissible, as the underlying data is sound."
+      },
+      {
+        "query_id": "Q5",
+        "answer": "The correct timeline, per hidden ground truth and corroborated evidence, is: 18:00 \u2014 Rohan arrives near the Mehta residence; 19:45 \u2014 climbs over the back fence and enters through the unlocked window; 20:10 \u2014 opens drawer, takes cash and watch, places tea set in sack; 20:30 \u2014 exits through garden, drops cap near rose bushes; 20:47 \u2014 leaves compound via side alley (unseen by main gate camera); 21:15 \u2014 returns to rented room in Kharar and hides items under floorboard. This timeline aligns with CCTV entry/exit (20:12\u201320:47), forensic timing of the break-in, and the absence of any other suspect."
+      },
+      {
+        "query_id": "Q6",
+        "answer": "The recovery report incorrectly stated that the silver tea set was wrapped in a 'blue cotton cloth.' Photographs from the recovery scene clearly show the cloth is green. This was a clerical error made by the inventory officer under poor lighting conditions. The error was corrected in the official log on March 19, 2024, and does not affect the authenticity of the recovered items or the identity of the accused."
+      },
+      {
+        "query_id": "Q7",
+        "answer": "The CCTV footage directly contradicts Priya Mehta\u2019s testimony. The footage shows no person exiting the compound until 8:47 PM, and no one entering or exiting between 7:30 PM and 8:12 PM. Priya claims she saw Rohan leave at 7:30 PM, but the camera would have captured him if he had exited through the main gate. Since the compound has only one monitored exit and no other entry/exit points, her statement cannot be true. This contradiction is resolved by her faulty memory due to a power outage."
+      },
+      {
+        "query_id": "Q8",
+        "answer": "The likelihood of conviction is very high. The evidence is strong and consistent: fingerprint match (after proper enhancement), recovery of all stolen items from the accused\u2019s residence, CCTV footage placing him at the scene, and a clear motive rooted in past grievances. While there are minor inconsistencies in witness testimony and report drafting, none undermine the core physical evidence. Indian courts have upheld convictions based on circumstantial evidence when the chain is unbroken, as here."
+      },
+      {
+        "query_id": "Q9",
+        "answer": "Rohan Verma\u2019s employment history is directly related to the crime. He worked as a domestic helper in the Mehta household from June to September 2023 and had intimate knowledge of the house layout, routines, and the location of the hidden cash drawer. His termination after a false accusation of theft created resentment and social stigma, providing a clear motive for revenge. His access to the home during employment enabled him to plan the burglary with precision, targeting items of both monetary and emotional value to the victim."
+      },
+      {
+        "query_id": "Q10",
+        "answer": "The most reliable evidence is the recovery of the stolen items from Rohan Verma\u2019s rented room. This is direct, physical, and corroborated by multiple sources: the watch and tea set were identified by the victim, the cash matches the reported amount, and the location was secured under a search warrant. The fingerprint evidence is second most reliable \u2014 though it required enhancement, it was scientifically validated and archived. CCTV footage is also reliable as it is objective and time-stamped. Witness testimony is the least reliable due to memory errors and potential bias."
+      }
+    ]
+  }
+}

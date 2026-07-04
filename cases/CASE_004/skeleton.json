@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "case_id": "004",
+    "case_type": "bribery",
+    "difficulty": "easy",
+    "incident_date": "2023-10-12",
+    "location": "Rajiv Nagar, Ghaziabad, Uttar Pradesh",
+    "summary": "On October 12, 2023, the Anti-Corruption Bureau (ACB) of Uttar Pradesh conducted a trap operation at the Ghaziabad Municipal Corporation office, targeting a junior clerk suspected of demanding a bribe of ₹50,000 for expediting a building permit. The complainant, Mr. Arjun Mehta, a local contractor, had recorded the demand via a hidden audio device and handed over marked currency notes during a scheduled meeting with the accused, Mr. Ramesh Kumar. ACB officers recovered the money from Ramesh Kumar immediately after the transaction. Forensic analysis of the currency revealed that the notes bore the same serial numbers as those issued by the ACB prior to the trap. However, one of the two independent witnesses, Mrs. Priya Sharma, later claimed she saw Ramesh Kumar receiving the money from a different person — a claim contradicted by the video footage from the ACB’s surveillance camera. The case hinges on the authenticity of the trap, the credibility of the witnesses, and whether the marked notes were planted or genuinely recovered from the accused. The timeline is clear: the demand was made on October 10, the meeting occurred on October 12 at 3:15 PM, and the recovery happened within 90 seconds of the exchange. All communications between the complainant and the accused were logged via WhatsApp and call records, which corroborate the meeting arrangement."
+  },
+  "hidden_ground_truth": {
+    "actual_criminal": "Ramesh Kumar",
+    "accomplices": [],
+    "true_motive": "To supplement his low salary and pay for his daughter’s private medical treatment for a chronic illness",
+    "true_timeline": [
+      "2023-10-10 14:30: Ramesh Kumar receives WhatsApp message from Arjun Mehta requesting expedited permit",
+      "2023-10-10 16:15: Ramesh Kumar replies demanding ₹50,000 via cash",
+      "2023-10-12 13:00: Ramesh Kumar collects ₹50,000 in marked notes from his cousin, Vikram, who had obtained them from a local moneylender (unrelated to ACB)",
+      "2023-10-12 14:45: Ramesh Kumar hides the money in his desk drawer",
+      "2023-10-12 15:15: ACB team arrives at office under guise of audit",
+      "2023-10-12 15:30: Arjun Mehta enters office, hands over envelope to Ramesh Kumar",
+      "2023-10-12 15:31: Ramesh Kumar pockets envelope, ACB officers enter and arrest him",
+      "2023-10-12 15:33: Money recovered from drawer — but the notes are NOT the original ACB-marked ones; they were swapped by Vikram before the trap"
+    ],
+    "lying_witnesses": [
+      "Priya Sharma"
+    ],
+    "forged_evidence": [
+      "The ACB’s recovery report falsely states that the seized notes were taken directly from Ramesh Kumar’s hand — when in fact they were retrieved from his desk drawer after he was detained"
+    ],
+    "injected_contradictions": [
+      {
+        "description": "Priya Sharma claims she saw Ramesh Kumar receive the envelope from a man in a blue shirt (Vikram), but the video shows only Arjun Mehta entering the room — Vikram never entered the office, and Priya was outside the building during the exchange, having been coached by Vikram to lie"
+      },
+      {
+        "description": "The forensic report lists the serial numbers of the recovered notes as matching ACB’s marked currency, but the actual ACB ledger shows those serials were never issued — they were copied from a public bank withdrawal record"
+      }
+    ]
+  },
+  "perspectives": [
+    "timeline reconstruction",
+    "witness credibility",
+    "forensic evidence",
+    "communication graph",
+    "money flow",
+    "digital forensics",
+    "alibi verification",
+    "trap procedure compliance"
+  ],
+  "contradictions": [
+    {
+      "type": "testimony",
+      "severity": "medium",
+      "claim_a": "Independent witness Priya Sharma states she saw Ramesh Kumar receive the bribe envelope from a man in a blue shirt outside the office before the meeting.",
+      "claim_b": "ACB surveillance video shows only Arjun Mehta entering the office at 15:30, and no other person is seen near Ramesh Kumar during the transaction."
+    },
+    {
+      "type": "forensic",
+      "severity": "high",
+      "claim_a": "Forensic report claims the recovered ₹50,000 notes match the serial numbers of the ACB-marked currency issued for the trap.",
+      "claim_b": "ACB’s internal currency ledger shows those exact serial numbers were never issued — they were withdrawn from a public bank in Noida on October 11, unrelated to the operation."
+    }
+  ],
+  "knowledge_graph": {
+    "nodes": [
+      {
+        "id": "P1",
+        "type": "Person",
+        "label": "Ramesh Kumar"
+      },
+      {
+        "id": "P2",
+        "type": "Person",
+        "label": "Arjun Mehta"
+      },
+      {
+        "id": "P3",
+        "type": "Person",
+        "label": "Priya Sharma"
+      },
+      {
+        "id": "P4",
+        "type": "Person",
+        "label": "Vikram Kumar"
+      },
+      {
+        "id": "E1",
+        "type": "Event",
+        "label": "Trap Operation at GMC Office"
+      },
+      {
+        "id": "E2",
+        "type": "Event",
+        "label": "Bribe Demand via WhatsApp"
+      },
+      {
+        "id": "E3",
+        "type": "Event",
+        "label": "Currency Withdrawal at Noida Bank"
+      },
+      {
+        "id": "E4",
+        "type": "Event",
+        "label": "Recovery of Bribe Money"
+      },
+      {
+        "id": "E5",
+        "type": "Event",
+        "label": "ACB Surveillance Recording"
+      },
+      {
+        "id": "E6",
+        "type": "Event",
+        "label": "Forensic Currency Analysis"
+      },
+      {
+        "id": "A1",
+        "type": "Asset",
+        "label": "₹50,000 in Currency Notes"
+      },
+      {
+        "id": "C1",
+        "type": "Communication",
+        "label": "WhatsApp Message Chain (Arjun-Ramesh)"
+      },
+      {
+        "id": "C2",
+        "type": "Communication",
+        "label": "Phone Call (Arjun-Ramesh)"
+      },
+      {
+        "id": "L1",
+        "type": "Location",
+        "label": "Ghaziabad Municipal Corporation Office"
+      },
+      {
+        "id": "L2",
+        "type": "Location",
+        "label": "Axis Bank, Noida"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P1",
+        "target": "P2",
+        "relation": "bribed"
+      },
+      {
+        "source": "P1",
+        "target": "A1",
+        "relation": "possesses"
+      },
+      {
+        "source": "P2",
+        "target": "C1",
+        "relation": "initiated"
+      },
+      {
+        "source": "P2",
+        "target": "C2",
+        "relation": "initiated"
+      },
+      {
+        "source": "P2",
+        "target": "E1",
+        "relation": "complained_about"
+      },
+      {
+        "source": "P1",
+        "target": "E2",
+        "relation": "committed"
+      },
+      {
+        "source": "P1",
+        "target": "E4",
+        "relation": "arrested_during"
+      },
+      {
+        "source": "P3",
+        "target": "E1",
+        "relation": "testified_against"
+      },
+      {
+        "source": "P4",
+        "target": "A1",
+        "relation": "provided"
+      },
+      {
+        "source": "P4",
+        "target": "E3",
+        "relation": "withdrew"
+      },
+      {
+        "source": "A1",
+        "target": "E6",
+        "relation": "analyzed_in"
+      },
+      {
+        "source": "E1",
+        "target": "L1",
+        "relation": "occurred_at"
+      },
+      {
+        "source": "E3",
+        "target": "L2",
+        "relation": "occurred_at"
+      },
+      {
+        "source": "E5",
+        "target": "E1",
+        "relation": "records"
+      },
+      {
+        "source": "C1",
+        "target": "E2",
+        "relation": "supports"
+      },
+      {
+        "source": "E4",
+        "target": "E6",
+        "relation": "provides_evidence_for"
+      },
+      {
+        "source": "P3",
+        "target": "P4",
+        "relation": "related_to"
+      },
+      {
+        "source": "A1",
+        "target": "E2",
+        "relation": "used_in"
+      },
+      {
+        "source": "E6",
+        "target": "E4",
+        "relation": "contradicts"
+      },
+      {
+        "source": "E5",
+        "target": "P3",
+        "relation": "contradicts"
+      }
+    ]
+  }
+}

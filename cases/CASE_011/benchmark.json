@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator of the kidnapping?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "Which witness statement contains the most deliberate falsehoods, and what evidence contradicts it?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q3",
+      "question": "What is the significance of the ink found on the ransom note, and why is the government office claim misleading?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q4",
+      "question": "Reconstruct the timeline of the kidnapping from 14:30 to 15:10 based on digital and physical evidence.",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q5",
+      "question": "How was the bank withdrawal receipt forged, and who had the means and opportunity to do it?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q6",
+      "question": "What motive did the actual perpetrator have, and how does it connect to other events in the case?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q7",
+      "question": "Which two individuals were framed, and what evidence was manipulated to implicate them?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q8",
+      "question": "Why does the smartwatch data suggest the kidnapping occurred earlier than the signal drop?",
+      "category": "digital_forensics"
+    },
+    {
+      "id": "Q9",
+      "question": "What role did Priya Mehta play in the crime, and how does her relationship to both Vikram and Manoj explain her actions?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q10",
+      "question": "Based on the evidence, what is the likelihood of conviction for each of the three accused, and why?",
+      "category": "conviction_likelihood"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "The actual perpetrator is Manoj Verma. He was wrongfully terminated from his security job after exposing Vikram Mehta’s illegal land acquisition in Sector 45. His motive was revenge. He orchestrated the kidnapping with Ramesh Kumar, who provided access to Arjun’s schedule and the vehicle, and Priya Mehta, who forged evidence to frame Rohan. Manoj entered the school in a stolen uniform, lured Arjun with a fake message, and coordinated the escape. The forensic, digital, and testimonial evidence all converge on him as the mastermind."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "Bittu Singh’s statement contains the most deliberate falsehoods. He claimed his motorcycle was stolen on October 13 and never recovered. However, CCTV from the Sector 62 pawnshop shows Ramesh Kumar returned the motorcycle on October 16, claiming he 'found' it to claim a reward. This was a deliberate attempt to mislead investigators into believing the bike was stolen and used by an outsider, when in fact it was used as a decoy vehicle by Ramesh. Bittu Singh’s statement was false because he was either complicit or being paid to lie — likely by Priya Mehta to divert suspicion."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "The ink on the ransom note was claimed to match Uttar Pradesh Revenue Department printers, suggesting official involvement. However, forensic analysis revealed the ink was HP LaserJet Pro ink, identical to the printer in Vikram Mehta’s private office. The paper stock also matched Vikram’s office supply. The government ink claim was deliberately misleading — a red herring planted by Priya Mehta, who accessed the office daily and knew the ink’s properties. This was intended to trigger a false investigation into government corruption, buying time for the kidnappers to escape."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "Timeline: 14:30 — Manoj Verma enters Noida Public School in a stolen security uniform under guise of maintenance. 14:55 — Ramesh Kumar parks Vikram’s SUV near the gate. A fake message (sent via Ramesh’s phone) lures Arjun to the vehicle. 15:02 — Arjun is forcibly taken into the SUV. 15:05 — Ramesh Kumar disables Arjun’s smartwatch GPS via Bluetooth tracker device. 15:07 — The SUV departs toward Sector 58. 15:30 — Manoj and Ramesh switch to the stolen motorcycle (registered to Bittu’s cousin) at a hidden garage. 15:45 — Ramesh uses the burner phone to confirm ransom drop location. 16:10 — Ransom message sent from Ghaziabad. The kidnapping occurred at 15:02, but the GPS signal was disabled at 15:05 to falsely suggest the abduction happened later."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The bank withdrawal receipt was forged using high-resolution scans of SBI letterhead, printed on Vikram Mehta’s office printer using his paper stock. The forgery was created using Priya Mehta’s user credentials on the office printer, logged at 17:01:33 on October 15. She had access to the office, knew the bank’s formatting, and had motive to frame Rohan. Only Priya had the means (access to printer, knowledge of bank documents) and opportunity (she was alone in the office after hours). The bank’s own records confirm no such withdrawal occurred."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "Manoj Verma’s motive was revenge for being wrongfully terminated from his security job after exposing Vikram Mehta’s illegal land acquisition in Sector 45. Vikram had Manoj framed for theft to silence him. Manoj sought to destroy Vikram’s family emotionally and financially. The kidnapping targeted Arjun — Vikram’s only son — to inflict maximum pain. The ransom demand was never meant to be paid; it was a cover for the real goal: to expose Vikram’s crimes by planting evidence (forged receipt, government ink) that would trigger a corruption investigation. The plan was to make Vikram look guilty, not just lose his son."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "Rohan Mehta and Bittu Singh were framed. Rohan was implicated by a forged ₹20 lakh withdrawal receipt printed on Vikram’s printer and by falsified cell tower data from his stolen phone. Bittu Singh was framed by falsely claiming his motorcycle was stolen on October 13, while CCTV shows Ramesh Kumar returned it on October 16. Both were used as decoys to misdirect police from the real perpetrators: Manoj, Ramesh, and Priya. The forged documents and false alibis were all created by Priya Mehta and Ramesh Kumar to shift blame."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Arjun’s smartwatch GPS signal dropped at 15:10, suggesting the kidnapping occurred then. However, digital forensics revealed the GPS module was manually disabled at 15:05 using a Bluetooth command from Ramesh Kumar’s old vehicle tracker device, which he retained after his employment. This means Arjun was taken and moved before the signal dropped — the delay was intentional to mislead investigators about the timing of the abduction. The kidnappers wanted the GPS to appear to drop at the moment of capture, but the real event happened earlier."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "Priya Mehta played a critical role as the forensic and logistical enabler. As Vikram’s estranged wife and Manoj’s secret lover, she had access to his office, printer, and documents. She forged the bank receipt to frame Rohan, used her knowledge of the printer to plant misleading ink evidence, and likely planted her DNA on Arjun’s bag by helping pack it. She also manipulated Ramesh Kumar’s alibi by remotely turning on the TV to simulate his presence at home. Her dual loyalty — to Manoj and resentment toward Vikram — motivated her to destroy his family while protecting her lover. Her actions were calculated, cold, and essential to the plan’s success."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The likelihood of conviction is very high for all three accused. Manoj Verma has direct forensic and circumstantial evidence linking him to the school entry, the kidnapping, and the motive. Ramesh Kumar’s fingerprints and tracker device are found at the crime scene, and his alibi is falsified. Priya Mehta’s DNA on the ransom note and bag, along with printer logs proving she printed the forged receipt, are irrefutable. The digital forensics, CCTV, and financial records are consistent and cross-verified. There is no reasonable doubt. All three will likely be convicted under multiple IPC sections, with life imprisonment probable for Manoj and Ramesh, and 10–15 years for Priya due to her lesser direct involvement but central role in forgery."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "DIGITAL-001",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "device": "Arjun Mehta’s iPhone 13 (Serial: A123456789)",
+    "examined_by": "Cyber Forensics Unit, Pune",
+    "date_examined": "2023-10-18"
+  },
+  "content": "Device recovered from victim’s study. Biometric login (fingerprint) enabled. Forensic imaging reveals: - ₹25 lakh transfer to 'R. Sharma' (Account: IB00123456789) initiated via UPI at 09:40:12 PM on 10/15/2023. Authentication: Fingerprint match. - WhatsApp logs: All messages from 10/10–10/15 deleted. Recovery via iCloud backup reveals 17 encrypted messages between Nidhi Rao and Vikram Desai discussing transfer, alibi, and 'cleanup.' - Fake screenshot of threatening WhatsApp message from Arjun to Vikram created using Arjun’s template and saved as 'land_deal.jpg' in Downloads folder. - Call log: One call to Nidhi Rao at 10:10:03 PM on 10/15 — duration 42 seconds — deleted from device, recovered via carrier backup. - Location history: Victim’s phone was stationary at home from 9:00 PM to 10:15 PM. Nidhi Rao’s phone (Android) was at her residence during same period, but cloud sync shows location spoofing via VPN app installed on October 14th."
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "document_id": "FIR-001",
+    "document_type": "FIR",
+    "metadata": {
+      "fir_number": "FIR/2023/1047",
+      "police_station": "Navi Mumbai Cyber Crime Police Station, Vashi",
+      "date_filed": "2023-08-20",
+      "filed_by": "Shri Rohan Verma, Former Senior Financial Analyst, VedaCorp Solutions Pvt. Ltd."
+    },
+    "content": "I, Rohan Verma, aged 32, residing at Flat 4B, Shanti Nagar, Nerul, Navi Mumbai, do hereby submit this First Information Report under Section 154 CrPC regarding serious financial fraud, forgery, and criminal breach of trust committed by senior management of VedaCorp Solutions Pvt. Ltd. On or about June 10, 2023, while reconciling vendor payments, I discovered that \u20b912.7 crore in revenue was fabricated through shell companies \u2014 Sahara Ventures and Nirvana Tech Solutions \u2014 neither of which are registered with GSTN or have any operational presence. I reported this internally to HR on July 3, 2023, and was terminated on July 5, 2023, allegedly for 'performance issues.' On July 28, 2023, I received an anonymous email from an internal source showing a \u20b915 lakh payment from Sahara Ventures to Dr. Anjali Kulkarni, the external auditor, with memo 'Audit Fee - Q4 2022.' I also found that the board minutes dated March 10, 2023, approving these fake contracts, bear the digital signature of independent director Mr. Ravi Nair, who was on medical leave in Goa during that period. I believe CFO Rajiv Desai and founder Arjun Mehta are orchestrating this fraud to inflate company valuation ahead of an IPO. I fear for my safety and request immediate investigation under Sections 420, 467, 468, 471, 409, and 120B IPC. Attached: Screenshots of internal emails, bank transaction logs, and GSTN verification reports."
+  },
+  {
+    "document_id": "WS-001",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Rajiv Desai",
+      "relation_to_case": "CFO, VedaCorp Solutions Pvt. Ltd.",
+      "occupation": "Chief Financial Officer"
+    },
+    "content": "I am Rajiv Desai, CFO of VedaCorp since 2019. I admit to preparing some financial documents that were later found to be inaccurate, but I did so under direct orders from Arjun Mehta. I did not initiate the fraud. The shell companies were created by Priya Mehta \u2014 she told me they were 'strategic partners' for international contracts. I signed the forged board minutes because I was told Mr. Ravi Nair had authorized them via email \u2014 I did not verify his physical presence. The \u20b95 crore transfer to Sahara Ventures was a repayment from a client named Sahara Ventures, which I believed was legitimate. I later learned from Dr. Kulkarni that she had been approached by unknown persons threatening her family, which is why she retracted her initial statement. I was never bribed. I acted out of fear for my job and family. I swear this is the truth under Section 164 CrPC."
+  },
+  {
+    "document_id": "WS-002",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Dr. Anjali Kulkarni",
+      "relation_to_case": "External Auditor, Board Member, VedaCorp Solutions Pvt. Ltd.",
+      "occupation": "Chartered Accountant and Director, Spectrum Audit"
+    },
+    "content": "I am Dr. Anjali Kulkarni, a practicing CA and independent director of VedaCorp. I audited the FY2022-23 financials and issued a clean opinion. I did not know about the shell companies. I received no payment from Sahara Ventures. The \u20b915 lakh credit in my account was a personal gift from a relative \u2014 I do not know its source. I initially told CBI that Arjun Mehta pressured me to sign off, but I later retracted because I received anonymous threats \u2014 a dead bird left on my doorstep, followed by a call saying 'Your daughter\u2019s school is watched.' I am terrified. I never signed the board minutes. I was never in the office on March 10. The audit report was based on documents provided by Rajiv Desai \u2014 I assumed they were genuine. I did not conduct site visits because I trusted the company\u2019s internal controls. I swear I am innocent."
+  },
+  {
+    "document_id": "WS-003",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Rohan Verma",
+      "relation_to_case": "Whistleblower, Former Employee",
+      "occupation": "Former Senior Financial Analyst"
+    },
+    "content": "I worked at VedaCorp from 2020 to July 2023. On June 10, 2023, I noticed inconsistencies in vendor invoices \u2014 GSTINs were invalid, addresses were residential, and bank accounts were opened after transaction dates. I cross-checked with the ERP and found no contracts. I reported this to HR on July 3. On July 5, I was fired. I never had access to the digital signing system. The email I sent to the MCA whistleblower portal was from my personal device. I never claimed to have seen Arjun Mehta sign the minutes \u2014 that\u2019s a misquote. I only said I saw the signed minutes on the server. I did not plant the fraud. I am being framed. My email metadata showing Priya Mehta\u2019s device was a hack \u2014 someone accessed my account after I logged out at work. I have proof of my login times. I fear for my life. I want justice."
+  },
+  {
+    "document_id": "WS-004",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Arjun Mehta",
+      "relation_to_case": "Founder and Managing Director, VedaCorp Solutions Pvt. Ltd.",
+      "occupation": "Managing Director"
+    },
+    "content": "I am Arjun Mehta, founder of VedaCorp. I built this company from scratch. The financial growth is real \u2014 we acquired two major clients in Q4 2022, one of them being Sahara Ventures, a logistics partner based in Mumbai. The \u20b95 crore transfer was repayment for infrastructure services rendered. I was in Singapore from March 1\u201315, 2023, as confirmed by my passport and hotel receipts. I did not sign any forged documents. I have never met Dr. Kulkarni outside formal meetings. My wife, Priya, has no role in operations \u2014 she is a homemaker. The whistleblower, Rohan Verma, was terminated for theft of proprietary code. He had access to internal systems and is clearly retaliating. The digital signature of Mr. Nair was authorized remotely \u2014 I was told he approved via encrypted portal. I have nothing to hide. I am being targeted by disgruntled employees and jealous competitors. I demand a fair investigation."
+  },
+  {
+    "document_id": "WS-005",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Priya Mehta",
+      "relation_to_case": "Wife of Arjun Mehta, Director of Sahara Ventures",
+      "occupation": "Homemaker"
+    },
+    "content": "I am Priya Mehta. I am not a businesswoman. I have never owned or operated Sahara Ventures. I was in Delhi from November 10\u201315, 2022, attending my sister\u2019s wedding. I did not file any documents with MCA. My Aadhaar was stolen in 2021 \u2014 I reported it to the police then. The signature on the Sahara Ventures registration is not mine. I never received any money from Sahara Ventures. The \u20b93.2 crore transferred to my account in July 2023 was a gift from my father \u2014 he is a retired army officer. I have no idea how the company was registered in my name. I am a victim of identity theft. I cooperate fully with the investigation."
+  },
+  {
+    "document_id": "WS-006",
+    "document_type": "witness_statement",
+    "metadata": {
+      "witness_name": "Ravi Nair",
+      "relation_to_case": "Independent Director, VedaCorp Solutions Pvt. Ltd.",
+      "occupation": "Retired Corporate Lawyer"
+    },
+    "content": "I am Ravi Nair, an independent director of VedaCorp since 2020. I was on medical leave in Goa from February 28 to March 18, 2023, recovering from knee surgery. I did not access any digital systems during this period. My login credentials were never shared. I did not sign the board minutes dated March 10, 2023. I only became aware of the alleged fraud in August 2023 when the MCA audit was announced. I have never received any payment from VedaCorp or its associates. I was never contacted for approval of vendor contracts. The digital signature on the minutes is a forgery. I have filed a complaint with the Cyber Crime Cell regarding unauthorized use of my credentials. I demand the resignation of all involved directors."
+  },
+  {
+    "document_id": "DFR-001",
+    "document_type": "digital_forensics_report",
+    "metadata": {
+      "report_id": "DFR/VedaCorp/2023/08",
+      "investigating_unit": "Navi Mumbai Cyber Forensics Lab",
+      "date_generated": "2023-09-02"
+    },
+    "content": "Forensic analysis of VedaCorp\u2019s internal servers and employee devices revealed the following: 1. The board meeting minutes dated 2023-03-10 were digitally signed using a certificate associated with Ravi Nair\u2019s account. However, the last login to that account was on 2023-02-27. The signature was generated from an IP address (192.168.1.15) matching Rajiv Desai\u2019s workstation. 2. The email titled 'Make sure Kulkarni gets her bonus' dated 2023-01-05 was sent from Priya Mehta\u2019s device (MAC: 78:4C:F1:XX:XX:XX), not Arjun Mehta\u2019s. The IP matched VedaCorp\u2019s internal network at 2:17 AM. 3. Rohan Verma\u2019s whistleblower email was sent from a device with Priya Mehta\u2019s Wi-Fi MAC address, logged in at 11:45 PM on 2023-07-02 \u2014 after Verma\u2019s work hours. 4. The bank reconciliation report submitted to Spectrum Audit was an edited Excel file. Original file 'Recon_Q4_2022.xlsx' was overwritten on 2023-07-18. Metadata shows edits made by Rajiv Desai\u2019s account. 5. Sahara Ventures\u2019 MCA registration was filed using a duplicate Aadhaar card linked to Dr. Kulkarni\u2019s identity, uploaded via a public portal on 2022-11-12. The upload IP matched VedaCorp\u2019s server room. Conclusion: Systemic forgery, identity theft, and insider manipulation confirmed. Multiple actors involved."
+  },
+  {
+    "document_id": "FR-001",
+    "document_type": "forensic_report",
+    "metadata": {
+      "report_id": "FR/VedaCorp/2023/09",
+      "investigating_unit": "Central Forensic Science Laboratory, Mumbai",
+      "date_generated": "2023-09-10"
+    },
+    "content": "Examination of physical and digital documents related to Sahara Ventures and Nirvana Tech Solutions: 1. All vendor invoices from Sahara Ventures bear forged GSTINs. GSTN portal confirms these numbers were either never issued or were suspended prior to transaction dates. 2. The physical address of Sahara Ventures (Mumbai) is a vacant commercial unit; no business activity detected via drone surveillance or neighbor interviews. 3. Bank account number ending 7890 (Sahara Ventures) was opened on 2022-11-15 at Axis Bank, Navi Mumbai, using a forged Aadhaar and PAN card of Dr. Anjali Kulkarni. 4. Signature on the MCA Form INC-22 (registration of Sahara Ventures) was digitally scanned from a document of Priya Mehta\u2019s signature on a 2020 hospital form \u2014 matching biometric patterns. 5. No physical or digital evidence links Arjun Mehta to the registration process. However, the IP address used to file the documents was traced to VedaCorp\u2019s HR server. Conclusion: Systematic creation of shell entities using stolen identities and forged documents. No legitimate business activity detected."
+  },
+  {
+    "document_id": "BR-001",
+    "document_type": "bank_statement_report",
+    "metadata": {
+      "report_id": "BR/VedaCorp/2023/04",
+      "bank": "Axis Bank, Navi Mumbai Corporate Branch",
+      "date_generated": "2023-09-05"
+    },
+    "content": "Transaction analysis of VedaCorp\u2019s corporate account (No. 7890123456789) reveals: 1. On 2023-01-20, \u20b98,00,00,000 was transferred to Sahara Ventures (A/c: 9876543210) under 'Vendor Payment - Services Rendered.' 2. On 2023-07-28, \u20b93,20,00,000 was withdrawn from Sahara Ventures to Priya Mehta\u2019s personal account (ending 4567) as 'Dividend Income.' 3. On 2023-08-10, \u20b95,00,00,000 was transferred from VedaCorp\u2019s payroll account to Sahara Ventures under 'Client Repayment.' 4. Sahara Ventures account was opened on 2022-11-15 with KYC documents later proven fraudulent. 5. No corresponding invoices or service agreements exist in VedaCorp\u2019s client database. 6. Bank\u2019s AI fraud detection system flagged the \u20b95 crore transfer on 2023-08-10 as 'high-risk - no client match, new recipient, sudden spike.' The flag was overridden by Rajiv Desai\u2019s authorization code. 7. All transactions were routed through three intermediary accounts in Kerala and Gujarat before final transfer to Cyprus-based trust 'Nile Holdings.' Conclusion: Structured money laundering scheme with multiple layers. Funds diverted to offshore entities."
+  },
+  {
+    "document_id": "CCTV-001",
+    "document_type": "cctv_report",
+    "metadata": {
+      "report_id": "CCTV/VedaCorp/2023/07",
+      "location": "VedaCorp Office, Navi Mumbai",
+      "date_generated": "2023-09-08"
+    },
+    "content": "CCTV footage from VedaCorp\u2019s main entrance and server room was reviewed for key dates: 1. On 2023-03-10 at 10:45 PM, a man matching Arjun Mehta\u2019s build and attire entered the office. He was alone. He went directly to the server room. No one else was present. 2. On 2023-07-18 at 3:12 AM, Rajiv Desai entered the office alone, accessed his workstation, and spent 47 minutes on the server. He left at 4:00 AM. 3. On 2023-01-22 at 9:30 PM, Priya Mehta entered the office and accessed the HR terminal for 12 minutes. 4. On 2023-08-10, 15 minutes after the \u20b95 crore transfer, Rajiv Desai was seen leaving the office with a sealed envelope. 5. No footage of Ravi Nair at the office during his alleged leave. Conclusion: Arjun Mehta was physically present at the time of signature forgery. Rajiv Desai manipulated documents after audit began. Priya Mehta accessed internal systems outside office hours."
+  },
+  {
+    "document_id": "IR-001",
+    "document_type": "police_investigation_report",
+    "metadata": {
+      "report_id": "IR/006/2023",
+      "investigating_officer": "DSP Priya Sharma",
+      "police_station": "Navi Mumbai Cyber Crime",
+      "date_generated": "2023-10-01"
+    },
+    "content": "This investigation into VedaCorp Financial Fraud (FIR 1047/2023) reveals a complex, multi-layered scheme to inflate company valuation for IPO purposes. Key findings: 1. \u20b912.7 crore in fabricated revenue through 9 shell companies, 2 of which (Sahara Ventures, Nirvana Tech) are central. 2. Digital forgery of board minutes and independent director\u2019s signature. 3. Bribery of auditor Dr. Anjali Kulkarni via \u20b915 lakh transfer from Sahara Ventures. 4. Identity theft of Dr. Kulkarni\u2019s Aadhaar to register Sahara Ventures. 5. \u20b95 crore transfer to Sahara Ventures was not a client repayment \u2014 no such client exists. 6. Whistleblower Rohan Verma\u2019s complaint was genuine; his device was hacked to frame him. 7. Arjun Mehta was physically present at office during forgery of minutes. 8. Priya Mehta accessed internal systems and is registered director of Sahara Ventures despite claims of ignorance. 9. Rajiv Desai coordinated forgery, altered documents, and bribed witnesses. 10. Dr. Kulkarni received bribe, retracted testimony under duress, and her Aadhaar was stolen. Conclusion: Arjun Mehta is the mastermind. Priya Mehta, Rajiv Desai, and Dr. Kulkarni are active accomplices. Evidence sufficient to file charge sheet under IPC 420, 467, 468, 471, 120B, and Prevention of Money Laundering Act, 2002."
+  },
+  {
+    "document_id": "CHARGE-SHEET-001",
+    "document_type": "charge_sheet",
+    "metadata": {
+      "charge_sheet_no": "CS/006/2023",
+      "court": "Sessions Court, Navi Mumbai",
+      "filed_by": "CBI Special Team",
+      "date_filed": "2023-10-15"
+    },
+    "content": "The Central Bureau of Investigation, under Section 173 CrPC, files this charge sheet against: 1. Arjun Mehta (MD, VedaCorp) 2. Priya Mehta (Wife of Arjun Mehta, Director, Sahara Ventures) 3. Rajiv Desai (CFO, VedaCorp) 4. Dr. Anjali Kulkarni (Auditor, Board Member) for offenses under Sections 420 (Cheating), 467 (Forgery of valuable security), 468 (Forgery for purpose of cheating), 471 (Using forged document as genuine), 409 (Criminal breach of trust by public servant), 120B (Criminal conspiracy), and Sections 3 and 4 of the Prevention of Money Laundering Act, 2002. The accused conspired to fabricate \u20b912.7 crore in revenue using shell companies registered using stolen identities. Board minutes were forged using digitally cloned signatures. Auditor was bribed. \u20b918 crore was laundered via Sahara Ventures to offshore trusts. Whistleblower was framed. Evidence includes digital forensics, bank trails, CCTV, and witness testimonies. All accused are remanded in custody pending trial."
+  },
+  {
+    "document_id": "HEARING-001",
+    "document_type": "hearing_transcript",
+    "metadata": {
+      "hearing_id": "HT/006/2023/01",
+      "court": "Sessions Court, Navi Mumbai",
+      "date": "2023-11-02",
+      "judge": "Hon'ble Ms. Justice Meera Deshmukh"
+    },
+    "content": "COURT: The charge sheet has been filed. Accused appear. Defence counsel requests bail. CBI opposes. CBI Counsel: 'Accused are flight risks. Evidence shows offshore fund transfers. One accused attempted to flee to Dubai on October 28.' Arjun Mehta\u2019s counsel: 'My client is a respected entrepreneur. He has deep roots in Navi Mumbai. The evidence is circumstantial.' Priya Mehta\u2019s counsel: 'My client was a victim of identity theft.' Dr. Kulkarni\u2019s counsel: 'My client was coerced and threatened.' Rajiv Desai\u2019s counsel: 'He was acting under duress.' JUDGE: 'The fraud involved deliberate forgery, bribery, and money laundering on a massive scale. The accused have shown no remorse. Bail is denied. All accused remanded in judicial custody until trial. Next hearing: December 15, 2023. Court adjourned.'"
+  }
+]

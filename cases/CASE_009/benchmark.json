@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "Which piece of evidence is most critical in proving the will is forged?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q3",
+      "question": "How do the financial records contradict Priya’s claim about the ₹5 lakh withdrawal?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q4",
+      "question": "Why is Mrs. Anjali Ghosh’s testimony unreliable?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q5",
+      "question": "What is the motive behind the crime?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q6",
+      "question": "Reconstruct the timeline of the forgery and fraud.",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q7",
+      "question": "Who are the accomplices, and what roles did they play?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q8",
+      "question": "Is Dr. Arjun Mehta complicit in the fraud?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q9",
+      "question": "What forensic evidence links Priya to the ink used in the forged will?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q10",
+      "question": "What is the likelihood of conviction for murder of Ramesh Das based on current evidence?",
+      "category": "conviction_likelihood"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "Priya Chatterjee is the actual perpetrator. She forged the 2017 will using her father’s paper and a pen she purchased, traced his signature, bribed Debashish Mukherjee to alter land records, hired Nandini Sen to falsely attest to typing the will, and orchestrated the murder of Ramesh Das to prevent exposure. Her motive was financial desperation — she needed ₹4.2 crore to cover debts and embezzlement from her father’s savings."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "The most critical evidence is the forensic report linking the ink in the will to a Parker pen purchased by Priya on 05/03/2017, while the paper is from a 2015 batch found in her father’s study. This proves the document was created after the paper was already in the house, contradicting the claim it was signed on 12/03/2017. Combined with the traced signature, this is irrefutable proof of forgery."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "Priya claims the ₹5 lakh withdrawal on 11/03/2017 was for legal fees to draft the will. However, bank records show the funds were transferred to 'P. C. Enterprises,' a shell company Priya created in 2016. No legal invoice, receipt, or law firm exists to support the claim. The transaction code 'CT-UNREG' confirms it was a non-legal, unregistered transfer — likely for personal use or to fund the forgery operation."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "Mrs. Anjali Ghosh’s testimony is unreliable because her personal diary confirms she was hospitalized for pneumonia from 08/03/2017 to 20/03/2017, making it impossible for her to have witnessed the signing on 12/03/2017. CCTV footage from her home also shows her arriving on 15/03/2017, further disproving her presence on the alleged signing date. Her claim of memory error is implausible given the specificity of her testimony."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The motive is financial desperation. Priya had failed business ventures and was deeply in debt. She had already embezzled ₹12 lakh from her father’s savings. She planned to sell the 2.3-acre land to a real estate developer for ₹4.2 crore to cover her debts and conceal her theft. The forged will and altered records were tools to gain sole ownership to enable the sale."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "Timeline: 2015 — Anil drafts a handwritten note naming Dr. Mehta as trustee (on Sunita’s notebook). 05/03/2017 — Priya buys Parker pen. 11/03/2017 — ₹5 lakh withdrawn to shell company. 12/03/2017 — Priya forges will using the pen and 2015 paper. 04/04/2019 — Debashish alters land record digitally. 12/06/2018 — Anil dies. 2020 — Priya files mutation. 2021 — Ramesh Das discovers fraud, is poisoned. 2022 — Nandini Sen flees to Nepal after threats. 01/2023 — Boundary stones moved to claim extra land. 05/2023 — Sunita files FIR."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "Accomplices: Debashish Mukherjee — bribed to alter the 2016 land record digitally; Nandini Sen — hired to type the will and sign a false affidavit, despite being on leave. Both acted under Priya’s direction. Nandini Sen was threatened into silence before fleeing. Dr. Mehta was manipulated into holding the 2015 note to lend credibility to the claim of equal division, but he is not criminally liable."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Dr. Arjun Mehta is not complicit. He received the 2015 handwritten note as a 'courtesy' from Anil, and had no knowledge of the 2017 will. However, Priya’s WhatsApp message shows she used him to keep the note away from Sunita, indicating manipulation. He is an unwitting tool, not a co-conspirator. His testimony is truthful but incomplete — he did not realize the note’s potential to be used in a fraud."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The forensic report from CFSL, Kolkata, confirms that the ink in the forged will matches the chemical composition of a Parker Pen Model 51 purchased by Priya on 05/03/2017 from a local shop in Kharagpur. The receipt and purchase record were recovered from her bank statement. This proves the will was written after that date, contradicting the claim it was signed on 12/03/2017 with her father’s pen."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The likelihood of conviction for murder is high. The toxicology report confirms curare poisoning, a rare and deliberate method. Ramesh Das’s diary explicitly named Priya as the threat. Priya had motive (to silence him), means (access to poison via her network), and opportunity (he was alone at home). While no direct eyewitness, circumstantial evidence is overwhelming under Indian law. The charge sheet includes murder under Section 302, and the court has already noted the strength of the evidence."
+    }
+  ]
+}

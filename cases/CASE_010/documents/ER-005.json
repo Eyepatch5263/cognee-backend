@@ -1,0 +1,11 @@
+{
+  "document_id": "ER-005",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "device": "iPhone 12 (Priya Roy)",
+    "imei": "358976012345678",
+    "analyst": "Cyber Cell, West Bengal Police",
+    "date": "2023-08-20"
+  },
+  "content": "Device analysis reveals: - Location data: Phone was at NH6 Bypass (coordinates: 22.412°N, 87.315°E) at 04:05 AM on August 14, 2023. - Smartwatch (Apple Watch Series 6): Heart rate spiked from 62 bpm to 138 bpm between 03:50 AM and 04:10 AM. Movement detected: 127 steps, 42 seconds of rapid motion. - Call logs: No outgoing call to emergency services at 04:20 AM. Call was placed from landline (0322-2547890) registered to shop. - WhatsApp: Deleted chat with number ending 9876 (Rajesh Choudhary) on August 14, 04:15 AM. Recovered metadata: 'Done. Car pushed. Body in. Call police at 4:20. Don’t mention me.' - Google Maps: Search history on August 13: 'how to fake car accident', 'sedatives without prescription', 'life insurance payout after murder'. Conclusion: Priya Roy was at the scene before the accident was reported. She orchestrated the timing. Deleted communications confirm premeditation."
+}

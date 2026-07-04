@@ -1,0 +1,10 @@
+{
+  "document_id": "FR-001",
+  "document_type": "forensic_report",
+  "metadata": {
+    "report_id": "FR/CC/2023/00478-02",
+    "prepared_by": "Forensics Division, Bengaluru Cyber Crime Cell",
+    "date": "2023-11-19"
+  },
+  "content": "Analysis of Rohan Desai’s workstation (Model: HP Z4 G4) revealed: 1. A keylogger executable (hash: a3f8b2c1...) was detected in the system32 folder. 2. File creation date metadata shows 2023-11-01. 3. Swap file analysis and journal entries from ext4 filesystem indicate the file was written to disk on 2023-11-14 at 18:22:47. 4. The keylogger was configured to exfiltrate credentials to a remote server (IP: 182.71.103.22, registered to a VPS in Dubai under a shell company). 5. The keylogger was triggered only during admin login attempts between 21:00 and 22:30 on November 14. 6. No evidence of direct access by Rohan during that window. 7. The keylogger’s configuration file contained a hardcoded reference to ‘Vikram_S_2022’—a username used by Vikram Singh during his tenure. Conclusion: The keylogger was installed on November 14, 2023, and was used to harvest credentials from the admin workstation. The timestamp was backdated to mislead investigators. The attacker had administrative access to the system prior to the breach."
+}

@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator of the fraud?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "Which witness provided the most contradictory testimony, and how?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q3",
+      "question": "Rank the following evidence by evidentiary weight: forged board minutes, ₹15 lakh transfer to Kulkarni, CCTV of Arjun entering office at 10:45 PM on March 10, and the hacked whistleblower email.",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q4",
+      "question": "Reconstruct the timeline of the fraud’s initiation, execution, and concealment.",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q5",
+      "question": "Which witnesses are lying, and what are they concealing?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q6",
+      "question": "What was the primary motive behind the fraud?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q7",
+      "question": "What is the likelihood of conviction for Arjun Mehta based on current evidence?",
+      "category": "conviction_likelihood"
+    },
+    {
+      "id": "Q8",
+      "question": "Map the ownership and control relationships between VedaCorp, Sahara Ventures, and the individuals involved.",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q9",
+      "question": "How was the ₹5 crore transfer to Sahara Ventures concealed from the auditor?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q10",
+      "question": "Why did Dr. Kulkarni retract her testimony twice, and what does this reveal about the pressure applied?",
+      "category": "witness_credibility"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "Arjun Mehta is the actual perpetrator. He masterminded the entire scheme to inflate VedaCorp’s valuation for a ₹250 crore private equity deal. He ordered the creation of shell companies, authorized the forgery of board minutes, and was physically present at the office when the critical forgery occurred (CCTV footage, March 10, 10:45 PM). He used his wife Priya Mehta and CFO Rajiv Desai as proxies, bribed auditor Dr. Kulkarni, and framed Rohan Verma. His motive was to exit before exposure, and the ₹18 crore diverted to offshore trusts under family trusts confirms his personal gain."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "Dr. Anjali Kulkarni provided the most contradictory testimony. Initially, she claimed she received no payment from Sahara Ventures, but bank records show a ₹15 lakh credit with memo 'Audit Fee - Q4 2022.' She then claimed she was pressured by Arjun Mehta, but later retracted, saying 'unknown persons' threatened her — contradicting both her initial denial and her first admission. This inconsistency reveals she was bribed and then intimidated, and her testimony is unreliable."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "Ranked by evidentiary weight: 1. CCTV of Arjun entering office at 10:45 PM on March 10 — directly contradicts his alibi and proves physical presence during forgery. 2. ₹15 lakh transfer to Kulkarni — direct financial proof of bribery. 3. Forged board minutes — central instrument of fraud, with digital forensics proving forgery. 4. Hacked whistleblower email — important for establishing frame-up, but less central to the fraud’s core mechanism. The CCTV and bribe transfer are the most damning."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "Timeline: 1. Nov 3, 2022: Arjun instructs Rajiv to create fake vendor contracts under Priya’s shell companies. 2. Nov 12, 2022: Sahara Ventures registered using Dr. Kulkarni’s stolen Aadhaar. 3. Dec 15, 2022: Kulkarni bribed with ₹15 lakh via Sahara Ventures. 4. Mar 10, 2023: Arjun enters office at night, digitally signs forged board minutes. 5. May 12, 2023: Rohan Verma is terminated after raising concerns. 6. Jul 28, 2023: ₹3.2 crore withdrawn by Priya as 'dividend.' 7. Aug 10, 2023: Spectrum Audit issues clean report based on forged docs. 8. Aug 15, 2023: MCA audit triggered. 9. Aug 20–25: Rajiv and Kulkarni retract testimony under bribes/threats. 10. Aug 25: ₹5 crore transferred to Sahara Ventures to further launder funds."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "Rajiv Desai is lying — he claims he acted alone but hid that he was ordered by Arjun and bribed Kulkarni. Dr. Kulkarni is lying — she denies receiving the bribe despite bank proof and falsely claims threats to explain her retraction. Rohan Verma is partially truthful — his complaint is genuine, but his email was hacked and sent from Priya’s device, making his evidence appear suspect. Arjun and Priya are lying — they deny involvement despite digital, physical, and financial evidence tying them directly."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The true motive was to inflate VedaCorp’s valuation to secure a ₹250 crore private equity investment, allowing Arjun Mehta and his family to exit before the fraud was discovered. Simultaneously, ₹18 crore was diverted to offshore accounts under family trusts via Sahara Ventures and intermediary entities. This was not merely financial gain — it was a structured exit plan disguised as growth."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "Conviction likelihood for Arjun Mehta is extremely high (>90%). Direct evidence includes: (1) CCTV placing him at the scene of forgery, (2) digital forensics proving he authorized the ₹5 crore transfer, (3) financial trails showing funds flowed to his family trusts, (4) his wife’s direct involvement as registered director of Sahara Ventures, and (5) corroborating testimony from the whistleblower and forensic reports. He has no credible alibi and the conspiracy is well-documented."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Arjun Mehta owns and controls VedaCorp. He uses his wife, Priya Mehta, as the registered director of Sahara Ventures, a shell company created to launder funds. Dr. Kulkarni, though not an owner, was bribed to approve financials and her identity was stolen to register Sahara Ventures. Rajiv Desai, as CFO, acted as the operational executor — routing money through Sahara Ventures to Kulkarni and offshore trusts. Thus, Arjun → Priya → Sahara Ventures → Kulkarni (stolen ID) → offshore trusts. VedaCorp is the source; Sahara Ventures is the conduit."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The ₹5 crore transfer was concealed by creating a fictitious 'client repayment' narrative. Rajiv Desai altered the bank reconciliation report in Excel to show this as a legitimate transaction. The auditor, Spectrum Audit, relied on this falsified document and did not verify the existence of Sahara Ventures as a client. No invoice, contract, or client record existed in VedaCorp’s system. The bank’s AI flagged the transaction, but Rajiv overrode it using his authorization code — exploiting weak internal controls."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "Dr. Kulkarni retracted her testimony twice because she was first bribed (received ₹15 lakh), then threatened (dead bird, family intimidation). Her first retraction blamed Arjun Mehta — likely to protect herself by shifting blame upward. Her second retraction claimed 'unknown persons' threatened her — to avoid implicating anyone specific, possibly fearing retaliation from Arjun’s network. This pattern reveals she was caught between bribery and fear, making her testimony a product of coercion, not truth."
+    }
+  ]
+}

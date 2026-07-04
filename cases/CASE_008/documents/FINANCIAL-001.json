@@ -1,0 +1,10 @@
+{
+  "document_id": "FINANCIAL-001",
+  "document_type": "financial_records",
+  "metadata": {
+    "source": "Sharma & Associates - Client Trust Account",
+    "date": "2024-03-22",
+    "analyst": "CBI Forensic Accounting Unit"
+  },
+  "content": "Audit of client trust account #CTA-7891 (NexaPay Client Fund) reveals irregular transfers totaling ₹42.7 lakhs between January 15, 2024, and March 10, 2024. Funds were transferred to personal accounts linked to Vikas Mehta via shell companies. Priya Sharma, as the managing partner, had signing authority. No formal approval from client board. Withdrawals coincided with Vikas’s startup’s cash crunch. On March 16, 2024, a final transfer of ₹8.5 lakhs was made. Arjun Mehta, as internal auditor for the client, had flagged these transfers in a draft report dated March 15, 2024. The report was never submitted due to 'administrative delay.' However, a draft was found on his encrypted cloud drive, with a note: 'If I disappear, send this to CBI.'"
+}

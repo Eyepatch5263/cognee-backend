@@ -1,0 +1,10 @@
+{
+  "document_id": "WS-004",
+  "document_type": "witness_statement",
+  "metadata": {
+    "witness_name": "Mr. Ramesh Gupta",
+    "relation_to_case": "Senior Partner, Gupta & Associates (Audit Firm)",
+    "occupation": "Chartered Accountant"
+  },
+  "content": "I was on emergency family leave from March 1 to March 15, 2022, due to my wife’s hospitalization. During this period, my digital signature was used by a junior auditor, Mr. Arun Verma, under my supervision via phone. The audit report for VedaCorp was completed on March 10, 2022, and signed digitally by me — but I did not review the underlying documents personally.\n\nI was provided with a clean audit file by VedaCorp’s finance team. I relied on their representations. I was unaware that Sparrow Holdings and Vireo Ventures were related parties. The company’s MCA filings did not disclose them, and we were not informed. We rely on client disclosures. Had we known, we would have flagged them under Section 188. I stand by the audit opinion but admit I did not conduct a full forensic review of related-party transactions. That is a systemic failure — not intentional fraud on my part."
+}

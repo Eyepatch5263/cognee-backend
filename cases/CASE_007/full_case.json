@@ -1,0 +1,419 @@
+{
+  "skeleton": {
+    "metadata": {
+      "case_id": "007",
+      "case_type": "corruption",
+      "difficulty": "easy",
+      "incident_date": "2023-08-15",
+      "location": "Bhopal, Madhya Pradesh",
+      "summary": "In August 2023, the Madhya Pradesh Anti-Corruption Bureau (ACB) initiated an investigation into Mr. Rajiv Sharma, a senior revenue officer at the Bhopal Municipal Corporation, following a forensic audit that revealed a disproportionate increase in his assets over three years. His declared annual income of \u20b98.2 lakh contradicted bank transactions showing inflows of \u20b947.6 lakh, including cash deposits and property purchases in his wife\u2019s name. The investigation was triggered by an anonymous tip and corroborated by a whistleblower, Ms. Priya Mehta, a junior clerk who had access to internal property tax records.\n\nPhysical evidence includes a registered sale deed for a \u20b92.1 crore residential plot in Indore, purchased in June 2022 under the name of Mrs. Anjali Sharma, Rajiv\u2019s wife, with no declared source of income. Bank statements show three large cash deposits of \u20b95 lakh each in March, May, and July 2022, coinciding with the approval of three high-value land regularization cases handled by Rajiv. A forensic audit by the State Financial Intelligence Unit (SFIU) confirmed the absence of legitimate income sources matching these transactions. Communication logs between Rajiv and a local real estate broker, Vikram Singh, reveal encrypted WhatsApp messages discussing \"commission\" and \"paperwork clearance.\"\n\nDespite Rajiv\u2019s claim that the property was funded by his father\u2019s inheritance, no inheritance records or wills have been produced. The case is considered straightforward due to clear financial discrepancies, strong documentary evidence, and a single primary suspect, though witness statements contain one critical contradiction that may mislead less sophisticated analysis."
+    },
+    "hidden_ground_truth": {
+      "actual_criminal": "Rajiv Sharma",
+      "accomplices": [
+        "Vikram Singh"
+      ],
+      "true_motive": "To secure funds for his daughter\u2019s overseas medical treatment, which was denied insurance coverage due to a pre-existing condition",
+      "true_timeline": [
+        "2020-12-10: Rajiv\u2019s daughter diagnosed with rare autoimmune disorder; estimated treatment cost \u20b930 lakh",
+        "2021-03-05: Rajiv begins accepting bribes from landowners seeking illegal regularization of encroached plots",
+        "2021-08-12: First bribe of \u20b94.5 lakh received via cash deposit through Vikram Singh\u2019s intermediary",
+        "2022-03-18: Second bribe of \u20b95 lakh deposited into Rajiv\u2019s account; property purchase initiated",
+        "2022-05-22: Third bribe of \u20b95 lakh deposited; wife\u2019s name used to avoid scrutiny",
+        "2022-06-15: \u20b92.1 crore plot in Indore purchased under Anjali Sharma\u2019s name",
+        "2023-07-20: Priya Mehta, fearing retaliation, submits anonymous complaint to ACB",
+        "2023-08-15: ACB raids Rajiv\u2019s residence and seizes bank records, property documents, and phone"
+      ],
+      "lying_witnesses": [
+        "Priya Mehta"
+      ],
+      "forged_evidence": [
+        "A fabricated inheritance document dated 2019, allegedly signed by Rajiv\u2019s deceased father, presented during the initial ACB interview to explain the property purchase"
+      ],
+      "injected_contradictions": [
+        {
+          "description": "Priya Mehta claims she saw Rajiv receive cash from Vikram Singh on 2022-03-15, but CCTV from the municipal office parking lot shows Vikram entering at 11:03 AM and leaving at 11:18 AM \u2014 while Rajiv was in a mandatory departmental meeting from 10:45 AM to 11:30 AM, confirmed by attendance logs."
+        }
+      ]
+    },
+    "perspectives": [
+      "timeline reconstruction",
+      "witness credibility",
+      "financial motive",
+      "property ownership",
+      "money flow",
+      "communication graph",
+      "forensic evidence",
+      "alibi verification"
+    ],
+    "contradictions": [
+      {
+        "type": "testimony",
+        "severity": "medium",
+        "claim_a": "Priya Mehta testified that she witnessed Rajiv Sharma accepting a cash envelope from Vikram Singh on March 15, 2022, at 11:10 AM near the municipal office parking lot.",
+        "claim_b": "Municipal office CCTV logs and attendance records confirm Rajiv Sharma was in a mandatory departmental meeting from 10:45 AM to 11:30 AM on March 15, 2022, making the alleged sighting impossible."
+      }
+    ],
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "P1",
+          "type": "Person",
+          "label": "Rajiv Sharma"
+        },
+        {
+          "id": "P2",
+          "type": "Person",
+          "label": "Anjali Sharma"
+        },
+        {
+          "id": "P3",
+          "type": "Person",
+          "label": "Vikram Singh"
+        },
+        {
+          "id": "P4",
+          "type": "Person",
+          "label": "Priya Mehta"
+        },
+        {
+          "id": "P5",
+          "type": "Person",
+          "label": "Ramesh Sharma (deceased)"
+        },
+        {
+          "id": "E1",
+          "type": "Event",
+          "label": "Property Purchase in Indore"
+        },
+        {
+          "id": "E2",
+          "type": "Event",
+          "label": "ACB Raid"
+        },
+        {
+          "id": "A1",
+          "type": "Asset",
+          "label": "Indore Residential Plot (\u20b92.1 Cr)"
+        },
+        {
+          "id": "A2",
+          "type": "Asset",
+          "label": "Rajiv Sharma\u2019s Bank Account (SBI)"
+        },
+        {
+          "id": "C1",
+          "type": "Communication",
+          "label": "WhatsApp Messages: Rajiv - Vikram"
+        },
+        {
+          "id": "D1",
+          "type": "Evidence",
+          "label": "Fabricated Inheritance Document"
+        },
+        {
+          "id": "L1",
+          "type": "Location",
+          "label": "Bhopal Municipal Corporation"
+        },
+        {
+          "id": "L2",
+          "type": "Location",
+          "label": "Indore, Madhya Pradesh"
+        }
+      ],
+      "edges": [
+        {
+          "source": "P1",
+          "target": "A1",
+          "relation": "owns"
+        },
+        {
+          "source": "P2",
+          "target": "A1",
+          "relation": "nominal_owner"
+        },
+        {
+          "source": "P1",
+          "target": "A2",
+          "relation": "owns"
+        },
+        {
+          "source": "P3",
+          "target": "P1",
+          "relation": "bribed"
+        },
+        {
+          "source": "P3",
+          "target": "C1",
+          "relation": "initiated"
+        },
+        {
+          "source": "C1",
+          "target": "P1",
+          "relation": "contains"
+        },
+        {
+          "source": "P1",
+          "target": "E1",
+          "relation": "perpetrated"
+        },
+        {
+          "source": "E1",
+          "target": "L2",
+          "relation": "occurred_at"
+        },
+        {
+          "source": "P4",
+          "target": "E2",
+          "relation": "testified_against"
+        },
+        {
+          "source": "D1",
+          "target": "P1",
+          "relation": "supports"
+        },
+        {
+          "source": "P5",
+          "target": "D1",
+          "relation": "forged_as_source"
+        },
+        {
+          "source": "P1",
+          "target": "L1",
+          "relation": "employed_at"
+        },
+        {
+          "source": "A2",
+          "target": "E1",
+          "relation": "funded"
+        },
+        {
+          "source": "P4",
+          "target": "P1",
+          "relation": "reported"
+        },
+        {
+          "source": "E2",
+          "target": "D1",
+          "relation": "seized"
+        }
+      ]
+    }
+  },
+  "documents": [
+    {
+      "document_id": "FIR-001",
+      "document_type": "FIR",
+      "metadata": {
+        "fir_number": "FIR/ACB/BPL/2023/087",
+        "police_station": "Anti-Corruption Bureau, Bhopal",
+        "date_filed": "2023-08-16",
+        "filed_by": "Shri Anil Verma, Senior Investigating Officer, ACB"
+      },
+      "content": "I, Shri Anil Verma, Senior Investigating Officer, Anti-Corruption Bureau, Bhopal, do hereby file this First Information Report under Section 13(1)(e) of the Prevention of Corruption Act, 1988 read with Section 154 CrPC.\n\nOn 15th August 2023, at approximately 10:30 AM, a forensic audit report prepared by the State Financial Intelligence Unit (SFIU) was received by this office, indicating disproportionate assets held by Mr. Rajiv Sharma, Senior Revenue Officer, Bhopal Municipal Corporation. The audit revealed that over a three-year period (2020\u20132023), Mr. Sharma\u2019s declared annual income of \u20b98.2 lakh is inconsistent with bank transactions totaling \u20b947.6 lakh, including three cash deposits of \u20b95 lakh each in March, May, and July 2022, and a property purchase of \u20b92.1 crore in Indore under the name of his wife, Mrs. Anjali Sharma, on 15th June 2022.\n\nThe property purchase lacks any documented source of income, and no inheritance records from Mr. Ramesh Sharma (deceased father) have been produced despite claims of inheritance. Additionally, encrypted WhatsApp communications between Mr. Sharma and real estate broker Vikram Singh contain references to \"commission\" and \"paperwork clearance\" coinciding with the approval of three irregular land regularization cases.\n\nAn anonymous complaint was received on 20th July 2023 from Ms. Priya Mehta, a junior clerk at Bhopal Municipal Corporation, who claimed firsthand knowledge of cash bribes being exchanged. Based on this evidence, a raid was conducted at Mr. Sharma\u2019s residence on 15th August 2023, during which bank statements, property documents, mobile phones, and a fabricated inheritance deed dated 2019 were seized.\n\nThe accused has been summoned for questioning. This case involves criminal misconduct under the Prevention of Corruption Act, 1988, and a full investigation is underway.\n\nSigned,\nShri Anil Verma\nSenior Investigating Officer\nAnti-Corruption Bureau, Bhopal"
+    },
+    {
+      "document_id": "WS-001",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Priya Mehta",
+        "relation_to_case": "Whistleblower and Junior Clerk",
+        "occupation": "Junior Clerk, Bhopal Municipal Corporation"
+      },
+      "content": "I, Priya Mehta, Junior Clerk in the Property Tax Division of Bhopal Municipal Corporation, solemnly declare the following:\n\nI have worked under Mr. Rajiv Sharma since 2019. I noticed a pattern: whenever landowners paid cash to get illegal regularization of encroached plots, their files were approved immediately. I saw Mr. Sharma receive cash envelopes from a man named Vikram Singh on multiple occasions. One such incident occurred on 15th March 2022 at around 11:10 AM, near the municipal office parking lot. Vikram arrived in a black Maruti Swift, handed him an envelope, and left. I was at the window of the records room and saw it clearly.\n\nI also saw similar transactions in May and July 2022. After the June 2022 purchase of a plot in Indore under Mrs. Sharma\u2019s name, I became afraid. I have no personal grudge against Mr. Sharma, but I could not remain silent. I submitted an anonymous complaint to ACB because I feared retaliation. I did not see any other source of income for Mr. Sharma. His father passed away in 2020, and I know for a fact that he left no property or savings. I have no idea how the \u20b92.1 crore plot was paid for.\n\nI swear this statement is true to the best of my knowledge."
+    },
+    {
+      "document_id": "WS-002",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Rajiv Sharma",
+        "relation_to_case": "Accused",
+        "occupation": "Senior Revenue Officer, Bhopal Municipal Corporation"
+      },
+      "content": "I, Rajiv Sharma, Senior Revenue Officer at Bhopal Municipal Corporation, declare as follows:\n\nI have served the public faithfully for over 18 years. The allegations against me are false and malicious. The property in Indore was purchased using funds inherited from my late father, Shri Ramesh Sharma, who passed away in December 2020. He was a small landowner in Gwalior and had saved \u20b925 lakh from agricultural land sales. He also owned a small shop in Bhopal, which he sold in 2019 for \u20b912 lakh. The total inheritance was approximately \u20b937 lakh.\n\nI used \u20b92.1 crore to buy the plot in Indore because my wife, Anjali, preferred to hold property in her name for family planning purposes. The remaining funds were invested in fixed deposits and mutual funds. The cash deposits in my account were from the sale of ancestral land in Gwalior, which I liquidated in installments. I used Vikram Singh, a local broker, only to assist with the Indore property paperwork. Our WhatsApp messages were about legal documentation, not bribes.\n\nI deny ever accepting bribes. The CCTV footage from the municipal office should show I was in a mandatory meeting on March 15, 2022, and I have no idea how Ms. Mehta claims to have seen me receive cash at that time. I am a man of integrity, and these accusations are an attempt to tarnish my reputation."
+    },
+    {
+      "document_id": "WS-003",
+      "document_type": "witness_statement",
+      "metadata": {
+        "witness_name": "Vikram Singh",
+        "relation_to_case": "Real Estate Broker",
+        "occupation": "Proprietor, Singh Properties, Bhopal"
+      },
+      "content": "I, Vikram Singh, owner of Singh Properties, Bhopal, state the following:\n\nI have known Mr. Rajiv Sharma since 2018 through property dealings. I helped him with the purchase of a residential plot in Indore in June 2022. I acted as a facilitator for the legal paperwork. I never gave him any cash. I only handled the registration, stamp duty, and documentation. The payment for the plot was made via bank transfer from Mrs. Anjali Sharma\u2019s account to the seller\u2019s account. I have no knowledge of any cash transactions between Mr. Sharma and myself.\n\nI admit we communicated on WhatsApp, but only about property titles, mutation records, and municipal approvals. The word 'commission' referred to my professional fee for handling the transaction, which was paid via cheque. I do not know who Priya Mehta is. I was at the municipal office on March 15, 2022, but only to file a property registration request for a client. I did not meet Mr. Sharma that day. I have no idea how anyone could claim otherwise."
+    },
+    {
+      "document_id": "ER-001",
+      "document_type": "CCTV_report",
+      "metadata": {
+        "report_id": "CCTV-BMC-2023-087",
+        "location": "Bhopal Municipal Corporation Parking Lot",
+        "date_of_analysis": "2023-08-17",
+        "analyst": "Shri Deepak Mehta, Forensic Surveillance Unit, ACB"
+      },
+      "content": "CCTV footage from the Bhopal Municipal Corporation parking lot (Camera ID: BMC-P1) was analyzed for the date of 15th March 2022.\n\nVikram Singh\u2019s vehicle (Maruti Swift, registration MP-09-AB-5678) entered the parking lot at 11:03:12 AM and exited at 11:18:45 AM.\n\nMr. Rajiv Sharma\u2019s attendance log confirms he was present in Mandatory Departmental Meeting Room 3 from 10:45:00 AM to 11:30:00 AM. The meeting was attended by 12 officers and recorded in the official register.\n\nNo visual evidence shows Mr. Sharma exiting the building between 10:45 AM and 11:30 AM. The CCTV angle does not capture the exact spot where Ms. Mehta claims the transaction occurred, but the timing and location are incompatible with her testimony.\n\nConclusion: It is physically impossible for Mr. Sharma to have received a cash envelope from Vikram Singh at 11:10 AM on 15th March 2022, as he was in a mandatory meeting at the time. Ms. Mehta\u2019s sighting is inconsistent with verified surveillance and attendance records."
+    },
+    {
+      "document_id": "ER-002",
+      "document_type": "Forensic_report",
+      "metadata": {
+        "report_id": "SFIU-FR-2023-087",
+        "issued_by": "State Financial Intelligence Unit, Bhopal",
+        "date_issued": "2023-08-14",
+        "analyst": "Dr. Nandini Roy, Chief Financial Forensic Analyst"
+      },
+      "content": "Forensic Audit Report on Assets of Mr. Rajiv Sharma (Employee ID: BMC-SRO-2011)\n\nDeclared Annual Income (2020\u20132023): \u20b98.2 lakh per annum\nTotal Bank Inflows (SBI Account No. 42356789012): \u20b947.6 lakh\n\nKey Findings:\n1. Three cash deposits of \u20b95 lakh each on 18th March 2022, 22nd May 2022, and 10th July 2022. No source of income declared for these deposits.\n2. \u20b92.1 crore property purchased in Indore on 15th June 2022 under Mrs. Anjali Sharma\u2019s name. Payment source: \u20b91.8 crore from SBI account (funded by above cash deposits), \u20b930 lakh from undisclosed savings.\n3. No inheritance records, wills, or property transfer documents from deceased father Ramesh Sharma (d. 2020) have been produced.\n4. No tax filings or income declarations for any property sale or inheritance.\n5. No evidence of business income, rental income, or gifts.\n\nConclusion: The assets acquired by Mr. Rajiv Sharma are disproportionate to his known sources of income. The cash deposits and property acquisition cannot be explained by legitimate means. The fabricated inheritance document (D1) presented during initial interview is a forgery, as confirmed by handwriting analysis and notary stamp verification. The financial trail points to illicit origin."
+    },
+    {
+      "document_id": "ER-003",
+      "document_type": "Digital_Forensics_Report",
+      "metadata": {
+        "report_id": "DFR-ACB-2023-087",
+        "device": "Rajiv Sharma\u2019s Samsung Galaxy S21",
+        "date_extracted": "2023-08-15",
+        "analyst": "Shri Arjun Patel, Cyber Forensics Cell, ACB"
+      },
+      "content": "Forensic extraction of WhatsApp messages from Rajiv Sharma\u2019s device (backup ID: ACB-007-S21-0815) revealed 17 encrypted conversations with Vikram Singh (number: +91-98765-43210) between January 2021 and August 2023.\n\nKey excerpts:\n- 18th March 2022: \"Vikram: Done. \u20b95L cleared. Paperwork done. No trace.\" \n- 22nd May 2022: \"Rajiv: Same as before. 5 more. Need to move fast. Anjali\u2019s name this time.\"\n- 10th July 2022: \"Vikram: Last one. After this, I\u2019m out. Too risky.\"\n\nAll messages were deleted from the app interface but recovered from device memory. Timestamps align with cash deposits. No messages reference inheritance, land sales, or legitimate income. The term 'commission' was used 9 times, always in context of \"clearing files\" or \"approvals.\" \n\nConclusion: The WhatsApp communications confirm a pattern of bribes tied to land regularization approvals. The use of coded language and encrypted deletion indicates intent to conceal. No evidence supports the claim of inheritance as a funding source."
+    },
+    {
+      "document_id": "ER-004",
+      "document_type": "Property_Record",
+      "metadata": {
+        "record_id": "PROP-IND-2022-0441",
+        "location": "Indore, Madhya Pradesh",
+        "date_of_registration": "2022-06-15",
+        "registered_owner": "Mrs. Anjali Sharma"
+      },
+      "content": "Property Registration Record: Plot No. 17, Sector 12, Indore, Madhya Pradesh\n\n- Area: 1200 sq. yards\n- Sale Value: \u20b92.1 crore\n- Seller: Shri Manoj Gupta, Indore Urban Development Authority\n- Buyer: Mrs. Anjali Sharma, wife of Rajiv Sharma, Bhopal\n- Payment Method: \u20b91.8 crore via bank transfer from SBI Account No. 42356789012 (Rajiv Sharma), \u20b930 lakh via demand draft from Anjali Sharma\u2019s personal account (SBI 42356789013)\n- Registration Fee Paid: \u20b910.5 lakh\n- Witness: Shri Vikram Singh (Broker), Shri Harish Chandra (Notary)\n\nNo source of funds for the demand draft (\u20b930 lakh) was declared. The buyer\u2019s income proof submitted was a copy of Rajiv Sharma\u2019s salary slip (\u20b98.2 lakh/year). No other income documents were provided.\n\nNote: The property was registered under the wife\u2019s name to avoid scrutiny under the Benami Transactions (Prohibition) Act, 1988. No declaration of benami status was made."
+    },
+    {
+      "document_id": "ER-005",
+      "document_type": "Evidence_Report",
+      "metadata": {
+        "evidence_id": "EVID-FAB-007",
+        "item": "Fabricated Inheritance Document",
+        "seized_on": "2023-08-15",
+        "location": "Rajiv Sharma\u2019s residence, Bhopal"
+      },
+      "content": "A document titled 'Last Will and Testament of Shri Ramesh Sharma' dated 12th March 2019 was seized during the raid. The document claims to be a notarized will leaving \u20b92.5 crore in property and cash to Rajiv Sharma.\n\nForensic Analysis by State Document Examination Unit:\n- Paper: Post-2021 stock, not available in 2019.\n- Ink: Laser printer toner, not consistent with 2019-era notary stamping.\n- Notary Seal: Faked. The notary (Shri Prakash Verma) denies ever witnessing or notarizing this document.\n- Signature: Handwriting analysis confirms it was digitally scanned and printed, not handwritten.\n- Witnesses: Names listed (Shri Ramesh Mehta, Smt. Lata Gupta) are fabricated. No such persons exist in municipal records.\n\nConclusion: This document is a forgery, created post-2022 to explain the source of funds for the Indore property purchase. It was presented during the initial ACB interview on 16th August 2023, after the raid, as a defensive measure."
+    },
+    {
+      "document_id": "IR-001",
+      "document_type": "Police_Investigation_Report",
+      "metadata": {
+        "report_id": "IR-ACB-BPL-007",
+        "investigating_officer": "Shri Anil Verma",
+        "date_submitted": "2023-09-05"
+      },
+      "content": "Investigation Summary \u2013 Case No. FIR/ACB/BPL/2023/087\n\nThe investigation confirms that Mr. Rajiv Sharma, Senior Revenue Officer, Bhopal Municipal Corporation, has acquired assets disproportionate to his known income. The \u20b947.6 lakh in unexplained bank inflows, the \u20b92.1 crore property purchase under his wife\u2019s name, and the encrypted WhatsApp communications with Vikram Singh all point to systematic bribery.\n\nAlthough Ms. Priya Mehta\u2019s testimony regarding the March 15, 2022 cash transaction is factually impossible due to verified CCTV and attendance logs, her broader allegations of cash bribes are corroborated by digital forensics and financial records.\n\nThe fabricated inheritance document was a deliberate attempt to mislead the investigation. The motive appears to be financing his daughter\u2019s overseas medical treatment, which was denied insurance coverage due to a pre-existing condition. This motive, while sympathetic, does not absolve criminal conduct.\n\nVikram Singh is identified as the intermediary who facilitated the bribes and acted as the money conduit. He is currently under further investigation.\n\nRecommendation: Charge sheet to be filed against Rajiv Sharma under Section 13(1)(e) of the Prevention of Corruption Act, 1988, and Section 420 IPC for cheating. Vikram Singh to be summoned as an accomplice. Priya Mehta\u2019s credibility is compromised on the specific date of March 15, 2022, but her overall testimony remains partially credible."
+    },
+    {
+      "document_id": "CS-001",
+      "document_type": "charge_sheet",
+      "metadata": {
+        "charge_sheet_no": "CS/ACB/BPL/2023/087",
+        "court": "Special Court for Prevention of Corruption, Bhopal",
+        "date_filed": "2023-09-10",
+        "prosecutor": "Shri Vikram Singh (Public Prosecutor)"
+      },
+      "content": "IN THE COURT OF THE SPECIAL JUDGE, PREVENTION OF CORRUPTION, BHOPAL\n\nCase No.: CS/ACB/BPL/2023/087\n\nState vs. Rajiv Sharma\n\nCharge Sheet under Section 13(1)(e) of the Prevention of Corruption Act, 1988 and Section 420 IPC\n\nThe accused, Rajiv Sharma, Senior Revenue Officer, Bhopal Municipal Corporation, is charged as follows:\n\n1. That on or about 18th March 2022, 22nd May 2022, and 10th July 2022, at Bhopal, the accused dishonestly received cash payments of \u20b95 lakh each from Vikram Singh, a real estate broker, in exchange for expediting illegal land regularization approvals, thereby committing criminal misconduct under Section 13(1)(e) of the Prevention of Corruption Act, 1988.\n\n2. That the accused, with intent to defraud the public and the state, purchased a property worth \u20b92.1 crore in Indore under the name of his wife, Anjali Sharma, without declaring any legitimate source of income, thereby committing the offence of cheating under Section 420 IPC.\n\n3. That the accused presented a forged inheritance document dated 2019 to mislead the investigation, thereby committing forgery under Section 467 IPC.\n\nEvidence: Bank statements, WhatsApp messages, CCTV logs, forensic audit, property records, seized forged document.\n\nAccused has been remanded in custody. Vikram Singh to be examined as an accomplice.\n\nSubmitted for trial.\n\nShri Vikram Singh\nPublic Prosecutor\nSpecial Court for Prevention of Corruption, Bhopal"
+    }
+  ],
+  "benchmark": {
+    "queries": [
+      {
+        "id": "Q1",
+        "question": "Who is the actual perpetrator?",
+        "category": "suspect_identification"
+      },
+      {
+        "id": "Q2",
+        "question": "What is the motive behind the corruption?",
+        "category": "motive_analysis"
+      },
+      {
+        "id": "Q3",
+        "question": "Which witness provided false testimony regarding the March 15, 2022 cash transaction?",
+        "category": "witness_credibility"
+      },
+      {
+        "id": "Q4",
+        "question": "What evidence was forged to explain the source of funds for the Indore property?",
+        "category": "evidence_ranking"
+      },
+      {
+        "id": "Q5",
+        "question": "How do the WhatsApp messages support the corruption allegation?",
+        "category": "communication_graph"
+      },
+      {
+        "id": "Q6",
+        "question": "What is the contradiction between Priya Mehta\u2019s statement and the CCTV logs?",
+        "category": "contradiction_detection"
+      },
+      {
+        "id": "Q7",
+        "question": "Why is the property purchase under Anjali Sharma\u2019s name significant?",
+        "category": "property_ownership"
+      },
+      {
+        "id": "Q8",
+        "question": "Which document proves the financial discrepancy between declared income and actual assets?",
+        "category": "financial_motive"
+      },
+      {
+        "id": "Q9",
+        "question": "What is the conviction likelihood based on the evidence presented?",
+        "category": "conviction_likelihood"
+      },
+      {
+        "id": "Q10",
+        "question": "Who is the accomplice, and what role did they play?",
+        "category": "relationship_mapping"
+      }
+    ],
+    "expected_answers": [
+      {
+        "query_id": "Q1",
+        "answer": "Rajiv Sharma is the actual perpetrator. He is the senior revenue officer who accepted bribes from Vikram Singh in exchange for approving illegal land regularization cases. The forensic audit, WhatsApp messages, and financial records all directly link him to the unexplained cash deposits and property purchase. Although he denies wrongdoing, the fabricated inheritance document and his inability to explain the \u20b947.6 lakh inflows confirm his guilt."
+      },
+      {
+        "query_id": "Q2",
+        "answer": "The true motive was to secure funds for his daughter\u2019s overseas medical treatment, which was denied insurance coverage due to a pre-existing autoimmune disorder. The estimated cost of \u20b930 lakh created financial pressure, leading him to begin accepting bribes in March 2021. This motive, while humanizing, does not justify the criminal acts and is corroborated by internal family records not disclosed during the investigation."
+      },
+      {
+        "query_id": "Q3",
+        "answer": "Priya Mehta provided false testimony regarding the March 15, 2022 cash transaction. She claimed to have seen Rajiv Sharma receive cash from Vikram Singh at 11:10 AM, but CCTV and attendance logs prove he was in a mandatory meeting from 10:45 AM to 11:30 AM. This specific claim is fabricated or mistaken, though her broader allegations of bribery are supported by other evidence."
+      },
+      {
+        "query_id": "Q4",
+        "answer": "A fabricated inheritance document dated 2019, allegedly signed by Rajiv Sharma\u2019s deceased father, Ramesh Sharma, was presented to explain the source of funds for the Indore property. Forensic analysis confirmed it was printed on post-2021 paper, used a forged notary seal, and contained fake witness names. It was created after the property purchase to mislead investigators."
+      },
+      {
+        "query_id": "Q5",
+        "answer": "The WhatsApp messages between Rajiv Sharma and Vikram Singh contain coded language such as '\u20b95L cleared,' 'paperwork done,' and 'Anjali\u2019s name this time,' which directly correlate with the timing and amounts of the three cash deposits. The use of terms like 'commission' and 'no trace' indicates an understanding of illegality and intent to conceal. These messages were recovered from device memory and confirm a pattern of bribery."
+      },
+      {
+        "query_id": "Q6",
+        "answer": "The contradiction is that Priya Mehta claimed to have witnessed Rajiv Sharma receiving cash from Vikram Singh at 11:10 AM on March 15, 2022, but official CCTV logs and attendance records confirm that Rajiv was in a mandatory departmental meeting from 10:45 AM to 11:30 AM. This makes the sighting physically impossible, exposing a critical flaw in her testimony on that specific date."
+      },
+      {
+        "query_id": "Q7",
+        "answer": "The property purchase under Anjali Sharma\u2019s name is significant because it was a deliberate attempt to circumvent scrutiny under the Benami Transactions (Prohibition) Act, 1988. By using his wife\u2019s name, Rajiv Sharma tried to create a legal fiction that the asset belonged to someone else, hiding his own illicit wealth. The lack of any declared income for Anjali Sharma further confirms the benami nature of the transaction."
+      },
+      {
+        "query_id": "Q8",
+        "answer": "The State Financial Intelligence Unit (SFIU) forensic audit report (ER-002) proves the financial discrepancy. It compares Rajiv Sharma\u2019s declared annual income of \u20b98.2 lakh with total unexplained bank inflows of \u20b947.6 lakh over three years, including three cash deposits of \u20b95 lakh each and a \u20b92.1 crore property purchase. The report concludes no legitimate source exists for these assets."
+      },
+      {
+        "query_id": "Q9",
+        "answer": "The conviction likelihood is very high. The case has multiple layers of corroborating evidence: financial records, digital communications, forensic analysis of forged documents, and a clear timeline linking bribes to asset acquisition. Although one witness statement contains a contradiction, it is isolated and does not undermine the overwhelming documentary and forensic evidence. The charge sheet is legally sound, and the accused\u2019s defense lacks credibility."
+      },
+      {
+        "query_id": "Q10",
+        "answer": "Vikram Singh is the accomplice. He acted as the intermediary who collected bribes from landowners and delivered cash to Rajiv Sharma. He facilitated the property purchase in Indore and used coded WhatsApp messages to coordinate the bribes. His role was essential in laundering the illicit cash and ensuring the transactions remained untraceable. He is being investigated as a co-conspirator under Section 12 of the Prevention of Corruption Act."
+      }
+    ]
+  }
+}

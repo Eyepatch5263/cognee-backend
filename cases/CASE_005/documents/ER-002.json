@@ -1,0 +1,10 @@
+{
+  "document_id": "ER-002",
+  "document_type": "forensic_report",
+  "metadata": {
+    "evidence_id": "E04",
+    "lab": "Maharashtra Forensic Science Laboratory, Pune",
+    "report_date": "2024-03-14"
+  },
+  "content": "FORENSIC ANALYSIS REPORT — BLOOD-STAINED WOODEN PLANK\n\nEvidence ID: E04\nRecovered from alley behind Shree Ram Grocery Store, Shivaji Nagar, Pune on 12/03/2024.\n\n1. DNA Analysis:\n   - Blood sample matches Arjun Deshmukh (P01) with 99.98% probability.\n   - No other human DNA detected.\n\n2. Fingerprint Analysis:\n   - Latent prints recovered: 3 partial prints.\n   - One print matches Rohan Deshmukh (P02) — confirmed via AFIS.\n   - Fingerprint analysis shows print was deposited on 10/03/2024 (verified via print age estimation and store purchase logs).\n   - No recent prints (post-10/03) found.\n\n3. Blood Pattern Analysis:\n   - Blood spatter pattern consistent with blunt force trauma to forearm.\n   - Blood amount indicates injury occurred at scene, not transported.\n\n4. Additional Finding:\n   - Blood on plank was not fresh at time of recovery — dried for approximately 12–18 hours.\n   - Swabbing pattern suggests blood was deliberately applied using a swab from Ruby Hall Clinic’s medical records (matching protocol used in hospital for Arjun’s wound).\n\nConclusion: The wooden plank was used in the assault. However, Rohan Deshmukh’s fingerprints were not deposited during the assault. They were present from a prior visit. The blood was likely planted after the attack using a swab from the hospital. This indicates tampering with evidence."
+}

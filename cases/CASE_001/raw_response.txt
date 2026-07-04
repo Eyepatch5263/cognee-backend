@@ -1,0 +1,325 @@
+```json
+{
+  "CASE METADATA": {
+    "case_id": "CASE_001",
+    "case_type": "murder",
+    "difficulty": "hard",
+    "incident_date": "2023-10-15",
+    "location": "Kharadi, Pune, Maharashtra",
+    "summary": "On the night of October 15, 2023, the body of Arjun Mehta, a 48-year-old real estate developer, was found in the backyard of his bungalow in Kharadi, Pune, with a single stab wound to the chest and signs of a struggle. The crime scene showed no forced entry, suggesting the killer was known to him. A bloodied kitchen knife, registered under Arjun’s name, was found nearby, but fingerprints were partially wiped. The initial FIR filed by his wife, Priya Mehta, claimed she heard a scream at 10:30 PM and found him dead upon rushing out. However, CCTV footage from a neighbor’s gate shows Priya leaving the house at 9:45 PM and returning at 11:15 PM — contradicting her statement. Arjun had recently finalized the sale of a disputed plot of land to his business partner, Vikram Desai, after a bitter legal battle with his estranged brother, Rohan Mehta, who claimed ancestral rights. Financial records show a sudden ₹25 lakh transfer from Arjun’s account to an unknown beneficiary the day before his death. The autopsy placed time of death between 9:30 PM and 10:15 PM, but a neighbor claims hearing a loud argument at 10:45 PM. Forensic analysis revealed trace DNA under Arjun’s fingernails — not matching any immediate family — and a partial palm print on the backdoor handle that doesn’t match any registered occupants. The case is further complicated by the sudden disappearance of Arjun’s personal assistant, Nidhi Rao, who had access to his phone and financial apps. Witnesses include household staff, neighbors, business associates, and a local priest who claims to have seen Arjun arguing with a hooded figure near the temple gate at 8:45 PM — a claim later retracted under pressure. The investigation has uncovered evidence of bribed testimony, forged property documents, and a hidden extramarital affair with a yoga instructor who denies any contact after September."
+  },
+  "HIDDEN GROUND TRUTH": {
+    "actual_criminal": "Vikram Desai",
+    "accomplices": ["Nidhi Rao"],
+    "true_motive": "property dispute and financial gain",
+    "true_timeline": [
+      "2023-10-15 08:45 PM: Vikram meets Arjun at the Shree Ganesh Temple gate to demand final signature on forged property transfer documents; Arjun refuses.",
+      "2023-10-15 09:15 PM: Vikram returns to Arjun’s house via service entrance (key obtained from Nidhi Rao); they argue in the kitchen.",
+      "2023-10-15 09:30 PM: Vikram stabs Arjun during the argument; Arjun scratches Vikram’s left forearm during struggle.",
+      "2023-10-15 09:35 PM: Vikram wipes knife, plants it near the garden, and exits through the backdoor, leaving partial palm print.",
+      "2023-10-15 09:40 PM: Nidhi Rao, acting on Vikram’s instructions, transfers ₹25 lakh from Arjun’s account to a shell account under 'R. Sharma'.",
+      "2023-10-15 09:45 PM: Priya Mehta leaves house to meet her yoga instructor, claiming she’s attending a meditation retreat.",
+      "2023-10-15 10:10 PM: Vikram calls Nidhi Rao to confirm transfer success; she deletes call logs.",
+      "2023-10-15 10:15 PM: Arjun dies from internal bleeding; body undiscovered.",
+      "2023-10-15 11:15 PM: Priya returns home, stages discovery, calls police.",
+      "2023-10-16: Nidhi Rao flees to Goa; Vikram bribes two neighbors to claim they heard an argument at 10:45 PM."
+    ],
+    "lying_witnesses": ["Priya Mehta", "Mrs. Kulkarni (Neighbor)", "Father Thomas (Priest)"],
+    "forged_evidence": [
+      "Forged property deed signed by Arjun (dated 2023-10-14) with altered thumbprint, submitted by Vikram to register land transfer",
+      "Fake WhatsApp message screenshot showing Arjun threatening Vikram, created by Nidhi Rao using Arjun’s phone backup",
+      "Staged blood spatter pattern on kitchen floor to imply struggle occurred near the sink, when actual struggle was near the backdoor"
+    ],
+    "injected_contradictions": [
+      "Priya claims she heard a scream at 10:30 PM, but CCTV shows her returning at 11:15 PM and the autopsy says death occurred by 10:15 PM",
+      "Father Thomas initially claims he saw Arjun arguing with a hooded man at 8:45 PM, but later retracts, saying he was mistaken — yet his original statement was recorded by a police constable who later admits he was paid ₹50,000 to 'clarify' it",
+      "Forensic report says DNA under Arjun’s nails matches no one in the database, but it actually matches Vikram — whose DNA was never entered because he never had a criminal record",
+      "Nidhi Rao’s phone shows no calls to Vikram after September, but call logs were wiped and a backup from a cloud account reveals 17 calls in the last week",
+      "The knife has Arjun’s fingerprints on the handle, but none on the blade — suggesting it was planted after the murder, yet the family claims he always kept it in the kitchen drawer",
+      "A neighbor claims to have seen a white sedan (Vikram’s car) leaving at 10:20 PM, but the car’s GPS shows it was parked at Vikram’s office until 11:00 PM — the GPS data was spoofed using a device bought online"
+    ]
+  },
+  "REASONING PERSPECTIVES": [
+    "timeline reconstruction",
+    "witness credibility",
+    "financial motive",
+    "family relationships",
+    "digital forensics",
+    "forensic evidence",
+    "property ownership",
+    "money flow",
+    "communication graph",
+    "alibi verification",
+    "forged document analysis",
+    "bribery patterns"
+  ],
+  "CONTRADICTIONS": [
+    {
+      "type": "timeline",
+      "severity": "critical",
+      "claim_a": "Priya Mehta claims she heard a scream at 10:30 PM and discovered the body immediately.",
+      "claim_b": "Autopsy report concludes death occurred between 9:30 PM and 10:15 PM, and CCTV shows Priya returning home at 11:15 PM."
+    },
+    {
+      "type": "testimony",
+      "severity": "high",
+      "claim_a": "Father Thomas states he saw Arjun arguing with a hooded man at 8:45 PM near the temple.",
+      "claim_b": "Father Thomas later retracts, saying he was confused by the lighting, but his original recorded statement was filed by a constable who was later found to have received a cash deposit of ₹50,000."
+    },
+    {
+      "type": "forensic",
+      "severity": "high",
+      "claim_a": "DNA under Arjun’s fingernails does not match any registered individual in the police database.",
+      "claim_b": "The DNA profile matches Vikram Desai, whose DNA was never entered due to lack of prior criminal record — but it was collected during a voluntary blood donation in 2021."
+    },
+    {
+      "type": "financial",
+      "severity": "critical",
+      "claim_a": "Arjun’s bank statement shows a ₹25 lakh transfer to 'R. Sharma' on October 15 at 9:40 PM, labeled 'personal loan'.",
+      "claim_b": "Nidhi Rao claims she never accessed Arjun’s phone after 9 PM, but digital forensics show the transfer was made via his phone’s biometric login, which only he and Nidhi knew."
+    },
+    {
+      "type": "testimony",
+      "severity": "medium",
+      "claim_a": "Mrs. Kulkarni (Neighbor) claims she heard a loud argument at 10:45 PM coming from Arjun’s house.",
+      "claim_b": "Her home security camera footage shows her own porch light was off at 10:45 PM, making it impossible to see or hear clearly — she later admits she was paid to 'confirm' the time."
+    },
+    {
+      "type": "forensic",
+      "severity": "high",
+      "claim_a": "The murder weapon has Arjun’s fingerprints on the handle and no prints on the blade.",
+      "claim_b": "Blood spatter analysis shows the knife was wiped after use, but the blade shows no trace of Arjun’s blood — suggesting it was not the weapon used, yet it was planted at the scene."
+    },
+    {
+      "type": "timeline",
+      "severity": "medium",
+      "claim_a": "Vikram Desai claims he was at his office until 11:00 PM and has CCTV footage to prove it.",
+      "claim_b": "The office CCTV footage shows his car parked outside, but the timestamp on the footage was altered — the original footage shows his car leaving at 9:50 PM."
+    },
+    {
+      "type": "digital forensics",
+      "severity": "high",
+      "claim_a": "Nidhi Rao’s phone shows no communication with Vikram after September 2023.",
+      "claim_b": "A cloud backup of her phone reveals 17 encrypted WhatsApp messages with Vikram between October 10–15, deleted from her device but recoverable via forensic imaging."
+    },
+    {
+      "type": "property",
+      "severity": "critical",
+      "claim_a": "Rohan Mehta claims the disputed land was ancestral property and Arjun had no right to sell it.",
+      "claim_b": "The property deed presented by Vikram shows Arjun as sole owner since 2018, but the original 2005 deed (found in Arjun’s safe) names Rohan as co-owner — the 2018 deed was forged."
+    },
+    {
+      "type": "financial",
+      "severity": "medium",
+      "claim_a": "Priya Mehta claims she had no knowledge of Arjun’s financial affairs and was financially dependent on him.",
+      "claim_b": "Bank records show Priya opened a new savings account in her name on October 14 with a ₹10 lakh deposit — the same day Vikram transferred funds to Nidhi Rao’s account."
+    }
+  ],
+  "EXPECTED KNOWLEDGE GRAPH": {
+    "nodes": [
+      {
+        "id": "P001",
+        "type": "Person",
+        "label": "Arjun Mehta"
+      },
+      {
+        "id": "P002",
+        "type": "Person",
+        "label": "Priya Mehta"
+      },
+      {
+        "id": "P003",
+        "type": "Person",
+        "label": "Vikram Desai"
+      },
+      {
+        "id": "P004",
+        "type": "Person",
+        "label": "Rohan Mehta"
+      },
+      {
+        "id": "P005",
+        "type": "Person",
+        "label": "Nidhi Rao"
+      },
+      {
+        "id": "P006",
+        "type": "Person",
+        "label": "Father Thomas"
+      },
+      {
+        "id": "P007",
+        "type": "Person",
+        "label": "Mrs. Kulkarni"
+      },
+      {
+        "id": "P008",
+        "type": "Person",
+        "label": "Constable Ramesh"
+      },
+      {
+        "id": "E001",
+        "type": "Event",
+        "label": "Murder of Arjun Mehta"
+      },
+      {
+        "id": "E002",
+        "type": "Event",
+        "label": "Property Sale Agreement"
+      },
+      {
+        "id": "E003",
+        "type": "Event",
+        "label": "₹25 Lakh Transfer"
+      },
+      {
+        "id": "E004",
+        "type": "Event",
+        "label": "Forged Property Deed"
+      },
+      {
+        "id": "A001",
+        "type": "Asset",
+        "label": "Kitchen Knife"
+      },
+      {
+        "id": "A002",
+        "type": "Asset",
+        "label": "Arjun's Smartphone"
+      },
+      {
+        "id": "A003",
+        "type": "Asset",
+        "label": "Vikram's White Sedan"
+      },
+      {
+        "id": "L001",
+        "type": "Location",
+        "label": "Arjun's Bungalow, Kharadi"
+      },
+      {
+        "id": "L002",
+        "type": "Location",
+        "label": "Shree Ganesh Temple Gate"
+      },
+      {
+        "id": "L003",
+        "type": "Location",
+        "label": "Vikram's Office"
+      },
+      {
+        "id": "C001",
+        "type": "Communication",
+        "label": "WhatsApp Messages (Vikram-Nidhi)"
+      },
+      {
+        "id": "C002",
+        "type": "Communication",
+        "label": "Phone Call (Vikram-Nidhi)"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P001",
+        "target": "E001",
+        "relation": "victim_of"
+      },
+      {
+        "source": "P003",
+        "target": "E001",
+        "relation": "perpetrator_of"
+      },
+      {
+        "source": "P005",
+        "target": "E001",
+        "relation": "accomplice_of"
+      },
+      {
+        "source": "P003",
+        "target": "E002",
+        "relation": "benefits_from"
+      },
+      {
+        "source": "P004",
+        "target": "E002",
+        "relation": "disputes"
+      },
+      {
+        "source": "P003",
+        "target": "E004",
+        "relation": "created"
+      },
+      {
+        "source": "P005",
+        "target": "E003",
+        "relation": "executed"
+      },
+      {
+        "source": "P001",
+        "target": "A001",
+        "relation": "owns"
+      },
+      {
+        "source": "P001",
+        "target": "A002",
+        "relation": "owns"
+      },
+      {
+        "source": "P003",
+        "target": "A003",
+        "relation": "owns"
+      },
+      {
+        "source": "P001",
+        "target": "L001",
+        "relation": "resides_at"
+      },
+      {
+        "source": "P003",
+        "target": "L003",
+        "relation": "works_at"
+      },
+      {
+        "source": "P001",
+        "target": "L002",
+        "relation": "visited"
+      },
+      {
+        "source": "P003",
+        "target": "L002",
+        "relation": "visited"
+      },
+      {
+        "source": "P003",
+        "target": "P005",
+        "relation": "bribed"
+      },
+      {
+        "source": "P008",
+        "target": "P006",
+        "relation": "bribed"
+      },
+      {
+        "source": "P007",
+        "target": "P003",
+        "relation": "bribed"
+      },
+      {
+        "source": "P005",
+        "target": "C001",
+        "relation": "part_of"
+      },
+      {
+        "source": "P003",
+        "target": "C002",
+        "relation": "initiated"
+      },
+      {
+        "source": "A001",
+        "target": "E001",
+        "relation": "used_as_weapon"
+      }
+    ]
+  }
+}
+```

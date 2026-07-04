@@ -1,0 +1,10 @@
+{
+  "document_id": "BR-001",
+  "document_type": "bank_statement_report",
+  "metadata": {
+    "report_id": "BR/VedaCorp/2023/04",
+    "bank": "Axis Bank, Navi Mumbai Corporate Branch",
+    "date_generated": "2023-09-05"
+  },
+  "content": "Transaction analysis of VedaCorp’s corporate account (No. 7890123456789) reveals: 1. On 2023-01-20, ₹8,00,00,000 was transferred to Sahara Ventures (A/c: 9876543210) under 'Vendor Payment - Services Rendered.' 2. On 2023-07-28, ₹3,20,00,000 was withdrawn from Sahara Ventures to Priya Mehta’s personal account (ending 4567) as 'Dividend Income.' 3. On 2023-08-10, ₹5,00,00,000 was transferred from VedaCorp’s payroll account to Sahara Ventures under 'Client Repayment.' 4. Sahara Ventures account was opened on 2022-11-15 with KYC documents later proven fraudulent. 5. No corresponding invoices or service agreements exist in VedaCorp’s client database. 6. Bank’s AI fraud detection system flagged the ₹5 crore transfer on 2023-08-10 as 'high-risk - no client match, new recipient, sudden spike.' The flag was overridden by Rajiv Desai’s authorization code. 7. All transactions were routed through three intermediary accounts in Kerala and Gujarat before final transfer to Cyprus-based trust 'Nile Holdings.' Conclusion: Structured money laundering scheme with multiple layers. Funds diverted to offshore entities."
+}

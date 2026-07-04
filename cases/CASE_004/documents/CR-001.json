@@ -1,0 +1,10 @@
+{
+  "document_id": "CR-001",
+  "document_type": "cctv_report",
+  "metadata": {
+    "report_id": "CCTV/CC/2023/00478-01",
+    "prepared_by": "Security Division, VerveTech Solutions",
+    "date": "2023-11-17"
+  },
+  "content": "CCTV footage from VerveTech Office (Jaynagar) was reviewed for the period 20:00 to 06:00 on 2023-11-15. 1. No personnel entered or exited the office during the breach window. 2. The server room door logs show no physical access. 3. The main entrance camera was partially obstructed by a maintenance trolley from 01:45 to 02:15. 4. The internal hallway camera near Arjun’s desk was offline due to a reported power surge at 01:20. 5. Rohan Desai’s apartment complex CCTV (Koramangala) confirms his presence from 01:00 to 04:00. 6. Jayanagar café CCTV shows a man matching Vikram Singh’s description (beard, height 5’10”, dark coat) using a mobile phone on public Wi-Fi at 01:45 AM on 2023-11-15. 7. The burner phone (purchased under fake Aadhaar) was last detected near Mysore Railway Station at 02:45 AM. Conclusion: The breach was executed remotely. No physical intrusion occurred. The attacker operated from outside the premises."
+}

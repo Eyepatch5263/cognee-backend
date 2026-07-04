@@ -1,0 +1,10 @@
+{
+  "document_id": "DFR-001",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "report_id": "DFR/EOW/2023/045",
+    "investigating_officer": "Sr. Inspector Meena Shah",
+    "date_issued": "2023-09-02"
+  },
+  "content": "Forensic examination of Karan Verma’s workstation (serial #VC-ERP-09) revealed 17 instances of Adobe Sign API calls matching the timestamps of forged digital signatures on service delivery reports. All 17 instances originated from his home IP address (192.168.1.101) during non-working hours (22:00–04:00). The signatures were generated using a template extracted from VedaCorp’s client database, which was accessed on 2022-08-19. The system logs confirm Karan was the only user with elevated permissions to generate signatures without managerial approval. No such activity was found on Priya Desai’s or Rajiv Nair’s systems. The digital certificate used by the CEO for transaction approvals was revoked on 2022-01-15. However, 14 transaction logs bear the CEO’s digital signature generated after revocation, indicating forgery. The CEO’s actual certificate was stored securely and never used after revocation. Conclusion: Karan Verma forged 12 digital signatures. Rajiv Nair and Arjun Mehta forged CEO signatures on transaction approvals."
+}

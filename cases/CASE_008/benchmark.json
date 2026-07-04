@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator of the hit-and-run?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "Which witness statement contains the most deliberate falsehood, and why?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q3",
+      "question": "How does the forensic paint analysis contradict the registered vehicle’s official service record?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q4",
+      "question": "Reconstruct the accurate timeline of events between 18:45 and 19:05 based on digital and physical evidence.",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q5",
+      "question": "What is the true motive behind the crime, and how is it connected to the financial records?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q6",
+      "question": "Which piece of evidence was forged, and who is responsible for the forgery?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q7",
+      "question": "Why is Priya Sharma’s Zoom alibi considered unreliable despite official logs?",
+      "category": "alibi_verification"
+    },
+    {
+      "id": "Q8",
+      "question": "What is the relationship between Vikas Mehta and the victim, and how does it support the conspiracy theory?",
+      "category": "relationship_mapping"
+    },
+    {
+      "id": "Q9",
+      "question": "Which two pieces of digital evidence most conclusively place Rohan Sharma at the crime scene?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q10",
+      "question": "What is the likelihood of conviction for Rohan Sharma and Vikas Mehta based on current evidence?",
+      "category": "conviction_likelihood"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "Rohan Sharma is the actual perpetrator. Digital forensics confirm his phone’s Bluetooth paired with Vikas Mehta’s phone at the crime scene at 18:50, and GPS data places him at the pedestrian crossing between 18:40–19:00. His fabricated photo gallery and altered mechanical report confirm intent to conceal. The headlight and paint fragment match a modified vehicle he repaired on March 16. His wife’s alibi is unrelated to the act. The motive — silencing Arjun Mehta — aligns with his actions."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "Mrs. Anjali Kapoor’s statement contains the most deliberate falsehood. She claims to have seen a woman driving, but CCTV clearly shows a male driver. She later admits to being nearsighted and confusing the silhouette. This is not an honest mistake — it was likely influenced by external pressure, possibly from Vikas Mehta or Priya Sharma, to deflect suspicion from the male driver and create confusion about the driver’s identity."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "The forensic report confirms the paint fragment matches the factory color 'Azure Blue (MB-2023)' used on 2021–2023 XUV700 models. However, the registered vehicle was repainted in 'Midnight Sapphire (MB-2024)' in January 2024, per official service records. The factory color is obsolete and no longer used, meaning the paint fragment could not have come from the currently registered vehicle — indicating the vehicle involved had been modified with an older, non-original part."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "18:45 — Arjun Mehta leaves office. 18:50 — Rohan Sharma’s phone pairs with Vikas Mehta’s phone near Sector 45. 18:52 — Rohan picks up Vikas from a side alley. 18:54 — Rohan hits Arjun at the pedestrian crossing. 18:57 — Rohan drops Vikas at a bus stop 3 km away. 18:59 — Rohan returns home, washes car, replaces headlight. 19:02 — Priya Sharma briefly leaves Zoom screen (per metadata tampering). 19:05 — Rohan uploads fake photos. 19:15 — Vikas boards train to Delhi. All timelines are corroborated by Bluetooth, GPS, and digital metadata, contradicting the alibis presented."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "The true motive is to prevent Arjun Mehta from exposing a ₹42.7 lakh financial fraud involving illicit transfers from a client trust account managed by Priya Sharma’s law firm to Vikas Mehta’s startup. Arjun, as an internal auditor, had drafted evidence of the fraud and planned to report it to authorities. Vikas, fearing exposure and criminal liability, hired Rohan to intimidate Arjun. The confrontation escalated into a fatal hit-and-run. The financial records show the timing of the fraud’s final transfer (March 16) directly preceded the murder, confirming the urgency to silence Arjun."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "The forged evidence includes: (1) the fake photo gallery on Rohan’s phone, fabricated by Rohan to support his alibi; and (2) the altered mechanical inspection report, falsified by the garage owner at Rohan’s request. Both were created to mislead investigators into believing the vehicle damage was old and that Rohan was elsewhere. The garage owner admitted to the alteration under questioning."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "Priya Sharma’s Zoom alibi is unreliable because although the company’s logs show her presence from 7:15–9:00 PM, digital forensics on the recording reveal a 4-minute gap (18:58–19:02) where her video feed was inactive and audio muted. Her screen was not visible during this window — precisely the time of the hit-and-run. The recording was later edited to mask this gap, suggesting she was aware of the incident and attempted to cover for her husband."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Vikas Mehta and Arjun Mehta had a professional relationship as client and auditor. Arjun was the internal auditor for Vikas’s startup, NexaPay, and discovered that Vikas had siphoned ₹42.7 lakhs from a client trust account managed by Priya Sharma’s law firm. Arjun threatened to expose the fraud. Vikas, fearing criminal prosecution and loss of funding, conspired with Rohan Sharma to eliminate Arjun. Their relationship is central to the motive: Vikas needed Arjun silenced, and Rohan was the instrument."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The two most conclusive digital pieces of evidence are: (1) Bluetooth pairing logs between Rohan’s iPhone and Vikas Mehta’s phone at 18:50 and 18:52, geolocated within 300m of the pedestrian crossing — proving Rohan was physically present with Vikas at the time of the crime; and (2) GPS location history showing Rohan’s phone moved from home to Sector 45 between 18:40–19:00, then returned home — directly contradicting his claim of being in Sohna Road."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The likelihood of conviction for both Rohan Sharma and Vikas Mehta is very high. The evidence is overwhelming: digital forensics place Rohan at the scene, financial records prove motive, the forged alibis are exposed, and the mechanical report was falsified. Vikas’s communication with Rohan and his presence near the scene at the time of the crime establish conspiracy. Even without a direct confession, the circumstantial and digital evidence meets the standard of 'beyond reasonable doubt' under Indian law. Priya Sharma may face lesser charges for obstruction, but Rohan and Vikas are clearly culpable."
+    }
+  ]
+}

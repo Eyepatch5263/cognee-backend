@@ -1,0 +1,10 @@
+{
+  "document_id": "ER-003",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "evidence_id": "E05",
+    "source": "Wedding Photo (submitted by Rohan Deshmukh)",
+    "analysis_date": "2024-03-15"
+  },
+  "content": "DIGITAL FORENSICS ANALYSIS REPORT — FORGED WEDDING PHOTO\n\nEvidence ID: E05\nSubmitted by Rohan Deshmukh as alibi evidence for 12/03/2024 wedding in Satara.\n\nImage File: IMG_20240312_201523.jpg (JPEG)\nMetadata:\n- Created: 12/03/2024 20:15:23\n- Modified: 12/03/2024 20:16:41\n- GPS Coordinates: 17.6987° N, 75.9063° E (Satara Wedding Venue)\n- Camera Model: Xiaomi Redmi Note 10 Pro\n\nAnalysis:\n1. Image contains group photo of wedding guests. Face of suspect (Rohan Deshmukh) is digitally inserted.\n2. Facial recognition analysis shows mismatch in skin tone, lighting angle, and shadow direction.\n3. Background elements (e.g., lanterns, curtain folds) show inconsistent parallax — evidence of compositing.\n4. Original photo (recovered from sister’s phone) was taken at 20:15 with 12 people. Rohan’s face was not among them.\n5. Timestamp of photo (20:15) conflicts with Ramesh Kulkarni’s timeline: he was still en route to Satara via train, arriving at 21:30.\n6. Phone usage logs show Ramesh Kulkarni borrowed a phone at 20:05 from a relative at Pune Railway Station — used to edit and send the photo.\n\nConclusion: The photo is a digitally altered composite. It was created to fabricate an alibi. The real perpetrator, Ramesh Kulkarni, used this photo to impersonate Rohan Deshmukh’s presence at the wedding."
+}

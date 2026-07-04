@@ -1,0 +1,269 @@
+```json
+{
+  "CASE METADATA": {
+    "case_id": "CASE_002",
+    "case_type": "rape",
+    "difficulty": "medium",
+    "incident_date": "2023-10-14",
+    "location": "Sector 17, Chandigarh, Punjab",
+    "summary": "On the night of October 14, 2023, 22-year-old Anjali Verma, a final-year law student, reported being sexually assaulted in the parking lot of her apartment complex in Sector 17, Chandigarh. She claimed she was approached by a man who pretended to be a security guard, forced her into a secluded corner, and raped her under threat of violence. She managed to escape and reported the incident to the Sector 17 Police Station within 90 minutes. The victim’s phone records show three calls to her roommate, Priya Mehta, and one to a number registered under the name of Rohan Kapoor, a local gym trainer and neighbor. CCTV footage from the main gate shows Anjali entering at 10:12 PM and exiting at 10:48 PM, but the camera covering the parking lot was malfunctioning between 10:20 PM and 10:50 PM. A medical examination confirmed sexual assault and collected biological evidence, including a partial DNA profile from under Anjali’s fingernails. The forensic report matched the DNA to Rohan Kapoor, but he claims he was at a late-night yoga session with his instructor, Arjun Singh, and provides a timestamped receipt from a nearby café. Anjali’s family, influential in local politics, pressured the police to expedite the case, while Rohan’s family alleges the accusation is a cover-up for a failed romantic relationship. The case is further complicated by conflicting witness statements: one neighbor claims to have seen Anjali walking with a man she knew, while another insists she was alone. The victim’s initial statement to police described the assailant as wearing a black hoodie, but later told her counselor the man was wearing a blue jacket — a detail never mentioned to police."
+  },
+  "HIDDEN GROUND TRUTH": {
+    "actual_criminal": "Rohan Kapoor",
+    "accomplices": [
+      "Arjun Singh"
+    ],
+    "true_motive": "Revenge for Anjali rejecting his romantic advances and threatening to expose his history of harassing female gym members",
+    "true_timeline": [
+      "2023-10-14 10:12 PM: Anjali Verma enters apartment complex parking lot.",
+      "2023-10-14 10:18 PM: Rohan Kapoor, disguised in a black hoodie, approaches Anjali under pretense of checking security.",
+      "2023-10-14 10:21 PM: Rohan drags Anjali behind a storage shed, assaults her, and forces her to bite him during struggle.",
+      "2023-10-14 10:35 PM: Rohan flees, discards hoodie in nearby trash bin, and walks to Café Zenith.",
+      "2023-10-14 10:37 PM: Rohan arrives at Café Zenith, where Arjun Singh (his yoga instructor) is waiting. Arjun falsifies the receipt timestamp to 10:30 PM to support alibi.",
+      "2023-10-14 10:48 PM: Anjali escapes and reports incident.",
+      "2023-10-14 11:05 PM: Rohan calls Arjun to confirm alibi alignment."
+    ],
+    "lying_witnesses": [
+      "Arjun Singh",
+      "Mrs. Mehta (Anjali’s neighbor who claims to have seen her with a man she knew)"
+    ],
+    "forged_evidence": [
+      "Timestamp-forged receipt from Café Zenith (original receipt shows 10:37 PM, altered to 10:30 PM)",
+      "Deleted call log from Rohan’s phone to Anjali’s number at 9:45 PM — later recovered by forensic team — indicating prior contact"
+    ],
+    "injected_contradictions": [
+      "Victim initially told police assailant wore black hoodie; later told counselor blue jacket — but CCTV from building entrance shows victim wearing blue jacket herself, leading to confusion over description.",
+      "Rohan’s DNA found under victim’s nails — but victim’s roommate Priya claims Anjali had scratched her own arm earlier that day while gardening, suggesting possible contamination.",
+      "Call log shows Rohan called Anjali at 9:45 PM — Rohan claims it was a wrong number; victim says she ignored it, but forensic analysis shows the call lasted 47 seconds and was not blocked."
+    ]
+  },
+  "REASONING PERSPECTIVES": [
+    "timeline reconstruction",
+    "witness credibility",
+    "forensic evidence",
+    "digital forensics",
+    "alibi verification",
+    "family pressure dynamics",
+    "communication graph",
+    "consent vs coercion"
+  ],
+  "CONTRADICTIONS": [
+    {
+      "type": "timeline",
+      "severity": "medium",
+      "claim_a": "Rohan Kapoor claims he was at Café Zenith from 10:30 PM to 11:00 PM, supported by a timestamped receipt.",
+      "claim_b": "Café Zenith’s server logs show the receipt was printed at 10:37 PM, and the POS system was manually altered — the actual time Rohan arrived was 10:37 PM, making his alibi impossible."
+    },
+    {
+      "type": "testimony",
+      "severity": "high",
+      "claim_a": "Anjali Verma told police the attacker wore a black hoodie.",
+      "claim_b": "Anjali later told her counselor the attacker wore a blue jacket — a detail never disclosed to police, but her own jacket was blue, creating ambiguity about whether she misremembered or was misled."
+    },
+    {
+      "type": "forensic",
+      "severity": "medium",
+      "claim_a": "DNA under Anjali’s fingernails matches Rohan Kapoor’s profile.",
+      "claim_b": "Anjali’s roommate Priya Mehta claims Anjali scratched her own arm while gardening at 6 PM, suggesting the DNA could be from self-inflicted injury, not assault."
+    },
+    {
+      "type": "digital forensics",
+      "severity": "high",
+      "claim_a": "Rohan Kapoor’s phone log shows no call to Anjali on October 14.",
+      "claim_b": "Forensic recovery from backup shows a 47-second call from Rohan to Anjali at 9:45 PM, which was manually deleted from the active log."
+    },
+    {
+      "type": "testimony",
+      "severity": "low",
+      "claim_a": "Mrs. Mehta, neighbor, claims she saw Anjali walking with a man she recognized as a neighbor around 10:20 PM.",
+      "claim_b": "Security guard on duty confirms Mrs. Mehta was not on her balcony at that time due to a migraine — her testimony is based on memory, not direct observation."
+    }
+  ],
+  "EXPECTED KNOWLEDGE GRAPH": {
+    "nodes": [
+      {
+        "id": "P001",
+        "type": "Person",
+        "label": "Anjali Verma"
+      },
+      {
+        "id": "P002",
+        "type": "Person",
+        "label": "Rohan Kapoor"
+      },
+      {
+        "id": "P003",
+        "type": "Person",
+        "label": "Arjun Singh"
+      },
+      {
+        "id": "P004",
+        "type": "Person",
+        "label": "Priya Mehta"
+      },
+      {
+        "id": "P005",
+        "type": "Person",
+        "label": "Mrs. Mehta"
+      },
+      {
+        "id": "E001",
+        "type": "Event",
+        "label": "Rape Incident"
+      },
+      {
+        "id": "E002",
+        "type": "Event",
+        "label": "Café Zenith Visit"
+      },
+      {
+        "id": "E003",
+        "type": "Event",
+        "label": "Gardening Incident"
+      },
+      {
+        "id": "E004",
+        "type": "Event",
+        "label": "Phone Call at 9:45 PM"
+      },
+      {
+        "id": "E005",
+        "type": "Evidence",
+        "label": "DNA Sample (Fingernails)"
+      },
+      {
+        "id": "E006",
+        "type": "Evidence",
+        "label": "Café Zenith Receipt"
+      },
+      {
+        "id": "E007",
+        "type": "Evidence",
+        "label": "Deleted Call Log"
+      },
+      {
+        "id": "L001",
+        "type": "Location",
+        "label": "Sector 17 Parking Lot"
+      },
+      {
+        "id": "L002",
+        "type": "Location",
+        "label": "Café Zenith"
+      },
+      {
+        "id": "L003",
+        "type": "Location",
+        "label": "Anjali's Apartment"
+      },
+      {
+        "id": "L004",
+        "type": "Location",
+        "label": "Garden of Apartment Complex"
+      }
+    ],
+    "edges": [
+      {
+        "source": "P001",
+        "target": "E001",
+        "relation": "victimized_in"
+      },
+      {
+        "source": "P002",
+        "target": "E001",
+        "relation": "perpetrated"
+      },
+      {
+        "source": "P002",
+        "target": "E002",
+        "relation": "visited"
+      },
+      {
+        "source": "P003",
+        "target": "E002",
+        "relation": "accompanied"
+      },
+      {
+        "source": "P003",
+        "target": "E006",
+        "relation": "forged"
+      },
+      {
+        "source": "P002",
+        "target": "P001",
+        "relation": "called"
+      },
+      {
+        "source": "P001",
+        "target": "E003",
+        "relation": "participated_in"
+      },
+      {
+        "source": "P004",
+        "target": "E003",
+        "relation": "testified_about"
+      },
+      {
+        "source": "E001",
+        "target": "E005",
+        "relation": "produced"
+      },
+      {
+        "source": "E005",
+        "target": "P002",
+        "relation": "matches"
+      },
+      {
+        "source": "E002",
+        "target": "E006",
+        "relation": "generates"
+      },
+      {
+        "source": "E004",
+        "target": "P002",
+        "relation": "originated_from"
+      },
+      {
+        "source": "E004",
+        "target": "P001",
+        "relation": "received_by"
+      },
+      {
+        "source": "P005",
+        "target": "E001",
+        "relation": "testified_against"
+      },
+      {
+        "source": "L001",
+        "target": "E001",
+        "relation": "location_of"
+      },
+      {
+        "source": "L002",
+        "target": "E002",
+        "relation": "location_of"
+      },
+      {
+        "source": "L004",
+        "target": "E003",
+        "relation": "location_of"
+      },
+      {
+        "source": "P001",
+        "target": "L003",
+        "relation": "resides_at"
+      },
+      {
+        "source": "P002",
+        "target": "L003",
+        "relation": "visited"
+      },
+      {
+        "source": "E007",
+        "target": "E004",
+        "relation": "contains"
+      }
+    ]
+  }
+}
+```

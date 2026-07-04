@@ -1,0 +1,10 @@
+{
+  "document_id": "FR-001",
+  "document_type": "forensic_report",
+  "metadata": {
+    "report_id": "FR/VedaCorp/2023/011",
+    "investigating_unit": "Forensic Accounting Division, ED",
+    "date_generated": "2023-08-25"
+  },
+  "content": "Financial trail analysis reveals:\n\n- ₹4.2 crore transferred from VedaCorp (A/C: SBIN-7890123456) to Sparrow Holdings (A/C: ICICI-5544332211) on Feb 15, 2022, under invoice #VSP-2022-001. No service delivery evidence found.\n- ₹7.5 crore transferred from Sparrow Holdings to Vireo Ventures (A/C: HDFC-1122334455) on July 12, 2022.\n- ₹6.8 crore transferred from Vireo Ventures to Mauritius account (MUS8765432109876543210) on July 28, 2022.\n- ₹6.0 crore withdrawn from Mauritius account on August 15, 2022, via wire transfer to 'A. Mehta' in Panaji, Goa — used to purchase Plot No. 7B, Candolim Beach, registered under 'A. Mehta' (PAN: APMCM7890R).\n\nPAN APMCM7890R is not registered to Amit Mehta (Dr. Nair’s brother) or any known individual. It was issued to a fictitious entity 'A. Mehta Enterprises' registered via a shell agent in Goa. The property is now under mortgage to an NBFC called 'Shree Capital Finance' — whose owner is linked to Arjun Mehta via a nominee director.\n\nSunita Rao’s ₹25 lakh deposit on July 18, 2022, originated from Sparrow Holdings via a chain of 3 intermediary accounts. The source: funds from VedaCorp.\n\nConclusion: ₹18.7 crore was systematically siphoned. The Goa property is the ultimate beneficiary asset. Arjun Mehta is the central node in the financial network."
+}

@@ -1,0 +1,10 @@
+{
+  "document_id": "DR-001",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "report_id": "DFR/CC/2023/00478-01",
+    "prepared_by": "Digital Forensics Unit, Bengaluru Cyber Crime Cell",
+    "date": "2023-11-18"
+  },
+  "content": "Forensic analysis of Arjun Mehta’s laptop (Model: Dell Latitude 5420, Serial: DL5420-8892) revealed: 1. BIOS logs confirm the device was powered off from 01:00 to 04:00 on 2023-11-15. 2. Wi-Fi adapter was disabled via Group Policy at 22:00 on 2023-11-14. 3. No remote desktop or SSH sessions were recorded. 4. The device fingerprint (MAC address, OS hash, browser user-agent) used to authenticate to VerveTech’s VPN on 2023-11-15 at 02:13:07 was spoofed. It matched Arjun’s registered device profile but was generated from a different hardware stack. 5. The spoofed fingerprint was consistent with a virtual machine environment, likely hosted remotely. 6. No traces of malware or remote access tools were found on the laptop. Conclusion: Arjun Mehta’s laptop was not the source of the breach. The device fingerprint was cloned using stolen metadata from a prior authorized login."
+}

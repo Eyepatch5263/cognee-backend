@@ -1,0 +1,96 @@
+{
+  "queries": [
+    {
+      "id": "Q1",
+      "question": "Who is the actual perpetrator of the assault?",
+      "category": "suspect_identification"
+    },
+    {
+      "id": "Q2",
+      "question": "What is the true motive behind the assault?",
+      "category": "motive_analysis"
+    },
+    {
+      "id": "Q3",
+      "question": "Which witness provided false testimony and why?",
+      "category": "witness_credibility"
+    },
+    {
+      "id": "Q4",
+      "question": "How was the alibi evidence (wedding photo) forged?",
+      "category": "contradiction_detection"
+    },
+    {
+      "id": "Q5",
+      "question": "What inconsistency exists between Mrs. Meena Kulkarni’s statement and the CCTV timestamp?",
+      "category": "timeline_reconstruction"
+    },
+    {
+      "id": "Q6",
+      "question": "Why is the presence of Rohan Deshmukh’s fingerprints on the plank not incriminating?",
+      "category": "evidence_ranking"
+    },
+    {
+      "id": "Q7",
+      "question": "What does the blood pattern analysis reveal about the timing of the evidence tampering?",
+      "category": "forensic_evidence"
+    },
+    {
+      "id": "Q8",
+      "question": "Which location verification contradicts Vikram Joshi’s initial statement?",
+      "category": "location_verification"
+    },
+    {
+      "id": "Q9",
+      "question": "How does the digital forensics report contradict the claim that Rohan Deshmukh was at the wedding?",
+      "category": "digital_forensics"
+    },
+    {
+      "id": "Q10",
+      "question": "What is the likelihood of Rohan Deshmukh being convicted based on the evidence presented?",
+      "category": "conviction_likelihood"
+    }
+  ],
+  "expected_answers": [
+    {
+      "query_id": "Q1",
+      "answer": "The actual perpetrator is Ramesh Kulkarni. He assaulted Arjun Deshmukh in retaliation for filing an excise complaint against his illegal alcohol distillation operation. He used the family feud between Arjun and Rohan to frame Rohan, planted Rohan’s old fingerprints on the wooden plank, and created a forged wedding photo to establish a false alibi. Digital forensics and timeline analysis confirm he was en route to Satara during the attack and arrived at the wedding reception only after 21:30, while the photo was timestamped at 20:15."
+    },
+    {
+      "query_id": "Q2",
+      "answer": "The true motive is revenge. Arjun Deshmukh reported Ramesh Kulkarni’s illegal alcohol distillation operation to the excise department on 28/02/2024. This led to a raid and seizure of Ramesh’s equipment. The assault on 12/03/2024 was a targeted act of retaliation, designed to intimidate Arjun and discredit his credibility by framing a family member."
+    },
+    {
+      "query_id": "Q3",
+      "answer": "Mrs. Meena Kulkarni provided false testimony. She is Ramesh Kulkarni’s sister-in-law and knowingly claimed she saw the attacker’s face at 18:30, identifying him as Rohan Deshmukh. However, CCTV footage shows the attack occurred at 18:37, and her window faces the opposite direction of the alley. Her statement was intentionally deceptive to support Ramesh’s alibi and divert suspicion from him."
+    },
+    {
+      "query_id": "Q4",
+      "answer": "The wedding photo was digitally altered by inserting Ramesh Kulkarni’s face into a group photo taken at 20:15 at the Satara wedding venue. Digital forensics revealed mismatched lighting, skin tone, and parallax errors. The original photo, recovered from his sister’s phone, did not include Ramesh. He used a borrowed phone at Pune Railway Station at 20:05 to edit and send the photo, creating a false impression of his presence at the wedding."
+    },
+    {
+      "query_id": "Q5",
+      "answer": "Mrs. Meena Kulkarni claimed she saw the attacker’s face clearly at 18:30 while looking out her window. However, the CCTV footage confirms the assault began at 18:37, and her kitchen window faces north, while the attack occurred on the east side of the store — making it physically impossible for her to have seen the attacker’s face at any time during the incident."
+    },
+    {
+      "query_id": "Q6",
+      "answer": "Rohan Deshmukh’s fingerprints on the plank are not incriminating because forensic analysis shows they were deposited during a prior visit on 10/03/2024, when he bought vegetables from the store. No recent prints were found, and the blood on the plank was planted after the assault using a swab from Ruby Hall Clinic — indicating the plank was tampered with after the crime to frame him."
+    },
+    {
+      "query_id": "Q7",
+      "answer": "The blood pattern analysis revealed the blood on the plank was dried for 12–18 hours at the time of recovery, but the assault occurred at 18:37 on 12/03/2024. Since the plank was recovered within 2 hours, the blood could not have dried naturally. This indicates the blood was applied later using a swab from Arjun’s hospital wound, confirming deliberate tampering after the assault."
+    },
+    {
+      "query_id": "Q8",
+      "answer": "Vikram Joshi’s initial statement claimed the attacker ran toward the bus stand, but later changed it to the railway station after police suggestion. CCTV footage shows the attacker turned left toward a rear street leading away from both the bus stand and railway station — contradicting both versions and indicating the witness was influenced or misled."
+    },
+    {
+      "query_id": "Q9",
+      "answer": "The digital forensics report shows the wedding photo was timestamped at 20:15, but Ramesh Kulkarni was still traveling from Pune to Satara at that time — he boarded the train at 19:15 and arrived at 21:30. The photo was edited to insert his face into a group image taken at 20:15, which he did not attend. His phone usage logs confirm he was using a borrowed phone in Pune at 20:05 to edit the photo — proving he was not at the wedding."
+    },
+    {
+      "query_id": "Q10",
+      "answer": "The likelihood of Rohan Deshmukh being convicted is extremely low. All evidence against him has been debunked: his fingerprints were from a prior visit, his alibi is unrelated to the crime, and the witnesses who identified him are either mistaken or complicit in framing him. The real perpetrator is Ramesh Kulkarni, and the forged evidence and false testimony have been exposed. Rohan should be cleared of all charges."
+    }
+  ]
+}

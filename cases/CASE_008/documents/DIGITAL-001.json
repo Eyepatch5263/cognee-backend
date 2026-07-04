@@ -1,0 +1,10 @@
+{
+  "document_id": "DIGITAL-001",
+  "document_type": "digital_forensics_report",
+  "metadata": {
+    "device": "Rohan Sharma - iPhone 14 Pro",
+    "analyst": "Cyber Cell, Gurgaon",
+    "date": "2024-03-21"
+  },
+  "content": "1. Photo gallery on device contains 42 images labeled 'Sohna Road Sunset Shoot - 17.03.2024.' Geotags show locations in Sohna Road between 18:00–19:30. However, metadata timestamps were altered. Original EXIF timestamps show the earliest image was taken on March 10, 2024, at 17:45. 2. Bluetooth logs show pairing with device 'Vikas_Mehta_iPhone' at 18:50:12 and 18:52:47. Location data from Bluetooth pairing corresponds to Sector 45, within 300m of pedestrian crossing. 3. Device location history (GPS) shows movement from home (Sector 44) to Sector 45 between 18:40–19:00, then return home at 19:05. 4. WhatsApp messages with Vikas Mehta were deleted between 18:56 and 19:00. Recovered fragments indicate: 'He’s gone. Clean the car. I’m on the bus.' 5. Conclusion: The photo gallery was fabricated to establish alibi. Device was physically present at the crime scene at time of impact."
+}
