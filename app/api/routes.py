@@ -820,7 +820,10 @@ async def run_case_benchmark(
         )
 
 @router.get("/{id}/briefs")
-async def get_case_briefs(id: str):
+async def get_case_briefs(
+    id: str,
+    client: CogneeAPIClient = Depends(get_cognee_client)
+):
     """
     Get the pre-generated legal briefs/summaries (quick, standard, detailed) for a case.
     """
@@ -833,16 +836,43 @@ async def get_case_briefs(id: str):
     if cached:
         return cached
 
-    case_num = id.replace("CASE_", "")
-    case_folder = f"CASE_{case_num.zfill(3)}"
+    # 1. Resolve dataset and case folder
+    dataset_id = id
+    case_folder = "CASE_001"
+    
+    try:
+        datasets = await client.list_datasets()
+    except Exception as e:
+        logger.error(f"Failed to list datasets in get_case_briefs: {e}")
+        datasets = []
+        
+    dataset_found = False
+    for ds in datasets:
+        ds_id = ds.get("id") or ds.get("datasetId") or ""
+        ds_name = ds.get("name") or ds.get("datasetName") or ""
+        
+        if ds_id == id or ds_name.lower() == id.lower() or ds_name.lower() == f"case_{id.lower()}":
+            dataset_id = ds_id
+            dataset_found = True
+            # Extract case folder name from name, e.g. "case_003" -> "CASE_003"
+            parts = ds_name.lower().split("case_")
+            num_str = parts[-1].strip()
+            if num_str.isdigit():
+                case_folder = f"CASE_{num_str.zfill(3)}"
+            break
+            
+    if not dataset_found:
+        case_num = id.replace("CASE_", "")
+        case_folder = f"CASE_{case_num.zfill(3)}"
     
     cases_dir = os.getenv("CASES_DIR", os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "cases")))
     briefs_path = os.path.join(cases_dir, case_folder, "legal_briefs.json")
     if not os.path.exists(briefs_path):
         raise HTTPException(
             status_code=404,
-            detail=f"Legal briefs for case {id} are not generated yet."
+            detail=f"Legal briefs for case {id} (resolved to {case_folder}) are not generated yet."
         )
+
         
     try:
         with open(briefs_path, "r") as f:

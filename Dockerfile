@@ -23,6 +23,10 @@ COPY app/ ./app/
 # Copy the cases data directory into the image (or it can be mounted as a volume)
 COPY cases/ ./cases/
 
+# Copy the .env file to load variables inside the container
+COPY .env ./
+
+
 # Expose the default FastAPI port
 EXPOSE 8000
 

@@ -27,7 +27,8 @@ class Settings:
     LLM_MODEL: str = os.getenv("LLM_MODEL", "qwen/qwen3-next-80b-a3b-instruct")
 
     # Frontend URL
-    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:3000")
+    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:3000,http://localhost:5173,https://cognee-verdict-frontend.vercel.app")
+
 
     @property
     def has_cognee_credentials(self) -> bool:
