@@ -86,7 +86,8 @@ class CogneeAPIClient:
         # Usually returns a list directly or wraps it in dict
         if isinstance(response, list):
             return response
-        return response.get("datasets", [])
+        return response.get("datasets") or []
+
 
     async def create_dataset(self, dataset_name: str) -> Dict[str, Any]:
         """Create a new dataset or return the existing one with same name."""
@@ -141,7 +142,7 @@ class CogneeAPIClient:
         response = await self._request("GET", f"/api/v1/datasets/{dataset_id}/data")
         if isinstance(response, list):
             return response
-        return response.get("data", [])
+        return response.get("data") or []
 
     async def recall_memory(
         self,
@@ -162,7 +163,8 @@ class CogneeAPIClient:
         response = await self._request("POST", "/api/v1/recall", json_data=payload)
         if isinstance(response, list):
             return response
-        return response.get("results", [])
+        return response.get("results") or []
+
 
     async def improve_memory(
         self,

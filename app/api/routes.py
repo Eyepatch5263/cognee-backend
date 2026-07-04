@@ -585,7 +585,7 @@ async def get_case_analysis(
                 top_k=50
             )
             chunks = []
-            for r in chunks_raw:
+            for r in (chunks_raw or []):
                 text = r.get("text") or r.get("content") or ""
                 source = r.get("source") or "graph"
                 meta = r.get("metadata") or {}
@@ -615,7 +615,7 @@ async def get_case_analysis(
             
             # Format chunks for the pipeline
             chunks = []
-            for r in chunks_raw:
+            for r in (chunks_raw or []):
                 text = r.get("text") or r.get("content") or ""
                 source = r.get("source") or "graph"
                 meta = r.get("metadata") or {}
@@ -624,6 +624,7 @@ async def get_case_analysis(
                     "source": meta.get("filename") or meta.get("source") or source,
                     "metadata": meta
                 })
+
                 
             # Compile Cognee input dict
             cognee_data = {

@@ -11,13 +11,16 @@ app = FastAPI(
 )
 
 # Enable CORS for Next.js and other UI environments
+allowed_origins = [origin.strip() for origin in settings.FRONTEND_URL.split(",") if origin.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.FRONTEND_URL],  # Adjust in production to match your front-end domain
+    allow_origins=allowed_origins,  # Adjust in production to match your front-end domain
     allow_credentials=True,
     allow_methods=["POST","GET","PUT","DELETE","OPTIONS"],
     allow_headers=["*"],
 )
+
 
 # Register exception handlers
 register_exception_handlers(app)
